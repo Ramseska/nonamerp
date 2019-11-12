@@ -1,0 +1,4 @@
+﻿<meta>
+  <info name="LognetRL" type="script"/>
+  <script src="compiled/netcoreapp2.1/server_side.dll" />
+</meta>

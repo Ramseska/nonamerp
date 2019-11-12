@@ -1,0 +1,37 @@
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\server_side.deps.json
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\server_side.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\server_side.pdb
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\Bootstrapper.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\rage-sharp.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\Colorful.Console.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\Microsoft.CodeAnalysis.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\Newtonsoft.Json.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\Ben.Demystifier.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\NeoSmart.Hashing.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\xxHash.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\compiled\netcoreapp2.1\rage-sharp.xml
+D:\Desktop\LogNet RL\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.csprojAssemblyReference.cache
+D:\Desktop\LogNet RL\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.AssemblyInfoInputs.cache
+D:\Desktop\LogNet RL\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.AssemblyInfo.cs
+D:\Desktop\LogNet RL\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.csproj.CopyComplete
+D:\Desktop\LogNet RL\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.dll
+D:\Desktop\LogNet RL\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.pdb
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\server_side.deps.json
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\server_side.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\server_side.pdb
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\Bootstrapper.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\Colorful.Console.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\Ben.Demystifier.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\NeoSmart.Hashing.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\xxHash.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.csprojAssemblyReference.cache
+D:\Desktop\lognetrl\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.AssemblyInfoInputs.cache
+D:\Desktop\lognetrl\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.AssemblyInfo.cs
+D:\Desktop\lognetrl\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.csproj.CopyComplete
+D:\Desktop\lognetrl\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.pdb
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\rage-sharp.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\Microsoft.CodeAnalysis.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Desktop\lognetrl\bridge\resources\server_side\compiled\netcoreapp2.1\Newtonsoft.Json.dll

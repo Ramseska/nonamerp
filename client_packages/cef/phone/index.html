@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="index.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body onload="initPhone()">
+        <div id="container">
+            <img class="wallpaper_screen" id="phone_bg" src="./source/bg/bg_img_1.jpg" height="420" width="210">
+            <img class="wallpaper_screen" src="./source/bg/wl_mask.png" height="420" width="210">
+            <div id="main_color_box" hidden=true>
+                <div id="header_color_box"></div>
+                <div id="middle_color_box"></div>
+                <div id="bottom_color_box"></div>
+            </div>
+            <img id="phone_main" src="./source/s9-main_v2.png" height="450" width="220">
+            <div id="phone_header">
+                <div id="phone_header_time" class="header_icons">24:24</div>
+                <img id="wifi_icon" class="header_icons" src="./source/wifi_icon_w.png">
+                <img id="battery_icon" class="header_icons" src="./source/battery_icon_w.png">
+                <div id="battery_procent" class="header_icons">85%</div>
+            </div>
+            <div id="main_box"></div>
+            <div id="middle_box">
+                <img src="./source/aps_icons/gallery.png" class="app_icons">
+                <img src="./source/aps_icons/billing.png" class="app_icons">
+                <img src="./source/aps_icons/settings.png" class="app_icons" onclick="callApp('aps_settings')">
+            </div>
+            <div id="footer_box">
+                <img src="./source/aps_icons/phone.png" class="app_icons">
+                <img src="./source/aps_icons/contacts.png" class="app_icons">
+                <img src="./source/aps_icons/messaging.png" class="app_icons">
+                <img src="./source/aps_icons/camera.png" class="app_icons">
+                <img src="./source/aps_icons/account.png" class="app_icons">
+            </div>
+            <div id="buttons_cascade">
+                <img id="back_button_icon" class="control_buttons" src="./source/back_button_icon_w.png" onclick="buttonBack()">
+                <img id="main_button_icon" class="control_buttons" src="./source/main_button_icon_w.png" onclick="buttonHome()">
+                <img id="split_button_icon" class="control_buttons" src="./source/split_button_icon_w.png" onclick="console.log('worked')">
+            </div>
+        </div>
+    </body>
+</html>

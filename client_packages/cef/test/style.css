@@ -1,0 +1,10 @@
+#galka
+{
+    transition: 10s;
+    background-color: red;
+}
+#galka.hover
+{
+    transition: 5s;
+    border: 2px solid rgb(113, 41, 131);
+}

@@ -1,0 +1,289 @@
+/* img { pointer-events: none; } */
+#container
+{
+    font-family: 'Work Sans', sans-serif;
+
+    -webkit-user-select: none;
+
+    position: absolute;
+
+    margin: 0 auto;
+
+    width: 220px;
+    height: 450px;
+
+    left: 100%;
+    top: 100%;
+    margin-left: -250px;
+    margin-top: -550px; 
+}
+
+#phone_main { position: absolute; }
+.wallpaper_screen
+{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+#phone_header
+{
+    font-family: 'Julius Sans One', sans-serif;
+
+    position: absolute;
+
+    top: 23px;
+    left: 5px;
+
+    width: 210px;
+    height: 15px;
+}
+#phone_header_time
+{
+    position: relative;
+    left: 170px;
+    top: 2px;
+    width: 1px;
+    font-size: 10;
+    
+    color: white;
+}
+#wifi_icon
+{
+    position: relative;
+    
+    width: 10px;
+    height: 8px;
+
+    top: -15px;
+    left: 126px;
+}
+#battery_icon
+{
+    position: relative;
+    
+    width: 9px;
+    height: 9px;
+
+    top: -14px;
+    left: 144px;
+}
+#battery_procent
+{
+    position: relative;
+
+    left: 139px;
+    top: -27px;
+    width: 1px;
+    font-size: 10;
+    
+    color: white;
+}
+#main_box::-webkit-scrollbar { display: none; }
+#main_box
+{
+    position: absolute;
+
+    width: 210px;
+    height: 363px;
+
+    left: 6px;
+    top: 38px;
+}
+#main_color_box
+{
+    position: absolute;
+
+    width: 210px;
+    height: 410px;
+
+    left: 6px;
+    top: 22px;
+}
+#header_color_box
+{
+    position: absolute;
+
+    width: 210px;
+    height: 15px;
+
+    background-color: green;
+}
+#middle_color_box
+{
+    position: absolute;
+
+    width: 210px;
+    height: 363px;
+
+    top: 15px;
+}
+#bottom_color_box
+{
+    position: absolute;
+
+    width: 210px;
+    height: 32px;
+
+    top: 378px;
+
+    background-color: hotpink;
+}
+#buttons_cascade
+{
+    position: absolute;
+
+    width: 210px;
+    height: 32px;
+
+    top: 400px;
+    left: 5px;
+
+    /* background-color: silver; */
+}
+#main_button_icon
+{
+    left: 78px;
+}
+#split_button_icon
+{
+    left: 128px;
+}
+#back_button_icon
+{
+    left: 25px;
+}
+.control_buttons
+{
+    position: relative;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+}
+#middle_box
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    position: absolute;
+
+    width: 210px;
+    height: 300px;
+
+    left: 6px;
+    top: 38px;
+}
+#footer_box
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    position: absolute;
+
+    width: 210px;
+    height: 60px;
+
+    left: 6px;
+    top: 338px;
+}
+
+.app_icons
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.filtered-bottom 
+{
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 rgb(0, 0, 0));
+    filter: opacity(.5) drop-shadow(0 0 0 rgb(0, 0, 0));
+}
+.filtered-header 
+{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.flex-mb-stlist
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    overflow: scroll;
+}
+.flex-mb-wplist
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    overflow: scroll;
+}
+.settings_item
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 210px;
+    height: 50px;
+}
+.settings_item_picture
+{
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 15px;
+}
+.settings_item_text
+{
+    font-size: 9;
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    margin-right: 100px;
+}
+.settings_item_text_2
+{
+    font-size: 8;
+    display: block;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+.settings_item_bottomline
+{
+    position: absolute;
+
+    width: 150px;
+    height: 1px;
+
+    margin-top: 49px;
+    margin-left: 50px;
+
+    background-color: rgb(234,234,234);
+}
+#back_button
+{
+    white-space: nowrap;
+    position: absolute;
+
+    width: 207px;
+    height: 30px;
+
+    left: 7px;
+    top: 40px;
+}
+.wallpaper_item
+{
+    margin-left: 5px;
+    margin-top: 5px;
+
+    height: 90px;
+    width: 63px;
+
+    background-color: blanchedalmond;
+}

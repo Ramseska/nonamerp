@@ -1,0 +1,43 @@
+<head>
+    <link href="color_picker.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cont">
+        <div class="picker">
+            Red <input type="range" min="0" max="255" step="1" id="red" value="0">
+            Green <input type="range" min="0" max="255" step="1" id="green" value="0">
+            Blue <input type="range" min="0" max="255" step="1" id="blue" value="0">
+            <div id="display"></div>
+            <div id="buttons">
+                <input type="button" id="button_yes" value="Accept" onclick="triggerYes()">
+                <input type="button" id="button_cancel" value="Cancel" onclick="triggerCancel()">
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var input = document.querySelectorAll("input");
+            var r, g, b;
+
+            for (var i = 0; i < input.length; i++) {
+                input[i].addEventListener("input", function () {
+                    var red = document.getElementById("red").value,
+                        green = document.getElementById("green").value,
+                        blue = document.getElementById("blue").value;
+                    var display = document.getElementById("display");
+                    display.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+                    r = red;
+                    g = green;
+                    b = blue;
+                });
+            }
+            function triggerYes() {
+                mp.trigger("pickerCalled", r, g, b);
+            }
+            function triggerCancel() {
+                mp.trigger("pickerClose");
+            }
+        </script>
+    </div>
+</body>
+
