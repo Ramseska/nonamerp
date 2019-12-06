@@ -4757,11 +4757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\lognetrl\\bridge\\resources\\server_side\\server_side.csproj",
+      "projectUniqueName": "D:\\Desktop\\nonamerp\\bridge\\resources\\server_side\\server_side.csproj",
       "projectName": "server_side",
-      "projectPath": "D:\\Desktop\\lognetrl\\bridge\\resources\\server_side\\server_side.csproj",
+      "projectPath": "D:\\Desktop\\nonamerp\\bridge\\resources\\server_side\\server_side.csproj",
       "packagesPath": "C:\\Users\\Rams3ska\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\lognetrl\\bridge\\resources\\server_side\\obj\\",
+      "outputPath": "D:\\Desktop\\nonamerp\\bridge\\resources\\server_side\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rams3ska\\AppData\\Roaming\\NuGet\\NuGet.Config",

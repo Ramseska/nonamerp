@@ -9,7 +9,7 @@ namespace server_side.Data
     {
         private Client player { get; set; }
 
-        private PlayerInfo() { } // пустой конструктор не юзать
+        private PlayerInfo() { }
         public PlayerInfo(Client player) { this.player = player; }
 
 
@@ -23,6 +23,7 @@ namespace server_side.Data
             player.SetData("PlayerMail", "None"); // почта
             player.SetData("PlayerLVL", 0); // lvl
             player.SetData("PlayerMoney", 0); // cash
+            player.SetData("PlayerHouse", -1); // house
         }
 
         public void SetAuthorized(bool status) => player.SetData("PlayerAuthorized", status);

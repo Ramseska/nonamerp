@@ -5,7 +5,7 @@
     position: absolute;
     width: 1080px;
     height: 520px;
-    background-color: #231c33;
+    background-color: #252d36;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -19,11 +19,11 @@
 
     border-bottom-width: 10px;
     border-bottom-style: solid;
-    border-bottom-color: #231c33;
+    border-bottom-color: #252d36;
 
     border-top-width: 10px;
     border-top-style: solid;
-    border-top-color: #231c33;
+    border-top-color: #252d36;
 }
 
 .item
@@ -31,7 +31,7 @@
     transition: 100ms;
     width: 200px;
     height: 150px;
-    background-color: #372f49;
+    background-color: #30495a;
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
