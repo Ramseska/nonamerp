@@ -5247,3 +5247,1006 @@ System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For in
 Parameter name: name
    at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
 =========================================================
+
+==================[07.12.2019 11:20:03]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:23:56]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:23:56]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:27:48]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:28:00]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:28:00]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:30:20]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:32:31]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:32:40]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:32:40]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:33:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:33:38]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:33:38]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:34:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:37:36]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:39:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:40:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:40:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:41:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:42:03]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:42:03]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:43:16]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:43:26]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:43:26]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:47:21]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:47:30]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:47:30]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:51:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:51:24]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:51:24]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:52:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:55:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:55:16]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:55:16]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:56:16]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:56:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:57:58]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 11:58:04]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 11:58:04]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:02:38]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:02:44]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:02:44]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:03:13]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:03:59]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:04:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:04:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:08:06]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:08:12]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:08:12]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:09:29]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:09:42]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:09:42]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:11:06]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:11:13]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:11:13]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:15:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.12.2019 12:15:21]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.12.2019 12:15:21]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[09.12.2019 5:10:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[09.12.2019 5:15:30]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[09.12.2019 5:15:30]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[09.12.2019 5:38:33]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[09.12.2019 5:38:56]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[09.12.2019 5:38:56]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:13:40]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 5:20:48]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 5:24:43]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:24:43]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:25:21]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:25:21]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:25:21]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:25:22]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 65
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[12.12.2019 5:34:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 5:34:13]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:34:13]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:34:41]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:34:41]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:34:41]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:34:41]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 65
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[12.12.2019 5:55:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 5:56:00]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:56:00]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:56:19]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:56:19]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 5:56:19]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:24]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:29]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:37]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:42]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:45]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:50]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:52]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:56:57]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:57:19]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 5:57:22]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:18:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 6:19:11]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:19:11]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:19:23]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:19:24]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:19:24]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:19:28]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:19:38]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:19:49]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:19:52]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:20:03]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:20:10]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:20:15]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:20:32]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:20:34]==================
+System.InvalidOperationException: Sequence contains no matching element
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+=========================================================
+
+==================[12.12.2019 6:22:29]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 6:22:41]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:22:41]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:22:57]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 74
+=========================================================
+
+==================[12.12.2019 6:23:03]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 74
+=========================================================
+
+==================[12.12.2019 6:23:47]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 74
+=========================================================
+
+==================[12.12.2019 6:33:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 6:34:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 6:38:18]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:38:18]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:46:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[12.12.2019 6:46:27]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[12.12.2019 6:46:27]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:35:39]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 16:36:42]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 16:43:02]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 16:50:51]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:50:51]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:50:51]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 16:50:52]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 125
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[18.12.2019 16:56:05]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 16:56:50]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:56:51]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:56:51]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 16:56:52]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 140
+=========================================================
+
+==================[18.12.2019 16:56:52]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 140
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[18.12.2019 16:59:28]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 16:59:54]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:59:54]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 16:59:55]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 16:59:55]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 140
+=========================================================
+
+==================[18.12.2019 16:59:55]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Data.House.OnPlayerEnterColshape(ColShape shape, Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\House.cs:line 140
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[18.12.2019 17:01:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:01:44]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 17:01:44]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 17:01:45]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:01:55]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:02:02]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:02:06]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:02:08]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:04:47]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:04:59]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 17:04:59]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Linq.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[18.12.2019 17:04:59]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:07]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:11]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================
+
+==================[18.12.2019 17:05:15]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================
+
+==================[18.12.2019 17:05:26]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:30]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:36]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:37]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:39]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:41]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:43]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:05:44]==================
+System.InvalidOperationException: Sequence contains no elements
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source)
+=========================================================
+
+==================[18.12.2019 17:06:51]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:08:43]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:13:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:18:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:21:16]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:23:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:24:55]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.12.2019 17:27:18]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================

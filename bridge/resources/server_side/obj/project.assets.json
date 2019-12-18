@@ -4752,7 +4752,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rams3ska\\.nuget\\packages\\": {}
+    "C:\\Users\\msmsm\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4760,12 +4761,16 @@
       "projectUniqueName": "D:\\Desktop\\nonamerp\\bridge\\resources\\server_side\\server_side.csproj",
       "projectName": "server_side",
       "projectPath": "D:\\Desktop\\nonamerp\\bridge\\resources\\server_side\\server_side.csproj",
-      "packagesPath": "C:\\Users\\Rams3ska\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\msmsm\\.nuget\\packages\\",
       "outputPath": "D:\\Desktop\\nonamerp\\bridge\\resources\\server_side\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Rams3ska\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\msmsm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -4813,7 +4818,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

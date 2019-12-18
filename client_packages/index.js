@@ -16,3 +16,5 @@ require("./cef/speedo");
 require("./cef/color_picker");
 require("./keybinds.js");
 require("./Sound");
+require("./debugUI");
+require("./cef/other/house");

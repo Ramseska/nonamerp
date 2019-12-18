@@ -8459,3 +8459,1317 @@ server_side: loading remote events.. found 2 remote event(s)
 server_side: loaded 4 remote event(s)
 -> Resource server_side started!
 Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:19:53
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:27:39
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:30:13
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:32:27
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:33:24
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:34:46
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:37:32
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:39:46
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:41:50
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:43:06
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:47:16
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:51:10
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:52:52
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:54:56
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:56:11
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:56:47
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 11:57:53
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:02:33
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:03:08
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:03:54
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:08:01
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:09:24
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:11:01
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 07.12.2019 12:15:09
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 09.12.2019 5:09:49
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 09.12.2019 5:38:25
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 5:13:21
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 5:20:40
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 5:33:53
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 5:55:42
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 6:18:49
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 6:22:22
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 6:33:06
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 6:34:48
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 12.12.2019 6:46:10
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 1 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 9 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 16:35:31
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 16:36:37
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 16:42:49
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 16:55:59
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 16:59:23
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:01:25
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:04:42
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+UNHANDLED EXCEPTION WHEN PARSING COMMAND crh 116t321 FROM PLAYER Ramses_Flipsize
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+   at int Number.ParseInt32(ReadOnlySpan<char> s, NumberStyles style, NumberFormatInfo info)
+   at int string.System.IConvertible.ToInt32(IFormatProvider provider)
+   at object Convert.ChangeType(object value, Type conversionType, IFormatProvider provider)
+   at bool GTANetworkInternals.CommandParser.Parse(Client sender, string cmdRaw, string ourcmd, string[] args)
+UNHANDLED EXCEPTION WHEN PARSING COMMAND crh 31613t13t13 FROM PLAYER Ramses_Flipsize
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+   at int Number.ParseInt32(ReadOnlySpan<char> s, NumberStyles style, NumberFormatInfo info)
+   at int string.System.IConvertible.ToInt32(IFormatProvider provider)
+   at object Convert.ChangeType(object value, Type conversionType, IFormatProvider provider)
+   at bool GTANetworkInternals.CommandParser.Parse(Client sender, string cmdRaw, string ourcmd, string[] args)
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:06:46
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:08:38
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:13:39
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:18:41
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:21:11
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:23:44
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:24:50
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 18.12.2019 17:27:13
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 5 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 7 server events(s)
+server_side: loading commands.. found 2 command(s)
+server_side: loading commands.. found 8 command(s)
+server_side: loaded 10 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loaded 4 remote event(s)
+-> Resource server_side started!
+Started! Waiting for connections..

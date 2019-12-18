@@ -173,8 +173,8 @@ namespace server_side.Events
 
             client.Name = data[1];
 
-            client.Position = new Vector3(437.7057, 220.5262, 103.1654);
-            client.Rotation.Z = 338.2034f;
+            client.Position = new Vector3(-143.7677, 6438.123, 31.4298);
+            client.Rotation.Z = -49.8411f;
             client.Dimension = 0;
 
             NAPI.Entity.SetEntityTransparency(client, 255);

@@ -7,17 +7,15 @@
     </head>
 
     <body>
-        <div id="container">
-            <div id="box-body">
-                <div id="text-box">
-                    Номер дома: 141<br><br>
-                    Класс: Элитный<br><br>
-                    Цена: 19849889$<br><br>
-                    Владелец: None<br><br>
-                </div>
-                <input type="button" value="Войти" id="button_enter_reg" class="button-style" onclick="">
-                <input type="button" value="Отмена" id="button_enter_reg_cancel" class="button-style" onclick="">
+        <div id="box-body">
+            <div id="text-box">
+                Номер дома: -1<br><br>
+                Класс: Undefined<br><br>
+                Цена: -1$<br><br>
+                Владелец: None<br><br>
             </div>
+            <input type="button" value="Войти" id="button-left" class="button-style">
+            <input type="button" value="Выход" id="button-right" class="button-style" onclick="mp.trigger('DestroyHouseInfoBar')">
         </div>
     </body>
 </html>

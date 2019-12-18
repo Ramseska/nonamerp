@@ -24,12 +24,11 @@ namespace server_side.Utilities
                 if (weather[0].Contains(dataWeather[i]))
                 {
                     NAPI.World.SetWeather(gameWeather[i]);
-                    Console.WriteLine($"Current weather: {gameWeather[i]}");
+                    Console.WriteLine($"Realworld Weather: Temperature: {temperature[0]} | Weather: {weather[0]}");
+                    Console.WriteLine($"Current game weather: {gameWeather[i]}");
                     break;
                 }
                 else if (i == dataWeather.Length - 1) Console.WriteLine("Not finded rl weather");
-
-                Console.WriteLine($"Temperature: {temperature[0]} | Weather: {weather[0]}");
             }
         }
     }
