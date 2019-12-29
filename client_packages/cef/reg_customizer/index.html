@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="../utils/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body onload="UpdateRanges()">
+        <div id="left-side" class="customize-box">
+            <div class="block-settings">
+                <div class="block-settings-name">Пол</div>
+                <input type="range" class="block-settings-range" id="range-sex" value="1" min="0" max="1" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-sex">Мужской</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Отец</div>
+                <input type="range" class="block-settings-range" id="range-father" value="0" min="0" max="45" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-father">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Мать</div>
+                <input type="range" class="block-settings-range" id="range-mother" value="0" min="0" max="45" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-mother">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Цвет кожи отца</div>
+                <input type="range" class="block-settings-range" id="range-skin-one" value="0" min="0" max="45" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-skin-1">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Цвет кожи матери</div>
+                <input type="range" class="block-settings-range" id="range-skin-two" value="0" min="0" max="45" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-skin-2">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Приоритет родителя</div>
+                <input type="range" class="block-settings-range" id="range-parents-mix" value="0" min="0" max="1" step="0.1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-mix-parents">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Приоритет кожи родителя</div>
+                <input type="range" class="block-settings-range" id="range-skin-mix" value="0" min="0" max="1" step="0.1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-mix-skins">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Глаза</div>
+                <input type="range" class="block-settings-range" id="range-eye" value="0" min="0" max="31" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-eyes">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Прическа</div>
+                <input type="range" class="block-settings-range" id="range-hair" value="0" min="0" max="74" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-hair">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Цвет волос на голове</div>
+                <input type="range" class="block-settings-range" id="range-hair-color" value="0" min="0" max="255" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-hair-color">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Цвет волос на теле</div>
+                <input type="range" class="block-settings-range" id="range-hair-hueir" value="0" min="0" max="255" step="1" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="range-output-hair-hueir">0</div>
+            </div>
+        </div>
+        <div id="right-side" class="customize-box">
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина носа</div>
+                <input type="range" class="block-settings-range" id="nose-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-nose-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Высота носа</div>
+                <input type="range" class="block-settings-range" id="nose-height" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-nose-height">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Длина носа</div>
+                <input type="range" class="block-settings-range" id="nose-length" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-nose-length">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Перегородка носа</div>
+                <input type="range" class="block-settings-range" id="nose-bridge" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-nose-bridge">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Кончик носа</div>
+                <input type="range" class="block-settings-range" id="nose-tip" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-nose-tip">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Положение носа</div>
+                <input type="range" class="block-settings-range" id="nose-bridge-shift" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-nose-bridge-shift">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Высота бровей</div>
+                <input type="range" class="block-settings-range" id="brow-height" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-brow-height">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина бровей</div>
+                <input type="range" class="block-settings-range" id="brow-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-brow-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Высота скул</div>
+                <input type="range" class="block-settings-range" id="cheekbone-height" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-cheekbone-height">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина скул</div>
+                <input type="range" class="block-settings-range" id="cheekbone-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-cheekbone-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина щек</div>
+                <input type="range" class="block-settings-range" id="cheeks-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-cheeks-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина век</div>
+                <input type="range" class="block-settings-range" id="eyes-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-eyes-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Полнота губ</div>
+                <input type="range" class="block-settings-range" id="lips" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-lips">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина челюсти</div>
+                <input type="range" class="block-settings-range" id="jaw-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-jaw-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Высота челюсти</div>
+                <input type="range" class="block-settings-range" id="jaw-height" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-jaw-height">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Высота подбородка</div>
+                <input type="range" class="block-settings-range" id="chin-height" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-chin-height">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Глубина подбородка</div>
+                <input type="range" class="block-settings-range" id="chin-position" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-chin-position">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина подбородка</div>
+                <input type="range" class="block-settings-range" id="chin-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-chin-width">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Форма подбородка</div>
+                <input type="range" class="block-settings-range" id="chin-shape" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-chin-shape">0</div>
+            </div>
+            <div class="block-settings">
+                <div class="block-settings-name">Ширина шеи</div>
+                <input type="range" class="block-settings-range" id="neck-width" value="0" min="-1.0" max="1.0" step="0.05" onchange="UpdateRanges()" oninput="UpdateRanges()">
+                <div class="block-settings-range-value" id="output-neck-width">0</div>
+            </div>
+        </div>
+        <div id="bottom-settings">
+            <div id="zoom-plus" class="bottom-buttons-settings" onclick="mp.trigger('Camera:zoom', 'forward')"></div>
+            <div id="zoom-minus" class="bottom-buttons-settings" onclick="mp.trigger('Camera:zoom', 'back')"></div>
+            <div id="accept-reg" class="bottom-buttons-settings" onclick="mp.trigger('FinishCustomize')"></div>
+        </div>
+        <div id="view-angle" class="bottom-buttons-settings" onclick="ChangeViewAngle(0)"></div>
+        <div id="view-front" class="bottom-buttons-settings" onclick="ChangeViewAngle(1)" hidden=true></div>
+    </body>
+</html>

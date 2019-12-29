@@ -33,13 +33,16 @@ namespace Main.events
         [ServerEvent(Event.ResourceStart)]
         async public void Event_OnResourceStart()
         {   
+            /*
             await Task.Run(() =>
             {
                 DateTime time = DateTime.Now;
-                NAPI.World.SetTime(time.Hour, time.Minute, time.Second); // set current time
+                NAPI.World.SetTime(12, time.Minute, time.Second); // set current time
             });
+            */
 
             NAPI.Server.SetGlobalServerChat(false); // disable default global chat
+            NAPI.Server.SetAutoRespawnAfterDeath(false);
             UtilityFuncs.SetCurrentWeatherInLA(); // set current weather how in real LA 
 
             Console.ForegroundColor = ConsoleColor.Green;
@@ -73,6 +76,32 @@ namespace Main.events
             {
                 double dist = Math.Sqrt(Math.Pow((p.Position.X - client.Position.X), 2) + Math.Pow((p.Position.Y - client.Position.Y), 2) + Math.Pow((p.Position.Z - client.Position.Z), 2));
                 if (dist <= 10) p.SendChatMessage("- " + text + $" ({client.Name})[{client.Value}]");
+            });
+        }
+
+        
+        [ServerEvent(Event.PlayerDeath)]
+        async public void Event_PlayerDeath(Client client, Client killer, uint reason)
+        {
+            Random rand = new Random();
+            Vector3[] respawnPositions =
+            {
+                new Vector3(258.9378f, -1340.669f, 24.53781f),
+                new Vector3(250.3403f, -1351.37f, 24.53782f),
+                new Vector3(251.3651f, -1347.497f, 24.53782f)
+            };
+            float[] rots = { 176.6944f, 250.9094f, 137.5093f };
+
+            await Task.Run(() =>
+            {
+                Thread.Sleep(1000); // 
+
+                int randResult = rand.Next(0, respawnPositions.Length);
+
+                client.Position = respawnPositions[randResult];
+                client.Rotation.Z = rots[randResult];
+
+                client.Dimension = 1;
             });
         }
     }

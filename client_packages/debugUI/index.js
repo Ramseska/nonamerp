@@ -16,7 +16,13 @@ mp.events.add('CreateDebugBrowser', () => {
         <font color='ffff00'>Vehicle ID: <font color='ffffff'>${player.vehicle == null ? (-1) : (player.vehicle.id)}<br>\
         <font color='ffff00'>Health: <font color='ffffff'>${player.getHealth()}<br>\
         <font color='ffff00'>Armour: <font color='ffffff'>${player.getArmour()}<br>\
-        <font color='ffff00'>Speed: <font color='ffffff'>${player.getSpeed().toFixed(4)}<br>"`);
+        <font color='ffff00'>Speed: <font color='ffffff'>${player.getSpeed().toFixed(4)}<br><br>\
+        <font color='ffff00'>Camera position: <font color='ffffff'>X: ${getCameraPosition().x.toFixed(4)}<br>\
+        <font color='ffff00'>Camera position: <font color='ffffff'>Y: ${getCameraPosition().y.toFixed(4)}<br>\
+        <font color='ffff00'>Camera position: <font color='ffffff'>Z: ${getCameraPosition().z.toFixed(4)}<br><br>\
+        <font color='ffff00'>Camera direction: <font color='ffffff'>X: ${getCameraDirection().x.toFixed(4)}<br>\
+        <font color='ffff00'>Camera direction: <font color='ffffff'>Y: ${getCameraDirection().y.toFixed(4)}<br>\
+        <font color='ffff00'>Camera direction: <font color='ffffff'>Z: ${getCameraDirection().z.toFixed(4)}<br>"`);
     },  1);
 });
 
@@ -32,3 +38,11 @@ setInterval(() => {
         else mp.events.call('DestroyDebugBrowser');
     }
 },  100);
+
+
+function getCameraPosition() {
+    return mp.cameras.new("gameplay").getCoord();
+}
+function getCameraDirection() {
+    return mp.cameras.new("gameplay").getDirection();
+}

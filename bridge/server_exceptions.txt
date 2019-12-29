@@ -6250,3 +6250,1720 @@ System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For in
 Parameter name: name
    at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
 =========================================================
+
+==================[23.12.2019 2:56:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[23.12.2019 3:02:55]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[23.12.2019 3:05:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[23.12.2019 3:05:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:00:06]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:34:32]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:35:26]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:40:26]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:51:32]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:55:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:55:39]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:57:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 17:59:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 18:06:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 18:11:42]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:14:59]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:19:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:21:20]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:23:19]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:27:11]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:28:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:29:41]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:57:17]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[24.12.2019 21:58:25]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:12:10]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:16:27]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:28:48]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:30:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:30:41]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:31:27]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:32:10]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:36:03]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:37:13]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:38:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:43:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:43:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:48:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:49:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:50:48]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:52:03]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 15:53:24]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:01:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:04:07]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:06:24]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:07:09]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:07:46]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:08:34]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:08:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:09:36]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:10:22]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:22:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:23:59]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:25:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:46:10]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:48:02]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:49:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 16:54:41]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:14:26]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:16:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:18:31]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:20:00]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:22:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:31:13]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:34:09]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:36:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:37:43]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 17:38:52]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 18:34:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 18:39:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 18:44:31]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 18:50:51]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 19:13:38]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[26.12.2019 19:14:06]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:07]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:10]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:10]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:11]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:11]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:12]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:12]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:12]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:13]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:14]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:14]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:15]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:15]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:15]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:15]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:16]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:16]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:16]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:16]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:17]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:17]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:18]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:18]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:18]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:19]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:19]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:19]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:20]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:20]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:20]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:20]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:21]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:21]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:22]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:22]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:22]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:23]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:23]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:23]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:23]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:24]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:24]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:25]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:25]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:25]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:25]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:25]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:25]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:14:26]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void GTANetworkAPI.Client.SetCustomization(bool gender, HeadBlend headBlend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+   at void server_side.Events.AnotherEvents.Event_SetPlayerCustomize(Client client, bool sex, int mother, int father, int skin_1, int skin_2, int parentsmix, int skinmix, int eyecolor, int haircolor, int hilightcolor) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 31
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26.12.2019 19:14:26]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.Player.SetPlayerCustomization(Client player, bool gender, HeadBlend headblend, byte eyeColor, byte hairColor, byte highlightColor, float[] faceFeatures, Dictionary<int, HeadOverlay> headOverlays, Decoration[] decorations)
+=========================================================
+
+==================[26.12.2019 19:18:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 15:46:08]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 15:50:05]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[27.12.2019 15:50:05]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[27.12.2019 15:50:05]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+=========================================================
+
+==================[27.12.2019 15:50:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+=========================================================
+
+==================[27.12.2019 15:53:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 15:55:22]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:02:00]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:02:33]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:02:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:03:18]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:11:21]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:12:53]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:15:38]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:22:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:22:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:23:54]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:24:18]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 16:26:00]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:21:26]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:25:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:27:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:28:41]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:30:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:33:59]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:36:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:37:00]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:37:55]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:38:38]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:39:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:40:24]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:40:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 17:41:22]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 18:18:00]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 18:19:50]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 18:23:47]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 19:06:20]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 22:36:50]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 22:38:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[27.12.2019 22:42:40]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[28.12.2019 16:45:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[28.12.2019 16:48:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[28.12.2019 16:56:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[28.12.2019 19:58:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[28.12.2019 21:41:08]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 18:49:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:04:47]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:37:03]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:37:12]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:40:44]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:45:20]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:47:06]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:49:50]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:50:46]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:51:19]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Sockets.SocketException (11001): Этот хост неизвестен
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Sockets.SocketException (11001): Этот хост неизвестен
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:31]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:32]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task<HttpResponseMessage> sendTask, HttpRequestMessage request, CancellationTokenSource cts, bool disposeCts)
+=========================================================
+
+==================[29.12.2019 19:51:32]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task<HttpResponseMessage> sendTask, HttpRequestMessage request, CancellationTokenSource cts, bool disposeCts)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:32]==================
+System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task<HttpResponseMessage> sendTask, HttpRequestMessage request, CancellationTokenSource cts, bool disposeCts)
+   at async Task<WebResponse> System.Net.HttpWebRequest.SendRequest()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:32]==================
+System.Net.WebException: Этот хост неизвестен Этот хост неизвестен ---> System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task<HttpResponseMessage> sendTask, HttpRequestMessage request, CancellationTokenSource cts, bool disposeCts)
+   at async Task<WebResponse> System.Net.HttpWebRequest.SendRequest()
+   at WebResponse System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at WebResponse System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+=========================================================
+
+==================[29.12.2019 19:51:32]==================
+System.Net.WebException: Этот хост неизвестен Этот хост неизвестен ---> System.Net.Http.HttpRequestException: Этот хост неизвестен ---> System.Net.Sockets.SocketException: Этот хост неизвестен
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<ValueTuple<Socket, Stream>> System.Net.Http.ConnectHelper.ConnectAsync(string host, int port, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> creationTask)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task<HttpResponseMessage> sendTask, HttpRequestMessage request, CancellationTokenSource cts, bool disposeCts)
+   at async Task<WebResponse> System.Net.HttpWebRequest.SendRequest()
+   at WebResponse System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at WebResponse System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:33]==================
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at async void server_side.Utilities.UtilityFuncs.SetCurrentWeatherInLA() in D:\Desktop\nonamerp\bridge\resources\server_side\Utilities\UtilityFuncs.cs:line 24
+=========================================================
+
+==================[29.12.2019 19:51:33]==================
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at async void server_side.Utilities.UtilityFuncs.SetCurrentWeatherInLA() in D:\Desktop\nonamerp\bridge\resources\server_side\Utilities\UtilityFuncs.cs:line 24
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:33]==================
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at async void server_side.Utilities.UtilityFuncs.SetCurrentWeatherInLA() in D:\Desktop\nonamerp\bridge\resources\server_side\Utilities\UtilityFuncs.cs:line 24
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.12.2019 19:51:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:52:33]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:53:36]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:54:18]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 19:54:55]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.12.2019 22:43:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 1:59:53]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:04:09]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:06:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:08:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:09:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:18:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:19:39]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:21:28]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:27:09]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:29:36]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:29:58]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:30:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:32:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:36:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:55:18]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:56:10]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:57:28]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:58:00]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 2:59:09]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:22:24]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:25:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:25:43]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:32:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:33:39]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:34:07]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 3:43:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 5:44:23]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 5:48:05]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 5:48:59]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 5:50:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 5:51:39]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 5:53:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 6:06:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 6:07:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 6:09:43]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 6:15:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.12.2019 6:16:41]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================

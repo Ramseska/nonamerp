@@ -1,308 +1,142 @@
-#text-box
+@font-face
 {
-    top: 20px;
-    position: relative;
-    text-align: center;
+    font-family: 'MainFont';
+    src: url('../../utils/fonts/RobotoCondensed/RobotoCondensed-Light.ttf');
 }
 
-#box-body
+body
 {
-    position: relative;
+    font-family: 'MainFont';
+    font-size: 25;
 
-    width: 300px;
-    height: 285px;
+    font-style: normal;
+
+    background-color: rgb(63, 63, 63);
+}
+
+#container
+{
+    position: absolute;
+
+    background-color: whitesmoke;
+
+    width: 530;
+    height: 300;
+
+    margin: 0;
 
     left: 50%;
     top: 50%;
 
-    margin-left: -150px;
-    margin-top: -200px;
+    margin-left: -265;
+    margin-top: -150;
 
-    border-radius: 3%;
+    border-radius: 5px;
+}
 
-    color: rgba(0, 0, 0, 0.8);
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16;
+#head
+{
+    position: relative;
+
+    background-color: rgb(80, 130, 238);
+
+    width: 530;
+    height: 35;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    color: white;
     font-weight: bold;
+    text-align: center;
+    font-size: 24;
 
-    background-color: whitesmoke;
+    box-shadow: 0px 11px 46px 0px rgba(0,0,0,0.23);
+}
+
+#content-info
+{
+    position: relative;
+
+    height: 170;
+    width: 420;
+
+    margin-left: 70;
+    margin-top: 50;
+}
+
+#button-box
+{
+    position: relative;
+
+    width: 390;
+    height: 45;
+
+    margin-top: 0;
+    margin-left: 70;
+}
+
+#button-line
+{
+    position: relative;
+
+    width: 170;
+    height: 1;
+
+    margin-left: 110;
+    top: 14;
+
+    background-color: rgba(133, 133, 133, 0.3);
 }
 
 .button-style
 {
     outline: none;
-    
     position: relative;
     float: left;
-
-    margin-top: 50px;
-
-    width: 150px;
-    height: 40px;
-    
+    width: 100px;
+    height: 30px;
     border: none;
-
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-
-    color: rgb(51, 51, 51);
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-
-    top: 45;
-}
-
-#button-left
-{
-    transition: .2s;
-
-    background-color: rgb(121, 216, 122); 
-    color: rgb(51, 51, 51);
-
-    border-bottom-left-radius: 8px;
-}
-#button-right
-{
-    transition: .2s;
-
-    background-color: rgb(187, 64, 64);
-    color: rgb(51, 51, 51);
-
-    border-bottom-right-radius: 8px;
-}
-
-#button-right:hover
-{
-    transition: .2s;
-    background-color: rgb(157, 48, 48);
-    color: rgb(0, 0, 0);
-}
-#button-left:hover
-{
-    transition: .2s;
-    background-color: rgb(91, 176, 87); 
-    color: rgb(0, 0, 0);
-}
-
-#button-right:active
-{
-    transition: .1s;
-    background-color: rgb(228, 79, 79);
-    color: rgb(0, 0, 0);
-}
-#button-left:active
-{
-    transition: .1s;
-    background-color: rgb(126, 221, 127); 
-    color: rgb(0, 0, 0);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#container
-{
-    width: 600px;
-    height: 500px;
-
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -300px;
-    margin-top: -350px;
-
-    background-color: rgb(255, 255, 255);
-}
-
-#button_enter_auth
-{
-    top: 75px;
-    left: 50px;
-    width: 225px;
-    border-radius: 15px;
-    background-color: rgb(121, 216, 122); 
-    color: rgba(51, 51, 51, 1);
-}
-#button_enter_cancel
-{
-    top: 75px;
-    left: 100px;
-    width: 225px;
-    border-radius: 15px;
-    background-color: rgba(180, 25, 25, 0.774);
-    color: rgba(51, 51, 51, 1);
-}
-#button_enter_auth:focus { background-color: rgb(113, 202, 115); }
-#button_enter_cancel:focus { background-color: rgba(163, 22, 22, 0.774); }
-
-
-input 
-{
-    outline: none;
-
-    border: 1px solid rgb(214, 214, 214);
-    
-    width: 500px;
-    height: 50px;
-    border-radius: 15px;
-
-    position: relative;
-
-    left: 50px;
-
-    text-align: center;
-
-    font-family: 'Montserrat Alternates', sans-serif;
+    color: whitesmoke;
     font-size: 16;
     font-style: normal;
     font-weight: bold;
+
+    box-shadow: 0px 0px 46px 20px rgba(0,0,0,0.20);
 }
 
-label
+#button-enter
 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 24;
-    font-style: normal;
-    font-weight: bold;
-
-    text-align: center;
-
-    position: relative;
-    left: 250px;
+    transition: 100ms;
+    background-color: #5ac98e;
 }
-
-input:focus
+#button-exit
 {
-    border: 2px solid rgba(68, 59, 82, 0.527);
-    background-color: rgb(252, 252, 252);
+    transition: 100ms;
+    background-color: rgb(218, 98, 98);
+    float: right;
 }
 
-
-#log_box
+#button-enter:hover
 {
-    background-color: rgb(255, 255, 255);
-
-    position: relative;
-    width: 600px;
-    height: 500px;
-    top: 60px;
-
-    border-radius: 15px;
+    transition: 100ms;
+    background-color: #4daa78;
 }
-
-
-#reg_box
+#button-exit:hover
 {
-    background-color: rgb(255, 255, 255);
-
-    position: relative;
-    width: 600px;
-    height: 640px;
-    top: 60px;
-
-    border-radius: 15px;
+    transition: 100ms;
+    background-color: rgb(182, 82, 82);;
 }
-#button_enter_reg
+#button-enter:active
 {
-    top: 75px;
-    left: 50px;
-    width: 225px;
-    border-radius: 15px;
-    background-color: rgb(121, 216, 122); 
-    color: rgba(51, 51, 51, 1);
+    transition: 100ms;
+    background-color: #5ac98e;
 }
-#button_enter_reg_cancel
+#button-exit:active
 {
-    top: 75px;
-    left: 100px;
-    width: 225px;
-    border-radius: 15px;
-    background-color: rgba(180, 25, 25, 0.774);
-    color: rgba(51, 51, 51, 1);
+    transition: 100ms;
+    background-color: rgb(218, 98, 98);
 }
-#button_enter_reg:focus { background-color: rgb(113, 202, 115); }
-#button_enter_reg_cancel:focus { background-color: rgba(163, 22, 22, 0.774); }
-
-
-button
-{
-    outline: none;
-    
-    position: relative;
-    float: left;
-    width: 300px;
-    height: 60px;
-    
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-
-    color: rgba(51, 51, 51, 0.8);
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 24;
-    font-style: normal;
-    font-weight: bold;
-}
-#sel_button_auth { background-color: rgb(121, 216, 122); }
-#sel_button_auth:focus { background-color: rgb(113, 202, 115); }
-#sel_button_reg { background-color: rgb(231, 229, 118); }
-#sel_button_reg:focus { background-color: rgb(207, 206, 106); }
-
-#log_output
-{
-    position: relative;
-    left: 50px;
-    top: 35px;
-    width: 500px;
-    height: 30px;
-
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 12;
-    text-align: center;
-    font-weight: bold;
-}
-#log_output_reg
-{
-    position: relative;
-    left: 50px;
-    top: 35px;
-    width: 500px;
-    height: 30px;
-
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 12;
-    text-align: center;
-    font-weight: bold;
-}
-*/

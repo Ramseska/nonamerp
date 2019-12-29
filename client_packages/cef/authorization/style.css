@@ -21,6 +21,7 @@
     border-radius: 15px;
     background-color: rgb(121, 216, 122); 
     color: rgba(51, 51, 51, 1);
+    transition: 100ms;
 }
 #button_enter_cancel
 {
@@ -30,9 +31,12 @@
     border-radius: 15px;
     background-color: rgba(180, 25, 25, 0.774);
     color: rgba(51, 51, 51, 1);
+    transition: 100ms;
 }
-#button_enter_auth:focus { background-color: rgb(113, 202, 115); }
-#button_enter_cancel:focus { background-color: rgba(163, 22, 22, 0.774); }
+#button_enter_auth:hover { transition: 100ms;background-color: rgb(98, 173, 99); }
+#button_enter_cancel:hover{transition: 100ms;background-color: rgba(146, 21, 21, 0.774);}
+#button_enter_auth:active { transition: 100ms;background-color: rgb(121, 216, 122); }
+#button_enter_cancel:active { transition: 100ms;background-color: rgba(180, 25, 25, 0.774);}
 
 
 input 
@@ -109,6 +113,7 @@ input:focus
     border-radius: 15px;
     background-color: rgb(121, 216, 122); 
     color: rgba(51, 51, 51, 1);
+    transition: 100ms;
 }
 #button_enter_reg_cancel
 {
@@ -118,10 +123,12 @@ input:focus
     border-radius: 15px;
     background-color: rgba(180, 25, 25, 0.774);
     color: rgba(51, 51, 51, 1);
+    transition: 100ms;
 }
-#button_enter_reg:focus { background-color: rgb(113, 202, 115); }
-#button_enter_reg_cancel:focus { background-color: rgba(163, 22, 22, 0.774); }
-
+#button_enter_reg:hover { transition: 100ms;background-color: rgb(98, 173, 99); }
+#button_enter_reg_cancel:hover { transition: 100ms;background-color: rgba(139, 19, 19, 0.774);}
+#button_enter_reg:active { transition: 100ms;background-color: rgb(121, 216, 122); }
+#button_enter_reg_cancel:active { transition: 100ms;background-color: rgba(180, 25, 25, 0.774);}
 
 button
 {

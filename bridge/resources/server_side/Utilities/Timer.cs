@@ -33,10 +33,12 @@ namespace server_side.Timers
 
         private async static void OnMinuteTimer(object source, ElapsedEventArgs e)
         {
+            /*
             await Task.Run(() =>
             {
                 NAPI.World.SetTime(time.Hour, time.Minute, time.Second);
             });
+            */
         }
 
         private async static void OnSecondTimer(object source, ElapsedEventArgs e)

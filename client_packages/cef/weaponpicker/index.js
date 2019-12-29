@@ -35,6 +35,7 @@ var weapon_list =
     "weapon_marksmanpistol",
     "weapon_flaregun",
     "weapon_raypistol",
+    "WEAPON_MAKAROV",
     "weapon_machinepistol", // smg
     "weapon_minismg",
     "weapon_microsmg",
@@ -138,6 +139,6 @@ mp.events.add("DestroyWeaponPicker", () => {
 });
 
 mp.events.add("CalledWeaponPicker", (weapon_name) => {
-    mp.events.callRemote("giveWeaponCrutch", mp.players.local,weapon_name,999999);
+    mp.events.callRemote("giveWeaponCrutch", mp.players.local, weapon_name, 999999);
     mp.gui.chat.push(`Выдано оружие !{f1f8aa}${weapon_name.split('_').join(' ').split('weapon ').join('')}`);
 });

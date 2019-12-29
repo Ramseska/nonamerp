@@ -7,15 +7,18 @@
     </head>
 
     <body>
-        <div id="box-body">
-            <div id="text-box">
-                Номер дома: -1<br><br>
-                Класс: Undefined<br><br>
-                Цена: -1$<br><br>
-                Владелец: None<br><br>
+        <div id="container">
+            <div id="head">Номер дома: 154</div>
+            <div id="content-info">
+                Владелец: Ramses Flipsize<br>
+                Класс: Эконом<br>
+                Цена: 152.000$<br>
             </div>
-            <input type="button" value="Войти" id="button-left" class="button-style">
-            <input type="button" value="Выход" id="button-right" class="button-style" onclick="mp.trigger('DestroyHouseInfoBar')">
+            <div id="button-box">
+                <input type="button" id="button-enter" class="button-style" value="Enter">
+                <input type="button" id="button-exit" class="button-style" value="Exit">
+                <div id="button-line"></div>
+            </div>
         </div>
     </body>
 </html>

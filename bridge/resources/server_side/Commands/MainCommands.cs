@@ -5,6 +5,18 @@ namespace server_side.Commands
 {
     class MainCommands : Script
     {
+        [Command("cint")]
+        public void CMD_cint(Client client)
+        {
+            Interiors.Interiors.CreateInterior(new Vector3(343.0853, -1399.852, 32.50924), new Vector3(275.9121, -1361.429, 24.5378), 47.18634f, 51.8164f, 1);
+            // /tpc 344.7057 -1398.057 32.50924
+        }
+        [Command("settime")]
+        public void CMD_settime(Client client, int hour)
+        {
+            NAPI.World.SetTime(hour, 0, 0);
+            client.SendChatMessage($"Время изменено на {hour} часов");
+        }
         [Command("stopsound")]
         public void CMD_stopsound(Client client)
         {
