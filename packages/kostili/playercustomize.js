@@ -1,7 +1,7 @@
 mp.events.add('SetPlayerCustomize', (player, cust) => {
     let c = JSON.parse(cust);
 
-    player.customizeparams = cust;
+    player.customizeparams = c;
 
     player.setCustomization(
         c.sex, 
@@ -41,8 +41,3 @@ mp.events.add('SetPlayerCustomize', (player, cust) => {
         ]);
     player.setClothes(2, parseInt(c.hair), 0, 2);
 });
-
-mp.events.add('FinishedCustomize', (player) => {
-    console.log(`Customize settings for player ${player.name}: \n${player.customizeparams}`);
-})
-

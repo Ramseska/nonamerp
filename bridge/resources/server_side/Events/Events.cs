@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using GTANetworkAPI;
-using server_side.DBConnection;
-using System.Linq;
-using System.Threading;
-using server_side.Commands;
 using System.Threading.Tasks;
 using server_side.Data;
 using server_side.Utilities;
+using server_side.Ints;
 
 namespace Main.events
 {
@@ -32,12 +27,14 @@ namespace Main.events
         }
         [ServerEvent(Event.ResourceStart)]
         async public void Event_OnResourceStart()
-        {   
+        {
+            Interiors.CreateInterior(new Vector3(343.0853f, -1399.852f, 32.5092), new Vector3(275.9121, -1361.429, 24.5378), 47.1863f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, "Hospital", 255, 200f));
+
             /*
             await Task.Run(() =>
             {
                 DateTime time = DateTime.Now;
-                NAPI.World.SetTime(12, time.Minute, time.Second); // set current time
+                NAPI.World.SetTime(time.Hour, time.Minute, time.Second); // set current time
             });
             */
 
@@ -92,17 +89,14 @@ namespace Main.events
             };
             float[] rots = { 176.6944f, 250.9094f, 137.5093f };
 
-            await Task.Run(() =>
-            {
-                Thread.Sleep(1000); // 
+            await Task.Delay(5000);
 
-                int randResult = rand.Next(0, respawnPositions.Length);
+            int randResult = rand.Next(0, respawnPositions.Length);
 
-                client.Position = respawnPositions[randResult];
-                client.Rotation.Z = rots[randResult];
+            client.Position = respawnPositions[randResult];
+            client.Rotation.Z = rots[randResult];
 
-                client.Dimension = 1;
-            });
+            client.Dimension = 1;
         }
     }
 }

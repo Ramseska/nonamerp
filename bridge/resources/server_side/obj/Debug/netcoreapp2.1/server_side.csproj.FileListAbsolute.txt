@@ -48,7 +48,6 @@ D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\rage-sha
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\Colorful.Console.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\Microsoft.CodeAnalysis.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\Microsoft.CodeAnalysis.CSharp.dll
-D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\Newtonsoft.Json.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\Ben.Demystifier.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\NeoSmart.Hashing.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\xxHash.dll

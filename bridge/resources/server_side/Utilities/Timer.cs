@@ -50,6 +50,13 @@ namespace server_side.Timers
                     UtilityFuncs.SetCurrentWeatherInLA();
                 }
             });
+
+            NAPI.Pools.GetAllPlayers().ForEach(p =>
+            {
+                if (!p.HasData("PickupKD")) return;
+
+                if (p.GetData("PickupKD") != 0) p.SetData("PickupKD", p.GetData("PickupKD") - 1);
+            });
         }
     }
 }

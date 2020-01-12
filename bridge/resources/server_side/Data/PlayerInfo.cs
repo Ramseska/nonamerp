@@ -24,6 +24,8 @@ namespace server_side.Data
             player.SetData("PlayerLVL", 0); // lvl
             player.SetData("PlayerMoney", 0); // cash
             player.SetData("PlayerHouse", -1); // house
+            player.SetData("PlayerCustomize", null); // customize player params
+            player.SetData("PickupKD", 0);
         }
 
         public void SetAuthorized(bool status) => player.SetData("PlayerAuthorized", status);
@@ -89,5 +91,8 @@ namespace server_side.Data
                 return 0;
             return player.GetData("PlayerMoney");
         }
+
+        public void SetCustomize(object args) => player.SetData("PlayerCustomize", args);
+        public object GetCustomize() => player.GetData("PlayerCustomize");
     }
 }

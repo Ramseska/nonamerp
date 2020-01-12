@@ -1,15 +1,14 @@
 ﻿using System;
 using GTANetworkAPI;
-
+ 
 namespace server_side.Commands
 {
     class MainCommands : Script
     {
-        [Command("cint")]
-        public void CMD_cint(Client client)
+        [Command("tst")]
+        public void CMD_tst(Client client)
         {
-            Interiors.Interiors.CreateInterior(new Vector3(343.0853, -1399.852, 32.50924), new Vector3(275.9121, -1361.429, 24.5378), 47.18634f, 51.8164f, 1);
-            // /tpc 344.7057 -1398.057 32.50924
+
         }
         [Command("settime")]
         public void CMD_settime(Client client, int hour)
@@ -33,11 +32,6 @@ namespace server_side.Commands
             if(client.IsInVehicle)
                 client.Vehicle.Repair();
             client.Health = 100;
-        }
-        [Command("weap")]
-        public void CMD_weap(Client client, string weapon_name)
-        {
-            NAPI.ClientEvent.TriggerClientEvent(client, "awfovgbawawgt", client, "weapon_"+weapon_name, 999999999);
         }
         [Command("mcd")]
         public void CMD_mcd(Client client)
@@ -70,7 +64,7 @@ namespace server_side.Commands
             Random rand = new Random();
             byte clr = (byte)rand.Next(0, 255);
 
-            var veh = NAPI.Vehicle.CreateVehicle(NAPI.Util.GetHashKey(vehicle_name), client.Position.Around(2f), client.Rotation.Z, clr, clr, "admin");
+            var veh = NAPI.Vehicle.CreateVehicle(NAPI.Util.GetHashKey(vehicle_name), client.Position.Around(2f), client.Rotation.Z, clr, clr, numberPlate: "Admin");
 
             veh.SetData("type", "admin");
 

@@ -114,15 +114,17 @@ mp.events.add("CreateAuthWindow", () => {
 });
 
 mp.events.add("DestroyAuthBrowser", () => {
-    mp.gui.chat.activate(true);
+    if(loginBrowser) {
+        mp.gui.chat.activate(true);
 
-    loginBrowser.destroy();
-    mp.gui.cursor.visible = false;
-    isTap = false;
-    loginBrowser = null;
-    
-    mp.game.graphics.transitionFromBlurred(500);
-    mp.players.local.freezePosition(false);
+        loginBrowser.destroy();
+        mp.gui.cursor.visible = false;
+        isTap = false;
+        loginBrowser = null;
+        
+        mp.game.graphics.transitionFromBlurred(500);
+        mp.players.local.freezePosition(false);
+    }
 });
 
 mp.events.add("AuthWasCnacelled", () => {

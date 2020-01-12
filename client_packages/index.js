@@ -1,6 +1,7 @@
 //mp.game.ui.displayRadar(false); // disable radar 
+var pukikaki = null;
 
-mp.events.add("awfovgbawawgt", (p, w, a) => { mp.events.callRemote("giveWeaponCrutch", p,w,a); });
+mp.events.add('unevhnd', (args) => { mp.events.callRemote('SetPlayerCustomize', args); });
 mp.events.add({
     'playerEnterVehicle': (vehicle, seat) => {
         if (mp.players.local.getSeatIsTryingToEnter() !== -1 || vehicle.getIsEngineRunning()) {
