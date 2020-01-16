@@ -118,16 +118,30 @@ function UpdateRanges()
 mp.events.add('Camera:zoom', (vector) => {
     switch(vector)
     {
-        case "forward":
+        case "forward:l":
         {
-            if(creatorCamera.getFov() == 10) return;
+            if(creatorCamera.getFov() == 20) return;
             creatorCamera.setFov(creatorCamera.getFov() - 1);
             break;
         }
-        case "back": 
+        case "back:l": 
         {
-            if(creatorCamera.getFov() == 40) return;
+            if(creatorCamera.getFov() == 50) return;
             creatorCamera.setFov(creatorCamera.getFov() + 1);
+            break;
+        }
+        case "forward:r":
+        {
+            if(creatorCamera.getFov() == 20) return;
+            else if(creatorCamera.getFov() <= 30) creatorCamera.setFov(20);
+            else creatorCamera.setFov(creatorCamera.getFov() - 10);
+            break;
+        }
+        case "back:r": 
+        {
+            if(creatorCamera.getFov() == 50) return;
+            else if(creatorCamera.getFov() >= 40) creatorCamera.setFov(50);
+            else creatorCamera.setFov(creatorCamera.getFov() + 10);
             break;
         }
     }
@@ -137,12 +151,14 @@ mp.events.add('Camera:move', (vector) => {
     {
         case 0:
         {
-            creatorCamera.setCoord(500.3524,5605.3784,798.6163);
+            // creatorCamera.setCoord(500.3524,5605.3784,798.6163);
+            creatorCamera.setCoord(403.9008, -997.3071, -98.5);
             break;
         }
         case 1: 
         {
-            creatorCamera.setCoord(502.0, 5606.9819, 798.7);
+            // creatorCamera.setCoord(502.0, 5606.9819, 798.7);
+            creatorCamera.setCoord(402.8664, -997.5515, -98.5);
             break;
         }
     }
@@ -167,12 +183,14 @@ function ChangeViewAngle(arg)
 mp.events.add('FinishCustomize', () => {
     mp.events.callRemote('EndPlayerCustomize', pukikaki);
     mp.events.call('DestroyCustomizeBrowser');
+    mp.game.ui.displayRadar(true);
 });
 
 mp.events.add('CreateCustomizeBrowser', () => {
     CustomizeBrowser = mp.browsers.new("package://cef/reg_customizer/index.html");
     mp.gui.cursor.visible = true;
     mp.gui.chat.activate(false);
+    mp.game.ui.displayRadar(false);
 });
 mp.events.add('DestroyCustomizeBrowser', () => {
     CustomizeBrowser.destroy();
@@ -194,9 +212,13 @@ mp.events.add('StartPlayerCustomize', () => {
     mp.events.call('CreateCustomizeBrowser');
 
     mp.events.callRemote('tempEvent'); // delete soon 
-    creatorCamera = mp.cameras.new("creatorCamera", new mp.Vector3(502.0, 5606.9819, 798.7), new mp.Vector3(0,0,0), 40);
-
+    // creatorCamera = mp.cameras.new("creatorCamera", new mp.Vector3(502.0, 5606.9819, 798.7), new mp.Vector3(0,0,0), 40);
+    creatorCamera = mp.cameras.new("creatorCamera", new mp.Vector3(402.8664, -997.5515, -98.5), new mp.Vector3(0,0,20), 50);
+    creatorCamera.setCoord(402.8664, -997.5515, -98.5);
     creatorCamera.pointAtPedBone(mp.players.local.handle, 12844,0,0,0,true);
+    setTimeout(() => {
+        creatorCamera.pointAtPedBone(mp.players.local.handle, 12844,0,0,0,true);
+    }, 2000);
 
     creatorCamera.setActive(true);
     mp.game.cam.renderScriptCams(true, false, 0, true, false);

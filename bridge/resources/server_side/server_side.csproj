@@ -21,9 +21,6 @@
     <Reference Include="Bootstrapper">
       <HintPath>..\..\runtime\Bootstrapper.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\runtime\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="rage-sharp">
       <HintPath>..\..\runtime\rage-sharp.dll</HintPath>
     </Reference>

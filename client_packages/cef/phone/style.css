@@ -1,3 +1,14 @@
+@font-face
+{
+    font-family: 'Julius Sans One';
+    src: url('../../cef/utils/fonts/JuliusSansOne/JuliusSansOne-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'Work Sans';
+    src: url('../../cef/utils/fonts/WorkSans/WorkSans-Regular.ttf');
+}
+
 /* img { pointer-events: none; } */
 #container
 {

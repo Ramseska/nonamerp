@@ -111,9 +111,12 @@ namespace server_side.Events
 
             await Task.Delay(2000);
 
-            //501,6888, 5603,808, 797,9096, 353,2294
+            /*
             client.Position = new Vector3(501.6888, 5603.808, 797.9096);
             client.Rotation = new Vector3(0, 0, 353.2294);
+            */
+            client.Position = new Vector3(402.8664, -996.4108, -99.00027);
+            client.Rotation = new Vector3(0, 0, -185.0000);
             client.Dimension = (uint)client.Value;
         }
 

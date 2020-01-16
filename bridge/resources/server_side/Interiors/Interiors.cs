@@ -18,11 +18,20 @@ namespace server_side.Ints
         private Marker ExitMarker;
         private ColShape EnterColShape;
         private ColShape ExitColShape;
-        public Blip InterBlip;
+        private Blip InterBlip;
         public uint Dimension;
 
         public static void CreateInterior(Vector3 enterPos, Vector3 exitPos, float enterRot, float exitRot, uint dimension, Blip blip = null)
         {
+            ColShape[] shapes =
+            {
+                NAPI.ColShape.CreateCylinderColShape(enterPos, 1f, 2f, 0),
+                NAPI.ColShape.CreateCylinderColShape(exitPos, 1f, 2f, dimension),
+            };
+
+            shapes[0].SetData("InteriorsColShape", true);
+            shapes[1].SetData("InteriorsColShape", true);
+
             InteriorsList.Add(
                 new Interiors
                 {
@@ -33,35 +42,31 @@ namespace server_side.Ints
                     Dimension = dimension,
                     EnterMarker = NAPI.Marker.CreateMarker(0, enterPos, new Vector3(0, 0, 0), new Vector3(0, 0, 0), 1f, new Color(255, 239, 185), false, 0),
                     ExitMarker = NAPI.Marker.CreateMarker(0, exitPos, new Vector3(0, 0, 0), new Vector3(0, 0, 0), 1f, new Color(255, 239, 185), false, dimension),
-                    EnterColShape = NAPI.ColShape.CreateCylinderColShape(enterPos, 1f, 2f, 0),
-                    ExitColShape = NAPI.ColShape.CreateCylinderColShape(exitPos, 1f, 2f, dimension),
+                    EnterColShape = shapes[0],
+                    ExitColShape = shapes[1],
                     InterBlip = blip
                 }
             );            
         }
 
-        [ServerEvent(Event.PlayerEnterColshape)]
-        private void Event_PlayerEnterInterColShape(ColShape shape, Client client)
+        public static void Event_PlayerEnterInterColShape(ColShape shape, Client client)
         {
-            if (!client.HasData("PickupKD")) return;
-            if (client.GetData("PickupKD") != 0) return;
+            if (!shape.HasData("InteriorsColShape")) return;
 
             Interiors inter = InteriorsList.Where(x => x.EnterColShape == shape || x.ExitColShape == shape).First();
 
-            if(shape == inter.EnterColShape)
+            if (shape == inter.EnterColShape)
             {
                 client.Position = inter.ExitPointCoords;
                 client.Rotation = new Vector3(0f, 0f, inter.ExitPointRotation);
                 client.Dimension = inter.Dimension;
             }
-            else if(shape == inter.ExitColShape)
+            else if (shape == inter.ExitColShape)
             {
                 client.Position = inter.EnterPointCoords;
                 client.Rotation = new Vector3(0f, 0f, inter.EnterPointRotation);
                 client.Dimension = 0;
             }
-
-            client.SetData("PickupKD", client.GetData("PickupKD") + 5);
         }
     }
 }

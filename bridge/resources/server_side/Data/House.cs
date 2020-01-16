@@ -30,7 +30,7 @@ namespace server_side.Data
         private int HouseInterior;
 
         private ColShape HouseColShape;
-        private Checkpoint HouseCheckpoint;
+        private Marker HouseMarker;
         private Blip HouseBlip;
         private TextLabel HouseText;
 
@@ -43,6 +43,8 @@ namespace server_side.Data
         public void CreateHouse(Vector3 HousePosition, int HousePrice, int HouseClass = 1)
         {
             int tempID = -1;
+
+            HouseClass = new Random().Next(0, 5);
 
             ColShape tempShape = NAPI.ColShape.CreatCircleColShape(HousePosition.X, HousePosition.Y, 1.5f);
 
@@ -88,35 +90,25 @@ namespace server_side.Data
                 HouseInterior = 0,
 
                 HouseColShape = tempShape,
-                HouseCheckpoint = NAPI.Checkpoint.CreateCheckpoint(CheckpointType.SingleArrow, new Vector3(HousePosition.X, HousePosition.Y, HousePosition.Z), new Vector3(0,0,0), 1.5f, new Color(255,0,0)),
-                HouseBlip = NAPI.Blip.CreateBlip(374, HousePosition, 1f, 2),
+                HouseMarker = NAPI.Marker.CreateMarker(1, new Vector3(HousePosition.X, HousePosition.Y, HousePosition.Z-1f), new Vector3(), new Vector3(), 1.0f, new Color(139,201,131,100)),
+                HouseBlip = NAPI.Blip.CreateBlip(374, HousePosition, 1f, 2, drawDistance: 100.0f, dimension: 0),
                 HouseText = NAPI.TextLabel.CreateTextLabel($"House ID: {tempID}\nHouse Owner: None\nHouse Price: {HousePrice}\nHouse Class: {HouseClass}\nHouse Status: {HouseStatus}", HousePosition, 3f, 3f, 10, new Color(255, 255, 255))
             });
         }
 
-        [ServerEvent(Event.PlayerEnterColshape)]
-        public void OnPlayerEnterColshape(ColShape shape, Client client)
+        public static void OnPlayerEnterColshape(ColShape shape, Client client)
         {
-            if(shape.HasData("CSHouseID"))
-            {
-                try
-                {
-                    House h = HouseList.Where(x => x.HouseID == (int)shape.GetData("CSHouseID")).First();
-                    Console.WriteLine("Data: {0} | HouseID: {1}", shape.GetData("CSHouseID"), h.HouseID);
-                    NAPI.ClientEvent.TriggerClientEvent(client, "CreateHouseInfoBar", h.HouseID, h.HouseClass, h.HousePrice, h.HouseOwner);
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine("Error: " + e);
-                }
-                client.SendChatMessage($"Y enter in {shape.GetData("CSHouseID")} colshape");
-            }
+            if (!shape.HasData("CSHouseID")) return;
+
+            House h = HouseList.Where(x => x.HouseID == (int)shape.GetData("CSHouseID")).First();
+            Console.WriteLine("Data: {0} | HouseID: {1}", shape.GetData("CSHouseID"), h.HouseID);
+            NAPI.ClientEvent.TriggerClientEvent(client, "CreateHouseInfoBar", h.HouseID, h.HouseClass, h.HousePrice, h.HouseOwner);
         }
 
         [Command("crh")]
         public void CMD_crh(Client client, int HousePrice)
         {
-            CreateHouse(client.Position, HousePrice);
+            CreateHouse(Utilities.UtilityFuncs.GetPosFrontOfPlayer(client, 3.0), HousePrice);
             client.SendChatMessage("House has been created!");
         }
     }

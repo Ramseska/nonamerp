@@ -1,6 +1,5 @@
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="index.js"></script>
         <meta charset="utf-8">
@@ -8,15 +7,15 @@
 
     <body>
         <div id="container">
-            <div id="head">Номер дома: 154</div>
+            <div id="head">Номер дома: </div>
             <div id="content-info">
-                Владелец: Ramses Flipsize<br>
-                Класс: Эконом<br>
-                Цена: 152.000$<br>
+                Владелец: <br>
+                Класс: <br>
+                Цена: <br>
             </div>
             <div id="button-box">
-                <input type="button" id="button-enter" class="button-style" value="Enter">
-                <input type="button" id="button-exit" class="button-style" value="Exit">
+                <input type="button" id="button-enter" class="button-style" value="Enter" onclick="mp.trigger('DestroyHouseInfoBar')">
+                <input type="button" id="button-exit" class="button-style" value="Exit" onclick="mp.trigger('DestroyHouseInfoBar')">
                 <div id="button-line"></div>
             </div>
         </div>

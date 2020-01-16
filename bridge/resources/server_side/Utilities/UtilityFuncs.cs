@@ -31,5 +31,12 @@ namespace server_side.Utilities
                 else if (i == dataWeather.Length - 1) Console.WriteLine("Not finded rl weather");
             }
         }
+        static public Vector3 GetPosFrontOfPlayer(Client client, double distantion)
+        {
+            double heading = client.Rotation.Z * Math.PI / 180;
+            double x = client.Position.X + (distantion * Math.Sin(-heading));
+            double y = client.Position.Y + (distantion * Math.Cos(-heading));
+            return new Vector3(x,y,client.Position.Z);
+        }
     }
 }

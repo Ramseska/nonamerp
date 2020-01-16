@@ -99,23 +99,35 @@ var weapon_list =
 
 function initThisFuckingShit()
 {
-    var container = document.getElementById('container');
+    // var container = document.getElementById('container');
 
     for(let i = 0; i < weapon_list.length; i++)
     {
+        /*
         let newItem = document.createElement('div');
         newItem.className = "item";
         newItem.onclick = function() { mp.trigger('CalledWeaponPicker', weapon_list[i]); };
         container.appendChild(newItem);
+        */
+
+        let newItem = document.createElement('div');
+        $(newItem).addClass('item').click(function() { mp.trigger('CalledWeaponPicker', weapon_list[i]); }).appendTo($("#container"));
 
         let itemImg = document.createElement('img');
         itemImg.src = "img/" + weapon_list[i] + ".webp";
+        switch(weapon_list[i])
+        {
+            case "weapon_smokegrenade": case "weapon_bzgas": case "weapon_molotov": case "weapon_parachute": case "weapon_fireextinguisher": itemImg.height = 115;
+            case "weapon_petrolcan": itemImg.height = 90;
+        }
+        /*
         switch(i)
         {
-            case 81: case 82: case 83: case 88:
-            case 89: itemImg.height = 115;
-            case 90: itemImg.height = 90;
+            case 82: case 83: case 84: case 89:
+            case 90: itemImg.height = 115;
+            case 91: itemImg.height = 90;
         }
+        */
         newItem.appendChild(itemImg);
     }
 }

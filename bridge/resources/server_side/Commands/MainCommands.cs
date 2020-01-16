@@ -1,14 +1,61 @@
 ﻿using System;
+using System.Linq;
 using GTANetworkAPI;
+using server_side.Utilities;
  
 namespace server_side.Commands
 {
     class MainCommands : Script
     {
-        [Command("tst")]
-        public void CMD_tst(Client client)
+        [Command("goto")]
+        void CMD_goto(Client client, int playerid)
         {
+            if (playerid < 0 || playerid >= NAPI.Server.GetMaxPlayers())
+            {
+                client.SendChatMessage("Неверный ID"); 
+                return;
+            }
+            Client player = NAPI.Pools.GetAllPlayers().Where(p => p.Value == playerid).FirstOrDefault();
+            if (player == null)
+            {
+                client.SendChatMessage($"Игрок с {playerid} ID не найден!"); 
+                return;
+            }
+            else if(NAPI.Player.IsPlayerDead(player))
+            {
+                client.SendChatMessage("Игрок не заспавнен!");
+                return;
+            }
 
+            client.Position = UtilityFuncs.GetPosFrontOfPlayer(player, 1.0);
+            client.Dimension = player.Dimension;
+
+            client.SendChatMessage($"Вы успешно телепортировались к игроку {new Data.PlayerInfo(player).GetName()}[{playerid}]");
+        }
+        [Command("gethere")]
+        void CMD_gethere(Client client, int playerid)
+        {
+            if (playerid < 0 || playerid >= NAPI.Server.GetMaxPlayers())
+            {
+                client.SendChatMessage("Неверный ID");
+                return;
+            }
+            Client player = NAPI.Pools.GetAllPlayers().Where(p => p.Value == playerid).FirstOrDefault();
+            if (player == null)
+            {
+                client.SendChatMessage($"Игрок с {playerid} ID не найден!");
+                return;
+            }
+            else if (NAPI.Player.IsPlayerDead(player))
+            {
+                client.SendChatMessage("Игрок не заспавнен!");
+                return;
+            }
+
+            player.Position = UtilityFuncs.GetPosFrontOfPlayer(client, 1.0);
+            player.Dimension = client.Dimension;
+
+            client.SendChatMessage($"Вы успешно телепортировались к себе игрока {new Data.PlayerInfo(player).GetName()}[{playerid}]");
         }
         [Command("settime")]
         public void CMD_settime(Client client, int hour)
@@ -64,7 +111,8 @@ namespace server_side.Commands
             Random rand = new Random();
             byte clr = (byte)rand.Next(0, 255);
 
-            var veh = NAPI.Vehicle.CreateVehicle(NAPI.Util.GetHashKey(vehicle_name), client.Position.Around(2f), client.Rotation.Z, clr, clr, numberPlate: "Admin");
+            Vehicle veh = NAPI.Vehicle.CreateVehicle(NAPI.Util.GetHashKey(vehicle_name), UtilityFuncs.GetPosFrontOfPlayer(client, 3.0), client.Rotation.Z / 2, clr, clr, numberPlate: "Admin");
+            veh.NumberPlate = "Admin";
 
             veh.SetData("type", "admin");
 

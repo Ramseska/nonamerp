@@ -1,17 +1,19 @@
-body{
+body
+{
     font-family: "Helvetica Neue", Helvetica;
 }
-.cont {
+.cont 
+{
     position: relative;
     margin-right: 100%;
     top: 10%;
     width: 250px;
     height: 300px;
     background-color:#f7f7f7;
-    border: 1px solid black;
     border-radius: 10px;
 }
-.picker{
+.picker
+{
     position: relative;
     top: 6%;
     bottom: 0;
@@ -21,7 +23,8 @@ body{
     width: 200px;
     height: 100px;
 }
-#display{
+#display
+{
     width: 100%;
     height: 100px;
     background: #00ffff;
@@ -30,15 +33,18 @@ body{
     border: 1px solid #000;
     border-radius: 10px;
 }
-input[type=range] {
+input[type=range] 
+{
   -webkit-appearance: none;
   width: 100%;
   margin: 6.95px 0;
 }
-input[type=range]:focus {
+input[type=range]:focus 
+{
   outline: none;
 }
-input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track 
+{
   width: 100%;
   height: 6.1px;
   cursor: pointer;
@@ -47,7 +53,8 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 0px;
   border: 0px solid rgba(0, 0, 1, 0);
 }
-input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb 
+{
   box-shadow: 0.5px 0.5px 4.9px #000031, 0px 0px 0.5px #00004b;
   border: 0px solid #00001e;
   height: 20px;
@@ -58,10 +65,12 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -6.95px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type=range]:focus::-webkit-slider-runnable-track 
+{
   background: rgba(115, 115, 115, 0.54);
 }
-input[type=range]::-moz-range-track {
+input[type=range]::-moz-range-track 
+{
   width: 100%;
   height: 6.1px;
   cursor: pointer;
@@ -70,7 +79,8 @@ input[type=range]::-moz-range-track {
   border-radius: 0px;
   border: 0px solid rgba(0, 0, 1, 0);
 }
-input[type=range]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb 
+{
   box-shadow: 0.5px 0.5px 4.9px #000031, 0px 0px 0.5px #00004b;
   border: 0px solid #00001e;
   height: 20px;
@@ -79,7 +89,8 @@ input[type=range]::-moz-range-thumb {
   background: #ffffff;
   cursor: pointer;
 }
-input[type=range]::-ms-track {
+input[type=range]::-ms-track 
+{
   width: 100%;
   height: 6.1px;
   cursor: pointer;
@@ -87,19 +98,22 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
-input[type=range]::-ms-fill-lower {
+input[type=range]::-ms-fill-lower 
+{
   background: rgba(85, 85, 85, 0.54);
   border: 0px solid rgba(0, 0, 1, 0);
   border-radius: 0px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
 }
-input[type=range]::-ms-fill-upper {
+input[type=range]::-ms-fill-upper 
+{
   background: rgba(100, 100, 100, 0.54);
   border: 0px solid rgba(0, 0, 1, 0);
   border-radius: 0px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
 }
-input[type=range]::-ms-thumb {
+input[type=range]::-ms-thumb 
+{
   box-shadow: 0.5px 0.5px 4.9px #000031, 0px 0px 0.5px #00004b;
   border: 0px solid #00001e;
   height: 20px;
@@ -109,14 +123,17 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
   height: 6.1px;
 }
-input[type=range]:focus::-ms-fill-lower {
+input[type=range]:focus::-ms-fill-lower 
+{
   background: rgba(100, 100, 100, 0.54);
 }
-input[type=range]:focus::-ms-fill-upper {
+input[type=range]:focus::-ms-fill-upper 
+{
   background: rgba(115, 115, 115, 0.54);
 }
 
-#button_yes {
+#button_yes 
+{
   position: relative;
   margin-top: 10px;
   width: 95px;
@@ -135,20 +152,23 @@ input[type=range]:focus::-ms-fill-upper {
   background: #9cffa7;
   transition: all .218s ease 0s;
 }
-#button_yes:hover {
+#button_yes:hover 
+{
   color: rgb(24,24,24);
   border: 1px solid rgb(198,198,198);
   background: #77e684;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
-#button_yes:active {
+#button_yes:active 
+{
   color: rgb(51,51,51);
   border: 1px solid rgb(204,204,204);
   background: #359b41;
   box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
 
-#button_cancel {
+#button_cancel 
+{
   position: absolute;
   margin-top: 10px;
   margin-left: 10px;
@@ -168,19 +188,22 @@ input[type=range]:focus::-ms-fill-upper {
   background: rgb(255, 130, 130);
   transition: all .218s ease 0s;
 }
-#button_cancel:hover {
+#button_cancel:hover 
+{
   color: rgb(24,24,24);
   border: 1px solid rgb(198,198,198);
   background: #fc6262;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
-#button_cancel:active {
+#button_cancel:active 
+{
   color: rgb(51,51,51);
   border: 1px solid rgb(204,204,204);
   background: rgb(168, 53, 53);
   box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
-input{
+input
+{
     display: block;
     width: 100%;
 }

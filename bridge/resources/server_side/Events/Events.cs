@@ -26,16 +26,13 @@ namespace Main.events
             });
         }
         [ServerEvent(Event.ResourceStart)]
-        async public void Event_OnResourceStart()
+        public void Event_OnResourceStart()
         {
-            Interiors.CreateInterior(new Vector3(343.0853f, -1399.852f, 32.5092), new Vector3(275.9121, -1361.429, 24.5378), 47.1863f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, "Hospital", 255, 200f));
+            Interiors.CreateInterior(new Vector3(343.0853f, -1399.852f, 32.5092), new Vector3(275.9121, -1361.429, 24.5378), 47.1863f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 100.0f, dimension: 0));
 
             /*
-            await Task.Run(() =>
-            {
-                DateTime time = DateTime.Now;
-                NAPI.World.SetTime(time.Hour, time.Minute, time.Second); // set current time
-            });
+            DateTime time = DateTime.Now;
+            NAPI.World.SetTime(time.Hour, time.Minute, time.Second); // set current time
             */
 
             NAPI.Server.SetGlobalServerChat(false); // disable default global chat
@@ -48,22 +45,21 @@ namespace Main.events
         }
 
         [ServerEvent(Event.PlayerConnected)]
-        async public void Event_PlayerConnected(Client client)
+        public void Event_PlayerConnected(Client client)
         {
-            await Task.Run(() => 
-            {
-                PlayerInfo player = new PlayerInfo(client);
-                player.SetDataToDefault(); // reset player data
+            PlayerInfo player = new PlayerInfo(client);
+            player.SetDataToDefault(); // reset player data
 
-                client.Position = new Vector3(1789.294, -244.4794, 291.7196);
-                client.Rotation.Z = 353.7821f;
+            client.Position = new Vector3(1789.294, -244.4794, 291.7196);
+            client.Rotation.Z = 353.7821f;
 
-                NAPI.Entity.SetEntityTransparency(client, 0);
+            NAPI.Entity.SetEntityTransparency(client, 0);
 
-                client.Dimension = Convert.ToUInt16("1234" + Convert.ToString(client.Value));
+            client.Dimension = Convert.ToUInt16("1234" + Convert.ToString(client.Value));
 
-                NAPI.ClientEvent.TriggerClientEvent(client, "CreateAuthWindow");
-            });
+            NAPI.ClientEvent.TriggerClientEvent(client, "CreateAuthWindow");
+
+            NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
         }
 
         [ServerEvent(Event.ChatMessage)]
@@ -93,10 +89,19 @@ namespace Main.events
 
             int randResult = rand.Next(0, respawnPositions.Length);
 
-            client.Position = respawnPositions[randResult];
-            client.Rotation.Z = rots[randResult];
+            NAPI.Player.SpawnPlayer(client, respawnPositions[randResult], rots[randResult]);
 
             client.Dimension = 1;
+        }
+        [ServerEvent(Event.PlayerEnterColshape)]
+        public void Event_PlayerEnterColshape(ColShape colshape, Client client)
+        {
+            if (client.GetData("PickupKD") != 0) return;
+            client.SetData("PickupKD", client.GetData("PickupKD") + 5);
+
+            // there another "EnterColShape" events:
+            Interiors.Event_PlayerEnterInterColShape(colshape, client);
+            House.OnPlayerEnterColshape(colshape, client);
         }
     }
 }

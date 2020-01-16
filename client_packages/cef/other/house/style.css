@@ -1,17 +1,15 @@
 @font-face
 {
-    font-family: 'MainFont';
+    font-family: 'Roboto Condensed';
     src: url('../../utils/fonts/RobotoCondensed/RobotoCondensed-Light.ttf');
 }
 
 body
 {
-    font-family: 'MainFont';
+    font-family: 'Roboto Condensed';
     font-size: 25;
 
     font-style: normal;
-
-    background-color: rgb(63, 63, 63);
 }
 
 #container

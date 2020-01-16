@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'Montserrat Alternates', sans-serif;
+    src: url('../../cef/utils/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf');
+}
+
 #container
 {
     width: 600px;
@@ -34,9 +40,9 @@
     transition: 100ms;
 }
 #button_enter_auth:hover { transition: 100ms;background-color: rgb(98, 173, 99); }
-#button_enter_cancel:hover{transition: 100ms;background-color: rgba(146, 21, 21, 0.774);}
+#button_enter_cancel:hover { transition: 100ms;background-color: rgba(146, 21, 21, 0.774); }
 #button_enter_auth:active { transition: 100ms;background-color: rgb(121, 216, 122); }
-#button_enter_cancel:active { transition: 100ms;background-color: rgba(180, 25, 25, 0.774);}
+#button_enter_cancel:active { transition: 100ms;background-color: rgba(180, 25, 25, 0.774); }
 
 
 input 
