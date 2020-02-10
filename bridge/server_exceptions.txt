@@ -939,3 +939,65 @@ System.IO.FileNotFoundException: Could not load the specified file.
 File name: 'MySql.Data'
    at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
 =========================================================
+
+==================[28.01.2020 10:24:49]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[28.01.2020 10:24:56]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[03.02.2020 14:40:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.02.2020 17:41:21]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[07.02.2020 17:46:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.02.2020 17:46:07]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.02.2020 17:46:07]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[07.02.2020 17:52:15]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[07.02.2020 17:52:15]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[07.02.2020 17:52:15]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================

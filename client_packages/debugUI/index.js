@@ -32,14 +32,6 @@ mp.events.add('DestroyDebugBrowser', () => {
     clearInterval(interDebugBrowser);
 });
 
-setInterval(() => {
-    if (mp.keys.isDown(18) === true && mp.keys.isDown(85) === true) {
-        if(debugBrowser === null) mp.events.call('CreateDebugBrowser');
-        else mp.events.call('DestroyDebugBrowser');
-    }
-},  100);
-
-
 function getCameraPosition() {
     return mp.cameras.new("gameplay").getCoord();
 }
