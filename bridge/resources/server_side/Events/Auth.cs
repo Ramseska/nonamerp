@@ -219,7 +219,8 @@ namespace server_side.Events
                 NAPI.ClientEvent.TriggerClientEvent(client, "unevhnd", player.GetCustomize());
 
             NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
-            client.SendNotification("~g~Вы успешно авторизировались!");
+            //client.SendNotification("~g~Вы успешно авторизировались!");
+            Utilities.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");
         }
     }
 }

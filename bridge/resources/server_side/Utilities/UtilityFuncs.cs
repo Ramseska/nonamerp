@@ -38,5 +38,7 @@ namespace server_side.Utilities
             double y = client.Position.Y + (distantion * Math.Cos(-heading));
             return new Vector3(x,y,client.Position.Z);
         }
+
+        static public void SendPlayerNotify(Client client, int type, string content, string sendername = null) => NAPI.ClientEvent.TriggerClientEvent(client, "pushNotify", type, content, sendername);
     }
 }
