@@ -6,7 +6,6 @@ using server_side.DBConnection;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using server_side.Data;
-using Newtonsoft.Json;
 
 namespace server_side.Events
 {
@@ -195,13 +194,13 @@ namespace server_side.Events
             player.SetAuthorized(true);
             player.SetDbID(Convert.ToInt32(data[0]));
             player.SetLVL(Convert.ToInt32(data[5]));
-            player.SetMail(data[4]);
-            player.SetMoney(Convert.ToInt32(data[6]));
             player.SetName(data[1]);
+            player.SetMail(data[4]);
             player.SetPassword(data[2]);
             player.SetRegIP(data[3]);
             player.SetCustomize(client.GetData("TGFBD_PCST"));
-            
+            player.GiveMoney(Convert.ToDouble(data[6]), updateinbd: false);
+
             client.ResetData("TGFBD_PCST");
             client.ResetData("R_TempName");
             client.ResetData("R_TempPassword");

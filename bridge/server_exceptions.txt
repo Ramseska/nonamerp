@@ -1517,3 +1517,419 @@ System.IO.FileNotFoundException: Could not load the specified file.
 File name: 'System.Net.Sockets.resources'
    at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
 =========================================================
+
+==================[15.02.2020 0:44:10]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 0:49:13]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 0:53:16]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 0:59:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:01:26]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:02:03]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 1:40:33]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:40:54]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 1:40:58]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+=========================================================
+
+==================[15.02.2020 1:41:08]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+=========================================================
+
+==================[15.02.2020 1:45:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:46:38]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:46:46]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 1:47:05]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:47:05]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:47:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:47:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:48:26]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:48:26]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:48:26]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:48:26]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:49:09]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:49:10]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:49:10]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:49:10]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:50:52]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:50:52]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:50:53]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:50:53]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:51:24]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:51:24]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:51:24]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:51:24]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:55:57]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:56:07]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 1:56:08]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:56:08]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:56:08]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:56:08]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:56:19]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:56:19]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:56:20]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:56:20]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:56:28]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:56:28]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:56:28]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:56:28]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 1:57:29]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 1:57:43]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 1:57:44]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 1:57:44]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 1:57:44]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 1:57:44]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 2:00:04]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 2:00:09]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 2:00:34]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+=========================================================
+
+==================[15.02.2020 2:00:34]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+=========================================================
+
+==================[15.02.2020 2:00:34]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+=========================================================
+
+==================[15.02.2020 2:00:34]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data truncated for column 'p_money' at row 1
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at int MySql.Data.MySqlClient.NativeDriver.GetResult(ref int affectedRow, ref long insertedId)
+   at ResultSet MySql.Data.MySqlClient.Driver.NextResult(int statementId, bool force)
+   at bool MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+=========================================================
+
+==================[15.02.2020 2:03:46]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 2:03:53]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[15.02.2020 2:06:51]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[15.02.2020 2:06:58]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================

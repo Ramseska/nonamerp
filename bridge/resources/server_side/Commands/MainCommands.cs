@@ -7,6 +7,21 @@ namespace server_side.Commands
 {
     class MainCommands : Script
     {
+        [Command("givemoney")]
+        void CMD_givemoney(Client client, double money)
+        {
+            Data.PlayerInfo player = new Data.PlayerInfo(client);
+            player.GiveMoney(money);
+
+            string msg = money < 0 ? "" : "+";
+            UtilityFuncs.SendPlayerNotify(client, 0, $"{msg}{money}$");
+        }
+
+        [Command("getmoney")]
+        void CMD_getmoney(Client client)
+        {
+            client.SendChatMessage($"Money: {new Data.PlayerInfo(client).GetMoney()}");
+        }
         [Command("goto")]
         void CMD_goto(Client client, int playerid)
         {

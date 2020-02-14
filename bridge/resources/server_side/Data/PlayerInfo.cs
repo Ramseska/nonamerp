@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using GTANetworkAPI;
+using server_side.DBConnection;
+using MySql.Data.MySqlClient;
 
 namespace server_side.Data
 {
@@ -22,7 +25,7 @@ namespace server_side.Data
             player.SetData("PlayerRegIP", "0.0.0.0"); // регистрационный ип
             player.SetData("PlayerMail", "None"); // почта
             player.SetData("PlayerLVL", 0); // lvl
-            player.SetData("PlayerMoney", 0); // cash
+            player.SetData("PlayerMoney", 0.00); // cash
             player.SetData("PlayerHouse", -1); // house
             player.SetData("PlayerCustomize", null); // customize player params
             player.SetData("PickupKD", 0);
@@ -83,13 +86,49 @@ namespace server_side.Data
                 return 0;
             return player.GetData("PlayerLVL");
         }
-
-        public void SetMoney(int money) => player.SetData("PlayerMoney", money);
+        /*
+        public void SetMoney(double money) => player.SetData("PlayerMoney", money);
         public int GetMoney()
         {
             if (!player.HasData("PlayerMoney"))
                 return 0;
             return player.GetData("PlayerMoney");
+        }
+        */
+
+        async public void GiveMoney(double money, string reason = null, bool updateinbd = true)
+        {
+            player.SetData("PlayerMoney", Math.Round(money, 2) + (player.GetData("PlayerMoney")));
+
+            if(updateinbd)
+            {
+                await Task.Run(() =>
+                {
+                    try
+                    {
+                        MySqlConnection con = MySqlConnector.GetDBConnection();
+
+                        con.Open();
+
+                        string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetName()}'";
+
+                        NAPI.Util.ConsoleOutput(query);
+
+                        MySqlCommand cmd = new MySqlCommand(query, con);
+                        cmd.ExecuteNonQuery();
+
+                        con.Close();
+                    }
+                    catch (Exception e) { NAPI.Util.ConsoleOutput(e.Message); }
+                });
+            }
+        }
+
+        public double GetMoney()
+        {
+            if (!player.HasData("PlayerMoney"))
+                return 0;
+            return Math.Round(player.GetData("PlayerMoney"), 2);
         }
 
         public void SetCustomize(object args) => player.SetData("PlayerCustomize", args);

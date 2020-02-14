@@ -14,7 +14,7 @@ require("./cef/authorization");
 require("./cef/speedo");
 require("./cef/color_picker");
 require("./keybinds.js");
-require("./sound");
+require("./sound/sound.js");
 //require("./debugUI");
 require("./cef/other/house");
 require("./cef/reg_customizer");
