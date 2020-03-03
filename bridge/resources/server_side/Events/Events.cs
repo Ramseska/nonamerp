@@ -28,7 +28,7 @@ namespace Main.events
         [ServerEvent(Event.ResourceStart)]
         public void Event_OnResourceStart()
         {
-            Interiors.CreateInterior(new Vector3(343.0853f, -1399.852f, 32.5092), new Vector3(275.9121, -1361.429, 24.5378), 47.1863f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 100.0f, dimension: 0));
+            Interiors.CreateInterior(new Vector3(343.0853f, -1399.852f, 32.5092), new Vector3(275.9121, -1361.429, 24.5378), 47.1863f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 15.0f, shortRange: true, dimension: 0));
 
             /*
             DateTime time = DateTime.Now;
@@ -67,7 +67,7 @@ namespace Main.events
         {
             NAPI.Pools.GetAllPlayers().ForEach(p =>
             {
-                double dist = Math.Sqrt(Math.Pow((p.Position.X - client.Position.X), 2) + Math.Pow((p.Position.Y - client.Position.Y), 2) + Math.Pow((p.Position.Z - client.Position.Z), 2));
+                double dist = Math.Sqrt(Math.Pow(p.Position.X - client.Position.X, 2) + Math.Pow(p.Position.Y - client.Position.Y, 2) + Math.Pow(p.Position.Z - client.Position.Z, 2));
                 if (dist <= 10) p.SendChatMessage("- " + text + $" ({client.Name})[{client.Value}]");
             });
         }
@@ -76,22 +76,23 @@ namespace Main.events
         [ServerEvent(Event.PlayerDeath)]
         async public void Event_PlayerDeath(Client client, Client killer, uint reason)
         {
-            Random rand = new Random();
-            Vector3[] respawnPositions =
+            await Task.Run(() =>
             {
-                new Vector3(258.9378f, -1340.669f, 24.53781f),
-                new Vector3(250.3403f, -1351.37f, 24.53782f),
-                new Vector3(251.3651f, -1347.497f, 24.53782f)
-            };
-            float[] rots = { 176.6944f, 250.9094f, 137.5093f };
+                Random rand = new Random();
+                Vector3[] respawnPositions =
+                {
+                    new Vector3(258.9378f, -1340.669f, 24.53781f),
+                    new Vector3(250.3403f, -1351.37f, 24.53782f),
+                    new Vector3(251.3651f, -1347.497f, 24.53782f)
+                };
+                float[] rots = { 176.6944f, 250.9094f, 137.5093f };
 
-            await Task.Delay(5000);
+                Task.Delay(5000);
 
-            int randResult = rand.Next(0, respawnPositions.Length);
-
-            NAPI.Player.SpawnPlayer(client, respawnPositions[randResult], rots[randResult]);
-
-            client.Dimension = 1;
+                int randVal = rand.Next(0, respawnPositions.Length);
+                NAPI.Player.SpawnPlayer(client, respawnPositions[randVal], rots[randVal]);
+                client.Dimension = 1;
+            });
         }
         [ServerEvent(Event.PlayerEnterColshape)]
         public void Event_PlayerEnterColshape(ColShape colshape, Client client)

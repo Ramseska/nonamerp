@@ -9,6 +9,36 @@ using server_side.Data;
 
 namespace server_side.Events
 {
+    class AuthData : Script
+    {
+        public Client Player;
+        public int dbID;
+        public string Name;
+        public string Password;
+        public string Mail;
+        public string IP;
+        public int LVL;
+        public double Cash;
+        public double BankMoney;
+
+        public AuthData(Client player, int id, string name, string password, string mail, string ip, int lvl, double cash, double bankmoney)
+        {
+            this.Player = player;
+            this.dbID = id;
+            this.Name = name;
+            this.Password = password;
+            this.Mail = mail;
+            this.IP = ip;
+            this.LVL = lvl;
+            this.Cash = cash;
+            this.BankMoney = bankmoney;
+        }
+        public AuthData(Client player)
+        {
+            this.Player = player;
+        }
+        public AuthData() { }
+    }
     class Auth : Script
     {
         private static int exceptionCount { get; set; } // счетчик исключений для отладки 
@@ -37,7 +67,8 @@ namespace server_side.Events
                             {
                                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_name` = '" + args[1] + "'", con);
                                 MySqlDataReader read = cmd.ExecuteReader();
-                                List<string> LoadedData = new List<string>();
+                                //List<string> LoadedData = new List<string>();
+                                AuthData auth = new AuthData(client);
 
                                 if (!read.HasRows)
                                 {
@@ -48,6 +79,15 @@ namespace server_side.Events
 
                                 while (read.Read())
                                 {
+                                    auth.dbID = (int)read["p_id"];
+                                    auth.Name = (string)read["p_name"];
+                                    auth.Password = (string)read["p_password"];
+                                    auth.IP = (string)read["p_ip"];
+                                    auth.Mail = (string)read["p_mail"];
+                                    auth.LVL = (int)read["p_lvl"];
+                                    auth.Cash = (double)read["p_money"];
+                                    auth.BankMoney = (double)read["p_bank"];
+                                    /*
                                     LoadedData.Add(read["p_id"].ToString());
                                     LoadedData.Add(read["p_name"].ToString());
                                     LoadedData.Add(read["p_password"].ToString());
@@ -55,17 +95,18 @@ namespace server_side.Events
                                     LoadedData.Add(read["p_mail"].ToString());
                                     LoadedData.Add(read["p_lvl"].ToString());
                                     LoadedData.Add(read["p_money"].ToString());
-                                    client.SetData("TGFBD_PCST", read["p_customize"]);
+                                    */
+                                    client.SetData("pCustomize", read["p_customize"]);
                                 }
                                 read.Close();
 
-                                if (LoadedData[2] != args[2].ToString())
+                                if (auth.Password != args[2].ToString())
                                 {
                                     NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswer", "[Ошибка]: Неверный пароль!");
                                     break;
                                 }
 
-                                LogInPlayerAccount(client, LoadedData);
+                                LogInPlayerAccount(client, auth);
 
                                 break;
                             }
@@ -158,10 +199,12 @@ namespace server_side.Events
                     string query = "SELECT * FROM `accounts` WHERE `p_name` = '" + name + "'";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader read = cmd.ExecuteReader();
-                    List<string> data = new List<string>();
+                    AuthData auth = new AuthData(client);
+                    //List<string> data = new List<string>();
 
                     while (read.Read())
                     {
+                        /*
                         data.Add(read["p_id"].ToString());
                         data.Add(read["p_name"].ToString());
                         data.Add(read["p_password"].ToString());
@@ -169,11 +212,20 @@ namespace server_side.Events
                         data.Add(read["p_mail"].ToString());
                         data.Add(read["p_lvl"].ToString());
                         data.Add(read["p_money"].ToString());
-                        client.SetData("TGFBD_PCST", read["p_customize"]);
+                        */
+                        auth.dbID = (int)read["p_id"];
+                        auth.Name = (string)read["p_name"];
+                        auth.Password = (string)read["p_password"];
+                        auth.IP = (string)read["p_ip"];
+                        auth.Mail = (string)read["p_mail"];
+                        auth.LVL = (int)read["p_lvl"];
+                        auth.Cash = (double)read["p_money"];
+                        auth.BankMoney = (double)read["p_bank"];
+                        client.SetData("pCustomize", read["p_customize"]);
                     }
                     read.Close();
 
-                    LogInPlayerAccount(client, data);
+                    LogInPlayerAccount(client, auth);
 
                     con.Close();
                     read.Close();
@@ -187,26 +239,38 @@ namespace server_side.Events
             });
         }
 
-        public void LogInPlayerAccount(Client client, List<string> data) 
+        public void LogInPlayerAccount(Client client, AuthData data) 
         {
             PlayerInfo player = new PlayerInfo(client);
 
             player.SetAuthorized(true);
+            player.SetDbID(data.dbID);
+            player.SetLVL(data.LVL);
+            player.SetName(data.Name);
+            player.SetMail(data.Mail);
+            player.SetPassword(data.Password);
+            player.SetRegIP(data.IP);
+            player.SetCustomize(client.GetData("pCustomize"));
+            player.GiveMoney(data.Cash, updateindb: false);
+            player.GiveBankMoney(data.BankMoney, updateindb: false);
+            /*
             player.SetDbID(Convert.ToInt32(data[0]));
             player.SetLVL(Convert.ToInt32(data[5]));
             player.SetName(data[1]);
             player.SetMail(data[4]);
             player.SetPassword(data[2]);
             player.SetRegIP(data[3]);
-            player.SetCustomize(client.GetData("TGFBD_PCST"));
-            player.GiveMoney(Convert.ToDouble(data[6]), updateinbd: false);
+            player.SetCustomize(client.GetData("pCustomize"));
+            player.GiveMoney(Convert.ToDouble(data[6]), updateindb: false);
+            */
 
-            client.ResetData("TGFBD_PCST");
+            client.ResetData("pCustomize");
             client.ResetData("R_TempName");
             client.ResetData("R_TempPassword");
             client.ResetData("R_TempMail");
 
-            client.Name = data[1];
+            //client.Name = data[1];
+            client.Name = data.Name;
 
             client.Position = new Vector3(-143.7677, 6438.123, 31.4298);
             client.Rotation.Z = -49.8411f;

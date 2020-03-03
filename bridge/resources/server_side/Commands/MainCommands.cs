@@ -7,6 +7,19 @@ namespace server_side.Commands
 {
     class MainCommands : Script
     {
+        [Command("gtbm")]
+        public void CMD_gbm(Client client)
+        {
+            Data.PlayerInfo player = new Data.PlayerInfo(client);
+            client.SendChatMessage($"Now: {player.GetBankMoney()} in bank.");
+        }
+        [Command("gbm")]
+        public void CMD_gbm(Client client, double money)
+        {
+            Data.PlayerInfo player = new Data.PlayerInfo(client);
+            player.GiveBankMoney(money);
+            client.SendChatMessage($"+{money} in bank. Now: {player.GetBankMoney()} in bank.");
+        }
         [Command("givemoney")]
         void CMD_givemoney(Client client, double money)
         {

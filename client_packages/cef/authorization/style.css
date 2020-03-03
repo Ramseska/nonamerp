@@ -2,6 +2,7 @@
 {
     font-family: 'Montserrat Alternates', sans-serif;
     src: url('../../cef/utils/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf');
+    font-display: fallback;
 }
 
 #container

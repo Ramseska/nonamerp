@@ -91,7 +91,7 @@ namespace server_side.Data
 
                 HouseColShape = tempShape,
                 HouseMarker = NAPI.Marker.CreateMarker(1, new Vector3(HousePosition.X, HousePosition.Y, HousePosition.Z-1f), new Vector3(), new Vector3(), 1.0f, new Color(139,201,131,100)),
-                HouseBlip = NAPI.Blip.CreateBlip(374, HousePosition, 1f, 2, drawDistance: 100.0f, dimension: 0),
+                HouseBlip = NAPI.Blip.CreateBlip(374, HousePosition, 1f, 2, drawDistance: 15.0f, dimension: 0, shortRange: true, name: $"Дом №{tempID}"),
                 HouseText = NAPI.TextLabel.CreateTextLabel($"House ID: {tempID}\nHouse Owner: None\nHouse Price: {HousePrice}\nHouse Class: {HouseClass}\nHouse Status: {HouseStatus}", HousePosition, 3f, 3f, 10, new Color(255, 255, 255))
             });
         }
@@ -108,7 +108,7 @@ namespace server_side.Data
         [Command("crh")]
         public void CMD_crh(Client client, int HousePrice)
         {
-            CreateHouse(Utilities.UtilityFuncs.GetPosFrontOfPlayer(client, 3.0), HousePrice);
+            CreateHouse(Utilities.UtilityFuncs.GetPosFrontOfPlayer(client, 1.0), HousePrice);
             client.SendChatMessage("House has been created!");
         }
     }

@@ -1,7 +1,9 @@
 ﻿using System;
+using GTANetworkAPI;
 using System.Collections.Generic;
 using System.Text;
 using MySql.Data.MySqlClient;
+using System.Threading.Tasks;
 
 namespace server_side.DBConnection
 {
@@ -15,7 +17,7 @@ namespace server_side.DBConnection
             string username = "root";
             string password = "";
 
-            String connString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + password;
+            string connString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + password;
 
             MySqlConnection conn = new MySqlConnection(connString);
 

@@ -1933,3 +1933,288 @@ System.IO.FileNotFoundException: Could not load the specified file.
 File name: 'MySql.Data'
    at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
 =========================================================
+
+==================[18.02.2020 22:11:01]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[18.02.2020 22:15:42]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[24.02.2020 0:44:48]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.02.2020 14:38:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.02.2020 14:42:58]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[29.02.2020 14:44:06]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+=========================================================
+
+==================[29.02.2020 14:44:06]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.GiveMoney(double money, string reason, bool updateinbd)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 103
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.02.2020 14:44:06]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.GiveMoney(double money, string reason, bool updateinbd)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 103
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.02.2020 14:44:06]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.GiveMoney(double money, string reason, bool updateinbd)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 103
+   at async void server_side.Data.PlayerInfo.GiveMoney(double money, string reason, bool updateinbd) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 97
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.02.2020 14:44:06]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.GiveMoney(double money, string reason, bool updateinbd)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 103
+   at async void server_side.Data.PlayerInfo.GiveMoney(double money, string reason, bool updateinbd) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 97
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.02.2020 14:47:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.02.2020 14:48:21]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[29.02.2020 14:48:29]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[29.02.2020 14:54:38]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.02.2020 14:54:38]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[29.02.2020 14:54:38]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[29.02.2020 14:54:38]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.02.2020 14:54:38]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[01.03.2020 11:16:28]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[01.03.2020 11:20:32]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[01.03.2020 11:21:20]==================
+System.ArgumentException: Object of type 'GTANetworkAPI.Client' cannot be converted to type 'System.Double'.
+   at object RuntimeType.TryChangeType(object value, Binder binder, CultureInfo culture, bool needsSpecialCast)
+=========================================================
+
+==================[01.03.2020 11:24:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[01.03.2020 11:24:40]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[01.03.2020 11:24:47]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'Microsoft.CSharp.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[01.03.2020 11:24:47]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'Microsoft.CSharp.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[01.03.2020 11:24:47]==================
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The call is ambiguous between the following methods or properties: 'System.Math.Round(decimal, int)' and 'System.Math.Round(double, int)'
+   at bool Microsoft.CSharp.RuntimeBinder.Semantics.ExpressionBinder+GroupToArgsBinder.GetResultOfBind()
+=========================================================
+
+==================[01.03.2020 11:24:47]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at IList<CustomAttributeData> System.Reflection.MemberInfo.GetCustomAttributesData()
+=========================================================
+
+==================[01.03.2020 11:24:47]==================
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The call is ambiguous between the following methods or properties: 'System.Math.Round(decimal, int)' and 'System.Math.Round(double, int)'
+   at object CallSite.Target(Closure, CallSite, Type, object, int)
+=========================================================
+
+==================[01.03.2020 11:24:48]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at IList<CustomAttributeData> System.Reflection.MemberInfo.GetCustomAttributesData()
+=========================================================
+
+==================[01.03.2020 11:24:48]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The call is ambiguous between the following methods or properties: 'System.Math.Round(decimal, int)' and 'System.Math.Round(double, int)'
+   at object CallSite.Target(Closure, CallSite, Type, object, int)
+   at TRet System.Dynamic.UpdateDelegates.UpdateAndExecute3<T0, T1, T2, TRet>(CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at double server_side.Data.PlayerInfo.GetBankMoney() in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 151
+   at void server_side.Commands.MainCommands.CMD_gbm(Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 14
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[01.03.2020 11:24:48]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at IList<CustomAttributeData> System.Reflection.MemberInfo.GetCustomAttributesData()
+=========================================================
+
+==================[01.03.2020 11:28:24]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[01.03.2020 11:28:34]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[01.03.2020 11:30:58]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[01.03.2020 11:31:05]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[01.03.2020 11:38:18]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[01.03.2020 11:39:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[04.03.2020 5:29:47]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[04.03.2020 5:34:28]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[04.03.2020 5:34:44]==================
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Double'.
+   at void server_side.Events.Auth.Event_GetAccountFromBD(Client client, object[] args)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Events\Auth.cs:line 88
+=========================================================
+
+==================[04.03.2020 5:40:50]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[04.03.2020 5:41:04]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[04.03.2020 5:42:19]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[04.03.2020 5:42:25]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
