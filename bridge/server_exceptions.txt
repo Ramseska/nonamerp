@@ -2218,3 +2218,902 @@ System.IO.FileNotFoundException: Could not load the specified file.
 File name: 'MySql.Data'
    at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
 =========================================================
+
+==================[04.03.2020 14:48:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[04.03.2020 14:53:17]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[04.03.2020 18:59:46]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[04.03.2020 21:03:50]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[04.03.2020 21:08:04]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 13:07:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 13:17:02]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 13:20:13]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 13:39:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 13:40:05]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 15:37:47]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 15:41:45]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+=========================================================
+
+==================[05.03.2020 15:41:49]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+=========================================================
+
+==================[05.03.2020 15:41:50]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+=========================================================
+
+==================[05.03.2020 15:47:55]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[05.03.2020 15:47:55]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 15:47:55]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 15:47:56]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[05.03.2020 15:47:56]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[05.03.2020 16:40:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 16:41:36]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 16:43:58]==================
+System.FormatException: Input string was not in a correct format.
+   at float Number.ParseSingle(ReadOnlySpan<char> value, NumberStyles options, NumberFormatInfo numfmt)
+=========================================================
+
+==================[05.03.2020 16:47:06]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 16:47:42]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 16:56:50]==================
+System.FormatException: Input string was not in a correct format.
+   at float Number.ParseSingle(ReadOnlySpan<char> value, NumberStyles options, NumberFormatInfo numfmt)
+=========================================================
+
+==================[05.03.2020 17:06:35]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 17:06:47]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 21:51:54]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 21:57:01]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 21:57:05]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[05.03.2020 21:57:05]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[05.03.2020 21:57:05]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[05.03.2020 21:57:05]==================
+System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+=========================================================
+
+==================[05.03.2020 21:57:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 21:57:06]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 21:57:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+=========================================================
+
+==================[05.03.2020 21:57:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+=========================================================
+
+==================[05.03.2020 21:57:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+=========================================================
+
+==================[05.03.2020 21:57:06]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)<---
+
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+=========================================================
+
+==================[05.03.2020 22:00:06]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+=========================================================
+
+==================[05.03.2020 22:02:34]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:02:52]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:02:55]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+=========================================================
+
+==================[05.03.2020 22:06:40]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:06:52]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:06:57]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Events.AnotherEvents.Event_ESavePosition(Client client, object[] position) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 16
+=========================================================
+
+==================[05.03.2020 22:06:58]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Events.AnotherEvents.Event_ESavePosition(Client client, object[] position) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[05.03.2020 22:12:19]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:12:34]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:12:41]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Events.AnotherEvents.Event_ESavePosition(Client client, object[] position) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 16
+=========================================================
+
+==================[05.03.2020 22:12:41]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Events.AnotherEvents.Event_ESavePosition(Client client, object[] position) in D:\Desktop\nonamerp\bridge\resources\server_side\Events\AnotherEvents.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[05.03.2020 22:15:07]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:15:22]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:15:26]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+=========================================================
+
+==================[05.03.2020 22:21:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:21:45]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:22:54]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:23:01]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:28:29]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:28:40]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[05.03.2020 22:34:55]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[05.03.2020 22:35:02]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[06.03.2020 12:37:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[06.03.2020 12:41:42]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[06.03.2020 12:41:58]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 14:45:42]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 14:52:04]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 15:12:45]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 15:13:02]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 15:15:19]==================
+System.FormatException: Input string was not in a correct format.
+   at float Number.ParseSingle(ReadOnlySpan<char> value, NumberStyles options, NumberFormatInfo numfmt)
+=========================================================
+
+==================[08.03.2020 15:17:44]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 15:17:54]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:01:28]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:05:25]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:06:15]==================
+System.InvalidCastException: Invalid cast from 'System.String' to 'System.String[]'.
+   at object Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+=========================================================
+
+==================[08.03.2020 19:08:40]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:08:55]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:09:18]==================
+System.InvalidCastException: Invalid cast from 'System.String' to 'System.String[]'.
+   at object Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+=========================================================
+
+==================[08.03.2020 19:14:30]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:14:40]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:14:55]==================
+System.InvalidCastException: Invalid cast from 'System.String' to 'System.String[]'.
+   at object Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+=========================================================
+
+==================[08.03.2020 19:17:34]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:17:39]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:17:43]==================
+System.InvalidCastException: Invalid cast from 'System.String' to 'System.String[]'.
+   at object Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+=========================================================
+
+==================[08.03.2020 19:18:06]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:18:12]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:18:17]==================
+System.InvalidCastException: Invalid cast from 'System.String' to 'System.String[]'.
+   at object Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+=========================================================
+
+==================[08.03.2020 19:47:42]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:47:55]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:47:59]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Commands.MainCommands.CMD_sp(Client client, string namepos) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 15
+=========================================================
+
+==================[08.03.2020 19:47:59]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Commands.MainCommands.CMD_sp(Client client, string namepos) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 15
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[08.03.2020 19:50:02]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:50:08]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 19:51:38]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 19:51:44]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 20:17:14]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 20:17:15]==================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: serverName
+   at void GTANetworkMethods.Server.SetServerName(string serverName)
+=========================================================
+
+==================[08.03.2020 20:17:16]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentNullException: Value cannot be null.
+Parameter name: serverName
+   at void GTANetworkMethods.Server.SetServerName(string serverName)
+   at void Main.events.Events.Event_OnResourceStart() in D:\Desktop\nonamerp\bridge\resources\server_side\Events\Events.cs:line 43
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[08.03.2020 20:18:17]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 20:18:17]==================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: serverName
+   at void GTANetworkMethods.Server.SetServerName(string serverName)
+=========================================================
+
+==================[08.03.2020 20:18:18]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentNullException: Value cannot be null.
+Parameter name: serverName
+   at void GTANetworkMethods.Server.SetServerName(string serverName)
+   at void Main.events.Events.Event_OnResourceStart() in D:\Desktop\nonamerp\bridge\resources\server_side\Events\Events.cs:line 43
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[08.03.2020 20:18:37]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[08.03.2020 20:23:21]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[08.03.2020 20:23:45]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Commands.MainCommands.CMD_test(Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 15
+=========================================================
+
+==================[08.03.2020 20:23:46]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Commands.MainCommands.CMD_test(Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 15
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================

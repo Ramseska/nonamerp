@@ -20,19 +20,8 @@ namespace server_side.Events
         public int LVL;
         public double Cash;
         public double BankMoney;
+        public int Age;
 
-        public AuthData(Client player, int id, string name, string password, string mail, string ip, int lvl, double cash, double bankmoney)
-        {
-            this.Player = player;
-            this.dbID = id;
-            this.Name = name;
-            this.Password = password;
-            this.Mail = mail;
-            this.IP = ip;
-            this.LVL = lvl;
-            this.Cash = cash;
-            this.BankMoney = bankmoney;
-        }
         public AuthData(Client player)
         {
             this.Player = player;
@@ -67,7 +56,6 @@ namespace server_side.Events
                             {
                                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_name` = '" + args[1] + "'", con);
                                 MySqlDataReader read = cmd.ExecuteReader();
-                                //List<string> LoadedData = new List<string>();
                                 AuthData auth = new AuthData(client);
 
                                 if (!read.HasRows)
@@ -87,15 +75,8 @@ namespace server_side.Events
                                     auth.LVL = (int)read["p_lvl"];
                                     auth.Cash = (double)read["p_money"];
                                     auth.BankMoney = (double)read["p_bank"];
-                                    /*
-                                    LoadedData.Add(read["p_id"].ToString());
-                                    LoadedData.Add(read["p_name"].ToString());
-                                    LoadedData.Add(read["p_password"].ToString());
-                                    LoadedData.Add(read["p_ip"].ToString());
-                                    LoadedData.Add(read["p_mail"].ToString());
-                                    LoadedData.Add(read["p_lvl"].ToString());
-                                    LoadedData.Add(read["p_money"].ToString());
-                                    */
+                                    auth.Age = (int)read["p_age"];
+
                                     client.SetData("pCustomize", read["p_customize"]);
                                 }
                                 read.Close();
@@ -200,19 +181,9 @@ namespace server_side.Events
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader read = cmd.ExecuteReader();
                     AuthData auth = new AuthData(client);
-                    //List<string> data = new List<string>();
 
                     while (read.Read())
                     {
-                        /*
-                        data.Add(read["p_id"].ToString());
-                        data.Add(read["p_name"].ToString());
-                        data.Add(read["p_password"].ToString());
-                        data.Add(read["p_ip"].ToString());
-                        data.Add(read["p_mail"].ToString());
-                        data.Add(read["p_lvl"].ToString());
-                        data.Add(read["p_money"].ToString());
-                        */
                         auth.dbID = (int)read["p_id"];
                         auth.Name = (string)read["p_name"];
                         auth.Password = (string)read["p_password"];
@@ -221,6 +192,7 @@ namespace server_side.Events
                         auth.LVL = (int)read["p_lvl"];
                         auth.Cash = (double)read["p_money"];
                         auth.BankMoney = (double)read["p_bank"];
+                        auth.Age = (int)read["p_age"];
                         client.SetData("pCustomize", read["p_customize"]);
                     }
                     read.Close();
@@ -253,23 +225,13 @@ namespace server_side.Events
             player.SetCustomize(client.GetData("pCustomize"));
             player.GiveMoney(data.Cash, updateindb: false);
             player.GiveBankMoney(data.BankMoney, updateindb: false);
-            /*
-            player.SetDbID(Convert.ToInt32(data[0]));
-            player.SetLVL(Convert.ToInt32(data[5]));
-            player.SetName(data[1]);
-            player.SetMail(data[4]);
-            player.SetPassword(data[2]);
-            player.SetRegIP(data[3]);
-            player.SetCustomize(client.GetData("pCustomize"));
-            player.GiveMoney(Convert.ToDouble(data[6]), updateindb: false);
-            */
+            player.SetAge(data.Age);
 
             client.ResetData("pCustomize");
             client.ResetData("R_TempName");
             client.ResetData("R_TempPassword");
             client.ResetData("R_TempMail");
 
-            //client.Name = data[1];
             client.Name = data.Name;
 
             client.Position = new Vector3(-143.7677, 6438.123, 31.4298);
@@ -282,7 +244,6 @@ namespace server_side.Events
                 NAPI.ClientEvent.TriggerClientEvent(client, "unevhnd", player.GetCustomize());
 
             NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
-            //client.SendNotification("~g~Вы успешно авторизировались!");
             Utilities.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");
         }
     }

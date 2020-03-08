@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.IO;
 using GTANetworkAPI;
 using server_side.Utilities;
  
@@ -7,6 +8,36 @@ namespace server_side.Commands
 {
     class MainCommands : Script
     {
+        [Command("test")]
+        public void CMD_test(Client client)
+        {
+
+        }
+        [Command("sp", GreedyArg = true)]
+        public void CMD_sp(Client client, string namepos = null)
+        {
+            string text;
+            Vector3 pos = !client.IsInVehicle ? client.Position : client.Vehicle.Position;
+            float rot = !client.IsInVehicle ? client.Rotation.Z : client.Vehicle.Rotation.Z;
+
+            text = client.IsInVehicle ? "[Veh]: " : "[OnF]: ";
+            text = text + Math.Round(pos.X, 4).ToString().Replace(",", ".") + ", " + Math.Round(pos.Y, 4).ToString().Replace(",", ".") + ", " + Math.Round(pos.Z, 4).ToString().Replace(",", ".") + " : " + Math.Round(rot, 4).ToString().Replace(",", ".");
+            if (namepos != null) 
+                text = text + " | " + namepos;
+
+            using(var s = File.AppendText("savepos.txt"))
+                s.WriteLine(text);
+
+            client.SendChatMessage($"Saved: {text}");
+        }
+        [Command("gm")]
+        public void CMD_gm(Client client)
+        {
+            client.Invincible = !client.Invincible;
+            if (client.Invincible)
+                client.SendChatMessage("GM ~g~Activated!");
+            else client.SendChatMessage("GM ~r~Deactivated!");
+        }
         [Command("gtbm")]
         public void CMD_gbm(Client client)
         {

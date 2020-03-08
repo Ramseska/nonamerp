@@ -155,6 +155,9 @@ namespace server_side.Data
             return Math.Round(player.GetData("PlayerBankMoney"), 2);
         }
 
+        public int GetAge() => player.GetData("PlayerAge");
+        public void SetAge(int age) => player.SetData("PlayerAge", age);
+
         public void SetCustomize(object args) => player.SetData("PlayerCustomize", args);
         public object GetCustomize() => player.GetData("PlayerCustomize");
     }

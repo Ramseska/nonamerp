@@ -12,3 +12,9 @@ mp.keys.bind(0x4A, false, () => { // j
 mp.keys.bind(0x74, false, () => { // f5
     mp.gui.cursor.visible = !mp.gui.cursor.visible;
 });
+
+mp.keys.bind(0x75, false, () => { // f6
+    let coords = `${mp.players.local.position.x.toFixed(4)}, ${mp.players.local.position.y.toFixed(4)}, ${mp.players.local.position.z.toFixed(4)}`;
+    mp.events.callRemote('ESavePosition', `${coords}`);
+    mp.gui.chat.push(`Saved position: ${coords}`);
+});

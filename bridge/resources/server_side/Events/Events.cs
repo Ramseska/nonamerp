@@ -28,30 +28,36 @@ namespace Main.events
         [ServerEvent(Event.ResourceStart)]
         public void Event_OnResourceStart()
         {
-            Interiors.CreateInterior(new Vector3(343.0853f, -1399.852f, 32.5092), new Vector3(275.9121, -1361.429, 24.5378), 47.1863f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 15.0f, shortRange: true, dimension: 0));
+            Interiors.CreateInterior(new Vector3(1839.098f, 3673.332f, 34.2767f), new Vector3(275.9121, -1361.429, 24.5378), 211.3162f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 15.0f, shortRange: true, dimension: 0));
 
             /*
             DateTime time = DateTime.Now;
             NAPI.World.SetTime(time.Hour, time.Minute, time.Second); // set current time
             */
 
-            NAPI.Server.SetGlobalServerChat(false); // disable default global chat
+            NAPI.Server.SetGlobalServerChat(true); // disable default global chat
             NAPI.Server.SetAutoRespawnAfterDeath(false);
             UtilityFuncs.SetCurrentWeatherInLA(); // set current weather how in real LA 
+            NAPI.Server.SetCommandErrorMessage("~r~Ошибка: ~w~Данной команды не существует!");
+            NAPI.Server.SetDefaultSpawnLocation(new Vector3(1789.294, -244.4794, 291.7196), 353.7821f);
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Server is loaded!\n");
+            NAPI.Util.ConsoleOutput("Server is loaded!\n");
             Console.ResetColor();
         }
 
         [ServerEvent(Event.PlayerConnected)]
-        public void Event_PlayerConnected(Client client)
+        async public void Event_PlayerConnected(Client client)
         {
             PlayerInfo player = new PlayerInfo(client);
             player.SetDataToDefault(); // reset player data
 
-            client.Position = new Vector3(1789.294, -244.4794, 291.7196);
-            client.Rotation.Z = 353.7821f;
+            await Task.Run(() =>
+            {
+                client.Position = new Vector3(1789.294, -244.4794, 291.7196);
+                client.Rotation.Z = 353.7821f;
+            });
+            
 
             NAPI.Entity.SetEntityTransparency(client, 0);
 
@@ -61,18 +67,24 @@ namespace Main.events
 
             NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
         }
-
+        /*
         [ServerEvent(Event.ChatMessage)]
         public void Event_ChatMessage(Client client, string text)
         {
+            
             NAPI.Pools.GetAllPlayers().ForEach(p =>
             {
                 double dist = Math.Sqrt(Math.Pow(p.Position.X - client.Position.X, 2) + Math.Pow(p.Position.Y - client.Position.Y, 2) + Math.Pow(p.Position.Z - client.Position.Z, 2));
                 if (dist <= 10) p.SendChatMessage("- " + text + $" ({client.Name})[{client.Value}]");
             });
+            
+            NAPI.Pools.GetAllPlayers().ForEach(p =>
+            {
+                p.SendChatMessage("- " + text + $" ({client.Name})[{client.Value}]");
+            });
         }
+        */
 
-        
         [ServerEvent(Event.PlayerDeath)]
         async public void Event_PlayerDeath(Client client, Client killer, uint reason)
         {

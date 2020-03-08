@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using GTANetworkAPI;
 
@@ -7,6 +8,12 @@ namespace server_side.Events
 {
     class AnotherEvents : Script
     {
+        [RemoteEvent("ESavePosition")]
+        public void Event_ESavePosition(Client client, string position)
+        {
+            using (var s = File.AppendText("ebanina.txt"))
+                s.WriteLine(position);
+        }
         [RemoteEvent("turnVehicleEngine")]
         public void Event_TurnVehicleEngine(Client client, object[] args)
         {
