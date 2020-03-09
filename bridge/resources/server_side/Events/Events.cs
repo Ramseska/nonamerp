@@ -29,7 +29,8 @@ namespace Main.events
         public void Event_OnResourceStart()
         {
             Interiors.CreateInterior(new Vector3(1839.098f, 3673.332f, 34.2767f), new Vector3(275.9121, -1361.429, 24.5378), 211.3162f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 15.0f, shortRange: true, dimension: 0));
-
+            House h = new House();
+            h.InitHouses();
             /*
             DateTime time = DateTime.Now;
             NAPI.World.SetTime(time.Hour, time.Minute, time.Second); // set current time

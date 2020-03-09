@@ -8,11 +8,6 @@ namespace server_side.Commands
 {
     class MainCommands : Script
     {
-        [Command("test")]
-        public void CMD_test(Client client)
-        {
-
-        }
         [Command("sp", GreedyArg = true)]
         public void CMD_sp(Client client, string namepos = null)
         {

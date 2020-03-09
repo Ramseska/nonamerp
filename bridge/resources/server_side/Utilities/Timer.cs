@@ -53,9 +53,11 @@ namespace server_side.Timers
 
             NAPI.Pools.GetAllPlayers().ForEach(p =>
             {
-                if (!p.HasData("PickupKD")) return;
+                if (p.HasData("PickupKD"))
+                    if (p.GetData("PickupKD") != 0) p.SetData("PickupKD", p.GetData("PickupKD") - 1);
 
-                if (p.GetData("PickupKD") != 0) p.SetData("PickupKD", p.GetData("PickupKD") - 1);
+                if (p.HasData("HouseCreateKD"))
+                    if (p.GetData("HouseCreateKD") != 0) p.SetData("HouseCreateKD", p.GetData("HouseCreateKD") - 1);
             });
         }
     }
