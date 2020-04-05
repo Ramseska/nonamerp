@@ -1,43 +1,59 @@
-mp.events.add('SetPlayerCustomize', (player, cust) => {
-    let c = JSON.parse(cust);
-
-    player.customizeparams = c;
+mp.events.add('sCustomizeSetMainData', (player, data) => {
+    
+    const c = JSON.parse(data);
 
     player.setCustomization(
-        c.sex, 
-        parseInt(c.mother), 
-        parseInt(c.father), 
+        c.base.sex, 
+        parseInt(c.parents.mother), 
+        parseInt(c.parents.father), 
         0, 
-        parseInt(c.skin_1), 
-        parseInt(c.skin_2), 
+        parseInt(c.parents.mother), 
+        parseInt(c.parents.father), 
         0, 
-        parseFloat(c.parentsMix), 
-        parseFloat(c.skinMix), 
+        parseFloat(c.parents.parentsMix), 
+        parseFloat(c.parents.skinMix), 
         0, 
-        parseInt(c.eyeColor), 
-        parseInt(c.hairColor), 
-        parseInt(c.hilightColor), 
+        parseInt(0), 
+        parseInt(c.hair[1]), 
+        parseInt(c.hair[2]), 
         [
-            parseFloat(c.noseWidth),
-            parseFloat(c.noseHeight),
-            parseFloat(c.noseLength),
-            parseFloat(c.noseBridge),
-            parseFloat(c.noseTip),
-            parseFloat(c.noseBridgeShift),
-            parseFloat(c.browHeight),
-            parseFloat(c.browWidth),
-            parseFloat(c.cheekboneHeight),
-            parseFloat(c.cheekboneWidth),
-            parseFloat(c.cheeksWidth),
-            parseFloat(c.eyesWidth),
-            parseFloat(c.lips),
-            parseFloat(c.jawWidth),
-            parseFloat(c.jawHeight),
-            parseFloat(c.chitHeight),
-            parseFloat(c.chinPosition),
-            parseFloat(c.chinWidth),
-            parseFloat(c.chinShape),
-            parseFloat(c.neckWidth)
-        ]);
-    player.setClothes(2, parseInt(c.hair), 0, 2);
+            parseFloat(c.features.noseWidth),
+            parseFloat(c.features.noseHeigth),
+            parseFloat(c.features.noseLength),
+            parseFloat(c.features.noseBridge),
+            parseFloat(c.features.noseTip),
+            parseFloat(c.features.noseBridgeShift),
+            parseFloat(c.features.browHeight),
+            parseFloat(c.features.browWidth),
+            parseFloat(c.features.cheekboneHeight),
+            parseFloat(c.features.cheekboneWidth),
+            parseFloat(c.features.cheekWidth),
+            parseFloat(c.features.eyes),
+            parseFloat(c.features.lips),
+            parseFloat(c.features.jawWidth),
+            parseFloat(c.features.jawHeight),
+            parseFloat(c.features.chinLength),
+            parseFloat(c.features.chinPosition),
+            parseFloat(c.features.chinWidth),
+            parseFloat(c.features.chinShape),
+            parseFloat(c.features.neckWidth)
+        ]
+    );
+    // player.setHairColor(5, 0);
+});
+
+mp.events.add('sCustomizeSetHair', (player, hair) => {
+    player.setClothes(2, parseInt(hair), 0, 2);
+});
+
+mp.events.add('sCustomizeChangeHairColor', (player, c1, c2) => {
+    player.setHairColor(parseInt(c1), parseInt(c2));
+});
+
+mp.events.add('sCustomizeEnd', (player, data) => {
+
+});
+
+mp.events.add('applyCustomize', (player, data) => {
+
 });

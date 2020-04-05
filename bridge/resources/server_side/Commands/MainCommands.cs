@@ -84,7 +84,7 @@ namespace server_side.Commands
             client.Position = UtilityFuncs.GetPosFrontOfPlayer(player, 1.0);
             client.Dimension = player.Dimension;
 
-            client.SendChatMessage($"Вы успешно телепортировались к игроку {new Data.PlayerInfo(player).GetName()}[{playerid}]");
+            client.SendChatMessage($"Вы успешно телепортировались к игроку {new Data.PlayerInfo(player).GetLogin()}[{playerid}]");
         }
         [Command("gethere")]
         void CMD_gethere(Client client, int playerid)
@@ -109,7 +109,7 @@ namespace server_side.Commands
             player.Position = UtilityFuncs.GetPosFrontOfPlayer(client, 1.0);
             player.Dimension = client.Dimension;
 
-            client.SendChatMessage($"Вы успешно телепортировались к себе игрока {new Data.PlayerInfo(player).GetName()}[{playerid}]");
+            client.SendChatMessage($"Вы успешно телепортировались к себе игрока {new Data.PlayerInfo(player).GetLogin()}[{playerid}]");
         }
         [Command("settime")]
         public void CMD_settime(Client client, int hour)

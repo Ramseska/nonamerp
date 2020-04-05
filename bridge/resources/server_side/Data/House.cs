@@ -201,5 +201,17 @@ namespace server_side.Data
 
             client.SendChatMessage($"Дом {houseid} успешно был удален!");
         }
+        [Command("htp")]
+        public void CMD_htp(Client client, int houseid)
+        {
+            if (HouseList.Exists(x => x.HouseID == houseid))
+            {
+                House h = HouseList.Where(x => x.HouseID == houseid).First();
+                client.SetData("HouseCreateKD", 2);
+                client.Position = h.HouseEnterPosition;
+                client.SendChatMessage($"Вы успешно телепортировались к дому с {houseid} ID");
+            }
+            else client.SendChatMessage("Дом с таким ID не найден!");
+        }
     }
 }
