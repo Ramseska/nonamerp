@@ -1,5 +1,6 @@
 <head>
     <link href="color_picker.css" rel="stylesheet">
+    <script src="../utils/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,23 +17,20 @@
         </div>
 
         <script type="text/javascript">
-            var input = document.querySelectorAll("input");
-            var r, g, b;
+            var colors = [0, 0, 0];
 
-            for (var i = 0; i < input.length; i++) {
-                input[i].addEventListener("input", function () {
-                    var red = document.getElementById("red").value,
-                        green = document.getElementById("green").value,
-                        blue = document.getElementById("blue").value;
-                    var display = document.getElementById("display");
-                    display.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
-                    r = red;
-                    g = green;
-                    b = blue;
+            $(function() {
+                $(document).on('input change', function(element)  {
+                    colors[0] = element.target.id == "red" ? Number($(element.target).val()) : colors[0];
+                    colors[1] = element.target.id == "green" ? Number($(element.target).val()) : colors[1];
+                    colors[2] = element.target.id == "blue" ? Number($(element.target).val()) : colors[2];
+
+                    $('#display').css('background-color', `rgb(${colors[0]}, ${colors[1]}, ${colors[2]})`);
                 });
-            }
+            })
+
             function triggerYes() {
-                mp.trigger("pickerCalled", r, g, b);
+                mp.trigger("pickerCalled", colors[0], colors[1], colors[2]);
             }
             function triggerCancel() {
                 mp.trigger("pickerClose");

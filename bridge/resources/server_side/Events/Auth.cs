@@ -13,7 +13,7 @@ namespace server_side.Events
     {
         public Client Player;
         public int dbID;
-        public string Name;
+        public string Login;
         public string Password;
         public string Mail;
         public string IP;
@@ -21,6 +21,7 @@ namespace server_side.Events
         public double Cash;
         public double BankMoney;
         public int Age;
+        public string Name;
 
         public AuthData(Client player)
         {
@@ -54,7 +55,7 @@ namespace server_side.Events
                     {
                         case 0: // auth
                             {
-                                MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_name` = '" + args[1] + "'", con);
+                                MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_login` = '" + args[1] + "'", con);
                                 MySqlDataReader read = cmd.ExecuteReader();
                                 AuthData auth = new AuthData(client);
 
@@ -68,7 +69,7 @@ namespace server_side.Events
                                 while (read.Read())
                                 {
                                     auth.dbID = (int)read["p_id"];
-                                    auth.Name = (string)read["p_name"];
+                                    auth.Login = (string)read["p_login"];
                                     auth.Password = (string)read["p_password"];
                                     auth.IP = (string)read["p_ip"];
                                     auth.Mail = (string)read["p_mail"];
@@ -76,8 +77,10 @@ namespace server_side.Events
                                     auth.Cash = (double)read["p_money"];
                                     auth.BankMoney = (double)read["p_bank"];
                                     auth.Age = (int)read["p_age"];
+                                    auth.Name = (string)read["p_name"];
 
                                     client.SetData("pCustomize", read["p_customize"]);
+                                    client.SetData("pClothes", read["p_clothes"]);
                                 }
                                 read.Close();
 
@@ -93,7 +96,7 @@ namespace server_side.Events
                             }
                         case 1: // reg
                             {
-                                MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_name` = '" + args[1] + "'", con);
+                                MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_login` = '" + args[1] + "'", con);
                                 MySqlDataReader read = cmd.ExecuteReader();
 
                                 if (read.HasRows)
@@ -104,7 +107,7 @@ namespace server_side.Events
                                 }
                                 read.Close();
 
-                                client.SetData("R_TempName", (string)args[1]);
+                                client.SetData("R_TempLogin", (string)args[1]);
                                 client.SetData("R_TempPassword", (string)args[2]);
                                 client.SetData("R_TempMail", (string)args[3]);
 
@@ -128,7 +131,7 @@ namespace server_side.Events
 
         async public void JumpToCustomizeStep(Client client)
         {
-            NAPI.ClientEvent.TriggerClientEvent(client, "StartPlayerCustomize");
+            NAPI.ClientEvent.TriggerClientEvent(client, "enableCustomize");
 
             await Task.Delay(2000);
 
@@ -138,30 +141,42 @@ namespace server_side.Events
             */
             client.Position = new Vector3(402.8664, -996.4108, -99.00027);
             client.Rotation = new Vector3(0, 0, -185.0000);
+
+            NAPI.Entity.SetEntityTransparency(client, 255);
+
             client.Dimension = (uint)client.Value;
         }
 
         [RemoteEvent("EndPlayerCustomize")]
-        async public void EndPlayerCustomize(Client client, dynamic customize)
+        async public void EndPlayerCustomize(Client client, string basedata, string customize, string clothes)
         {
             await Task.Run(() =>
             {
                 try
                 {
+                    NAPI.Util.ConsoleOutput($"EndPlayerCustomize: start");
+
                     MySqlConnection con = MySqlConnector.GetDBConnection();
 
                     con.Open();
 
-                    string query = "INSERT INTO `accounts` (`p_name`, `p_password`, `p_ip`, `p_mail`, `p_customize`) VALUES ('" + client.GetData("R_TempName") + "', '" + client.GetData("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData("R_TempMail") + "', '" + customize + "')";
+                    dynamic based = NAPI.Util.FromJson(basedata);
+                    dynamic cust = NAPI.Util.FromJson(customize);
+
+                    string name = $"{based["name"]} {based["subname"]}";
+
+                    string query = "INSERT INTO `accounts` (`p_login`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`) VALUES ('" + client.GetData("R_TempLogin") + "', '" + client.GetData("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "')";
                     MySqlCommand cmd = new MySqlCommand(query, con);
 
                     cmd.ExecuteNonQuery();
 
-                    CreatePlayerAccount(client, client.GetData("R_TempName"));
+                    CreatePlayerAccount(client, client.GetData("R_TempLogin"));
 
                     con.Close();
+
+                    NAPI.Util.ConsoleOutput($"EndPlayerCustomize: end");
                 }
-                catch (Exception e) { Console.WriteLine(e); }
+                catch (Exception e) { NAPI.Util.ConsoleOutput($"{e}"); }
             });
         }
 
@@ -173,11 +188,13 @@ namespace server_side.Events
             {
                 try
                 {
+                    NAPI.Util.ConsoleOutput($"CreatePlayerAccount: start");
+
                     MySqlConnection con = MySqlConnector.GetDBConnection();
 
                     con.Open();
 
-                    string query = "SELECT * FROM `accounts` WHERE `p_name` = '" + name + "'";
+                    string query = "SELECT * FROM `accounts` WHERE `p_login` = '" + name + "'";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader read = cmd.ExecuteReader();
                     AuthData auth = new AuthData(client);
@@ -185,7 +202,7 @@ namespace server_side.Events
                     while (read.Read())
                     {
                         auth.dbID = (int)read["p_id"];
-                        auth.Name = (string)read["p_name"];
+                        auth.Login = (string)read["p_login"];
                         auth.Password = (string)read["p_password"];
                         auth.IP = (string)read["p_ip"];
                         auth.Mail = (string)read["p_mail"];
@@ -193,14 +210,19 @@ namespace server_side.Events
                         auth.Cash = (double)read["p_money"];
                         auth.BankMoney = (double)read["p_bank"];
                         auth.Age = (int)read["p_age"];
+                        auth.Name = (string)read["p_name"];
                         client.SetData("pCustomize", read["p_customize"]);
+                        client.SetData("pClothes", read["p_clothes"]);
                     }
                     read.Close();
 
+                    NAPI.ClientEvent.TriggerClientEvent(client, "disableCustomize");
                     LogInPlayerAccount(client, auth);
 
                     con.Close();
                     read.Close();
+
+                    NAPI.Util.ConsoleOutput($"CreatePlayerAccount: end");
                 }
                 catch (Exception e)
                 {
@@ -218,17 +240,19 @@ namespace server_side.Events
             player.SetAuthorized(true);
             player.SetDbID(data.dbID);
             player.SetLVL(data.LVL);
-            player.SetName(data.Name);
+            player.SetLogin(data.Login);
             player.SetMail(data.Mail);
             player.SetPassword(data.Password);
             player.SetRegIP(data.IP);
             player.SetCustomize(client.GetData("pCustomize"));
+            player.SetClothes(client.GetData("pClothes"));
             player.GiveMoney(data.Cash, updateindb: false);
             player.GiveBankMoney(data.BankMoney, updateindb: false);
             player.SetAge(data.Age);
 
             client.ResetData("pCustomize");
-            client.ResetData("R_TempName");
+            client.ResetData("pClothes");
+            client.ResetData("R_TempLogin");
             client.ResetData("R_TempPassword");
             client.ResetData("R_TempMail");
 
@@ -241,7 +265,10 @@ namespace server_side.Events
             NAPI.Entity.SetEntityTransparency(client, 255);
 
             if(player.GetCustomize() != null)
-                NAPI.ClientEvent.TriggerClientEvent(client, "unevhnd", player.GetCustomize());
+                NAPI.ClientEvent.TriggerClientEvent(client, "setPlayerCustomize", player.GetCustomize());
+
+            if (player.GetClothes() != null)
+                NAPI.ClientEvent.TriggerClientEvent(client, "setPlayerClothes", player.GetClothes());
 
             NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
             Utilities.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");

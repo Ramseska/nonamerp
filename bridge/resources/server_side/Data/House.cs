@@ -81,7 +81,7 @@ namespace server_side.Data
                             HouseList.Add(hd);
                         }
                         foreach (House h in HouseList)
-                            Console.WriteLine($"ID: {h.HouseID} - Price: {h.HousePrice}, Class: {h.HouseClass}, Owner: {h.HouseOwner}, Status: {h.HouseStatus} | {h.HouseColShape}");
+                            NAPI.Util.ConsoleOutput($"ID: {h.HouseID} - Price: {h.HousePrice}, Class: {h.HouseClass}, Owner: {h.HouseOwner}, Status: {h.HouseStatus} | {h.HouseColShape}");
                         NAPI.Util.ConsoleOutput("[MySQL]: Домов загружено: {0} | Домов в списке: {1}", cc, HouseList.Count);
                     }
                 }
@@ -161,7 +161,7 @@ namespace server_side.Data
                     return;
 
             House h = HouseList.Where(x => x.HouseID == (int)shape.GetData("CSHouseID")).First();
-            Console.WriteLine("Data: {0} | HouseID: {1}", shape.GetData("CSHouseID"), h.HouseID);
+            NAPI.Util.ConsoleOutput("Data: {0} | HouseID: {1}", shape.GetData("CSHouseID"), h.HouseID);
             NAPI.ClientEvent.TriggerClientEvent(client, "CreateHouseInfoBar", h.HouseID, h.HouseClass, h.HousePrice, h.HouseOwner);
         }
 
@@ -200,6 +200,18 @@ namespace server_side.Data
             });
 
             client.SendChatMessage($"Дом {houseid} успешно был удален!");
+        }
+        [Command("htp")]
+        public void CMD_htp(Client client, int houseid)
+        {
+            if (HouseList.Exists(x => x.HouseID == houseid))
+            {
+                House h = HouseList.Where(x => x.HouseID == houseid).First();
+                client.SetData("HouseCreateKD", 2);
+                client.Position = h.HouseEnterPosition;
+                client.SendChatMessage($"Вы успешно телепортировались к дому с {houseid} ID");
+            }
+            else client.SendChatMessage("Дом с таким ID не найден!");
         }
     }
 }

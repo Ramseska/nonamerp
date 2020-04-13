@@ -1,0 +1,451 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../utils/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="left_container">
+            <div id="circle_container">
+                <div id="t_1" id="circle_description" class="bar_circle circle_actived"></div>
+                <div id="t_2" id="circle_genetic" class="bar_circle circle_hover"></div>
+                <div id="t_3" id="circle_face" class="bar_circle circle_hover"></div>
+                <div id="t_4" id="circle_hair" class="bar_circle circle_hover"></div>
+                <div id="t_5" id="circle_cosmetic" class="bar_circle circle_hover"></div>
+                <div id="t_6" id="circle_cloth" class="bar_circle circle_hover"></div>
+            </div>
+            <div id="left_inside_container">
+                <div id="box_description" class="left_box_content">
+                    <h3>Основная информация</h3>
+                    <div class="form-group">
+                        <span class="span-lable">Имя</span>
+                        <input class="form-field" id="input_name" type="text" placeholder="Eugene">
+                        <div class="input-error"><span class="span-lable-error" title="Поле не может быть пустым!">!</span></div>
+                    </div>
+                    <div class="form-group">
+                        <span class="span-lable">Фамилия</span>
+                        <input class="form-field" id="input_subname" type="text" placeholder="Onegin">
+                        <div class="input-error"><span class="span-lable-error" title="Поле не может быть пустым!">!</span></div>
+                    </div>
+                    <div class="form-group">
+                        <span class="span-lable">Возраст</span>
+                        <input class="form-field" id="input_old" type="text" placeholder="21">
+                        <div class="input-error"><span class="span-lable-error" title="Поле не может быть пустым!">!</span></div>
+                    </div>
+                    <div class="form-group">
+                        <span class="span-lable">Пол</span>
+                        <label class="switch">
+                            <input type="checkbox" id="input_sex">
+                            <span class="slider">Женский&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мужской</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="box_genetic" class="left_box_content" hidden=true>
+                    <h3>Генетика</h3>
+                    <div class="genetic_container">
+                        <label class="mix_label">Приоритет родителя</label>
+                        <div class="form-group-range">
+                            <span id="output_parent_mix" class="span-lable-range">0</span>
+                            <input id="parent_mix" type="range" class="rangeslider" step=".1" min="0" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Приоритет цвета кожи</label>
+                        <div class="form-group-range">
+                            <span id="output_parent_skin" class="span-lable-range">0</span>
+                            <input id="parent_skin" type="range" class="rangeslider" step=".1" min="0" max="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="box_face" class="left_box_content" hidden=true>
+                    <h3>Параметры лица</h3>
+                    <div class="genetic_container">
+                        <label class="mix_label">Ширина носа</label>
+                        <div class="form-group-range">
+                            <span id="output_features_nose_width" class="span-lable-range">0</span>
+                            <input id="features_nose_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Высота носа</label>
+                        <div class="form-group-range">
+                            <span id="output_features_nose_heigth" class="span-lable-range">0</span>
+                            <input id="features_nose_heigth" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Длина носа</label>
+                        <div class="form-group-range">
+                            <span id="output_features_nose_length" class="span-lable-range">0</span>
+                            <input id="features_nose_length" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Глубина переносицы</label>
+                        <div class="form-group-range">
+                            <span id="output_features_nose_bridge" class="span-lable-range">0</span>
+                            <input id="features_nose_bridge" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Кончик носа</label>
+                        <div class="form-group-range">
+                            <span id="output_features_nose_tip" class="span-lable-range">0</span>
+                            <input id="features_nose_tip" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Смещение переносицы</label>
+                        <div class="form-group-range">
+                            <span id="output_features_nose_bridgeshift" class="span-lable-range">0</span>
+                            <input id="features_nose_bridgeshift" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Высота бровей</label>
+                        <div class="form-group-range">
+                            <span id="output_features_brow_heigth" class="span-lable-range">0</span>
+                            <input id="features_brow_heigth" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Глубина бровей</label>
+                        <div class="form-group-range">
+                            <span id="output_features_brow_width" class="span-lable-range">0</span>
+                            <input id="features_brow_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Высота скул</label>
+                        <div class="form-group-range">
+                            <span id="output_features_cheekbone_heigth" class="span-lable-range">0</span>
+                            <input id="features_cheekbone_heigth" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Ширина скул</label>
+                        <div class="form-group-range">
+                            <span id="output_features_cheekbone_width" class="span-lable-range">0</span>
+                            <input id="features_cheekbone_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Полнота щек</label>
+                        <div class="form-group-range">
+                            <span id="output_features_cheek_width" class="span-lable-range">0</span>
+                            <input id="features_cheek_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Веки глаз</label>
+                        <div class="form-group-range">
+                            <span id="output_features_eyes" class="span-lable-range">0</span>
+                            <input id="features_eyes" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Полнота губ</label>
+                        <div class="form-group-range">
+                            <span id="output_features_lips" class="span-lable-range">0</span>
+                            <input id="features_lips" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Ширина челюсти</label>
+                        <div class="form-group-range">
+                            <span id="output_features_jaw_width" class="span-lable-range">0</span>
+                            <input id="features_jaw_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Высота челюсти</label>
+                        <div class="form-group-range">
+                            <span id="output_features_jaw_heigth" class="span-lable-range">0</span>
+                            <input id="features_jaw_heigth" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Высота подбородка</label>
+                        <div class="form-group-range">
+                            <span id="output_features_chin_length" class="span-lable-range">0</span>
+                            <input id="features_chin_length" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Глубина подбородка</label>
+                        <div class="form-group-range">
+                            <span id="output_features_chin_position" class="span-lable-range">0</span>
+                            <input id="features_chin_position" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Ширина подбородка</label>
+                        <div class="form-group-range">
+                            <span id="output_features_chin_width" class="span-lable-range">0</span>
+                            <input id="features_chin_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Раздвоенность подбородка</label>
+                        <div class="form-group-range">
+                            <span id="output_features_chin_shape" class="span-lable-range">0</span>
+                            <input id="features_chin_shape" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Обхват шеи</label>
+                        <div class="form-group-range">
+                            <span id="output_features_neck_width" class="span-lable-range">0</span>
+                            <input id="features_neck_width" type="range" class="rangeslider" step=".1" min="-1" max="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="box_hair" class="left_box_content" hidden=true>
+                    <h3>Внешний вид</h3>
+                    <div class="genetic_container">
+                        <label class="mix_label">Прическа</label>
+                        <input id="hair_button" type="button" value=">">
+                        <div class="colors_line_container">
+                            <input type="button" id="left_color_button" class="colors_buttons" value="<">
+                            <div class="colors_line_box" id="color_hair_1"></div>
+                            <input type="button" id="right_color_button" class="colors_buttons" value=">">
+                        </div>
+                        <div class="colors_line_container">
+                            <input type="button" id="left_color_button" class="colors_buttons" value="<">
+                            <div class="colors_line_box" id="color_hair_2"></div>
+                            <input type="button" id="right_color_button" class="colors_buttons" value=">">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Недостатки</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_blemishes" class="span-lable-range">No</span>
+                            <input id="headoverlay_blemishes" type="range" class="rangeslider" step="1" min="-1" max="23" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_blemishes_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_blemishes_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Волосы на лице</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_facialhair" class="span-lable-range">No</span>
+                            <input id="headoverlay_facialhair" type="range" class="rangeslider" step="1" min="-1" max="28" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_facialhair_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_facialhair_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Брови</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_eyebrows" class="span-lable-range">No</span>
+                            <input id="headoverlay_eyebrows" type="range" class="rangeslider" step="1" min="-1" max="33" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_eyebrows_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_eyebrows_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Старение</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_ageing" class="span-lable-range">No</span>
+                            <input id="headoverlay_ageing" type="range" class="rangeslider" step="1" min="-1" max="14" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_ageing_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_ageing_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Дефекты лица</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_complexion" class="span-lable-range">No</span>
+                            <input id="headoverlay_complexion" type="range" class="rangeslider" step="1" min="-1" max="11" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_complexion_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_complexion_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Солнечные ожоги</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_sundamage" class="span-lable-range">No</span>
+                            <input id="headoverlay_sundamage" type="range" class="rangeslider" step="1" min="-1" max="10" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_sundamage_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_sundamage_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Родинки\веснушки</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_moles" class="span-lable-range">No</span>
+                            <input id="headoverlay_moles" type="range" class="rangeslider" step="1" min="-1" max="17" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_moles" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_moles" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Волосы на груди</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_chesthair" class="span-lable-range">No</span>
+                            <input id="headoverlay_chesthair" type="range" class="rangeslider" step="1" min="-1" max="16" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_chesthair" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_chesthair" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Недостатки на теле</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_bodybelmishes" class="span-lable-range">No</span>
+                            <input id="headoverlay_bodybelmishes" type="range" class="rangeslider" step="1" min="-1" max="11" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_bodybelmishes" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_bodybelmishes" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box_cosmetic" class="left_box_content" hidden=true>
+                    <h3>Косметика</h3>
+                    <div class="genetic_container">
+                        <label class="mix_label">Макияж</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_makeup" class="span-lable-range">No</span>
+                            <input id="headoverlay_makeup" type="range" class="rangeslider" step="1" min="-1" max="8" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_makeup_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_makeup_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="genetic_container">
+                        <label class="mix_label">Румянец</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_blush" class="span-lable-range">No</span>
+                            <input id="headoverlay_blush" type="range" class="rangeslider" step="1" min="-1" max="6" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_blush_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_blush_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="genetic_container">
+                        <label class="mix_label">Помада</label>
+                        <div class="form-group-range">
+                            <span id="output_headoverlay_lipstick" class="span-lable-range">No</span>
+                            <input id="headoverlay_lipstick" type="range" class="rangeslider" step="1" min="-1" max="9" value="-1">
+                        </div>
+                        <div class="little-range-box">
+                            <label class="little-mix_label">Прозрачность</label>
+                            <div class="little-form-group-range">
+                                <span id="output_headoverlay_lipstick_opacity" class="little-span-lable-range">1.0</span>
+                                <input id="headoverlay_lipstick_opacity" type="range" class="little-rangeslider" step=".01" min="0" max="1" value="1.0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box_cloth" class="left_box_content" hidden=true>
+                    <h3>Косметика</h3>
+                    <div class="genetic_container">
+                        <label class="mix_label">Топ</label>
+                        <div class="cloth_line_container">
+                            <input type="button" id="left_cloth_button" class="cloth_buttons" value="<">
+                            <div class="cloth_output" id="cloth_output_top" data-sld="-1" data-kid="0">None</div>
+                            <input type="button" id="right_cloth_button" class="cloth_buttons" value=">">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Ноги</label>
+                        <div class="cloth_line_container">
+                            <input type="button" id="left_cloth_button" class="cloth_buttons" value="<">
+                            <div class="cloth_output" id="cloth_output_legs" data-sld="-1" data-kid="1">None</div>
+                            <input type="button" id="right_cloth_button" class="cloth_buttons" value=">">
+                        </div>
+                    </div>
+                    <div class="genetic_container">
+                        <label class="mix_label">Обувь</label>
+                        <div class="cloth_line_container">
+                            <input type="button" id="left_cloth_button" class="cloth_buttons" value="<">
+                            <div class="cloth_output" id="cloth_output_shoes" data-sld="-1" data-kid="2">None</div>
+                            <input type="button" id="right_cloth_button" class="cloth_buttons" value=">">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right_container" hidden="true">
+            <div id="right_inside_container">
+                <div id="parents_container" hidden="true">
+                    <div id="_parents_container">
+                        <div id="parents_switch_box">
+                            <button class="parents_switch_button" id="parents_switch_button_l"><</button>
+                            <div id="parents_switcher">Отец</div>
+                            <button class="parents_switch_button" id="parents_switch_button_r">></button>
+                        </div>
+                        <div id="parents_list"></div>
+                    </div>
+                </div>
+                <div id="hair_container" hidden="true">
+                    <div id="_hair_container">
+                        <div id="hair_label">Прически</div>
+                        <div id="hair_list"></div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div id="end_button_container">
+            <input type="button" id="plus_zoom_button" class="bar_circle circle_hover free-buttons">
+            <input type="button" id="minus_zoom_button" class="bar_circle circle_hover free-buttons">
+            <input type="button" id="end_button" class="bar_circle circle_hover free-buttons">
+        </div>
+    </body>
+</html>

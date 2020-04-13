@@ -20,9 +20,11 @@ namespace server_side.Data
         {
             player.SetData("PlayerAuthorized", false); // статус авторизации
             player.SetData("PlayerDbID", -1); // ид из бд 
-            player.SetData("PlayerName", "None"); // ник
+            player.SetData("PlayerLogin", "None"); // логин
             player.SetData("PlayerPassword", "None"); // пароль
             player.SetData("PlayerRegIP", "0.0.0.0"); // регистрационный ип
+            player.SetData("PlayerCurrentIP", "0.0.0.0"); // текущий ип
+            player.SetData("PlayerName", "None"); // имя игрока
             player.SetData("PlayerMail", "None"); // почта
             player.SetData("PlayerLVL", 0); // lvl
             player.SetData("PlayerMoney", 0.00); // cash
@@ -31,6 +33,7 @@ namespace server_side.Data
             player.SetData("PickupKD", 0);
             player.SetData("PlayerBankMoney", 0.00); // банковский счет
             player.SetData("PlayerAge", 0); // возраст
+            player.SetData("PlayerClothes", null); // одежда
         }
 
         public void SetAuthorized(bool status) => player.SetData("PlayerAuthorized", status);
@@ -49,12 +52,12 @@ namespace server_side.Data
             return player.GetData("PlayerDbID");
         }
 
-        public void SetName(string name) => player.SetData("PlayerName", name);
-        public string GetName()
+        public void SetLogin(string login) => player.SetData("PlayerLogin", login);
+        public string GetLogin()
         {
-            if (!player.HasData("PlayerName"))
+            if (!player.HasData("PlayerLogin"))
                 return "None";
-            return player.GetData("PlayerName");
+            return player.GetData("PlayerLogin");
         }
 
         public void SetPassword(string password) => player.SetData("PlayerPassword", password);
@@ -96,28 +99,19 @@ namespace server_side.Data
             {
                 await Task.Run(() =>
                 {
-                    string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetName()}'";
+                    string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetLogin()}'";
 
-                    using (MySqlConnection con = MySqlConnector.GetDBConnection())
-                    {
-                        con.Open();
-                        new MySqlCommand(query, con).ExecuteNonQuery();
-                    }
-                    /*
                     try
                     {
-                        MySqlConnection con = MySqlConnector.GetDBConnection();
-
-                        con.Open();
-
-                        MySqlCommand cmd = new MySqlCommand(query, con);
-                        cmd.ExecuteNonQuery();
-
-                        con.Close();
+                        using (MySqlConnection con = MySqlConnector.GetDBConnection())
+                        {
+                            con.Open();
+                            new MySqlCommand(query, con).ExecuteNonQuery();
+                        }
 
                     }
                     catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }
-                    */
+
                 });
             }
         }
@@ -137,13 +131,18 @@ namespace server_side.Data
             {
                 await Task.Run(() =>
                 {
-                    string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetName()}'";
+                    string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetLogin()}'";
 
-                    using (MySqlConnection con = MySqlConnector.GetDBConnection())
+                    try
                     {
-                        con.Open();
-                        new MySqlCommand(query, con).ExecuteNonQuery();
+                        using (MySqlConnection con = MySqlConnector.GetDBConnection())
+                        {
+                            con.Open();
+                            new MySqlCommand(query, con).ExecuteNonQuery();
+                        }
+
                     }
+                    catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }
                 });
             }
         }
@@ -160,5 +159,16 @@ namespace server_side.Data
 
         public void SetCustomize(object args) => player.SetData("PlayerCustomize", args);
         public object GetCustomize() => player.GetData("PlayerCustomize");
+
+        public void SetClothes(object args) => player.SetData("PlayerClothes", args);
+        public object GetClothes() => player.GetData("PlayerClothes");
+
+        public void SetName(string name) => player.SetData("PlayerName", name);
+        public string GetName()
+        {
+            if (!player.HasData("PlayerName"))
+                return "None";
+            return player.GetData("PlayerName");
+        }
     }
 }
