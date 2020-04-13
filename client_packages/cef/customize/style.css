@@ -886,17 +886,40 @@ input[type=range].little-rangeslider:focus::-webkit-slider-runnable-track {
     left: 50%;
     bottom: 0;
     margin-bottom: 2%;
-    margin-left: 30px;
+
+    margin-left: -109.15px;
 }
 
 #end_button
 {
-    border: 0;
-    outline: none;
-
     background-image: url("./img/white_version/right.png");
 }
 #end_button:active
+{
+    transition: 300ms;
+
+    background-color: #393f4a;
+
+    transform: scale(1);
+}
+
+#plus_zoom_button 
+{
+    background-image: url("./img/white_version/zoom_plus.png"); 
+}
+#minus_zoom_button 
+{ 
+    background-image: url("./img/white_version/zoom_minus.png"); 
+}
+
+.free-buttons
+{
+    border: 0;
+    outline: none;
+
+    margin-right: 10px;
+}
+.free-buttons:active
 {
     transition: 300ms;
 

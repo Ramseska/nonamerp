@@ -160,6 +160,9 @@ namespace server_side.Data
         public void SetCustomize(object args) => player.SetData("PlayerCustomize", args);
         public object GetCustomize() => player.GetData("PlayerCustomize");
 
+        public void SetClothes(object args) => player.SetData("PlayerClothes", args);
+        public object GetClothes() => player.GetData("PlayerClothes");
+
         public void SetName(string name) => player.SetData("PlayerName", name);
         public string GetName()
         {

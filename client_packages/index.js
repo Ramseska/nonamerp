@@ -1,7 +1,9 @@
 //mp.game.ui.displayRadar(false); // disable radar 
 var pukikaki = null;
 
-mp.events.add('unevhnd', (args) => { mp.events.callRemote('SetPlayerCustomize', args); });
+mp.events.add('setPlayerCustomize', (args) => { mp.events.callRemote('sSetPlayerCustomize', args); });
+mp.events.add('setPlayerClothes', (args) => { mp.events.callRemote('sSetPlayerClothes', args); });
+
 mp.events.add({
     'playerEnterVehicle': (vehicle, seat) => {
         if (mp.players.local.getSeatIsTryingToEnter() !== -1 || vehicle.getIsEngineRunning()) return;

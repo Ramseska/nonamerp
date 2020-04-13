@@ -55,47 +55,44 @@ const clothList =
     ]
 ]
 
-var localData = 
+var zoomButtonInterval = null;
+
+var baseData =
 {
-    base: 
-    {
-        name: undefined,
-        subname: undefined,
-        old: undefined,
-        sex: true
-    },
-    parents:
-    {
-        mother: 25,
-        father: 13,
-        motherSkin: 0,
-        fatherSkin: 0,
-        parentsMix: 0.0,
-        skinMix: 0.0
-    },
-    features:
-    {
-        noseWidth: 0.0,
-        noseHeigth: 0.0,
-        noseLength: 0.0,
-        noseBridge: 0.0,
-        noseTip: 0.0,
-        noseBridgeShift: 0.0,
-        browHeigth: 0.0,
-        browWidth: 0.0,
-        cheekboneHeigth: 0.0,
-        cheekboneWidth: 0.0,
-        cheekWidth: 0.0,
-        eyes: 0.0,
-        lips: 0.0,
-        jawWidth: 0.0,
-        jawHeigth: 0.0,
-        chinLength: 0.0,
-        chinPosition: 0.0,
-        chinWidth: 0.0,
-        chinShape: 0.0,
-        neckWidth: 0.0
-    },
+    name: undefined,
+    subname: undefined,
+    old: undefined,
+}
+
+var customizeData =
+{
+    mother: 25,
+    father: 13,
+    motherSkin: 0,
+    fatherSkin: 0,
+    parentsMix: 0.0,
+    skinMix: 0.0,
+    sex: true,
+    noseWidth: 0.0,
+    noseHeigth: 0.0,
+    noseLength: 0.0,
+    noseBridge: 0.0,
+    noseTip: 0.0,
+    noseBridgeShift: 0.0,
+    browHeigth: 0.0,
+    browWidth: 0.0,
+    cheekboneHeigth: 0.0,
+    cheekboneWidth: 0.0,
+    cheekWidth: 0.0,
+    eyes: 0.0,
+    lips: 0.0,
+    jawWidth: 0.0,
+    jawHeigth: 0.0,
+    chinLength: 0.0,
+    chinPosition: 0.0,
+    chinWidth: 0.0,
+    chinShape: 0.0,
+    neckWidth: 0.0,
     hair: [0, 0, 0],
     headOverlay:
     {
@@ -111,9 +108,78 @@ var localData =
         moles: [9, 255, 1.0],
         chestHair: [10, 255, 1.0],
         bodyBlemishes: [11, 255, 1.0],
-        addBodyBlemishes: 1
     }
-};
+}
+
+var clothes =
+{
+    1: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    2: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    3: 
+    {
+        drawable: 15,
+        texture: 0,
+        palette: 2
+    },
+    4: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    5: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    6: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    7: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    8: 
+    {
+        drawable: 15,
+        texture: 0,
+        palette: 2
+    },
+    9: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    10: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    },
+    11: 
+    {
+        drawable: 0,
+        texture: 0,
+        palette: 2
+    }
+}
 
 const hairColors =
 [
@@ -146,17 +212,23 @@ $(document).ready(() => {
             // right container 
             switch($(event.target).index())
             {
-                default: 
-                {
-                    if(hairActived) unloadHairList()
-                    break;
-                }
                 case 1: 
                 {
                     unloadParentsList()
                     $("#right_container").fadeIn(100);
                     $("#parents_container").fadeIn(100);
                     loadParentsList(parentSwitcher);
+                    break;
+                }
+                case 5:
+                {
+                    mp.trigger('customizeCameraDirOn', 1);   
+                    break;
+                }
+                default: 
+                {
+                    if(hairActived) unloadHairList();
+                    mp.trigger('customizeCameraDirOn', 0);
                     break;
                 }
             }
@@ -172,172 +244,187 @@ $(document).ready(() => {
         $(el.target.parentElement.lastElementChild).css('border', '1px solid #b0afb7').css('border-left', '0');
     });
     $("#input_sex").change(() => {
-        localData.base.sex = !$("#input_sex").prop('checked');
+        customizeData.sex = !$("#input_sex").prop('checked');
 
-        mp.trigger('customizeChangeSex', JSON.stringify(localData));
-        mp.trigger('customizeSetDefaultClothes', JSON.stringify(localData.base.sex));
+        mp.trigger('localCustomizeChangeSex', JSON.stringify(customizeData));
+        mp.trigger('localSetCustomize', JSON.stringify(customizeData));
+        mp.trigger('localCustomizeSetDefaultClothes', JSON.stringify(customizeData.sex));
     });
 
-    $('#end_button').click(() => { mp.trigger('customizeEnd', JSON.stringify(localData), isInputValid); });
+    $('#end_button').click(() => 
+    {
+        let inputsStatus = false;
+
+        for(let i = 0; i < isInputValid.length; i++)
+        {
+            if(isInputValid[i] == false)
+            {
+                inputsStatus = false;
+                break;
+            }
+            inputsStatus = true;
+        }
+        mp.trigger('localCustomizeEnd', JSON.stringify(baseData), JSON.stringify(customizeData), JSON.stringify(clothes), inputsStatus); 
+    });
     
     $(document).on('input change', '#parent_mix', function()  {
-        $('#output_parent_mix').html(localData.parents.parentsMix = $(this).val());
+        $('#output_parent_mix').html(customizeData.parentsMix = $(this).val());
     });
     $(document).on('input change', '#parent_skin', function()  {
-        $('#output_parent_skin').html(localData.parents.skinMix = $(this).val());
+        $('#output_parent_skin').html(customizeData.skinMix = $(this).val());
     });
 
     $(document).on('input change', '#features_nose_width', function()  {
-        $('#output_features_nose_width').html(localData.features.noseWidth = $(this).val());
+        $('#output_features_nose_width').html(customizeData.noseWidth = $(this).val());
     });
     $(document).on('input change', '#features_nose_heigth', function()  {
-        $('#output_features_nose_heigth').html(localData.features.noseHeigth = $(this).val());
+        $('#output_features_nose_heigth').html(customizeData.noseHeigth = $(this).val());
     });
     $(document).on('input change', '#features_nose_length', function()  {
-        $('#output_features_nose_length').html(localData.features.noseLength = $(this).val());
+        $('#output_features_nose_length').html(customizeData.noseLength = $(this).val());
     });
     $(document).on('input change', '#features_nose_bridge', function()  {
-        $('#output_features_nose_bridge').html(localData.features.noseBridge = $(this).val());
+        $('#output_features_nose_bridge').html(customizeData.noseBridge = $(this).val());
     });
     $(document).on('input change', '#features_nose_tip', function()  {
-        $('#output_features_nose_tip').html(localData.features.noseTip = $(this).val());
+        $('#output_features_nose_tip').html(customizeData.noseTip = $(this).val());
     });
     $(document).on('input change', '#features_nose_bridgeshift', function()  {
-        $('#output_features_nose_bridgeshift').html(localData.features.noseBridgeShift = $(this).val());
+        $('#output_features_nose_bridgeshift').html(customizeData.noseBridgeShift = $(this).val());
     });
     $(document).on('input change', '#features_brow_heigth', function()  {
-        $('#output_features_brow_heigth').html(localData.features.browHeigth = $(this).val());
+        $('#output_features_brow_heigth').html(customizeData.browHeigth = $(this).val());
     });
     $(document).on('input change', '#features_brow_width', function()  {
-        $('#output_features_brow_width').html(localData.features.browWidth = $(this).val());
+        $('#output_features_brow_width').html(customizeData.browWidth = $(this).val());
     });
     $(document).on('input change', '#features_cheekbone_heigth', function()  {
-        $('#output_features_cheekbone_heigth').html(localData.features.cheekboneHeigth = $(this).val());
+        $('#output_features_cheekbone_heigth').html(customizeData.cheekboneHeigth = $(this).val());
     });
     $(document).on('input change', '#features_cheekbone_width', function()  {
-        $('#output_features_cheekbone_width').html(localData.features.cheekboneWidth = $(this).val());
+        $('#output_features_cheekbone_width').html(customizeData.cheekboneWidth = $(this).val());
     });
     $(document).on('input change', '#features_cheek_width', function()  {
-        $('#output_features_cheek_width').html(localData.features.cheekWidth = $(this).val());
+        $('#output_features_cheek_width').html(customizeData.cheekWidth = $(this).val());
     });
     $(document).on('input change', '#features_eyes', function()  {
-        $('#output_features_eyes').html(localData.features.eyes = $(this).val());
+        $('#output_features_eyes').html(customizeData.eyes = $(this).val());
     });
     $(document).on('input change', '#features_lips', function()  {
-        $('#output_features_lips').html(localData.features.lips = $(this).val());
+        $('#output_features_lips').html(customizeData.lips = $(this).val());
     });
     $(document).on('input change', '#features_jaw_width', function()  {
-        $('#output_features_jaw_width').html(localData.features.jawWidth = $(this).val());
+        $('#output_features_jaw_width').html(customizeData.jawWidth = $(this).val());
     });
     $(document).on('input change', '#features_jaw_heigth', function()  {
-        $('#output_features_jaw_heigth').html(localData.features.jawHeigth = $(this).val());
+        $('#output_features_jaw_heigth').html(customizeData.jawHeigth = $(this).val());
     });
     $(document).on('input change', '#features_chin_length', function()  {
-        $('#output_features_chin_length').html(localData.features.chinLength = $(this).val());
+        $('#output_features_chin_length').html(customizeData.chinLength = $(this).val());
     });
     $(document).on('input change', '#features_chin_position', function()  {
-        $('#output_features_chin_position').html(localData.features.chinPosition = $(this).val());
+        $('#output_features_chin_position').html(customizeData.chinPosition = $(this).val());
     });
     $(document).on('input change', '#features_chin_width', function()  {
-        $('#output_features_chin_width').html(localData.features.chinWidth = $(this).val());
+        $('#output_features_chin_width').html(customizeData.chinWidth = $(this).val());
     });
     $(document).on('input change', '#features_chin_shape', function()  {
-        $('#output_features_chin_shape').html(localData.features.chinShape = $(this).val());
+        $('#output_features_chin_shape').html(customizeData.chinShape = $(this).val());
     });
     $(document).on('input change', '#features_neck_width', function()  {
-        $('#output_features_neck_width').html(localData.features.neckWidth = $(this).val());
+        $('#output_features_neck_width').html(customizeData.neckWidth = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_blemishes', function()  {
-        $('#output_headoverlay_blemishes').html((localData.headOverlay.blemishes[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.blemishes[1])
+        $('#output_headoverlay_blemishes').html((customizeData.headOverlay.blemishes[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.blemishes[1])
     });
     $(document).on('input change', '#headoverlay_blemishes_opacity', function()  {
-        $('#output_headoverlay_blemishes_opacity').html(localData.headOverlay.blemishes[2] = $(this).val());
+        $('#output_headoverlay_blemishes_opacity').html(customizeData.headOverlay.blemishes[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_facialhair', function()  {
-        $('#output_headoverlay_facialhair').html((localData.headOverlay.facialHair[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.facialHair[1])
+        $('#output_headoverlay_facialhair').html((customizeData.headOverlay.facialHair[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.facialHair[1])
     });
     $(document).on('input change', '#headoverlay_facialhair_opacity', function()  {
-        $('#output_headoverlay_facialhair_opacity').html(localData.headOverlay.facialHair[2] = $(this).val());
+        $('#output_headoverlay_facialhair_opacity').html(customizeData.headOverlay.facialHair[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_eyebrows', function()  {
-        $('#output_headoverlay_eyebrows').html((localData.headOverlay.eyebrows[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.eyebrows[1])
+        $('#output_headoverlay_eyebrows').html((customizeData.headOverlay.eyebrows[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.eyebrows[1])
     });
     $(document).on('input change', '#headoverlay_eyebrows_opacity', function()  {
-        $('#output_headoverlay_eyebrows_opacity').html(localData.headOverlay.eyebrows[2] = $(this).val());
+        $('#output_headoverlay_eyebrows_opacity').html(customizeData.headOverlay.eyebrows[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_ageing', function()  {
-        $('#output_headoverlay_ageing').html((localData.headOverlay.ageing[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.ageing[1])
+        $('#output_headoverlay_ageing').html((customizeData.headOverlay.ageing[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.ageing[1])
     });
     $(document).on('input change', '#headoverlay_ageing_opacity', function()  {
-        $('#output_headoverlay_ageing_opacity').html(localData.headOverlay.ageing[2] = $(this).val());
+        $('#output_headoverlay_ageing_opacity').html(customizeData.headOverlay.ageing[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_complexion', function()  {
-        $('#output_headoverlay_complexion').html((localData.headOverlay.complexion[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.complexion[1])
+        $('#output_headoverlay_complexion').html((customizeData.headOverlay.complexion[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.complexion[1])
     });
     $(document).on('input change', '#headoverlay_complexion_opacity', function()  {
-        $('#output_headoverlay_complexion_opacity').html(localData.headOverlay.complexion[2] = $(this).val());
+        $('#output_headoverlay_complexion_opacity').html(customizeData.headOverlay.complexion[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_sundamage', function()  {
-        $('#output_headoverlay_sundamage').html((localData.headOverlay.sunDamage[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.sunDamage[1])
+        $('#output_headoverlay_sundamage').html((customizeData.headOverlay.sunDamage[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.sunDamage[1])
     });
     $(document).on('input change', '#headoverlay_sundamage_opacity', function()  {
-        $('#output_headoverlay_sundamage_opacity').html(localData.headOverlay.sunDamage[2] = $(this).val());
+        $('#output_headoverlay_sundamage_opacity').html(customizeData.headOverlay.sunDamage[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_moles', function()  {
-        $('#output_headoverlay_moles').html((localData.headOverlay.moles[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.moles[1])
+        $('#output_headoverlay_moles').html((customizeData.headOverlay.moles[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.moles[1])
     });
     $(document).on('input change', '#headoverlay_moles_opacity', function()  {
-        $('#output_headoverlay_moles_opacity').html(localData.headOverlay.moles[2] = $(this).val());
+        $('#output_headoverlay_moles_opacity').html(customizeData.headOverlay.moles[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_chesthair', function()  {
-        $('#output_headoverlay_chesthair').html((localData.headOverlay.chestHair[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.chestHair[1])
+        $('#output_headoverlay_chesthair').html((customizeData.headOverlay.chestHair[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.chestHair[1])
     });
     $(document).on('input change', '#headoverlay_chesthair_opacity', function()  {
-        $('#output_headoverlay_chesthair_opacity').html(localData.headOverlay.chestHair[2] = $(this).val());
+        $('#output_headoverlay_chesthair_opacity').html(locacustomizeDatal.headOverlay.chestHair[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_bodybelmishes', function()  {
-        $('#output_headoverlay_bodybelmishes').html((localData.headOverlay.bodyBlemishes[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.bodyBlemishes[1])
+        $('#output_headoverlay_bodybelmishes').html((customizeData.headOverlay.bodyBlemishes[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.bodyBlemishes[1])
     });
     $(document).on('input change', '#headoverlay_bodybelmishes_opacity', function()  {
-        $('#output_headoverlay_bodybelmishes_opacity').html(localData.headOverlay.bodyBlemishes[2] = $(this).val());
+        $('#output_headoverlay_bodybelmishes_opacity').html(customizeData.headOverlay.bodyBlemishes[2] = $(this).val());
     });
 
 
     $(document).on('input change', '#headoverlay_blush', function()  {
-        $('#output_headoverlay_blush').html((localData.headOverlay.blush[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.blush[1])
+        $('#output_headoverlay_blush').html((customizeData.headOverlay.blush[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.blush[1])
     });
     $(document).on('input change', '#headoverlay_blush_opacity', function()  {
-        $('#output_headoverlay_blush_opacity').html(localData.headOverlay.blush[2] = $(this).val());
+        $('#output_headoverlay_blush_opacity').html(customizeData.headOverlay.blush[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_lipstick', function()  {
-        $('#output_headoverlay_lipstick').html((localData.headOverlay.lipStick[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.lipStick[1])
+        $('#output_headoverlay_lipstick').html((customizeData.headOverlay.lipStick[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.lipStick[1])
     });
     $(document).on('input change', '#headoverlay_lipstick_opacity', function()  {
-        $('#output_headoverlay_lipstick_opacity').html(localData.headOverlay.lipStick[2] = $(this).val());
+        $('#output_headoverlay_lipstick_opacity').html(customizeData.headOverlay.lipStick[2] = $(this).val());
     });
 
     $(document).on('input change', '#headoverlay_makeup', function()  {
-        $('#output_headoverlay_makeup').html((localData.headOverlay.makeup[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : localData.headOverlay.makeup[1])
+        $('#output_headoverlay_makeup').html((customizeData.headOverlay.makeup[1] = $(this).val() == -1 ? 255 : $(this).val()) == 255 ? "No" : customizeData.headOverlay.makeup[1])
     });
     $(document).on('input change', '#headoverlay_makeup_opacity', function()  {
-        $('#output_headoverlay_makeup_opacity').html(localData.headOverlay.makeup[2] = $(this).val());
+        $('#output_headoverlay_makeup_opacity').html(customizeData.headOverlay.makeup[2] = $(this).val());
     });
     
     $(document).on('input change', '#input_name', function()  {
         if(checkNameOnValid($(this).val()) != null)
         {
             $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nИмя может содержать только латинские символы!');
-            localData.base.name = "";
+            baseData.name = "";
             isInputValid[0] = false;
         }
         else if(checkNameOnValid($(this).val()) == null)
@@ -345,12 +432,12 @@ $(document).ready(() => {
             if($(this).val().length < 2)
             {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Имя не может содержать менее 2-х символов!');
-                localData.base.name = "";
+                baseData.name = "";
                 isInputValid[0] = false;
             }
             else {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).attr('title', '');
-                localData.base.name = $(this).val();
+                baseData.name = $(this).val();
                 isInputValid[0] = true;
             }   
         }
@@ -359,7 +446,7 @@ $(document).ready(() => {
         if(checkNameOnValid($(this).val()) != null)
         {
             $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nИмя может содержать только латинские символы!');
-            localData.base.subname = "";
+            baseData.subname = "";
             isInputValid[1] = false;
         }
         else if(checkNameOnValid($(this).val()) == null)
@@ -367,12 +454,12 @@ $(document).ready(() => {
             if($(this).val().length < 2)
             {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Фамилия не может содержать менее 2-х символов!');
-                localData.base.subname = "";
+                baseData.subname = "";
                 isInputValid[1] = false;
             }
             else {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).attr('title', '');
-                localData.base.subname = $(this).val();
+                baseData.subname = $(this).val();
                 isInputValid[1] = true;
             }   
         }
@@ -381,7 +468,7 @@ $(document).ready(() => {
         if(checkOldOnValid($(this).val()) != null)
         {
             $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nВозраст может содержать только цифры!');
-            localData.base.old = 0;
+            baseData.old = 0;
             isInputValid[2] = false;
         }
         else if(checkOldOnValid($(this).val()) == null)
@@ -389,19 +476,19 @@ $(document).ready(() => {
             if($(this).val().length == 0)
             {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nПоле не может быть пустым!');
-                localData.base.old = 0;
+                baseData.old = 0;
                 isInputValid[2] = false;
             }
             else if($(this).val() < 16 || $(this).val() > 80)
             {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nВозраст персонажа не должен быть меньше 16 или более 80 лет!');
-                localData.base.old = 0;
+                baseData.old = 0;
                 isInputValid[2] = false;
             }
             else 
             {
                 $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).attr('title', '');
-                localData.base.old = $(this).val();
+                baseData.old = $(this).val();
                 isInputValid[2] = true;
             }
         }
@@ -417,17 +504,17 @@ $(document).ready(() => {
         {
             case "color_hair_1":
             {
-                localData.hair[1]= $(e.target).index();
+                customizeData.hair[1]= $(e.target).index();
                 break;
             }
             case "color_hair_2":
             {
-                localData.hair[2] = $(e.target).index();
+                customizeData.hair[2] = $(e.target).index();
                 break;
             }
         }
 
-        mp.trigger('customizeChangeHairColor', localData.hair[1], localData.hair[2]);
+        mp.trigger('localSetCustomize', JSON.stringify(customizeData));
     });
 
     $(".parents_switch_button").click(() => switchParentsList())
@@ -457,18 +544,54 @@ $(document).ready(() => {
         $(e.target.parentElement).children('.cloth_output').html($(e.target.parentElement).children('.cloth_output').data('sld')+1)
 
         setCloth(
-            clothList[Number(localData.base.sex)][$(e.target.parentElement).children('.cloth_output').data('kid')][$(e.target.parentElement).children('.cloth_output').data('sld')][0], 
-            clothList[Number(localData.base.sex)][$(e.target.parentElement).children('.cloth_output').data('kid')][$(e.target.parentElement).children('.cloth_output').data('sld')][1]
+            clothList[Number(customizeData.sex)][$(e.target.parentElement).children('.cloth_output').data('kid')][$(e.target.parentElement).children('.cloth_output').data('sld')][0], 
+            clothList[Number(customizeData.sex)][$(e.target.parentElement).children('.cloth_output').data('kid')][$(e.target.parentElement).children('.cloth_output').data('sld')][1]
         );
     });
 
-    $(document).on('input change', function() {
-        mp.trigger('customizeChangeBlendData', localData.parents.mother, localData.parents.father, 0, localData.parents.mother, localData.parents.father, 0, localData.parents.parentsMix, localData.parents.skinMix, 0)
-        mp.trigger('customizeSetFeatures', JSON.stringify(localData.features));
-        mp.trigger('customizeSetHeadOverlay', JSON.stringify(localData.headOverlay));
+    $('#plus_zoom_button').mousedown(function() {
+        zoomButtonInterval = setInterval(() => {
+            mp.trigger('customizeCameraZoom', 1)
+        }, 1);
     });
 
-    mp.trigger('customizeSetDefaultClothes', JSON.stringify(localData.base.sex));
+    $('#plus_zoom_button').mouseup(function() {
+        clearInterval(zoomButtonInterval);
+    })
+
+    $('#minus_zoom_button').mousedown(function() {
+        zoomButtonInterval = setInterval(() => {
+            mp.trigger('customizeCameraZoom', 0)
+        }, 1);
+    });
+
+    $('#minus_zoom_button').mouseup(function() {
+        clearInterval(zoomButtonInterval);
+    })
+
+    /*
+    $('#zoom_plus_button').click(function() {
+        mp.trigger('customizeCameraZoom', 0)
+    });
+
+    $('#zoom_minus_button').click(function() {
+        mp.trigger('customizeCameraZoom', 1)
+    });
+
+    $(document).on('input change', function() {
+        mp.trigger('localSetCustomize', JSON.stringify(customizeData))
+    });
+    */
+
+    $(document).on('input change', function() {
+        mp.trigger('localSetCustomize', JSON.stringify(customizeData))
+    });
+
+
+    mp.trigger('localCustomizeChangeSex', JSON.stringify(customizeData));
+    mp.trigger('localCustomizeSetDefaultClothes', JSON.stringify(customizeData.sex));
+    mp.trigger('localSetCustomize', JSON.stringify(customizeData));
+    mp.trigger('customizeSetDefaultClothes', customizeData.sex);
 });
 
 function setCloth(type, cloth)
@@ -476,7 +599,10 @@ function setCloth(type, cloth)
     let toros = -1;
     type == 11 ? cloth == 9 ? toros = 0 : cloth == 16 ? toros = 0 : cloth == 38 ? toros = 8 : cloth == 3 ? toros = 3 : cloth == 14 ? toros = 14 : cloth == 27 ? toros = 0 : toros = 0 : toros = -1;
 
-    mp.trigger('customizeSetCloth', type, cloth, toros);
+    clothes[type].drawable = cloth;
+    clothes[3].drawable = toros;
+
+    mp.trigger('localCustomizeSetCloth', type, cloth, toros);
 }
 
 function loadHairList()
@@ -489,15 +615,17 @@ function loadHairList()
 
     for(let i = 0; i < hairList.length; i++)
     {
-        if(hairList[i][0] === +localData.base.sex)
+        if(hairList[i][0] === +customizeData.sex)
         {
-            let img = `url(img/hairs/hair_`+ +localData.base.sex + `_${hairList[i][1]}.png)`;
+            let img = `url(img/hairs/hair_`+ +customizeData.sex + `_${hairList[i][1]}.png)`;
             
-            $("#hair_list").append($('<div class="hair_item_container"></div>').data("hairID", hairList[i][1]).css('background-color', localData.hair[0] === hairList[i][1] ? `#4c3232` : '#393f4a').click(function() {
+            $("#hair_list").append($('<div class="hair_item_container"></div>').data("hairID", hairList[i][1]).css('background-color', customizeData.hair[0] === hairList[i][1] ? `#4c3232` : '#393f4a').click(function() {
                 $("#hair_list").children(this).css('background-color', '#393f4a');
                 $(this).css('background-color', '#4c3232');
 
-                mp.trigger('customizeSetHair', $(this).data("hairID"));
+                customizeData.hair[0] = $(this).data("hairID");
+
+                mp.trigger('localSetCustomize', JSON.stringify(customizeData));
             }).append('<div class="hair_item"></div>').css('background-image', img));
         }
     }
@@ -522,12 +650,13 @@ function loadParentsList(parentStatus)
         {
             let image = "url(img/parents/p_icon_"+parentsList[i][0].toLowerCase()+".png)";
 
-            $("#parents_list").append($('<div class="parent_item_container"></div>').data("itemID", parentsList[i][2]).data("sex", parentsList[i][1]).css('background-color', parentStatus === 0 ? (localData.parents.mother === parentsList[i][2] ? `#4c3232` : '#393f4a') : (localData.parents.father === parentsList[i][2] ? `#4c3232` : '#393f4a')).click(function () {
-                $(this).data("sex") === 0 ? localData.parents.mother = localData.parents.motherSkin = $(this).data("itemID") : localData.parents.father = localData.parents.fatherSkin = $(this).data("itemID");
+            $("#parents_list").append($('<div class="parent_item_container"></div>').data("itemID", parentsList[i][2]).data("sex", parentsList[i][1]).css('background-color', parentStatus === 0 ? (customizeData.mother === parentsList[i][2] ? `#4c3232` : '#393f4a') : (customizeData.father === parentsList[i][2] ? `#4c3232` : '#393f4a')).click(function () {
+
+                $(this).data("sex") === 0 ? customizeData.mother = customizeData.motherSkin = $(this).data("itemID") : customizeData.father = customizeData.fatherSkin = $(this).data("itemID");
                 $("#parents_list").children(this).css('background-color', '#393f4a');
                 $(this).css('background-color', '#4c3232');
 
-                mp.trigger('customizeChangeBlendData', localData.parents.mother, localData.parents.father, 0, localData.parents.mother, localData.parents.father, 0, localData.parents.parentsMix, localData.parents.skinMix, 0)
+                mp.trigger('localSetCustomize', JSON.stringify(customizeData))
                     
             }).append($('<div class="parent_item_img"></div>').css('background-image', image)).append($(`<div class='parent_item_name'>${parentsList[i][0]}</div>`)))
          }

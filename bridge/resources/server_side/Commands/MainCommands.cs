@@ -84,7 +84,7 @@ namespace server_side.Commands
             client.Position = UtilityFuncs.GetPosFrontOfPlayer(player, 1.0);
             client.Dimension = player.Dimension;
 
-            client.SendChatMessage($"Вы успешно телепортировались к игроку {new Data.PlayerInfo(player).GetLogin()}[{playerid}]");
+            client.SendChatMessage($"Вы успешно телепортировались к игроку {new Data.PlayerInfo(player).GetName()}[{playerid}]");
         }
         [Command("gethere")]
         void CMD_gethere(Client client, int playerid)
@@ -109,7 +109,7 @@ namespace server_side.Commands
             player.Position = UtilityFuncs.GetPosFrontOfPlayer(client, 1.0);
             player.Dimension = client.Dimension;
 
-            client.SendChatMessage($"Вы успешно телепортировались к себе игрока {new Data.PlayerInfo(player).GetLogin()}[{playerid}]");
+            client.SendChatMessage($"Вы успешно телепортировались к себе игрока {new Data.PlayerInfo(player).GetName()}[{playerid}]");
         }
         [Command("settime")]
         public void CMD_settime(Client client, int hour)
@@ -140,12 +140,12 @@ namespace server_side.Commands
             if (client.Vehicle == null)
             {
                 client.SendChatMessage($"On foot::\tX: {client.Position.X} | Y: {client.Position.Y} | Z: {client.Position.Z} | R: {client.Rotation.Z}");
-                Console.WriteLine($"On foot::{client.Position.X}, {client.Position.Y}, {client.Position.Z}, {client.Rotation.Z}");
+                NAPI.Util.ConsoleOutput($"On foot::{client.Position.X}, {client.Position.Y}, {client.Position.Z}, {client.Rotation.Z}");
             }
             else
             {
                 client.SendChatMessage($"In Vehicle::\tX: {client.Vehicle.Position.X} | Y: {client.Vehicle.Position.Y} | Z: {client.Vehicle.Position.Z} | R: {client.Vehicle.Rotation.Z}");
-                Console.WriteLine($"In Vehicle::{client.Vehicle.Position.X}, {client.Vehicle.Position.Y}, {client.Vehicle.Position.Z}, {client.Vehicle.Rotation.Z}");
+                NAPI.Util.ConsoleOutput($"In Vehicle::{client.Vehicle.Position.X}, {client.Vehicle.Position.Y}, {client.Vehicle.Position.Z}, {client.Vehicle.Rotation.Z}");
             }
         }
         [Command("tpc")]
