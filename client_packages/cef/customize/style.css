@@ -58,12 +58,12 @@ body, html
     /* box-shadow: 0px 0px 8px 1px rgba(187,191,202,1); */
 }
 
-#t_1 { background-image: url("./img/white_version/icon_description.png"); }
-#t_2 { background-image: url("./img/white_version/icon_genes.png"); }
-#t_3 { background-image: url("./img/white_version/icon_face.png"); }
-#t_4 { background-image: url("./img/white_version/icon_hair.png"); }
-#t_5 { background-image: url("./img/white_version/icon_cosmetic.png"); }
-#t_6 { background-image: url("./img/white_version/icon_clothes.png"); }
+#t_1 { background-image: url("./img/icon_description.png"); }
+#t_2 { background-image: url("./img/icon_genes.png"); }
+#t_3 { background-image: url("./img/icon_face.png"); }
+#t_4 { background-image: url("./img/icon_hair.png"); }
+#t_5 { background-image: url("./img/icon_cosmetic.png"); }
+#t_6 { background-image: url("./img/icon_clothes.png"); }
 
 .bar_circle
 {
@@ -892,7 +892,7 @@ input[type=range].little-rangeslider:focus::-webkit-slider-runnable-track {
 
 #end_button
 {
-    background-image: url("./img/white_version/right.png");
+    background-image: url("./img/right.png");
 }
 #end_button:active
 {
@@ -905,11 +905,11 @@ input[type=range].little-rangeslider:focus::-webkit-slider-runnable-track {
 
 #plus_zoom_button 
 {
-    background-image: url("./img/white_version/zoom_plus.png"); 
+    background-image: url("./img/zoom_plus.png"); 
 }
 #minus_zoom_button 
 { 
-    background-image: url("./img/white_version/zoom_minus.png"); 
+    background-image: url("./img/zoom_minus.png"); 
 }
 
 .free-buttons
@@ -926,4 +926,18 @@ input[type=range].little-rangeslider:focus::-webkit-slider-runnable-track {
     background-color: #393f4a;
 
     transform: scale(1);
+}
+
+#modal_title
+{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    color: black;
+    font-size: 12;
+    padding: 3 7 7 7;
+    font-weight: 500;
+    border-bottom: 2px #ffc6c6 solid;
 }

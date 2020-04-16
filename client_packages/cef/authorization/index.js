@@ -65,7 +65,7 @@ function CheckNickNameOnValid(name) {
     if (name.length < 3 || name.length > 24) 
         return "[Ошибка]: Никнейм не может содержать меньше 3 и более 24 символов!";
 
-    else if (name.match(/[^A-Za-z_]/gi)) 
+    else if (name.match(/[^A-Za-z0-9_]/gi)) 
         return "[Ошибка]: Никнейм содержит запрещенные символы!";
 
     else return "";

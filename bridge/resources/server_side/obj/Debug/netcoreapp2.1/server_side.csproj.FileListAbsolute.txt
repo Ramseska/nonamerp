@@ -52,3 +52,4 @@ D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\Ben.Demy
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\NeoSmart.Hashing.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\compiled\netcoreapp2.1\xxHash.dll
 D:\Desktop\nonamerp\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.csproj.CopyComplete
+D:\Desktop\nonamerp\bridge\resources\server_side\obj\Debug\netcoreapp2.1\server_side.csproj.CoreCompileInputs.cache

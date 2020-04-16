@@ -22,6 +22,7 @@ namespace server_side.Events
         public double BankMoney;
         public int Age;
         public string Name;
+        public string SocialName;
 
         public AuthData(Client player)
         {
@@ -78,6 +79,7 @@ namespace server_side.Events
                                     auth.BankMoney = (double)read["p_bank"];
                                     auth.Age = (int)read["p_age"];
                                     auth.Name = (string)read["p_name"];
+                                    auth.SocialName = (string)read["p_socialclub"];
 
                                     client.SetData("pCustomize", read["p_customize"]);
                                     client.SetData("pClothes", read["p_clothes"]);
@@ -154,8 +156,6 @@ namespace server_side.Events
             {
                 try
                 {
-                    NAPI.Util.ConsoleOutput($"EndPlayerCustomize: start");
-
                     MySqlConnection con = MySqlConnector.GetDBConnection();
 
                     con.Open();
@@ -164,8 +164,12 @@ namespace server_side.Events
                     dynamic cust = NAPI.Util.FromJson(customize);
 
                     string name = $"{based["name"]} {based["subname"]}";
+                    string sc = client.SocialClubName;
 
-                    string query = "INSERT INTO `accounts` (`p_login`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`) VALUES ('" + client.GetData("R_TempLogin") + "', '" + client.GetData("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "')";
+                    if (sc == null)
+                        sc = "-";
+
+                    string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`) VALUES ('" + client.GetData("R_TempLogin") + "', '" + sc + "', '" + client.GetData("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "')";
                     MySqlCommand cmd = new MySqlCommand(query, con);
 
                     cmd.ExecuteNonQuery();
@@ -173,8 +177,6 @@ namespace server_side.Events
                     CreatePlayerAccount(client, client.GetData("R_TempLogin"));
 
                     con.Close();
-
-                    NAPI.Util.ConsoleOutput($"EndPlayerCustomize: end");
                 }
                 catch (Exception e) { NAPI.Util.ConsoleOutput($"{e}"); }
             });
@@ -188,8 +190,6 @@ namespace server_side.Events
             {
                 try
                 {
-                    NAPI.Util.ConsoleOutput($"CreatePlayerAccount: start");
-
                     MySqlConnection con = MySqlConnector.GetDBConnection();
 
                     con.Open();
@@ -211,6 +211,8 @@ namespace server_side.Events
                         auth.BankMoney = (double)read["p_bank"];
                         auth.Age = (int)read["p_age"];
                         auth.Name = (string)read["p_name"];
+                        auth.SocialName = (string)read["p_socialclub"];
+
                         client.SetData("pCustomize", read["p_customize"]);
                         client.SetData("pClothes", read["p_clothes"]);
                     }
@@ -221,8 +223,6 @@ namespace server_side.Events
 
                     con.Close();
                     read.Close();
-
-                    NAPI.Util.ConsoleOutput($"CreatePlayerAccount: end");
                 }
                 catch (Exception e)
                 {
@@ -249,6 +249,7 @@ namespace server_side.Events
             player.GiveMoney(data.Cash, updateindb: false);
             player.GiveBankMoney(data.BankMoney, updateindb: false);
             player.SetAge(data.Age);
+            player.SetSocialClub(data.SocialName);
 
             client.ResetData("pCustomize");
             client.ResetData("pClothes");

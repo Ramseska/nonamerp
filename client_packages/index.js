@@ -39,7 +39,7 @@ require("./keybinds.js");
 require("./sound/sound.js");
 //require("./debugUI");
 require("./cef/other/house");
-require("./cef/reg_customizer");
+//require("./cef/reg_customizer");
 require("./camfly.js");
 require("./cef/notify/notify.js");
 require("./ints.js")

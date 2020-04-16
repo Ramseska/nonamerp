@@ -34,6 +34,15 @@ namespace server_side.Data
             player.SetData("PlayerBankMoney", 0.00); // банковский счет
             player.SetData("PlayerAge", 0); // возраст
             player.SetData("PlayerClothes", null); // одежда
+            player.SetData("PlayerSocialClub", null); // social club name
+        }
+
+        public void SetSocialClub(string clubName) => player.SetData("PlayerSocialClub", clubName);
+        public string GetSocialClub()
+        {
+            if (player.GetData("PlayerSocialClub") == null)
+                return "Undefined";
+            return player.GetData("PlayerSocialClub");
         }
 
         public void SetAuthorized(bool status) => player.SetData("PlayerAuthorized", status);

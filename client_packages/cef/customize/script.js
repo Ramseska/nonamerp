@@ -133,7 +133,7 @@ var clothes =
     },
     4: 
     {
-        drawable: 0,
+        drawable: 21,
         texture: 0,
         palette: 2
     },
@@ -145,7 +145,7 @@ var clothes =
     },
     6: 
     {
-        drawable: 0,
+        drawable: 5,
         texture: 0,
         palette: 2
     },
@@ -175,7 +175,7 @@ var clothes =
     },
     11: 
     {
-        drawable: 0,
+        drawable: 15,
         texture: 0,
         palette: 2
     }
@@ -190,6 +190,8 @@ const hairColors =
     "#5ba41d", "#f1cb5d", "#f9ce06", "#f6a206", "#fa880b", "#f67c20", "#fe7c13", "#f75a1f", "#f5350a", "#d10406", "#9b0306", 
     "#25140e", "#3b1e16", "#582e1b", "#603727", "#492416", "#301c12", "#020205", "#a9865c", "#c2935d"
 ];
+
+var mousePos = [0, 0];
 
 $(document).ready(() => {
     for(let q = 0; q < 64; q++)
@@ -249,6 +251,10 @@ $(document).ready(() => {
         mp.trigger('localCustomizeChangeSex', JSON.stringify(customizeData));
         mp.trigger('localSetCustomize', JSON.stringify(customizeData));
         mp.trigger('localCustomizeSetDefaultClothes', JSON.stringify(customizeData.sex));
+
+        if(customizeData.sex)
+            clothes[4].drawable = 21;
+        clothes[4].drawable = 15;
     });
 
     $('#end_button').click(() => 
@@ -419,24 +425,37 @@ $(document).ready(() => {
     $(document).on('input change', '#headoverlay_makeup_opacity', function()  {
         $('#output_headoverlay_makeup_opacity').html(customizeData.headOverlay.makeup[2] = $(this).val());
     });
+
+    $('.span-lable-error').hover(function() {
+        let pos = [$(this).offset().top, $(this).offset().left];
+        $('#modal_title').html($(this).data('error')).offset({top: pos[0]-10, left: pos[1]+35}).fadeIn(100);
+    }, function() {
+        $('#modal_title').offset({top: 0, left: 0}).hide();
+    });
     
     $(document).on('input change', '#input_name', function()  {
         if(checkNameOnValid($(this).val()) != null)
         {
-            $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nИмя может содержать только латинские символы!');
+            $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Имя может содержать только латинские символы!');
             baseData.name = "";
             isInputValid[0] = false;
         }
         else if(checkNameOnValid($(this).val()) == null)
         {
-            if($(this).val().length < 2)
+            if($(this).val().length == 0)
             {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Имя не может содержать менее 2-х символов!');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Поле не может быть пустым!');
+                baseData.name = "";
+                isInputValid[0] = false;
+            }
+            else if($(this).val().length < 2 || $(this).val().length > 24)
+            {
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Имя не может содержать менее 2-х и более 24-х символов!');
                 baseData.name = "";
                 isInputValid[0] = false;
             }
             else {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).attr('title', '');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).data('error', '');
                 baseData.name = $(this).val();
                 isInputValid[0] = true;
             }   
@@ -445,20 +464,26 @@ $(document).ready(() => {
     $(document).on('input change', '#input_subname', function() {
         if(checkNameOnValid($(this).val()) != null)
         {
-            $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nИмя может содержать только латинские символы!');
+            $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Имя может содержать только латинские символы!');
             baseData.subname = "";
             isInputValid[1] = false;
         }
         else if(checkNameOnValid($(this).val()) == null)
         {
-            if($(this).val().length < 2)
+            if($(this).val().length == 0)
             {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Фамилия не может содержать менее 2-х символов!');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Поле не может быть пустым!');
+                baseData.subname = "";
+                isInputValid[1] = false;
+            }
+            else if($(this).val().length < 2 || $(this).val().length > 24)
+            {
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Фамилия не может содержать менее 2-х и более 24-х символов!');
                 baseData.subname = "";
                 isInputValid[1] = false;
             }
             else {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).attr('title', '');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).data('error', '');
                 baseData.subname = $(this).val();
                 isInputValid[1] = true;
             }   
@@ -467,7 +492,7 @@ $(document).ready(() => {
     $(document).on('input change', '#input_old', function() {
         if(checkOldOnValid($(this).val()) != null)
         {
-            $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nВозраст может содержать только цифры!');
+            $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Возраст может содержать только цифры!');
             baseData.old = 0;
             isInputValid[2] = false;
         }
@@ -475,19 +500,19 @@ $(document).ready(() => {
         {
             if($(this).val().length == 0)
             {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nПоле не может быть пустым!');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Поле не может быть пустым!');
                 baseData.old = 0;
                 isInputValid[2] = false;
             }
             else if($(this).val() < 16 || $(this).val() > 80)
             {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).attr('title', 'Ошибка!\nВозраст персонажа не должен быть меньше 16 или более 80 лет!');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeIn(100).data('error', 'Возраст персонажа не должен быть меньше 16 или более 80 лет!');
                 baseData.old = 0;
                 isInputValid[2] = false;
             }
             else 
             {
-                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).attr('title', '');
+                $(this.parentElement).children('.input-error').children('.span-lable-error').fadeOut(100).data('error', '');
                 baseData.old = $(this).val();
                 isInputValid[2] = true;
             }
@@ -567,26 +592,11 @@ $(document).ready(() => {
 
     $('#minus_zoom_button').mouseup(function() {
         clearInterval(zoomButtonInterval);
-    })
-
-    /*
-    $('#zoom_plus_button').click(function() {
-        mp.trigger('customizeCameraZoom', 0)
-    });
-
-    $('#zoom_minus_button').click(function() {
-        mp.trigger('customizeCameraZoom', 1)
     });
 
     $(document).on('input change', function() {
         mp.trigger('localSetCustomize', JSON.stringify(customizeData))
     });
-    */
-
-    $(document).on('input change', function() {
-        mp.trigger('localSetCustomize', JSON.stringify(customizeData))
-    });
-
 
     mp.trigger('localCustomizeChangeSex', JSON.stringify(customizeData));
     mp.trigger('localCustomizeSetDefaultClothes', JSON.stringify(customizeData.sex));

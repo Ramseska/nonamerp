@@ -44,46 +44,53 @@ namespace server_side.Data
 
                 int cc = 0;
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM house", con);
-                using (MySqlDataReader read = cmd.ExecuteReader())
+                try
                 {
-                    if (!read.HasRows)
-                        NAPI.Util.ConsoleOutput("[MySQL]: Дома не найдены.");
-                    else
+                    using (MySqlDataReader read = cmd.ExecuteReader())
                     {
-                        while (read.Read())
+                        if (!read.HasRows)
+                            NAPI.Util.ConsoleOutput("[MySQL]: Дома не найдены.");
+                        else
                         {
-                            cc++;
-
-                            House hd = new House();
-
-                            for (int i = 0; i < read.FieldCount; i++)
+                            while (read.Read())
                             {
-                                hd.HouseID = (int)read["h_id"];
-                                hd.HouseClass = (int)read["h_class"];
-                                hd.HousePrice = (int)read["h_price"];
-                                hd.HouseRent = (int)read["h_price"] * (1 / 100);
-                                hd.HouseOwner = (string)read["h_owner"];
-                                hd.HouseDays = (int)read["h_days"];
-                                hd.HouseStatus = Convert.ToString(read["h_owner"]).Contains("None") ? false : true;
-                                hd.HouseDoors = (bool)read["h_lock"];
-                                hd.HouseInterior = (int)read["h_interior"];
-                                hd.HouseEnterPosition = new Vector3((float)read["h_enterposX"], (float)read["h_enterposY"], (float)read["h_enterposZ"]);
-                                hd.HouseEnterRotation = (float)read["h_enterposR"];
+                                cc++;
+
+                                House hd = new House();
+
+                                for (int i = 0; i < read.FieldCount; i++)
+                                {
+                                    hd.HouseID = (int)read["h_id"];
+                                    hd.HouseClass = (int)read["h_class"];
+                                    hd.HousePrice = (int)read["h_price"];
+                                    hd.HouseRent = (int)read["h_price"] * (1 / 100);
+                                    hd.HouseOwner = (string)read["h_owner"];
+                                    hd.HouseDays = (int)read["h_days"];
+                                    hd.HouseStatus = Convert.ToString(read["h_owner"]).Contains("None") ? false : true;
+                                    hd.HouseDoors = (bool)read["h_lock"];
+                                    hd.HouseInterior = (int)read["h_interior"];
+                                    hd.HouseEnterPosition = new Vector3((float)read["h_enterposX"], (float)read["h_enterposY"], (float)read["h_enterposZ"]);
+                                    hd.HouseEnterRotation = (float)read["h_enterposR"];
+                                }
+
+                                ColShape cs = NAPI.ColShape.CreateCylinderColShape(hd.HouseEnterPosition, 1.0f, 2f, dimension: 0);
+                                cs.SetData("CSHouseID", hd.HouseID);
+                                hd.HouseColShape = cs;
+                                hd.HouseMarker = NAPI.Marker.CreateMarker(1, new Vector3(hd.HouseEnterPosition.X, hd.HouseEnterPosition.Y, hd.HouseEnterPosition.Z - 1f), new Vector3(), new Vector3(), 1.0f, new Color(139, 201, 131, 100));
+                                hd.HouseBlip = NAPI.Blip.CreateBlip(hd.HouseStatus == true ? 375 : 374, hd.HouseEnterPosition, 1f, 2, drawDistance: 15.0f, dimension: 0, shortRange: true, name: $"Дом № {hd.HouseID}");
+                                hd.HouseText = NAPI.TextLabel.CreateTextLabel($"House ID: {hd.HouseID}\nHouse Owner: None\nHouse Price: {hd.HousePrice}\nHouse Class: {hd.HouseClass}\nHouse Status: {hd.HouseStatus}", hd.HouseEnterPosition, 3f, 3f, 10, new Color(255, 255, 255));
+
+                                HouseList.Add(hd);
                             }
-
-                            ColShape cs = NAPI.ColShape.CreateCylinderColShape(hd.HouseEnterPosition, 1.0f, 2f, dimension: 0);
-                            cs.SetData("CSHouseID", hd.HouseID);
-                            hd.HouseColShape = cs;
-                            hd.HouseMarker = NAPI.Marker.CreateMarker(1, new Vector3(hd.HouseEnterPosition.X, hd.HouseEnterPosition.Y, hd.HouseEnterPosition.Z - 1f), new Vector3(), new Vector3(), 1.0f, new Color(139, 201, 131, 100));
-                            hd.HouseBlip = NAPI.Blip.CreateBlip(hd.HouseStatus == true ? 375 : 374, hd.HouseEnterPosition, 1f, 2, drawDistance: 15.0f, dimension: 0, shortRange: true, name: $"Дом № {hd.HouseID}");
-                            hd.HouseText = NAPI.TextLabel.CreateTextLabel($"House ID: {hd.HouseID}\nHouse Owner: None\nHouse Price: {hd.HousePrice}\nHouse Class: {hd.HouseClass}\nHouse Status: {hd.HouseStatus}", hd.HouseEnterPosition, 3f, 3f, 10, new Color(255, 255, 255));
-
-                            HouseList.Add(hd);
+                            foreach (House h in HouseList)
+                                NAPI.Util.ConsoleOutput($"ID: {h.HouseID} - Price: {h.HousePrice}, Class: {h.HouseClass}, Owner: {h.HouseOwner}, Status: {h.HouseStatus} | {h.HouseColShape}");
+                            NAPI.Util.ConsoleOutput("[MySQL]: Домов загружено: {0} | Домов в списке: {1}", cc, HouseList.Count);
                         }
-                        foreach (House h in HouseList)
-                            NAPI.Util.ConsoleOutput($"ID: {h.HouseID} - Price: {h.HousePrice}, Class: {h.HouseClass}, Owner: {h.HouseOwner}, Status: {h.HouseStatus} | {h.HouseColShape}");
-                        NAPI.Util.ConsoleOutput("[MySQL]: Домов загружено: {0} | Домов в списке: {1}", cc, HouseList.Count);
                     }
+                }
+                catch (Exception e)
+                {
+                    NAPI.Util.ConsoleOutput($"[MySQL Error]: Дома не были загружены. >> {e}");
                 }
             }
         }
