@@ -9,7 +9,7 @@ using server_side.Data;
 
 namespace server_side.Events
 {
-    class AuthData : Script
+    class AuthData
     {
         public Client Player;
         public int dbID;

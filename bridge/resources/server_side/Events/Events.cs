@@ -114,8 +114,8 @@ namespace Main.events
         [ServerEvent(Event.PlayerEnterColshape)]
         public void Event_PlayerEnterColshape(ColShape colshape, Client client)
         {
-            if (client.GetData("PickupKD") != 0) return;
-            client.SetData("PickupKD", client.GetData("PickupKD") + 5);
+            if (client.GetData(EntityData.PLAYER_PICKUPKD) != 0) return;
+            client.SetData(EntityData.PLAYER_PICKUPKD, client.GetData(EntityData.PLAYER_PICKUPKD) + 5);
 
             // there another "EnterColShape" events:
             Interiors.Event_PlayerEnterInterColShape(colshape, client);

@@ -31,7 +31,7 @@ mp.events.add("playerCommand", (command) => {
 
 mp.gui.chat.isChatActive = false;
 
-//require("./cef/weaponpicker");
+require("./cef/weaponpicker");
 require("./cef/authorization");
 //require("./cef/speedo");
 require("./cef/color_picker");

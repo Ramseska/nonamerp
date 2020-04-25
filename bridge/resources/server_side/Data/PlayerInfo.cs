@@ -18,97 +18,96 @@ namespace server_side.Data
 
         public void SetDataToDefault()
         {
-            player.SetData("PlayerAuthorized", false); // статус авторизации
-            player.SetData("PlayerDbID", -1); // ид из бд 
-            player.SetData("PlayerLogin", "None"); // логин
-            player.SetData("PlayerPassword", "None"); // пароль
-            player.SetData("PlayerRegIP", "0.0.0.0"); // регистрационный ип
-            player.SetData("PlayerCurrentIP", "0.0.0.0"); // текущий ип
-            player.SetData("PlayerName", "None"); // имя игрока
-            player.SetData("PlayerMail", "None"); // почта
-            player.SetData("PlayerLVL", 0); // lvl
-            player.SetData("PlayerMoney", 0.00); // cash
-            player.SetData("PlayerHouse", -1); // house
-            player.SetData("PlayerCustomize", null); // customize player params
-            player.SetData("PickupKD", 0);
-            player.SetData("PlayerBankMoney", 0.00); // банковский счет
-            player.SetData("PlayerAge", 0); // возраст
-            player.SetData("PlayerClothes", null); // одежда
-            player.SetData("PlayerSocialClub", null); // social club name
+            player.SetData(EntityData.PLAYER_AUTHORIZED, false);
+            player.SetData(EntityData.PLAYER_DBID, -1);
+            player.SetData(EntityData.PLAYER_LOGIN, string.Empty);
+            player.SetData(EntityData.PLAYER_PASSWORD, string.Empty);
+            player.SetData(EntityData.PLAYER_MAIL, string.Empty);
+            player.SetData(EntityData.PLAYER_SOCIAL, string.Empty);
+            player.SetData(EntityData.PLAYER_IP, "0.0.0.0");
+            player.SetData(EntityData.PLAYER_REGIP, "0.0.0.0");
+            player.SetData(EntityData.PLAYER_NAME, string.Empty);
+            player.SetData(EntityData.PLAYER_LVL, -1);
+            player.SetData(EntityData.PLAYER_AGE, -1);
+            player.SetData(EntityData.PLAYER_PICKUPKD, 0);
+            player.SetData(EntityData.PLAYER_MONEY, 0.00);
+            player.SetData(EntityData.PLAYER_BANK, 0.00);
+            player.SetData(EntityData.PLAYER_HOUSE, -1);
+            player.SetData(EntityData.PLAYER_CUSTOMIZE, null);
+            player.SetData(EntityData.PLAYER_CLOTHES, null);
         }
 
-        public void SetSocialClub(string clubName) => player.SetData("PlayerSocialClub", clubName);
-        public string GetSocialClub()
-        {
-            if (player.GetData("PlayerSocialClub") == null)
-                return "Undefined";
-            return player.GetData("PlayerSocialClub");
-        }
+        public void SetAuthorized(bool status) => player.SetData(EntityData.PLAYER_AUTHORIZED, status);
+        public bool GetAuthorized() => player.GetData(EntityData.PLAYER_AUTHORIZED);
 
-        public void SetAuthorized(bool status) => player.SetData("PlayerAuthorized", status);
-        public bool GetAuthorized()
-        {
-            if (!player.HasData("PlayerAuthorized"))
-                return false;
-            return player.GetData("PlayerAuthorized");
-        }
+        public void SetDbID(int id) => player.SetData(EntityData.PLAYER_DBID, id);
+        public int GetDbID() => player.GetData(EntityData.PLAYER_DBID);
 
-        public void SetDbID(int id) => player.SetData("PlayerDbID", id);
-        public int GetDbID()
-        {
-            if (!player.HasData("PlayerDbID"))
-                return -1;
-            return player.GetData("PlayerDbID");
-        }
-
-        public void SetLogin(string login) => player.SetData("PlayerLogin", login);
+        public void SetLogin(string login) => player.SetData(EntityData.PLAYER_LOGIN, login);
         public string GetLogin()
         {
-            if (!player.HasData("PlayerLogin"))
-                return "None";
-            return player.GetData("PlayerLogin");
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_LOGIN)))
+                return player.GetData(EntityData.PLAYER_LOGIN);
+
+            return "Undefined";
         }
 
-        public void SetPassword(string password) => player.SetData("PlayerPassword", password);
+        public void SetPassword(string password) => player.SetData(EntityData.PLAYER_PASSWORD, password);
         public string GetPassword()
         {
-            if (!player.HasData("PlayerPassword"))
-                return "None";
-            return player.GetData("PlayerPassword");
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_PASSWORD)))
+                return player.GetData(EntityData.PLAYER_PASSWORD);
+
+            return "Undefined";
         }
 
-        public void SetRegIP(string ip) => player.SetData("PlayerRegIP", ip);
-        public string GetRegIP()
-        {
-            if (!player.HasData("PlayerRegIP"))
-                return "0.0.0.0";
-            return player.GetData("PlayerRegIP");
-        }
-
-        public void SetMail(string mail) => player.SetData("PlayerMail", mail);
+        public void SetMail(string mail) => player.SetData(EntityData.PLAYER_MAIL, mail);
         public string GetMail()
         {
-            if (!player.HasData("PlayerMail"))
-                return "None";
-            return player.GetData("PlayerMail");
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_MAIL)))
+                return player.GetData(EntityData.PLAYER_MAIL);
+
+            return "Undefined";
         }
 
-        public void SetLVL(int lvl) => player.SetData("PlayerLVL", lvl);
-        public int GetLVL()
+        public void SetSocialClub(string clubName) => player.SetData(EntityData.PLAYER_SOCIAL, clubName);
+        public string GetSocialClub()
         {
-            if (!player.HasData("PlayerLVL"))
-                return 0;
-            return player.GetData("PlayerLVL");
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_SOCIAL)))
+                return player.GetData(EntityData.PLAYER_SOCIAL);
+
+            return "Undefined";
         }
+
+        public void SetCurrentIP(string ip) => player.SetData(EntityData.PLAYER_IP, ip);
+        public string GetCurrentIP() => player.GetData(EntityData.PLAYER_IP);
+
+        public void SetRegIP(string ip) => player.SetData(EntityData.PLAYER_REGIP, ip);
+        public string GetRegIP() => player.GetData(EntityData.PLAYER_REGIP);
+
+        public void SetName(string name) => player.SetData(EntityData.PLAYER_NAME, name);
+        public string GetName()
+        {
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_NAME)))
+                return player.GetData(EntityData.PLAYER_NAME);
+
+            return "Undefined";
+        }
+
+        public void SetLVL(int lvl) => player.SetData(EntityData.PLAYER_LVL, lvl);
+        public int GetLVL() => player.GetData(EntityData.PLAYER_LVL);
+
+        public int GetAge() => player.GetData(EntityData.PLAYER_AGE);
+        public void SetAge(int age) => player.SetData(EntityData.PLAYER_AGE, age);
 
         async public void GiveMoney(double money, string reason = null, bool updateindb = true)
         {
-            player.SetData("PlayerMoney", Math.Round(money, 2) + (player.GetData("PlayerMoney")));
+            player.SetData(EntityData.PLAYER_MONEY, Math.Round(money, 2) + (player.GetData(EntityData.PLAYER_MONEY)));
             if (updateindb)
             {
                 await Task.Run(() =>
                 {
-                    string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetLogin()}'";
+                    string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
 
                     try
                     {
@@ -124,23 +123,17 @@ namespace server_side.Data
                 });
             }
         }
-
-        public double GetMoney()
-        {
-            if (!player.HasData("PlayerMoney"))
-                return -1;
-            return Math.Round(player.GetData("PlayerMoney"), 2);
-        }
+        public double GetMoney() => Math.Round(player.GetData(EntityData.PLAYER_MONEY), 2);
 
         async public void GiveBankMoney(double money, string reason = null, bool updateindb = true)
         {
-            player.SetData("PlayerBankMoney", Math.Round(money, 2) + (player.GetData("PlayerBankMoney")));
+            player.SetData(EntityData.PLAYER_BANK, Math.Round(money, 2) + (player.GetData(EntityData.PLAYER_BANK)));
 
-            if(updateindb)
+            if (updateindb)
             {
                 await Task.Run(() =>
                 {
-                    string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_name` = '{GetLogin()}'";
+                    string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
 
                     try
                     {
@@ -155,29 +148,15 @@ namespace server_side.Data
                 });
             }
         }
+        public double GetBankMoney() => Math.Round(player.GetData(EntityData.PLAYER_BANK), 2);
 
-        public double GetBankMoney()
-        {
-            if (!player.HasData("PlayerBankMoney"))
-                return -1;
-            return Math.Round(player.GetData("PlayerBankMoney"), 2);
-        }
+        public void SetHouse(int houseid) => player.SetData(EntityData.PLAYER_HOUSE, houseid);
+        public int GetHouse() => player.GetData(EntityData.PLAYER_HOUSE);
 
-        public int GetAge() => player.GetData("PlayerAge");
-        public void SetAge(int age) => player.SetData("PlayerAge", age);
+        public void SetCustomize(object args) => player.SetData(EntityData.PLAYER_CUSTOMIZE, args);
+        public object GetCustomize() => player.GetData(EntityData.PLAYER_CUSTOMIZE);
 
-        public void SetCustomize(object args) => player.SetData("PlayerCustomize", args);
-        public object GetCustomize() => player.GetData("PlayerCustomize");
-
-        public void SetClothes(object args) => player.SetData("PlayerClothes", args);
-        public object GetClothes() => player.GetData("PlayerClothes");
-
-        public void SetName(string name) => player.SetData("PlayerName", name);
-        public string GetName()
-        {
-            if (!player.HasData("PlayerName"))
-                return "None";
-            return player.GetData("PlayerName");
-        }
+        public void SetClothes(object args) => player.SetData(EntityData.PLAYER_CLOTHES, args);
+        public object GetClothes() => player.GetData(EntityData.PLAYER_CLOTHES);
     }
 }

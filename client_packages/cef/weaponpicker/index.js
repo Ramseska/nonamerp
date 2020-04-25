@@ -135,6 +135,7 @@ function initThisFuckingShit()
 mp.events.add("CreateWeaponPicker", () => {
     weaponPickerBrowser = mp.browsers.new("package://cef/weaponpicker/index.html");
 
+    mp.gui.chat.activate(false);
     weaponPickerBrowser.visible = true;
     mp.gui.cursor.visible = true;
 
@@ -144,6 +145,7 @@ mp.events.add("CreateWeaponPicker", () => {
 mp.events.add("DestroyWeaponPicker", () => {
     weaponPickerBrowser.destroy();
     mp.gui.cursor.visible = false;
+    mp.gui.chat.activate(true);
 
     weaponPickerBrowser = null;
 
