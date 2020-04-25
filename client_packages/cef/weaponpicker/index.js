@@ -120,14 +120,6 @@ function initThisFuckingShit()
             case "weapon_smokegrenade": case "weapon_bzgas": case "weapon_molotov": case "weapon_parachute": case "weapon_fireextinguisher": itemImg.height = 115;
             case "weapon_petrolcan": itemImg.height = 90;
         }
-        /*
-        switch(i)
-        {
-            case 82: case 83: case 84: case 89:
-            case 90: itemImg.height = 115;
-            case 91: itemImg.height = 90;
-        }
-        */
         newItem.appendChild(itemImg);
     }
 }

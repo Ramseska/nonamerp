@@ -6342,3 +6342,378 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has 
    at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
    at void MySql.Data.MySqlClient.NativeDriver.ReadOk(bool read)
 =========================================================
+
+==================[25.04.2020 22:07:30]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[25.04.2020 22:07:36]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[25.04.2020 22:13:13]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[25.04.2020 22:13:15]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[25.04.2020 22:15:09]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[25.04.2020 22:15:12]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:26:33 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:26:41 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:33:30 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:33:36 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:38:46 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:38:51 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:44:55 AM]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:44:57 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:44:57 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:44:57 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:44:57 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[4/26/2020 1:46:15 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:46:19 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:46:31 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+=========================================================
+
+==================[4/26/2020 1:46:32 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 89
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:46:33 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 89
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:46:33 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 89
+   at async void server_side.Data.PlayerInfo.SetCurrentIP(string ip) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 86
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:46:33 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 89
+   at async void server_side.Data.PlayerInfo.SetCurrentIP(string ip) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 86
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:47:49 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:47:52 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:48:00 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+=========================================================
+
+==================[4/26/2020 1:48:00 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 90
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:48:00 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 90
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:48:01 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 90
+   at async void server_side.Data.PlayerInfo.SetCurrentIP(string ip) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 86
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:48:01 AM]==================
+System.InvalidOperationException: Connection must be valid and open.
+   at void MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   at void MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySqlDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at int MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at void server_side.Data.PlayerInfo.SetCurrentIP(string ip)+() => { } in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 90
+   at async void server_side.Data.PlayerInfo.SetCurrentIP(string ip) in D:\Desktop\nonamerp\bridge\resources\server_side\Data\PlayerInfo.cs:line 86
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[4/26/2020 1:49:01 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:49:04 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 1:54:32 AM]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:54:32 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:54:32 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'System.Net.Sockets.resources'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 1:54:32 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:54:32 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[4/26/2020 1:54:33 AM]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:54:33 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:54:33 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[4/26/2020 1:54:33 AM]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:54:33 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[4/26/2020 1:54:33 AM]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[4/26/2020 2:07:35 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 2:07:39 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 2:33:49 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 2:33:54 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 2:34:27 AM]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Commands.MainCommands.CMD_test(Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 18
+=========================================================
+
+==================[4/26/2020 2:34:27 AM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Commands.MainCommands.CMD_test(Client client) in D:\Desktop\nonamerp\bridge\resources\server_side\Commands\MainCommands.cs:line 18
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[4/26/2020 2:40:56 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 2:41:07 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================
+
+==================[4/26/2020 3:02:48 AM]==================
+System.IO.FileNotFoundException: Could not load the specified file.
+File name: 'MySql.Data'
+   at Assembly System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+=========================================================
+
+==================[4/26/2020 3:02:54 AM]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method.
+Parameter name: name
+   at int System.Text.EncodingTable.internalGetCodePageFromName(string name)
+=========================================================

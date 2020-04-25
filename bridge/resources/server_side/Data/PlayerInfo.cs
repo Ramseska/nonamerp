@@ -35,6 +35,8 @@ namespace server_side.Data
             player.SetData(EntityData.PLAYER_HOUSE, -1);
             player.SetData(EntityData.PLAYER_CUSTOMIZE, null);
             player.SetData(EntityData.PLAYER_CLOTHES, null);
+            player.SetData(EntityData.PLAYER_DATEREG, null);
+            player.SetData(EntityData.PLAYER_LASTJOIN, null);
         }
 
         public void SetAuthorized(bool status) => player.SetData(EntityData.PLAYER_AUTHORIZED, status);
@@ -79,7 +81,19 @@ namespace server_side.Data
             return "Undefined";
         }
 
-        public void SetCurrentIP(string ip) => player.SetData(EntityData.PLAYER_IP, ip);
+        async public void SetCurrentIP(string ip)
+        {
+            await Task.Run(() =>
+            {
+                using(MySqlConnection con = MySqlConnector.GetDBConnection())
+                {
+                    con.Open();
+                    new MySqlCommand($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_login` = '{GetLogin()}'", con).ExecuteNonQuery();
+                }
+            });
+            
+            player.SetData(EntityData.PLAYER_IP, ip);
+        }
         public string GetCurrentIP() => player.GetData(EntityData.PLAYER_IP);
 
         public void SetRegIP(string ip) => player.SetData(EntityData.PLAYER_REGIP, ip);
@@ -116,7 +130,6 @@ namespace server_side.Data
                             con.Open();
                             new MySqlCommand(query, con).ExecuteNonQuery();
                         }
-
                     }
                     catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }
 
@@ -158,5 +171,37 @@ namespace server_side.Data
 
         public void SetClothes(object args) => player.SetData(EntityData.PLAYER_CLOTHES, args);
         public object GetClothes() => player.GetData(EntityData.PLAYER_CLOTHES);
+
+        public void SetDateReg(string date) => player.SetData(EntityData.PLAYER_DATEREG, date);
+        public string GetDateReg()
+        {
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_DATEREG)))
+                return player.GetData(EntityData.PLAYER_DATEREG);
+
+            return "Undefined";
+        }
+
+        async public void SetLastJoin(string date)
+        {
+            string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_login` = '{GetLogin()}'";
+
+            await Task.Run(() =>
+            {
+                using (MySqlConnection con = MySqlConnector.GetDBConnection())
+                {
+                    con.Open();
+                    new MySqlCommand(query, con).ExecuteNonQuery();
+                }
+            });
+
+            player.SetData(EntityData.PLAYER_LASTJOIN, date);
+        }
+        public string GetLastJoin()
+        {
+            if (!string.IsNullOrEmpty(player.GetData(EntityData.PLAYER_LASTJOIN)))
+                return player.GetData(EntityData.PLAYER_LASTJOIN);
+
+            return "Undefined";
+        }
     }
 }

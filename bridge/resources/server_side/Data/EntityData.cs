@@ -25,6 +25,8 @@
         public const string PLAYER_HUNGRY = "PLAYER_HUNGRY";
         public const string PLAYER_THIRST = "PLAYER_THIRST";
         public const string PLAYER_HEALTH = "PLAYER_HEALTH";
+        public const string PLAYER_DATEREG = "PLAYER_DATAREG";
+        public const string PLAYER_LASTJOIN = "PLAYER_LASTJOIN";
 
 
         // vehicle data

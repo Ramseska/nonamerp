@@ -23,6 +23,8 @@ namespace server_side.Events
         public int Age;
         public string Name;
         public string SocialName;
+        public string DateReg;
+        public string LastJoin;
 
         public AuthData(Client player)
         {
@@ -80,6 +82,7 @@ namespace server_side.Events
                                     auth.Age = (int)read["p_age"];
                                     auth.Name = (string)read["p_name"];
                                     auth.SocialName = (string)read["p_socialclub"];
+                                    auth.DateReg = (string)read["p_datereg"];
 
                                     client.SetData("pCustomize", read["p_customize"]);
                                     client.SetData("pClothes", read["p_clothes"]);
@@ -166,10 +169,12 @@ namespace server_side.Events
                     string name = $"{based["name"]} {based["subname"]}";
                     string sc = client.SocialClubName;
 
+                    string currentTime = DateTime.Now.ToString();
+
                     if (sc == null)
                         sc = "-";
 
-                    string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`) VALUES ('" + client.GetData("R_TempLogin") + "', '" + sc + "', '" + client.GetData("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "')";
+                    string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`, `p_datereg`) VALUES ('" + client.GetData("R_TempLogin") + "', '" + sc + "', '" + client.GetData("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "', '" + currentTime + "')";
                     MySqlCommand cmd = new MySqlCommand(query, con);
 
                     cmd.ExecuteNonQuery();
@@ -178,7 +183,7 @@ namespace server_side.Events
 
                     con.Close();
                 }
-                catch (Exception e) { NAPI.Util.ConsoleOutput($"{e}"); }
+                catch (Exception e) { NAPI.Util.ConsoleOutput($"{e.ToString()}"); }
             });
         }
 
@@ -212,6 +217,7 @@ namespace server_side.Events
                         auth.Age = (int)read["p_age"];
                         auth.Name = (string)read["p_name"];
                         auth.SocialName = (string)read["p_socialclub"];
+                        auth.DateReg = (string)read["p_datereg"];
 
                         client.SetData("pCustomize", read["p_customize"]);
                         client.SetData("pClothes", read["p_clothes"]);
@@ -250,6 +256,9 @@ namespace server_side.Events
             player.GiveBankMoney(data.BankMoney, updateindb: false);
             player.SetAge(data.Age);
             player.SetSocialClub(data.SocialName);
+            player.SetDateReg(data.DateReg);
+            player.SetLastJoin(DateTime.Now.ToString());
+            player.SetCurrentIP(client.Address);
 
             client.ResetData("pCustomize");
             client.ResetData("pClothes");

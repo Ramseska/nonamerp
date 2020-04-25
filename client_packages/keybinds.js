@@ -4,7 +4,9 @@ mp.keys.bind(0x4F, false, () => { // O
 });
 
 mp.keys.bind(0x4A, false, () => { // j 
-    if (loginBrowser != null) return;
+    if(loginBrowser != null) return;
+    else if(mp.gui.cursor.visible == true && weaponPickerBrowser == null) return;
+
     if(weaponPickerBrowser == null) mp.events.call('CreateWeaponPicker');
     else mp.events.call('DestroyWeaponPicker');
 });

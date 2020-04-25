@@ -17,10 +17,8 @@ namespace server_side.Events
         [RemoteEvent("turnVehicleEngine")]
         public void Event_TurnVehicleEngine(Client client, object[] args)
         {
-            if (!client.IsInVehicle)
-                return;
-
-            client.Vehicle.EngineStatus = !client.Vehicle.EngineStatus;
+            if (client.VehicleSeat == -1 && client.IsInVehicle)
+                client.Vehicle.EngineStatus = !client.Vehicle.EngineStatus;
         }
         [RemoteEvent("pickerChange")]
         public void Event_PickerChange(Client client, object[] colors)
