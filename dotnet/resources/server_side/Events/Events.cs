@@ -2,8 +2,10 @@
 using GTANetworkAPI;
 using System.Threading.Tasks;
 using server_side.Data;
-using server_side.Utilities;
 using server_side.Ints;
+using server_side.Systems;
+using server_side.Utilities;
+using server_side.Jobs;
 
 namespace Main.events
 {
@@ -28,10 +30,14 @@ namespace Main.events
         [ServerEvent(Event.ResourceStart)]
         public void Event_OnResourceStart()
         {
+            // ints
             Interiors.CreateInterior(new Vector3(1839.098f, 3673.332f, 34.2767f), new Vector3(275.9121, -1361.429, 24.5378), 211.3162f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 15.0f, shortRange: true, dimension: 0));
-            House h = new House();
-            h.InitHouses();
             
+            // houses
+            House.InitHouses();
+
+            // jobs
+            Job.InitJobs();
             
             /*
             DateTime time = DateTime.Now;
@@ -40,9 +46,12 @@ namespace Main.events
 
             NAPI.Server.SetGlobalServerChat(true); // disable default global chat
             NAPI.Server.SetAutoRespawnAfterDeath(false);
-            UtilityFuncs.SetCurrentWeatherInLA(); // set current weather how in real LA 
-            NAPI.Server.SetCommandErrorMessage("~r~Ошибка: ~w~Данной команды не существует!");
+            RealWeather.SetCurrentWeatherInLA(); // set current weather how in real LA 
+            NAPI.Server.SetCommandErrorMessage("~r~[Ошибка]: ~w~Данной команды не существует!");
             NAPI.Server.SetDefaultSpawnLocation(new Vector3(1789.294, -244.4794, 291.7196), 353.7821f);
+            //
+            NAPI.Server.SetLogCommandParamParserExceptions(true);
+            NAPI.Server.SetLogRemoteEventParamParserExceptions(true);
 
             Console.ForegroundColor = ConsoleColor.Green;
             NAPI.Util.ConsoleOutput("Server is loaded!\n");
@@ -71,6 +80,9 @@ namespace Main.events
             NAPI.ClientEvent.TriggerClientEvent(client, "CreateAuthWindow");
 
             NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
+
+            //
+            NAPI.ClientEvent.TriggerClientEvent(client, "createDebugUI");
         }
         /*
         [ServerEvent(Event.ChatMessage)]
@@ -115,11 +127,12 @@ namespace Main.events
         public void Event_PlayerEnterColshape(ColShape colshape, Player client)
         {
             if (client.GetData<int>(EntityData.PLAYER_PICKUPKD) != 0) return;
-            client.SetData(EntityData.PLAYER_PICKUPKD, client.GetData<int>(EntityData.PLAYER_PICKUPKD) + 5);
+            client.SetData<int>(EntityData.PLAYER_PICKUPKD, client.GetData<int>(EntityData.PLAYER_PICKUPKD) + 5);
 
             // there another "EnterColShape" events:
-            Interiors.Event_PlayerEnterInterColShape(colshape, client);
+            Interiors.OnPlayerEnterConshape(colshape, client);
             House.OnPlayerEnterColshape(colshape, client);
+            Job.OnEnterJobPickUp(colshape, client);
         }
     }
 }

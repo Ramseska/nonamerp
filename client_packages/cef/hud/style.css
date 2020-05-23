@@ -1,0 +1,187 @@
+@font-face {
+  font-family: OpenSansRegular;
+  src: url('../utils/fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+
+body
+{
+  overflow: hidden;
+  -webkit-user-select: none;
+  margin: 0;
+}
+
+.container
+{
+  position: relative;
+  /* width: 300px; */
+  height: 60px;
+  float: right;
+  top: 100%;
+  margin-top: -60px;
+  display: flex;
+}
+
+.hud-block
+{
+  position: relative;
+
+  width: 30px;
+  height: 100%;
+  margin-right: 5px;
+
+  display: flex;
+}
+
+#satiety-block
+{
+  transform: skewX(-20deg);
+  /* background-color: #f5ffffaa; */
+}
+#thirst-block
+{
+  transform: skewX(-20deg);
+  /* background-color: #f5ffffaa; */
+}
+
+#main-block
+{
+  width: 190px;
+  /* background-color: #f5ffffaa; */
+  clip-path: polygon(11.5% 0%, 100% 0%, 100% 100%, 0% 100%);
+  margin-right: 0;
+  margin-left: -11;
+  display: flex;
+
+  font-family: 'OpenSansRegular';
+}
+
+.mat-glass
+{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+}
+
+.mat-glass::before
+{
+  content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .6);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+#thirst-line
+{
+  background-color: rgba(71, 208, 255, 0.7);
+  margin-right: 0;
+}
+#satiety-line
+{
+  background-color: rgba(71, 255, 124, 0.7);
+  margin-right: 0;
+}
+
+.hud-icon
+{
+  width: 25;
+  height: 25;
+
+  margin-left: 2.5px;
+  margin-top: 55%;
+
+  position: absolute;
+}
+
+#voice-border-circle
+{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  background-color: #fd8888;
+  border-radius: 30px;
+}
+
+#voice-inside-circle
+{
+  position: relative;
+
+  width: 46px;
+  height: 46px;
+
+  left: 2px;
+  top: 2px;
+
+  background-color: #e8e8e8;
+  /* background-color: #6bdc81; */
+  border-radius: 30px;
+
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#voice-icon
+{
+  width: 25;
+  height: 25;
+
+  display: block;
+  margin: auto;
+}
+
+#cash-icon
+{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+#cash-box
+{
+  margin-left: 24px;
+  display: inline-flex;
+  margin-bottom: 2px;
+}
+
+#bank-box
+{
+  margin-left: 15px;
+  display: inline-flex;
+}
+
+#bank-icon
+{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+.hud-text
+{
+  position: relative;
+}
+
+#text-container
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  height: 45px;
+  margin-top: 7px;
+}

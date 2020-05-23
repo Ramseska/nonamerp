@@ -36,7 +36,7 @@ namespace server_side.Data
         public Blip HouseBlip;
         public TextLabel HouseText;
 
-        public void InitHouses()
+        public static void InitHouses()
         {
             using (MySqlConnection con = MySqlConnector.GetDBConnection())
             {
@@ -74,7 +74,7 @@ namespace server_side.Data
                             }
 
                             ColShape cs = NAPI.ColShape.CreateCylinderColShape(hd.HouseEnterPosition, 1.0f, 2f, dimension: 0);
-                            cs.SetData("CSHouseID", hd.HouseID);
+                            cs.SetData<int>("CSHouseID", hd.HouseID);
                             hd.HouseColShape = cs;
                             hd.HouseMarker = NAPI.Marker.CreateMarker(1, new Vector3(hd.HouseEnterPosition.X, hd.HouseEnterPosition.Y, hd.HouseEnterPosition.Z - 1f), new Vector3(), new Vector3(), 1.0f, new Color(139, 201, 131, 100));
                             hd.HouseBlip = NAPI.Blip.CreateBlip(hd.HouseStatus == true ? 375 : 374, hd.HouseEnterPosition, 1f, 2, drawDistance: 15.0f, dimension: 0, shortRange: true, name: $"Дом № {hd.HouseID}");
@@ -117,7 +117,7 @@ namespace server_side.Data
             HouseList.Sort();
 
             ColShape tempShape = NAPI.ColShape.CreateCylinderColShape(HousePosition, 1.0f, 2f, dimension: 0);
-            tempShape.SetData("CSHouseID", tempID);
+            tempShape.SetData<int>("CSHouseID", tempID);
 
             House h = new House()
             {

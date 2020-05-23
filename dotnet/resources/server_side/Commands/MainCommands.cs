@@ -29,7 +29,10 @@ namespace server_side.Commands
         [Command("gm")]
         public void CMD_gm(Player client)
         {
-            client.SendChatMessage("Undefined");
+            if (!client.GetData<bool>("temp_gm"))
+                client.SetData<bool>("temp_gm", true);
+            else
+                client.SetData<bool>("temp_gm", false);
         }
         [Command("gtbm")]
         public void CMD_gbm(Player client)
@@ -45,7 +48,7 @@ namespace server_side.Commands
             client.SendChatMessage($"+{money} in bank. Now: {playerInfo.GetBankMoney()} in bank.");
         }
         [Command("givemoney")]
-        void CMD_givemoney(Player client, double money)
+        public void CMD_givemoney(Player client, double money)
         {
             Data.PlayerInfo playerInfo = new Data.PlayerInfo(client);
             playerInfo.GiveMoney(money);
@@ -55,12 +58,12 @@ namespace server_side.Commands
         }
 
         [Command("getmoney")]
-        void CMD_getmoney(Player client)
+        public void CMD_getmoney(Player client)
         {
             client.SendChatMessage($"Money: {new Data.PlayerInfo(client).GetMoney()}");
         }
         [Command("goto")]
-        void CMD_goto(Player client, int playerid)
+        public void CMD_goto(Player client, int playerid)
         {
             if (playerid < 0 || playerid >= NAPI.Server.GetMaxPlayers())
             {
@@ -85,7 +88,7 @@ namespace server_side.Commands
             client.SendChatMessage($"Вы успешно телепортировались к игроку {new Data.PlayerInfo(player).GetName()}[{playerid}]");
         }
         [Command("gethere")]
-        void CMD_gethere(Player client, int playerid)
+        public void CMD_gethere(Player client, int playerid)
         {
             if (playerid < 0 || playerid >= NAPI.Server.GetMaxPlayers())
             {
@@ -151,46 +154,42 @@ namespace server_side.Commands
         {
             client.Position = new Vector3(x,y,z);
         }
-        [Command("veh")]
-        public void CMD_veh(Player client, string vehicle_name)
-        {
-            if (client.HasData("temp_vehicle"))
-            {
-                client.ResetData("temp_vehicle");
-            }
-                
-            Random rand = new Random();
-            byte clr = (byte)rand.Next(0, 255);
 
-            Vehicle veh = NAPI.Vehicle.CreateVehicle(NAPI.Util.GetHashKey(vehicle_name), UtilityFuncs.GetPosFrontOfPlayer(client, 3.0), client.Rotation.Z / 2, clr, clr, numberPlate: "Admin");
+        [Command("veh")]
+        public void CMD_veh(Player player, string vehname)
+        {
+            if (player.HasData("admin_car"))
+            {
+                player.GetData<Vehicle>("admin_car").Delete();
+                player.ResetData("admin_car");
+            }
+
+            Vehicle veh = NAPI.Vehicle.CreateVehicle(NAPI.Util.GetHashKey(vehname), UtilityFuncs.GetPosFrontOfPlayer(player, 3.0), player.Rotation.Z / 2, new Random().Next(0, 255), new Random().Next(0, 255), numberPlate: "Admin");
             veh.NumberPlate = "Admin";
 
-            veh.SetData<string>("type", "admin");
-
-            veh.EngineStatus = false;
-
-            client.SetData<Vehicle>("temp_vehicle", veh);
+            player.SetData<Vehicle>("admin_car", veh);
+            veh.SetData<bool>("temp_vehicle", true);
         }
         [Command("delv")]
-        public void CMD_delv(Player client)
+        public void CMD_delv(Player player)
         {
-            if (client.HasData("temp_vehicle"))
+            if(player.IsInVehicle)
             {
-                client.GetData<Vehicle>("temp_vehicle").ResetData("type");
-                client.GetData<Vehicle>("temp_vehicle").Delete();
-            }
-
-            else if (client.Vehicle != null && client.Vehicle.GetData<string>("type") == "admin")
-            {
-                client.Vehicle.ResetData("type");
-                client.Vehicle.Delete();
+                if (player.GetData<Vehicle>("admin_car") == player.Vehicle)
+                {
+                    player.Vehicle.Delete();
+                    player.ResetData("admin_car");
+                }
+                else
+                {
+                    player.SendChatMessage("Вы не можете удалить данный транспорт!");
+                    return;
+                }
             }
             else
             {
-                client.SendChatMessage("Vehicle is not finded");
-                return;
+                player.SendChatMessage("Вы не в машине!");
             }
-            client.ResetData("temp_vehicle");
         }
     }
 }

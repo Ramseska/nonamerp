@@ -37,6 +37,13 @@ namespace server_side.Data
             player.SetData<object>(EntityData.PLAYER_CLOTHES, null);
             player.SetData<object>(EntityData.PLAYER_DATEREG, null);
             player.SetData<object>(EntityData.PLAYER_LASTJOIN, null);
+            player.SetData<int>(EntityData.PLAYER_SATIETY, 0);
+            player.SetData<int>(EntityData.PLAYER_THIRST, 0);
+
+            // unext
+            player.SetData<double>(EntityData.PLAYER_JOB_SALARY, 0.0);
+            player.SetData<int>(EntityData.PLAYER_JOB, 0);
+            player.SetData<int>(EntityData.PLAYER_TEMPJOB, 0);
         }
 
         public void SetAuthorized(bool status) => player.SetData<bool>(EntityData.PLAYER_AUTHORIZED, status);
@@ -92,7 +99,7 @@ namespace server_side.Data
                 }
             });
             
-            player.SetData(EntityData.PLAYER_IP, ip);
+            player.SetData<string>(EntityData.PLAYER_IP, ip);
         }
         public string GetCurrentIP() => player.GetData<string>(EntityData.PLAYER_IP);
 
@@ -135,6 +142,8 @@ namespace server_side.Data
 
                 });
             }
+
+            Utilities.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_MONEY), 2);
 
@@ -160,6 +169,8 @@ namespace server_side.Data
                     catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }
                 });
             }
+
+            Utilities.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetBankMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_BANK), 2);
 
@@ -203,5 +214,27 @@ namespace server_side.Data
 
             return "Undefined";
         }
+
+        public void SetSatiety(int value)
+        {
+            if (value > 100) value = 100;
+            else if (value < 0) value = 0;
+
+            player.SetData<int>(EntityData.PLAYER_SATIETY, value);
+
+            Utilities.UtilityFuncs.UpdatePlayerHud(player);
+        }
+        public int GetSatiety() => player.GetData<int>(EntityData.PLAYER_SATIETY);
+
+        public void SetThirst(int value)
+        {
+            if (value > 100) value = 100;
+            else if (value < 0) value = 0;
+
+            player.SetData<int>(EntityData.PLAYER_THIRST, value);
+
+            Utilities.UtilityFuncs.UpdatePlayerHud(player);
+        }
+        public int GetThirst() => player.GetData<int>(EntityData.PLAYER_THIRST);
     }
 }

@@ -22,7 +22,8 @@
         public const string PLAYER_HOUSE = "PLAYER_HOUSE";
         public const string PLAYER_PICKUPKD = "PLAYER_PICKUPKD";
         public const string PLAYER_JOB = "PLAYER_JOB";
-        public const string PLAYER_HUNGRY = "PLAYER_HUNGRY";
+        public const string PLAYER_TEMPJOB = "PLAYER_TEMPJOB";
+        public const string PLAYER_SATIETY = "PLAYER_SATIETY";
         public const string PLAYER_THIRST = "PLAYER_THIRST";
         public const string PLAYER_HEALTH = "PLAYER_HEALTH";
         public const string PLAYER_DATEREG = "PLAYER_DATAREG";
@@ -41,5 +42,10 @@
         public const string VEHICLE_DOORS = "VEHICLE_DOORS";
         public const string VEHICLE_HEALTH = "VEHICLE_HEALTH";
         public const string VEHICLE_ENGINE = "VEHICLE_ENGINE";
+
+
+        // jobs
+        public const string JOB_ID = "JOB_ID";
+        public const string PLAYER_JOB_SALARY = "PLAYER_JOB_SALARY";
     }
 }

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: OpenSansRegular;
+    src: url('../utils/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: OpenSansLight;
+    src: url('../utils/fonts/OpenSans/OpenSans-Light.ttf');
+}
+
+body
+{
+    /* font-family: Raleway, Open Sans, Arial; */
+
+    font-family: OpenSansRegular, sans-serif;
+
+    overflow: hidden;
+
+    -webkit-user-select: none;
+}
+
+#description
+{
+    color: #5f5f5f;
+    padding: 20 28 20 28;
+    font-size: 14;
+    white-space: pre-wrap;
+}
+
+#container
+{
+    position: relative;
+    width: 320px;
+
+    margin: auto;
+
+    top: 50%;
+    margin-top: -85px;
+}
+
+#head-title
+{
+    position: relative;
+    width: 100%;
+    height: 21px;
+    background-color: whitesmoke;
+    border-radius: 3px 3px 0px 0px;
+    text-align: center;
+    font-weight: 100;
+    padding: 10 0 15 0;
+    font-size: 20;
+    font-family: OpenSansLight;
+}
+
+#head-outline
+{
+    width: 100%;
+    height: 1px;
+    background: -webkit-linear-gradient(18deg, rgb(114, 242, 255) 24%, rgb(75, 255, 0) 93%);
+}
+
+#body-background
+{
+    position: relative;
+
+    background-color: whitesmoke;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 0px 0px 3px 3px;
+}
+
+input[type=button]
+{
+    border: 1px solid #d4d4d4;
+    outline: 0;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: 0 25 15 25;
+    width: 80px;
+    height: 30px;
+    font-family: OpenSansLight, sans-serif;
+    font-weight: 100;
+}
+
+#button-accept:hover
+{
+    transition: 150ms;
+    border: 1px solid #8edaad;
+}
+#button-cancel
+{
+    border: 1px solid #d4d4d4;
+    float: right;
+}
+#button-cancel:hover
+{
+    transition: 150ms;
+    border: 1px solid #d69292;
+}
+
+#button-accept:active
+{
+    transition: 150ms;
+    border: 1px solid rgb(72, 255, 148);
+}
+
+#button-cancel:active
+{
+    transition: 150ms;
+    border: 1px solid rgb(255, 55, 55);
+}

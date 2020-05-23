@@ -18,14 +18,8 @@ mp.events.add("playerCommand", (command) => {
 	args.shift();
 		
 	if (commandName === "pup") {
-        mp.gui.chat.push(`You enter command a "${commandName}" [${args[0]}, ${args[1]}, ${args[2]}, ${args[3]}]`);
-        mp.players.local.setComponentVariation(Number(args[0]), Number(args[1]), Number(args[2]), Number(args[3]));
-    }
-    
-    if(commandName === "cs") {
-        if(customizeBrowser == null)
-            mp.events.call('enableCustomize');
-        else mp.events.call('disableCustomize');
+        mp.gui.chat.push(`You enter command a "${commandName}" [${args[0]}, ${args[1]}]`);
+        mp.players.local.setComponentVariation(Number(args[0]), Number(args[1]), 0, 2);
     }
 });
 
@@ -37,7 +31,7 @@ require("./cef/authorization");
 require("./cef/color_picker");
 require("./keybinds.js");
 require("./sound/sound.js");
-//require("./debugUI");
+require("./debugUI/debugUI.js");
 require("./cef/other/house");
 //require("./cef/reg_customizer");
 require("./camfly.js");
@@ -45,3 +39,5 @@ require("./cef/notify/notify.js");
 require("./ints.js")
 require("./voice/voice.js");
 require("./cef/customize/index.js");
+require("./cef/workdialog/workdialog.js");
+require("./cef/hud/hud.js");

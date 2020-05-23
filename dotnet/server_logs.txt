@@ -1,372 +1,15 @@
 Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:11:05
-Loaded 667 entries from vehicleData.json
-Loading resources..
--> Starting WiredPlayers resource..
-WiredPlayers: setting as Gamemode resource
-WiredPlayers: loading scripts.. found 1 script(s)
-WiredPlayers: instantiating WiredPlayers.weapons.Weapons..
-WiredPlayers: instantiating WiredPlayers.vehicles.Vehicles..
-WiredPlayers: instantiating WiredPlayers.townhall.TownHall..
-WiredPlayers: instantiating WiredPlayers.parking.Parking..
-WiredPlayers: instantiating WiredPlayers.model.SkinModel..
-WiredPlayers: instantiating WiredPlayers.jobs.FastFood..
-WiredPlayers: instantiating WiredPlayers.jobs.Fishing..
-WiredPlayers: instantiating WiredPlayers.jobs.Garbage..
-WiredPlayers: instantiating WiredPlayers.jobs.Hooker..
-WiredPlayers: instantiating WiredPlayers.jobs.Job..
-WiredPlayers: instantiating WiredPlayers.jobs.Mechanic..
-WiredPlayers: instantiating WiredPlayers.jobs.Taxi..
-WiredPlayers: instantiating WiredPlayers.jobs.Thief..
-WiredPlayers: instantiating WiredPlayers.house.Furniture..
-WiredPlayers: instantiating WiredPlayers.house.House..
-WiredPlayers: instantiating WiredPlayers.globals.Globals..
-WiredPlayers: instantiating WiredPlayers.factions.Emergency..
-WiredPlayers: instantiating WiredPlayers.factions.Faction..
-WiredPlayers: instantiating WiredPlayers.factions.Police..
-WiredPlayers: instantiating WiredPlayers.factions.WeazelNews..
-WiredPlayers: instantiating WiredPlayers.drivingschool.DrivingSchool..
-WiredPlayers: instantiating WiredPlayers.database.Database..
-WiredPlayers: instantiating WiredPlayers.chat.Chat..
-WiredPlayers: instantiating WiredPlayers.character.Animations..
-WiredPlayers: instantiating WiredPlayers.character.Customization..
-WiredPlayers: instantiating WiredPlayers.character.Login..
-WiredPlayers: instantiating WiredPlayers.character.Telephone..
-WiredPlayers: instantiating WiredPlayers.business.Business..
-WiredPlayers: instantiating WiredPlayers.business.CarShop..
-WiredPlayers: instantiating WiredPlayers.bank.Bank..
-WiredPlayers: instantiating WiredPlayers.admin.Admin..
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 4 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loaded 37 server events(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 6 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 3 command(s)
-WiredPlayers: loading commands.. found 18 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 13 command(s)
-Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:11:32
-Loaded 667 entries from vehicleData.json
-Loading resources..
--> Starting WiredPlayers resource..
-WiredPlayers: setting as Gamemode resource
-WiredPlayers: loading scripts.. found 1 script(s)
-WiredPlayers: instantiating WiredPlayers.weapons.Weapons..
-WiredPlayers: instantiating WiredPlayers.vehicles.Vehicles..
-WiredPlayers: instantiating WiredPlayers.townhall.TownHall..
-WiredPlayers: instantiating WiredPlayers.parking.Parking..
-WiredPlayers: instantiating WiredPlayers.model.SkinModel..
-WiredPlayers: instantiating WiredPlayers.jobs.FastFood..
-WiredPlayers: instantiating WiredPlayers.jobs.Fishing..
-WiredPlayers: instantiating WiredPlayers.jobs.Garbage..
-WiredPlayers: instantiating WiredPlayers.jobs.Hooker..
-WiredPlayers: instantiating WiredPlayers.jobs.Job..
-WiredPlayers: instantiating WiredPlayers.jobs.Mechanic..
-WiredPlayers: instantiating WiredPlayers.jobs.Taxi..
-WiredPlayers: instantiating WiredPlayers.jobs.Thief..
-WiredPlayers: instantiating WiredPlayers.house.Furniture..
-WiredPlayers: instantiating WiredPlayers.house.House..
-WiredPlayers: instantiating WiredPlayers.globals.Globals..
-WiredPlayers: instantiating WiredPlayers.factions.Emergency..
-WiredPlayers: instantiating WiredPlayers.factions.Faction..
-WiredPlayers: instantiating WiredPlayers.factions.Police..
-WiredPlayers: instantiating WiredPlayers.factions.WeazelNews..
-WiredPlayers: instantiating WiredPlayers.drivingschool.DrivingSchool..
-WiredPlayers: instantiating WiredPlayers.database.Database..
-WiredPlayers: instantiating WiredPlayers.chat.Chat..
-WiredPlayers: instantiating WiredPlayers.character.Animations..
-WiredPlayers: instantiating WiredPlayers.character.Customization..
-WiredPlayers: instantiating WiredPlayers.character.Login..
-WiredPlayers: instantiating WiredPlayers.character.Telephone..
-WiredPlayers: instantiating WiredPlayers.business.Business..
-WiredPlayers: instantiating WiredPlayers.business.CarShop..
-WiredPlayers: instantiating WiredPlayers.bank.Bank..
-WiredPlayers: instantiating WiredPlayers.admin.Admin..
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 4 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loaded 37 server events(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 6 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 3 command(s)
-WiredPlayers: loading commands.. found 18 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 13 command(s)
-Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:13:13
-Loaded 667 entries from vehicleData.json
-Loading resources..
--> Starting WiredPlayers resource..
-WiredPlayers: setting as Gamemode resource
-WiredPlayers: loading scripts.. found 1 script(s)
-WiredPlayers: instantiating WiredPlayers.weapons.Weapons..
-WiredPlayers: instantiating WiredPlayers.vehicles.Vehicles..
-WiredPlayers: instantiating WiredPlayers.townhall.TownHall..
-WiredPlayers: instantiating WiredPlayers.parking.Parking..
-WiredPlayers: instantiating WiredPlayers.model.SkinModel..
-WiredPlayers: instantiating WiredPlayers.jobs.FastFood..
-WiredPlayers: instantiating WiredPlayers.jobs.Fishing..
-WiredPlayers: instantiating WiredPlayers.jobs.Garbage..
-WiredPlayers: instantiating WiredPlayers.jobs.Hooker..
-WiredPlayers: instantiating WiredPlayers.jobs.Job..
-WiredPlayers: instantiating WiredPlayers.jobs.Mechanic..
-WiredPlayers: instantiating WiredPlayers.jobs.Taxi..
-WiredPlayers: instantiating WiredPlayers.jobs.Thief..
-WiredPlayers: instantiating WiredPlayers.house.Furniture..
-WiredPlayers: instantiating WiredPlayers.house.House..
-WiredPlayers: instantiating WiredPlayers.globals.Globals..
-WiredPlayers: instantiating WiredPlayers.factions.Emergency..
-WiredPlayers: instantiating WiredPlayers.factions.Faction..
-WiredPlayers: instantiating WiredPlayers.factions.Police..
-WiredPlayers: instantiating WiredPlayers.factions.WeazelNews..
-WiredPlayers: instantiating WiredPlayers.drivingschool.DrivingSchool..
-WiredPlayers: instantiating WiredPlayers.database.Database..
-WiredPlayers: instantiating WiredPlayers.chat.Chat..
-WiredPlayers: instantiating WiredPlayers.character.Animations..
-WiredPlayers: instantiating WiredPlayers.character.Customization..
-WiredPlayers: instantiating WiredPlayers.character.Login..
-WiredPlayers: instantiating WiredPlayers.character.Telephone..
-WiredPlayers: instantiating WiredPlayers.business.Business..
-WiredPlayers: instantiating WiredPlayers.business.CarShop..
-WiredPlayers: instantiating WiredPlayers.bank.Bank..
-WiredPlayers: instantiating WiredPlayers.admin.Admin..
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 4 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loaded 37 server events(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 6 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 3 command(s)
-WiredPlayers: loading commands.. found 18 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 13 command(s)
-Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:14:12
-Loaded 667 entries from vehicleData.json
-Loading resources..
--> Starting WiredPlayers resource..
-WiredPlayers: setting as Gamemode resource
-WiredPlayers: loading scripts.. found 1 script(s)
-WiredPlayers: instantiating WiredPlayers.weapons.Weapons..
-WiredPlayers: instantiating WiredPlayers.vehicles.Vehicles..
-WiredPlayers: instantiating WiredPlayers.townhall.TownHall..
-WiredPlayers: instantiating WiredPlayers.parking.Parking..
-WiredPlayers: instantiating WiredPlayers.model.SkinModel..
-WiredPlayers: instantiating WiredPlayers.jobs.FastFood..
-WiredPlayers: instantiating WiredPlayers.jobs.Fishing..
-WiredPlayers: instantiating WiredPlayers.jobs.Garbage..
-WiredPlayers: instantiating WiredPlayers.jobs.Hooker..
-WiredPlayers: instantiating WiredPlayers.jobs.Job..
-WiredPlayers: instantiating WiredPlayers.jobs.Mechanic..
-WiredPlayers: instantiating WiredPlayers.jobs.Taxi..
-WiredPlayers: instantiating WiredPlayers.jobs.Thief..
-WiredPlayers: instantiating WiredPlayers.house.Furniture..
-WiredPlayers: instantiating WiredPlayers.house.House..
-WiredPlayers: instantiating WiredPlayers.globals.Globals..
-WiredPlayers: instantiating WiredPlayers.factions.Emergency..
-WiredPlayers: instantiating WiredPlayers.factions.Faction..
-WiredPlayers: instantiating WiredPlayers.factions.Police..
-WiredPlayers: instantiating WiredPlayers.factions.WeazelNews..
-WiredPlayers: instantiating WiredPlayers.drivingschool.DrivingSchool..
-WiredPlayers: instantiating WiredPlayers.database.Database..
-WiredPlayers: instantiating WiredPlayers.chat.Chat..
-WiredPlayers: instantiating WiredPlayers.character.Animations..
-WiredPlayers: instantiating WiredPlayers.character.Customization..
-WiredPlayers: instantiating WiredPlayers.character.Login..
-WiredPlayers: instantiating WiredPlayers.character.Telephone..
-WiredPlayers: instantiating WiredPlayers.business.Business..
-WiredPlayers: instantiating WiredPlayers.business.CarShop..
-WiredPlayers: instantiating WiredPlayers.bank.Bank..
-WiredPlayers: instantiating WiredPlayers.admin.Admin..
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 4 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loaded 37 server events(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 6 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 3 command(s)
-WiredPlayers: loading commands.. found 18 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 13 command(s)
-Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:14:45
-Loaded 667 entries from vehicleData.json
-Loading resources..
--> Starting WiredPlayers resource..
-WiredPlayers: setting as Gamemode resource
-WiredPlayers: loading scripts.. found 1 script(s)
-WiredPlayers: instantiating WiredPlayers.weapons.Weapons..
-WiredPlayers: instantiating WiredPlayers.vehicles.Vehicles..
-WiredPlayers: instantiating WiredPlayers.townhall.TownHall..
-WiredPlayers: instantiating WiredPlayers.parking.Parking..
-WiredPlayers: instantiating WiredPlayers.model.SkinModel..
-WiredPlayers: instantiating WiredPlayers.jobs.FastFood..
-WiredPlayers: instantiating WiredPlayers.jobs.Fishing..
-WiredPlayers: instantiating WiredPlayers.jobs.Garbage..
-WiredPlayers: instantiating WiredPlayers.jobs.Hooker..
-WiredPlayers: instantiating WiredPlayers.jobs.Job..
-WiredPlayers: instantiating WiredPlayers.jobs.Mechanic..
-WiredPlayers: instantiating WiredPlayers.jobs.Taxi..
-WiredPlayers: instantiating WiredPlayers.jobs.Thief..
-WiredPlayers: instantiating WiredPlayers.house.Furniture..
-WiredPlayers: instantiating WiredPlayers.house.House..
-WiredPlayers: instantiating WiredPlayers.globals.Globals..
-WiredPlayers: instantiating WiredPlayers.factions.Emergency..
-WiredPlayers: instantiating WiredPlayers.factions.Faction..
-WiredPlayers: instantiating WiredPlayers.factions.Police..
-WiredPlayers: instantiating WiredPlayers.factions.WeazelNews..
-WiredPlayers: instantiating WiredPlayers.drivingschool.DrivingSchool..
-WiredPlayers: instantiating WiredPlayers.database.Database..
-WiredPlayers: instantiating WiredPlayers.chat.Chat..
-WiredPlayers: instantiating WiredPlayers.character.Animations..
-WiredPlayers: instantiating WiredPlayers.character.Customization..
-WiredPlayers: instantiating WiredPlayers.character.Login..
-WiredPlayers: instantiating WiredPlayers.character.Telephone..
-WiredPlayers: instantiating WiredPlayers.business.Business..
-WiredPlayers: instantiating WiredPlayers.business.CarShop..
-WiredPlayers: instantiating WiredPlayers.bank.Bank..
-WiredPlayers: instantiating WiredPlayers.admin.Admin..
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 4 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 3 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 5 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 1 server event(s)
-WiredPlayers: loading server events.. found 2 server event(s)
-WiredPlayers: loaded 37 server events(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 6 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 2 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 1 command(s)
-WiredPlayers: loading commands.. found 3 command(s)
-WiredPlayers: loading commands.. found 18 command(s)
-WiredPlayers: loading commands.. found 4 command(s)
-WiredPlayers: loading commands.. found 13 command(s)
-Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:42:40
+-> SERVER STARTED AT 23.05.2020 18:28:01
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -374,14 +17,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -460,18 +104,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:46:37
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 18:41:23
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -479,14 +123,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -565,18 +210,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:48:20
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 18:53:19
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -584,14 +229,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -670,18 +316,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:51:23
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:08:04
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -689,14 +335,121 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:35:03
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -775,18 +528,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:53:30
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:36:22
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -794,14 +547,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -816,8 +570,8 @@ ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.Col
 ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -835,15 +589,63 @@ ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColS
 ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 34 - Price: 45000, Class: 2, Initializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:54:30
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:37:16
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -851,14 +653,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -937,18 +740,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:55:54
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:45:46
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -956,14 +759,121 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:47:55
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -1042,18 +952,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:57:00
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:49:26
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -1061,14 +971,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -1147,18 +1058,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 6:57:33
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:51:30
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -1166,14 +1077,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -1252,18 +1164,18 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, OInitializing Bootstrapper.dll (1.1.0.0)..
--> SERVER STARTED AT 04.05.2020 7:09:36
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 19:58:47
 Loaded 667 entries from vehicleData.json
 Loading resources..
 -> Starting server_side resource..
 server_side: loading scripts.. found 1 script(s)
 server_side: instantiating Main.events.Events..
-server_side: instantiating server_side.Utilities.UtilityFuncs..
 server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
 server_side: instantiating server_side.Ints.Interiors..
 server_side: instantiating server_side.Events.AnotherEvents..
 server_side: instantiating server_side.Events.Auth..
@@ -1271,14 +1183,15 @@ server_side: instantiating server_side.Data.House..
 server_side: instantiating server_side.Data.PlayerInfo..
 server_side: instantiating server_side.Commands.MainCommands..
 server_side: loading server events.. found 6 server event(s)
-server_side: loading server events.. found 1 server event(s)
-server_side: loaded 7 server events(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
 server_side: loading commands.. found 3 command(s)
 server_side: loading commands.. found 16 command(s)
 server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
 server_side: loading remote events.. found 3 remote event(s)
-server_side: loaded 6 remote event(s)
+server_side: loaded 7 remote event(s)
 ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
@@ -1357,7 +1270,958 @@ ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColSh
 ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
 ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 79 - Price: 4600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 80 - Price: 6500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 81 - Price: 5900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
-ID: 82 - Price: 5800, Class: 0, O
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 20:18:22
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 20:28:26
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 20:39:40
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 20:46:23
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 22:02:06
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 23.05.2020 22:04:49
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatuInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 24.05.2020 1:16:35
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatusInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 24.05.2020 1:19:59
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 8 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 79 - Price: 4600, Class: 1, Owner: None, StatusInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 24.05.2020 1:38:34
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utilities.UtilityFuncs..
+server_side: instantiating server_side.Systems.RealWeather..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 6 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loaded 9 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 16 command(s)
+server_side: loaded 19 commands(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 7 remote event(s)
+ID: 1 - Price: 300000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 2 - Price: 124000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 3 - Price: 130000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 4 - Price: 98900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 6 - Price: 160000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 7 - Price: 210000, Class: 4, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 8 - Price: 127001, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 9 - Price: 217600, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 10 - Price: 87800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 5 - Price: 107800, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 11 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 12 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 13 - Price: 95000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 14 - Price: 115000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 15 - Price: 91100, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 16 - Price: 50000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 17 - Price: 59700, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 18 - Price: 110000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 19 - Price: 150000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 20 - Price: 135000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 21 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 22 - Price: 21900, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 23 - Price: 110000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 24 - Price: 64200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 26 - Price: 90000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 27 - Price: 130000, Class: 3, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 28 - Price: 10000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 29 - Price: 35000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 30 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 31 - Price: 6100, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 32 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 33 - Price: 44800, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 34 - Price: 45000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 35 - Price: 35000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 36 - Price: 22500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 38 - Price: 17950, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 40 - Price: 27000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 41 - Price: 12630, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 37 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 39 - Price: 5700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 42 - Price: 2800, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 43 - Price: 96300, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 44 - Price: 86900, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 45 - Price: 94000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 46 - Price: 666, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 47 - Price: 38000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 48 - Price: 47000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 49 - Price: 45000, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 50 - Price: 18800, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 52 - Price: 9600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 54 - Price: 9999, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 55 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 56 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 57 - Price: 6700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 53 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 51 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 58 - Price: 7000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 25 - Price: 88088, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 59 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 60 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 61 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 62 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 63 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 64 - Price: 4200, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 65 - Price: 63200, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 66 - Price: 48500, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 67 - Price: 86000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 68 - Price: 12600, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 69 - Price: 55000, Class: 2, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 70 - Price: 1500, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 71 - Price: 600, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 72 - Price: 7700, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 73 - Price: 8000, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 74 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 75 - Price: 3700, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 76 - Price: 3500, Class: 1, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 77 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI.ColShape
+ID: 78 - Price: 5100, Class: 0, Owner: None, Status: False | GTANetworkAPI

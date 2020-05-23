@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Threading.Tasks;
-using System.Timers;
 using GTANetworkAPI;
-using server_side.Utilities;
+using server_side.Systems;
 using server_side.Data;
 
 namespace server_side.Timers
@@ -24,41 +22,43 @@ namespace server_side.Timers
         {
             // sec timer
             secTimer = new System.Timers.Timer(1000);
-            secTimer.Elapsed += OnSecondTimer;
-            secTimer.AutoReset = secTimer.Enabled = true;
-            // one minute timer
-            minuteTimer = new System.Timers.Timer(60 * 1000);
-            minuteTimer.Elapsed += OnMinuteTimer;
-            minuteTimer.AutoReset = minuteTimer.Enabled = true;
-        }
-
-        private async static void OnMinuteTimer(object source, ElapsedEventArgs e)
-        {
-            /*
-            await Task.Run(() =>
+            secTimer.Elapsed += (s, e) =>
             {
-                NAPI.World.SetTime(time.Hour, time.Minute, time.Second);
-            });
-            */
-        }
-
-        private async static void OnSecondTimer(object source, ElapsedEventArgs e)
-        {
-            await Task.Run(() =>
-            {
-                if (time.Minute == 0 && time.Second == 0) // every new hour
+                // update weather every new hour
+                if (time.Minute == 0 && time.Second == 0)
                 {
-                   UtilityFuncs.SetCurrentWeatherInLA();
+                    RealWeather.SetCurrentWeatherInLA();
                 }
-            });
 
+                // reset pickups kd for all players
+                NAPI.Pools.GetAllPlayers().ForEach(p =>
+                {
+                    if (p.HasData(EntityData.PLAYER_PICKUPKD))
+                        if (p.GetData<int>(EntityData.PLAYER_PICKUPKD) != 0) p.SetData(EntityData.PLAYER_PICKUPKD, p.GetData<int>(EntityData.PLAYER_PICKUPKD) - 1);
+
+                    if (p.HasData("HouseCreateKD"))
+                        if (p.GetData<int>("HouseCreateKD") != 0) p.SetData("HouseCreateKD", p.GetData<int>("HouseCreateKD") - 1);
+                });
+            };
+            secTimer.AutoReset = secTimer.Enabled = true;
+            // --
+
+            // minute timer
+            minuteTimer = new System.Timers.Timer(60 * 1000);
+            minuteTimer.Elapsed += (s, e) =>
+            {
+                // NAPI.World.SetTime(time.Hour, time.Minute, time.Second);
+            };
+            minuteTimer.AutoReset = minuteTimer.Enabled = true;
+            // --
+        }
+        [ServerEvent(Event.Update)]
+        public void Event_Update()
+        {
             NAPI.Pools.GetAllPlayers().ForEach(p =>
             {
-                if (p.HasData(EntityData.PLAYER_PICKUPKD))
-                    if (p.GetData<int>(EntityData.PLAYER_PICKUPKD) != 0) p.SetData(EntityData.PLAYER_PICKUPKD, p.GetData<int>(EntityData.PLAYER_PICKUPKD) - 1);
-
-                if (p.HasData("HouseCreateKD"))
-                    if (p.GetData<int>("HouseCreateKD") != 0) p.SetData("HouseCreateKD", p.GetData<int>("HouseCreateKD") - 1);
+                if(p.GetData<bool>("temp_gm"))
+                    p.Health = 100;
             });
         }
     }

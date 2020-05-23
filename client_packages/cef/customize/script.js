@@ -607,7 +607,19 @@ $(document).ready(() => {
 function setCloth(type, cloth)
 {
     let toros = -1;
-    type == 11 ? cloth == 9 ? toros = 0 : cloth == 16 ? toros = 0 : cloth == 38 ? toros = 8 : cloth == 3 ? toros = 3 : cloth == 14 ? toros = 14 : cloth == 27 ? toros = 0 : toros = 0 : toros = -1;
+
+    if(type == 11) {
+        switch(cloth)
+        {
+            case 9: 
+            case 16: 
+            case 27: toros = 0; break;
+            case 38: toros = 8; break;
+            case 3: toros = 3; break;
+            case 14: toros = 14; break;
+            default: toros = -1; break;
+        }
+    }
 
     clothes[type].drawable = cloth;
     clothes[3].drawable = toros;

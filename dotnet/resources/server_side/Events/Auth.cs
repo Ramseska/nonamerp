@@ -24,7 +24,6 @@ namespace server_side.Events
         public string Name;
         public string SocialName;
         public string DateReg;
-        public string LastJoin;
 
         public AuthData(Player player)
         {
@@ -84,8 +83,8 @@ namespace server_side.Events
                                     auth.SocialName = (string)read["p_socialclub"];
                                     auth.DateReg = (string)read["p_datereg"];
 
-                                    client.SetData("pCustomize", read["p_customize"]);
-                                    client.SetData("pClothes", read["p_clothes"]);
+                                    client.SetData<object>("pCustomize", read["p_customize"]);
+                                    client.SetData<object>("pClothes", read["p_clothes"]);
                                 }
                                 read.Close();
 
@@ -112,9 +111,9 @@ namespace server_side.Events
                                 }
                                 read.Close();
 
-                                client.SetData("R_TempLogin", (string)args[1]);
-                                client.SetData("R_TempPassword", (string)args[2]);
-                                client.SetData("R_TempMail", (string)args[3]);
+                                client.SetData<string>("R_TempLogin", (string)args[1]);
+                                client.SetData<string>("R_TempPassword", (string)args[2]);
+                                client.SetData<string>("R_TempMail", (string)args[3]);
 
                                 NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
 
@@ -217,8 +216,8 @@ namespace server_side.Events
                         auth.SocialName = (string)read["p_socialclub"];
                         auth.DateReg = (string)read["p_datereg"];
 
-                        client.SetData("pCustomize", read["p_customize"]);
-                        client.SetData("pClothes", read["p_clothes"]);
+                        client.SetData<object>("pCustomize", read["p_customize"]);
+                        client.SetData<object>("pClothes", read["p_clothes"]);
                     }
                     read.Close();
 
@@ -277,6 +276,8 @@ namespace server_side.Events
 
             if (playerInfo.GetClothes() != null)
                 NAPI.ClientEvent.TriggerClientEvent(client, "setPlayerClothes", playerInfo.GetClothes());
+
+            NAPI.ClientEvent.TriggerClientEvent(client, "createHud", 50, 60, playerInfo.GetMoney(), playerInfo.GetBankMoney());
 
             NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
             Utilities.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");

@@ -49,7 +49,7 @@ namespace server_side.Ints
             );            
         }
 
-        public static void Event_PlayerEnterInterColShape(ColShape shape, Player client)
+        public static void OnPlayerEnterConshape(ColShape shape, Player client)
         {
             if (!shape.HasData("InteriorsColShape")) return;
 
