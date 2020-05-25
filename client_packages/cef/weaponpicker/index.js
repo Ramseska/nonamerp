@@ -130,8 +130,6 @@ mp.events.add("CreateWeaponPicker", () => {
     mp.gui.chat.activate(false);
     weaponPickerBrowser.visible = true;
     mp.gui.cursor.visible = true;
-
-    mp.game.graphics.transitionToBlurred(1000);
 });
 
 mp.events.add("DestroyWeaponPicker", () => {

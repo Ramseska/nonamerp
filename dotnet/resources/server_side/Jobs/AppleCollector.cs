@@ -22,7 +22,7 @@ namespace server_side.Jobs
         public const string APPLECOL_CURRENT_CP = "APPLECOL_CURRENT_CP";
         public const string APPLECOL_NEXT_CP = "APPLECOL_NEXT_CP";
 
-        const int MaxApples = 12; // максимальное кол-во переносимых яблок
+        const int MaxApples = 20; // максимальное кол-во переносимых яблок
         private double SalaryFactor = 0.2; // $ за 1 яблоко
 
         private ColShape StartJobColShape { get; set; }
@@ -79,13 +79,26 @@ namespace server_side.Jobs
 
             player.SetData<int>(APPLECOL_UNITS_HAVE, 0);
             player.SetData<int>(APPLECOL_UNITS_DELIVED, 0);
-            player.SetData<int>(APPLECOL_NEXT_CP, -1);
-            player.SetData<int>(APPLECOL_CURRENT_CP, -1);
+            player.SetData<Checkpoint>(APPLECOL_NEXT_CP, null);
+            player.SetData<Checkpoint>(APPLECOL_CURRENT_CP, null);
+
+            CreateNewPoint(player);
         }
 
         public void EndJob(Player player)
         {
+            if (player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP") != null)
+            {
+                player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP").Delete();
+            }
+
+            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы закончили работу сборщика яблок!");
+            player.SendChatMessage($"Всего собрано {Utilities.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_DELIVED)}{Utilities.Colors.WHITE} яблок.");
+            player.SendChatMessage($"Ваша зарплата: {Utilities.Colors.YELLOW}{player.GetData<double>(EntityData.PLAYER_JOB_SALARY)}{Utilities.Colors.WHITE} $");
+
             Job.GiveJobSalary(player);
+
+            NAPI.ClientEvent.TriggerClientEvent(player, "destroyAppleCollectorApp");
 
             player.SetData<int>(EntityData.PLAYER_TEMPJOB, 0);
             player.SetData<int>(EntityData.PLAYER_JOB, 0);
@@ -93,24 +106,16 @@ namespace server_side.Jobs
             player.ResetData(APPLECOL_UNITS_DELIVED);
             player.ResetData(APPLECOL_NEXT_CP);
             player.ResetData(APPLECOL_CURRENT_CP);
-
-            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы закончили работу сборщика яблок!");
         }
 
         public void GiveApples(Player player, int apples)
         {
-            if(player.GetData<int>(APPLECOL_UNITS_HAVE) == MaxApples)
+            player.SetData<int>(APPLECOL_UNITS_HAVE, (player.GetData<int>(APPLECOL_UNITS_HAVE) + apples));
+            
+            if(player.GetData<int>(APPLECOL_UNITS_HAVE) > MaxApples)
             {
-                player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}У Вас больше нет места для яблок!");
-                return;
+                player.SetData<int>(APPLECOL_UNITS_HAVE, MaxApples);
             }
-
-            if((player.GetData<int>(APPLECOL_UNITS_HAVE) + apples) >= MaxApples)
-            {
-                apples = 0;
-            }
-
-            player.SetData<int>(APPLECOL_UNITS_HAVE, player.GetData<int>(APPLECOL_UNITS_HAVE) + apples);
         }
 
         [ServerEvent(Event.PlayerEnterColshape)]
@@ -130,13 +135,73 @@ namespace server_side.Jobs
                 player.SetData<int>(APPLECOL_UNITS_DELIVED, player.GetData<int>(APPLECOL_UNITS_DELIVED) + player.GetData<int>(APPLECOL_UNITS_HAVE));
                 player.SetData<int>(APPLECOL_UNITS_HAVE, 0);
 
+                player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы положили яблоки в ящик. Всего собрано {Utilities.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_DELIVED)} {Utilities.Colors.WHITE}яблок!");
+
                 player.SetData<double>(EntityData.PLAYER_JOB_SALARY, GetSalary(player));
+
+                CreateNewPoint(player);
             }
         }
 
-        private void StartNewPoint(Player player)
+        [RemoteEvent("InitCurrentAppleColCP")]
+        public void InitCurrentAppleColCP(Player player, Checkpoint cp)
         {
+            player.SendChatMessage($"InitCP: {cp}");
 
+            player.SetData<Checkpoint>(APPLECOL_CURRENT_CP, cp);
+        }
+
+        [ServerEvent(Event.PlayerEnterCheckpoint)]
+        private void PlayerEnterCheckpoint(Checkpoint checkpoint, Player player)
+        {
+            player.SendChatMessage($"{player.GetData<Checkpoint>("APPLECOL_CURRENT_CP")} <> {checkpoint} <> {player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP")}");
+
+            if (player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP") == checkpoint)
+                player.SendChatMessage("yes");
+
+            if (player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP") == checkpoint)
+            {
+                player.SendChatMessage("started collect!");
+                StartCollectApples(player);
+            }
+        }
+        [RemoteEvent("sEndCollectApples")]
+        public void sEndCollectApples(Player player)
+        {
+            if (player.GetData<Job.eJobs>(EntityData.PLAYER_JOB) != Job.eJobs.AppleCollector)
+                return;
+
+            GiveApples(player, 5);
+
+            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы собрали яблоки! Сейчас у Вас собрано {player.GetData<int>(APPLECOL_UNITS_HAVE)} яблок.");
+
+            player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP").Delete();
+
+            CreateNewPoint(player);
+        }
+
+        private void StartCollectApples(Player player)
+        {
+            if (player.GetData<Job.eJobs>(EntityData.PLAYER_JOB) != Job.eJobs.AppleCollector)
+                return;
+
+            if (player.GetData<int>(APPLECOL_UNITS_HAVE) >= MaxApples)
+            {
+                player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}У Вас больше нет места для яблок!");
+                return;
+            }
+            NAPI.ClientEvent.TriggerClientEvent(player, "createAppleCollectorApp");
+        }
+
+        private void CreateNewPoint(Player player)
+        {
+            if (player.GetSharedData<Checkpoint>("APPLECOL_CURRENTCP") != null)
+                return;
+
+            Vector3 point = ListApplePoints[new Random().Next(0, ListApplePoints.Count)];
+            NAPI.ClientEvent.TriggerClientEvent(player, "cCreateNewPoint", point);
+
+            player.SendChatMessage("Point: " + point);
         }
 
         private double GetSalary(Player player)

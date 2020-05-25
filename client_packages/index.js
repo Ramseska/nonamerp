@@ -41,3 +41,5 @@ require("./voice/voice.js");
 require("./cef/customize/index.js");
 require("./cef/workdialog/workdialog.js");
 require("./cef/hud/hud.js");
+require("./cef/appleminigame/appleminigame.js");
+require("./jobs/applecollector.js");

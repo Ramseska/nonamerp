@@ -73,6 +73,9 @@ namespace server_side.Jobs
         {
             PlayerInfo pInfo = new PlayerInfo(player);
             pInfo.GiveMoney(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), "JOB APPLE COLLECTOR");
+
+            Utilities.UtilityFuncs.SendPlayerNotify(player, 0, $"+{player.GetData<double>(EntityData.PLAYER_JOB_SALARY)}$");
+
             player.SetData<double>(EntityData.PLAYER_JOB_SALARY, 0.0);
         }
 
