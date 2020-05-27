@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\Desktop\\nonamerp\\dotnet\\resources\\server_side\\server_side.csproj",
         "projectName": "server_side",
         "projectPath": "D:\\Desktop\\nonamerp\\dotnet\\resources\\server_side\\server_side.csproj",
-        "packagesPath": "C:\\Users\\Rams3ska\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\msmsm\\.nuget\\packages\\",
         "outputPath": "D:\\Desktop\\nonamerp\\dotnet\\resources\\server_side\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rams3ska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\msmsm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,12 +47,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

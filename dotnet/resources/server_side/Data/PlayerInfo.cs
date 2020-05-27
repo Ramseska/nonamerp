@@ -136,6 +136,7 @@ namespace server_side.Data
                         {
                             con.Open();
                             new MySqlCommand(query, con).ExecuteNonQuery();
+                            con.Close();
                         }
                     }
                     catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }

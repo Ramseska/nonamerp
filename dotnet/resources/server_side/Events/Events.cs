@@ -6,26 +6,21 @@ using server_side.Ints;
 using server_side.Systems;
 using server_side.Utilities;
 using server_side.Jobs;
+using System.Linq;
 
 namespace Main.events
 {
     class Events : Script
     {
         [ServerEvent(Event.PlayerEnterVehicle)]
-        async public void Event_PlayerEnterVehicle(Player player, Vehicle vehicle, sbyte seatID)
+        public void Event_PlayerEnterVehicle(Player player, Vehicle vehicle, sbyte seatID)
         {
-            await Task.Run(() =>
-            {
-                NAPI.ClientEvent.TriggerClientEvent(player, "createSpeedo");
-            });
+            // NAPI.ClientEvent.TriggerClientEvent(player, "createSpeedo");
         }
         [ServerEvent(Event.PlayerExitVehicle)]
         async public void Event_PlayerExitVehicle(Player player, Vehicle vehicle)
         {
-            await Task.Run(() =>
-            {
-                NAPI.ClientEvent.TriggerClientEvent(player, "destroySpeedo");
-            });
+            // NAPI.ClientEvent.TriggerClientEvent(player, "destroySpeedo");
         }
         [ServerEvent(Event.ResourceStart)]
         public void Event_OnResourceStart()
@@ -54,7 +49,7 @@ namespace Main.events
             NAPI.Server.SetLogRemoteEventParamParserExceptions(true);
 
             Console.ForegroundColor = ConsoleColor.Green;
-            NAPI.Util.ConsoleOutput("Server is loaded!\n");
+            NAPI.Util.ConsoleOutput("\nServer is loaded!\n");
             Console.ResetColor();
         }
 
@@ -133,6 +128,18 @@ namespace Main.events
             Interiors.OnPlayerEnterConshape(colshape, client);
             House.OnPlayerEnterColshape(colshape, client);
             Job.OnEnterJobPickUp(colshape, client);
+        }
+
+        [ServerEvent(Event.Update)]
+        public void Event_Update()
+        {
+            NAPI.Pools.GetAllPlayers().ForEach((p) =>
+            {
+                if(p.GetData<bool>("temp_gm") == true)
+                {
+                    p.Health = 100;
+                }
+            });
         }
     }
 }

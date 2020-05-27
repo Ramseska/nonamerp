@@ -71,8 +71,7 @@ namespace server_side.Jobs
 
         public static void GiveJobSalary(Player player)
         {
-            PlayerInfo pInfo = new PlayerInfo(player);
-            pInfo.GiveMoney(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), "JOB APPLE COLLECTOR");
+            new PlayerInfo(player).GiveMoney(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), "JOB APPLE COLLECTOR");
 
             Utilities.UtilityFuncs.SendPlayerNotify(player, 0, $"+{player.GetData<double>(EntityData.PLAYER_JOB_SALARY)}$");
 

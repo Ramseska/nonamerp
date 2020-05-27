@@ -15,6 +15,9 @@
     <Reference Include="Bootstrapper">
       <HintPath>..\..\runtime\Bootstrapper.dll</HintPath>
     </Reference>
+    <Reference Include="Colorful.Console">
+      <HintPath>..\..\runtime\Colorful.Console.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\..\runtime\MySql.Data.dll</HintPath>
     </Reference>
