@@ -82,12 +82,12 @@ namespace server_side.Data
 
                             HouseList.Add(hd);
                         }
-                        foreach (House h in HouseList)
-                            NAPI.Util.ConsoleOutput($"ID: {h.HouseID} - Price: {h.HousePrice}, Class: {h.HouseClass}, Owner: {h.HouseOwner}, Status: {h.HouseStatus} | {h.HouseColShape}");
                         
                         NAPI.Util.ConsoleOutput("[MySQL]: Домов загружено: {0} | Домов в списке: {1}", cc, HouseList.Count);
                     }
+                    read.Close();
                 }
+                con.Close();
             }
         }
 
@@ -176,7 +176,7 @@ namespace server_side.Data
             client.SendChatMessage("House has been created!");
         }
         [Command("hdl")]
-        async public void CMD_hdl(Player client, int houseid)
+        public void CMD_hdl(Player client, int houseid)
         {
             if(!HouseList.Exists(x => x.HouseID == houseid))
             {
@@ -192,15 +192,7 @@ namespace server_side.Data
 
             HouseList.Remove(h);
 
-            await Task.Run(() =>
-            {
-                using(MySqlConnection con = MySqlConnector.GetDBConnection())
-                {
-                    con.Open();
-                    MySqlCommand cmd = new MySqlCommand($"DELETE FROM house WHERE h_id = {houseid}", con);
-                    cmd.ExecuteNonQuery();
-                }
-            });
+            MySqlConnector.RequestExecuteNonQuery($"DELETE FROM house WHERE h_id = {houseid}");
 
             client.SendChatMessage($"Дом {houseid} успешно был удален!");
         }

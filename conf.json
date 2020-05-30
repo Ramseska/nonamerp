@@ -5,6 +5,7 @@
 	"stream-distance" : 300.0,
 	"announce" : false,
 	"csharp" : "true",
-	"port": 22005,
-	"allow-cef-debugging": true
+	"port" : 22005,
+	"voice-chat" : true,
+	"api-threading-debugging" : true
 }

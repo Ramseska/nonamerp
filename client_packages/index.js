@@ -1,3 +1,23 @@
+require("./cef/weaponpicker");
+require("./cef/authorization");
+//require("./cef/speedo");
+require("./cef/color_picker");
+require("./keybinds.js");
+require("./sound/sound.js");
+// require("./debugUI/debugUI.js");
+require("./cef/other/house");
+//require("./cef/reg_customizer");
+require("./camfly.js");
+require("./cef/notify/notify.js");
+require("./ints.js")
+require("./voice/voice.js");
+require("./cef/customize/index.js");
+require("./cef/workdialog/workdialog.js");
+require("./cef/hud/hud.js");
+require("./cef/appleminigame/appleminigame.js");
+require("./jobs/applecollector.js");
+
+
 //mp.game.ui.displayRadar(false); // disable radar 
 var pukikaki = null;
 
@@ -21,25 +41,12 @@ mp.events.add("playerCommand", (command) => {
         mp.gui.chat.push(`You enter command a "${commandName}" [${args[0]}, ${args[1]}]`);
         mp.players.local.setComponentVariation(Number(args[0]), Number(args[1]), 0, 2);
     }
+
+    if(commandName === "slt") {
+        mp.game.time.setClockTime(Number(args[0]), Number(args[1]), Number(0));
+    }
+    if(commandName === "blackout")
+    {
+        for (let i = 0; i <= 16; i++) mp.game.graphics.setLightsState(i, true);
+    }
 });
-
-mp.gui.chat.isChatActive = false;
-
-require("./cef/weaponpicker");
-require("./cef/authorization");
-//require("./cef/speedo");
-require("./cef/color_picker");
-require("./keybinds.js");
-require("./sound/sound.js");
-require("./debugUI/debugUI.js");
-require("./cef/other/house");
-//require("./cef/reg_customizer");
-require("./camfly.js");
-require("./cef/notify/notify.js");
-require("./ints.js")
-require("./voice/voice.js");
-require("./cef/customize/index.js");
-require("./cef/workdialog/workdialog.js");
-require("./cef/hud/hud.js");
-require("./cef/appleminigame/appleminigame.js");
-require("./jobs/applecollector.js");

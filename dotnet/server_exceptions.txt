@@ -1,15 +1,15 @@
 
-==================[24.05.2020 7:51:12]==================
+==================[29.05.2020 23:43:27]==================
 System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
    at int System.Text.EncodingTable.InternalGetCodePageFromName(string name)
 =========================================================
 
-==================[24.05.2020 8:03:22]==================
+==================[29.05.2020 23:49:34]==================
 System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 8:03:23]==================
+==================[29.05.2020 23:49:34]==================
 System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
@@ -17,7 +17,7 @@ System.IO.IOException: Unable to write data to the transport connection: Про�
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 8:03:23]==================
+==================[29.05.2020 23:49:34]==================
 System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
@@ -26,12 +26,12 @@ System.IO.IOException: Unable to write data to the transport connection: Про�
    at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
 =========================================================
 
-==================[24.05.2020 8:03:24]==================
+==================[29.05.2020 23:49:34]==================
 System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 8:03:24]==================
+==================[29.05.2020 23:49:34]==================
 System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
@@ -39,23 +39,23 @@ System.IO.IOException: Unable to write data to the transport connection: Про�
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 8:03:24]==================
+==================[29.05.2020 23:49:34]==================
 System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
    --- End of inner exception stack trace ---
-   at void System.Net.So
-==================[24.05.2020 17:28:49]==================
+   at void System
+==================[30.05.2020 1:54:58]==================
 System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
    at int System.Text.EncodingTable.InternalGetCodePageFromName(string name)
 =========================================================
 
-==================[24.05.2020 17:37:03]==================
+==================[30.05.2020 2:01:23]==================
 System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 17:37:04]==================
+==================[30.05.2020 2:01:23]==================
 System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
@@ -63,7 +63,7 @@ System.IO.IOException: Unable to read data from the transport connection: Про
    at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 17:37:04]==================
+==================[30.05.2020 2:01:23]==================
 System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
@@ -72,7 +72,7 @@ System.IO.IOException: Unable to read data from the transport connection: Про
    at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
 =========================================================
 
-==================[24.05.2020 17:37:04]==================
+==================[30.05.2020 2:01:23]==================
 MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
  ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
  ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
@@ -85,10 +85,660 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has 
    at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
 =========================================================
 
-==================[24.05.2020 17:37:04]==================
+==================[30.05.2020 2:01:23]==================
 System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
    at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
 =========================================================
 
-==================[24.05.2020 17:37:04]==================
+==================[30.05.2020 2:01:23]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:01:23]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 2:01:23]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at void MySql.Data.MySqlClient.NativeDriver.ReadOk(bool read)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 2:01:56]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at void MySql.Data.MySqlClient.NativeDriver.ReadOk(bool read)
+=========================================================
+
+==================[30.05.2020 2:07:06]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:07:06]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:07:06]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 2:07:06]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:07:06]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 2:07:06]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное �
+==================[30.05.2020 4:35:50]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at int System.Text.EncodingTable.InternalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.05.2020 4:41:13]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 4:41:14]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 4:41:14]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 4:41:14]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 4:41:14]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 4:41:14]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.So
+==================[30.05.2020 13:24:02]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at int System.Text.EncodingTable.InternalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.05.2020 13:32:32]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 13:32:32]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 13:32:32]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 13:32:32]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+=========================================================
+
+==================[30.05.2020 13:32:32]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 13:32:32]==================
 System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разо�
+==================[30.05.2020 15:31:17]==================
+System.ArgumentException: 'iso-2022-cn' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at int System.Text.EncodingTable.InternalGetCodePageFromName(string name)
+=========================================================
+
+==================[30.05.2020 15:37:25]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:37:25]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:37:25]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 15:37:25]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:37:25]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:37:25]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 15:40:18]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+=========================================================
+
+==================[30.05.2020 15:43:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:43:08]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:43:08]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 15:43:08]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+=========================================================
+
+==================[30.05.2020 15:43:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 15:43:08]==================
+System.IO.IOException: Unable to write data to the tran
+==================[30.05.2020 17:15:55]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:15:55]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:15:55]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 17:15:55]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:15:55]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:15:55]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 17:15:55]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорв
+==================[30.05.2020 17:26:09]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:26:09]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:26:10]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 17:26:10]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:26:10]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 17:26:10]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 17:26:10]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорв
+==================[30.05.2020 20:12:48]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:12:48]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:12:48]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 20:12:48]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+=========================================================
+
+==================[30.05.2020 20:12:48]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:12:48]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.N
+==================[30.05.2020 20:19:34]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:19:34]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:19:34]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 20:19:34]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:19:34]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:19:34]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 20:19:34]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорв
+==================[30.05.2020 20:46:40]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 20:46:40]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, byte[] buffer, int offset, int count)
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at void MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySqlPacket MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at void MySql.Data.MySqlClient.NativeDriver.ReadOk(bool read)
+=========================================================
+
+==================[30.05.2020 20:47:52]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:47:52]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:47:52]==================
+System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at int System.Net.Sockets.NetworkStream.Read(byte[] buffer, int offset, int size)
+   at int MySql.Data.MySqlClient.TimedStream.Read(byte[]
+==================[30.05.2020 20:57:32]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:57:32]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[30.05.2020 20:57:32]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[30.05.2020 21:00:35]==================
+System.Exception: Non-thread-safe API has been invoked out of main thread. Check NAPI.Task.Run.
+   at void Bootstrapper.EventInternalClass.OnThreadingException()
+=========================================================
+
+==================[30.05.2020 21:00:36]==================
+System.Exception: Non-thread-safe API has been invoked out of main thread. Check NAPI.Task.Run.
+   at void Bootstrapper.EventInternalClass.OnThreadingException()
+   at void GTANetworkMethods.Player.SpawnPlayer(Player player, Vector3 pos, float heading)
+   at void Main.events.Events.Event_PlayerDeath(Player client, Player killer, uint reason)+() => { } in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 121
+   at void System.Threading.Tasks.Task.s_ecCallback(object obj)
+   at void System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, object state)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[30.05.2020 21:00:36]==================
+System.Exception: Non-thread-safe API has been invoked out of main thread. Check NAPI.Task.Run.
+   at void Bootstrapper.EventInternalClass.OnThreadingException()
+   at void GTANetworkMethods.Player.SpawnPlayer(Player player, Vector3 pos, float heading)
+   at void Main.events.Events.Event_PlayerDeath(Player client, Player killer, uint reason)+() => { } in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 121
+   at void System.Threading.Tasks.Task.s_ecCallback(object obj)
+   at void System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, object state)
+   at void System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, object state)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Thr

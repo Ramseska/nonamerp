@@ -11,7 +11,7 @@ namespace server_side.Jobs
 {
     public class Job : Script
     {
-        public enum eJobs
+        public enum eJobs : int
         {
             None = 0,
             AppleCollector = 1,
@@ -69,9 +69,9 @@ namespace server_side.Jobs
             }
         }
 
-        public static void GiveJobSalary(Player player)
+        public static void GiveJobSalary(Player player, eJobs job)
         {
-            new PlayerInfo(player).GiveMoney(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), "JOB APPLE COLLECTOR");
+            new PlayerInfo(player).GiveMoney(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), jobsInfo[(int)job][0]);
 
             Utilities.UtilityFuncs.SendPlayerNotify(player, 0, $"+{player.GetData<double>(EntityData.PLAYER_JOB_SALARY)}$");
 
@@ -80,9 +80,21 @@ namespace server_side.Jobs
 
         public static void OnEnterJobPickUp(ColShape shape, Player player)
         {
-            if(shape.HasData(EntityData.JOB_ID))
+            if (player.IsInVehicle) return;
+
+            if (shape.HasData(EntityData.JOB_ID))
             {
                 ShowJobDialog(player, shape.GetData<eJobs>(EntityData.JOB_ID));
+            }
+        }
+
+        public static void IsLeaveOnJob(Player player)
+        {
+            if (player.GetData<double>(EntityData.PLAYER_JOB_SALARY) > 0)
+            {
+                PlayerInfo pInfo = new PlayerInfo(player);
+                pInfo.AddToPayCheck(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), "from job salary");
+                player.SetData<double>(EntityData.PLAYER_JOB_SALARY, 0.00);
             }
         }
 

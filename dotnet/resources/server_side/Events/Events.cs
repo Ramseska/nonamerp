@@ -7,6 +7,8 @@ using server_side.Systems;
 using server_side.Utilities;
 using server_side.Jobs;
 using System.Linq;
+using MySql.Data.MySqlClient;
+using server_side.DBConnection;
 
 namespace Main.events
 {
@@ -18,7 +20,7 @@ namespace Main.events
             // NAPI.ClientEvent.TriggerClientEvent(player, "createSpeedo");
         }
         [ServerEvent(Event.PlayerExitVehicle)]
-        async public void Event_PlayerExitVehicle(Player player, Vehicle vehicle)
+        public void Event_PlayerExitVehicle(Player player, Vehicle vehicle)
         {
             // NAPI.ClientEvent.TriggerClientEvent(player, "destroySpeedo");
         }
@@ -41,7 +43,7 @@ namespace Main.events
 
             NAPI.Server.SetGlobalServerChat(true); // disable default global chat
             NAPI.Server.SetAutoRespawnAfterDeath(false);
-            RealWeather.SetCurrentWeatherInLA(); // set current weather how in real LA 
+            //RealWeather.SetCurrentWeatherInLA(); // set current weather how in real LA 
             NAPI.Server.SetCommandErrorMessage("~r~[Ошибка]: ~w~Данной команды не существует!");
             NAPI.Server.SetDefaultSpawnLocation(new Vector3(1789.294, -244.4794, 291.7196), 353.7821f);
             //
@@ -54,30 +56,32 @@ namespace Main.events
         }
 
         [ServerEvent(Event.PlayerConnected)]
-        async public void Event_PlayerConnected(Player client)
+        public void Event_PlayerConnected(Player client)
         {
-            PlayerInfo playerInfo = new PlayerInfo(client);
-
-            playerInfo.SetDataToDefault(); // reset player data
-            playerInfo.SetSocialClub(client.SocialClubName);
-
-            await Task.Run(() =>
+            try
             {
+                PlayerInfo playerInfo = new PlayerInfo(client);
+
+                playerInfo.SetDataToDefault(); // reset player data
+                playerInfo.SetSocialClub(client.SocialClubName);
+
                 client.Position = new Vector3(1789.294, -244.4794, 291.7196);
                 client.Rotation = new Vector3(client.Rotation.X, client.Rotation.Y, 353.7821f);
-            });
-            
+                NAPI.Entity.SetEntityTransparency(client, 0);
 
-            NAPI.Entity.SetEntityTransparency(client, 0);
+                client.Dimension = Convert.ToUInt16("1234" + Convert.ToString(client.Value));
 
-            client.Dimension = Convert.ToUInt16("1234" + Convert.ToString(client.Value));
+                NAPI.ClientEvent.TriggerClientEvent(client, "CreateAuthWindow");
 
-            NAPI.ClientEvent.TriggerClientEvent(client, "CreateAuthWindow");
+                NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
 
-            NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
+                //NAPI.ClientEvent.TriggerClientEvent(client, "createDebugUI");
+            }
+            catch (Exception e)
+            {
+                NAPI.Util.ConsoleOutput(e.ToString());
+            }
 
-            //
-            NAPI.ClientEvent.TriggerClientEvent(client, "createDebugUI");
         }
         /*
         [ServerEvent(Event.ChatMessage)]
@@ -98,25 +102,23 @@ namespace Main.events
         */
 
         [ServerEvent(Event.PlayerDeath)]
-        async public void Event_PlayerDeath(Player client, Player killer, uint reason)
+        public void Event_PlayerDeath(Player client, Player killer, uint reason)
         {
-            await Task.Run(() =>
+            Random rand = new Random();
+            Vector3[] respawnPositions =
             {
-                Random rand = new Random();
-                Vector3[] respawnPositions =
-                {
-                    new Vector3(258.9378f, -1340.669f, 24.53781f),
-                    new Vector3(250.3403f, -1351.37f, 24.53782f),
-                    new Vector3(251.3651f, -1347.497f, 24.53782f)
-                };
-                float[] rots = { 176.6944f, 250.9094f, 137.5093f };
+                new Vector3(258.9378f, -1340.669f, 24.53781f),
+                new Vector3(250.3403f, -1351.37f, 24.53782f),
+                new Vector3(251.3651f, -1347.497f, 24.53782f)
+            };
+            float[] rots = { 176.6944f, 250.9094f, 137.5093f };
 
-                Task.Delay(5000);
-
+            NAPI.Task.Run(() =>
+            {
                 int randVal = rand.Next(0, respawnPositions.Length);
                 NAPI.Player.SpawnPlayer(client, respawnPositions[randVal], rots[randVal]);
                 client.Dimension = 1;
-            });
+            }, 5000);
         }
         [ServerEvent(Event.PlayerEnterColshape)]
         public void Event_PlayerEnterColshape(ColShape colshape, Player client)
@@ -141,5 +143,28 @@ namespace Main.events
                 }
             });
         }
+        // Какого-то хуя не работает. Нужно найти способ реализации
+        /*
+        [ServerEvent(Event.PlayerDisconnected)]
+        public void OnPlayerDisconnected(Player player, DisconnectionType type, string reason)
+        {
+            switch (type)
+            {
+                case DisconnectionType.Left:
+                    NAPI.Util.ConsoleOutput($"{player.Name} has left from server.");
+                    break;
+
+                case DisconnectionType.Timeout:
+                    NAPI.Util.ConsoleOutput($"{player.Name} has timed out.");
+                    break;
+
+                case DisconnectionType.Kicked:
+                    NAPI.Util.ConsoleOutput($"{player.Name} has been kicked for {reason}");
+                    break;
+            }
+
+            Job.IsLeaveOnJob(player);
+        }
+        */
     }
 }

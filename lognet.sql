@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 09 2020 г., 18:48
+-- Время создания: Май 30 2020 г., 09:23
 -- Версия сервера: 10.3.13-MariaDB-log
 -- Версия PHP: 7.1.32
 
@@ -30,31 +30,37 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `accounts` (
   `p_id` int(11) NOT NULL,
-  `p_name` varchar(64) NOT NULL,
-  `p_ip` varchar(64) DEFAULT NULL,
-  `p_password` varchar(64) NOT NULL,
-  `p_mail` varchar(128) NOT NULL,
+  `p_socialclub` varchar(128) DEFAULT NULL,
+  `p_login` varchar(32) DEFAULT NULL,
+  `p_name` varchar(32) DEFAULT NULL,
+  `p_ip` varchar(32) DEFAULT NULL,
+  `p_lastip` varchar(32) DEFAULT NULL,
+  `p_password` varchar(32) DEFAULT NULL,
+  `p_mail` varchar(256) DEFAULT NULL,
   `p_lvl` int(12) NOT NULL DEFAULT 0,
-  `p_datareg` date DEFAULT NULL,
+  `p_datereg` varchar(64) DEFAULT NULL,
+  `p_lastjoin` varchar(64) DEFAULT NULL,
   `p_birthday` date DEFAULT NULL,
   `p_sex` tinyint(1) DEFAULT NULL,
   `p_height` int(11) NOT NULL DEFAULT 0,
   `p_weight` int(11) NOT NULL DEFAULT 0,
   `p_age` int(3) NOT NULL DEFAULT 0,
+  `p_satiety` int(3) NOT NULL DEFAULT 100,
+  `p_thirst` int(3) NOT NULL DEFAULT 100,
   `p_money` double(32,2) NOT NULL DEFAULT 0.00,
   `p_bank` double(32,2) NOT NULL DEFAULT 0.00,
   `p_customize` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `p_house` int(11) NOT NULL DEFAULT 0
+  `p_clothes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `p_house` int(11) NOT NULL DEFAULT 0,
+  `p_paycheck` double(32,2) NOT NULL DEFAULT 0.00
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `accounts`
 --
 
-INSERT INTO `accounts` (`p_id`, `p_name`, `p_ip`, `p_password`, `p_mail`, `p_lvl`, `p_datareg`, `p_birthday`, `p_sex`, `p_height`, `p_weight`, `p_age`, `p_money`, `p_bank`, `p_customize`, `p_house`) VALUES
-(1, 'Ramses', '127.0.0.1', 'qweewq', 'responsetie@mail.ru', 0, NULL, NULL, NULL, 0, 0, 0, 10504.02, 412.11, '{\"sex\":false,\"mother\":\"31\",\"father\":\"0\",\"skin_1\":\"0\",\"skin_2\":\"0\",\"parentsMix\":\"0\",\"skinMix\":\"0\",\"eyeColor\":\"3\",\"hair\":\"59\",\"hairColor\":\"34\",\"hilightColor\":\"0\",\"noseWidth\":\"-0.35\",\"noseHeight\":\"0\",\"noseLength\":\"0.6\",\"noseBridge\":\"0.45\",\"noseTip\":\"0\",\"noseBridgeShift\":\"0\",\"browHeight\":\"-0.3\",\"browWidth\":\"0\",\"cheekboneHeight\":\"0\",\"cheekboneWidth\":\"0.5\",\"cheeksWidth\":\"-1\",\"eyesWidth\":\"0\",\"lips\":\"0\",\"jawWidth\":\"-1\",\"jawHeight\":\"0\",\"chitHeight\":\"0\",\"chinPosition\":\"-0.1\",\"chinWidth\":\"-0.15\",\"chinShape\":\"-1\",\"neckWidth\":\"-1\"}', 0),
-(2, 'Ramseska', '127.0.0.1', 'qweewq', 'qwewafwqe@', 0, NULL, NULL, NULL, 0, 0, 0, 220.05, 111.10, '{\"sex\":true,\"mother\":\"0\",\"father\":\"0\",\"skin_1\":\"0\",\"skin_2\":\"0\",\"parentsMix\":\"0\",\"skinMix\":\"0\",\"eyeColor\":\"0\",\"hair\":\"0\",\"hairColor\":\"0\",\"hilightColor\":\"0\",\"noseWidth\":\"0\",\"noseHeight\":\"0\",\"noseLength\":\"0\",\"noseBridge\":\"0\",\"noseTip\":\"0\",\"noseBridgeShift\":\"0\",\"browHeight\":\"0\",\"browWidth\":\"0\",\"cheekboneHeight\":\"0\",\"cheekboneWidth\":\"0\",\"cheeksWidth\":\"0\",\"eyesWidth\":\"0\",\"lips\":\"0\",\"jawWidth\":\"0\",\"jawHeight\":\"0\",\"chitHeight\":\"0\",\"chinPosition\":\"0\",\"chinWidth\":\"0\",\"chinShape\":\"0\",\"neckWidth\":\"0\"}', 0),
-(3, 'Waka_Flipsize', '25.35.241.149', 'kazakovloh', 'hakerkruto@gmail.com', 0, NULL, NULL, NULL, 0, 0, 0, 0.00, 0.00, '{\"sex\":true,\"mother\":\"0\",\"father\":\"36\",\"skin_1\":\"10\",\"skin_2\":\"0\",\"parentsMix\":\"0\",\"skinMix\":\"0\",\"eyeColor\":\"0\",\"hair\":\"55\",\"hairColor\":\"38\",\"hilightColor\":\"71\",\"noseWidth\":\"-0.35\",\"noseHeight\":\"-0.3\",\"noseLength\":\"0.55\",\"noseBridge\":\"0\",\"noseTip\":\"0\",\"noseBridgeShift\":\"0\",\"browHeight\":\"0\",\"browWidth\":\"0\",\"cheekboneHeight\":\"-0.5\",\"cheekboneWidth\":\"-0.65\",\"cheeksWidth\":\"-0.95\",\"eyesWidth\":\"0\",\"lips\":\"0\",\"jawWidth\":\"0\",\"jawHeight\":\"0\",\"chitHeight\":\"0\",\"chinPosition\":\"0\",\"chinWidth\":\"0\",\"chinShape\":\"0\",\"neckWidth\":\"0\"}', 0);
+INSERT INTO `accounts` (`p_id`, `p_socialclub`, `p_login`, `p_name`, `p_ip`, `p_lastip`, `p_password`, `p_mail`, `p_lvl`, `p_datereg`, `p_lastjoin`, `p_birthday`, `p_sex`, `p_height`, `p_weight`, `p_age`, `p_satiety`, `p_thirst`, `p_money`, `p_bank`, `p_customize`, `p_clothes`, `p_house`, `p_paycheck`) VALUES
+(1, 'Rams3ska', 'Ramses', 'Adolf Hietler', '127.0.0.1', '127.0.0.1', 'qweewq', 'responsetie@mail.ru', 0, '28.05.2020 23:41:09', '30.05.2020 4:48:37', NULL, 1, 0, 0, 32, 100, 100, 22.20, 0.00, '{\"mother\":25,\"father\":13,\"motherSkin\":0,\"fatherSkin\":0,\"parentsMix\":0,\"skinMix\":0,\"sex\":true,\"noseWidth\":0,\"noseHeigth\":0,\"noseLength\":0,\"noseBridge\":0,\"noseTip\":0,\"noseBridgeShift\":0,\"browHeigth\":0,\"browWidth\":0,\"cheekboneHeigth\":0,\"cheekboneWidth\":0,\"cheekWidth\":0,\"eyes\":0,\"lips\":0,\"jawWidth\":0,\"jawHeigth\":0,\"chinLength\":0,\"chinPosition\":0,\"chinWidth\":0,\"chinShape\":0,\"neckWidth\":0,\"hair\":[12,0,0],\"headOverlay\":{\"blemishes\":[0,255,1],\"facialHair\":[1,255,1],\"eyebrows\":[2,255,1],\"ageing\":[3,255,1],\"makeup\":[4,255,1],\"blush\":[5,255,1],\"complexion\":[6,255,1],\"sunDamage\":[7,255,1],\"lipStick\":[8,255,1],\"moles\":[9,255,1],\"chestHair\":[10,255,1],\"bodyBlemishes\":[11,255,1]}}', '{\"1\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"2\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"3\":{\"drawable\":-1,\"texture\":0,\"palette\":2},\"4\":{\"drawable\":3,\"texture\":0,\"palette\":2},\"5\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"6\":{\"drawable\":1,\"texture\":0,\"palette\":2},\"7\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"8\":{\"drawable\":15,\"texture\":0,\"palette\":2},\"9\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"10\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"11\":{\"drawable\":9,\"texture\":0,\"palette\":2}}', 0, 0.00);
 
 -- --------------------------------------------------------
 
@@ -183,7 +189,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT для таблицы `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -5,10 +5,12 @@ using AngleSharp;
 
 namespace server_side.Systems
 {
+    // Нужно переписать, т.к. есть пара багов (или вовсе отказаться от нее и сделать какой-то рандом с вероятностью)
+
     class RealWeather : Script
     {
         // Weather in the game from real LA
-        public async static void SetCurrentWeatherInLA()
+        public async void SetCurrentWeatherInLA()
         {
             var config = new Configuration().WithDefaultLoader();
             var document = await BrowsingContext.New(config).OpenAsync("https://www.bbc.com/weather/5368361");
@@ -23,12 +25,18 @@ namespace server_side.Systems
             {
                 if (weather[0].Contains(dataWeather[i]))
                 {
-                    NAPI.World.SetWeather(gameWeather[i]);
-                    NAPI.Util.ConsoleOutput($"Realworld Weather: Temperature: {temperature[0]} | Weather: {weather[0]}");
-                    NAPI.Util.ConsoleOutput($"Current game weather: {gameWeather[i]}");
+                    NAPI.Task.Run(() =>
+                    {
+                        NAPI.World.SetWeather(gameWeather[i]);
+                        NAPI.Util.ConsoleOutput($"Realworld Weather: Temperature: {temperature[0]} | Weather: {weather[0]}");
+                        NAPI.Util.ConsoleOutput($"Current game weather: {gameWeather[i]}");
+                    });
                     break;
                 }
-                else if (i == dataWeather.Length - 1) NAPI.Util.ConsoleOutput("Not finded rl weather");
+                else if (i == dataWeather.Length - 1)
+                {
+                    NAPI.Task.Run(() => { NAPI.Util.ConsoleOutput("Not finded rl weather"); });
+                }
             }
         }
     }

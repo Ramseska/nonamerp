@@ -17,7 +17,6 @@ function loadApp()
     idk = true;
 
     let positions = getRandom(20, 5);
-    console.log(positions)
 
     for(let i = 0; i < 5; i++)
     {
@@ -30,7 +29,7 @@ function loadApp()
             $(event.toElement).removeClass('apple-item').addClass('apple-img').draggable("disable").appendTo($(this)).css({left: 0, top: 0, position: 'relative'});
             $(this).droppable("disable").animate({borderColor: '#6dda6d'}, 200);
 
-            //mp.trigger('onTakedApple');
+            mp.trigger('onTakedApple');
 
             countApples++;
 

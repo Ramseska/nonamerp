@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using GTANetworkAPI;
 using server_side.DBConnection;
 using MySql.Data.MySqlClient;
+using System.Security.Policy;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace server_side.Data
 {
@@ -39,6 +41,7 @@ namespace server_side.Data
             player.SetData<object>(EntityData.PLAYER_LASTJOIN, null);
             player.SetData<int>(EntityData.PLAYER_SATIETY, 0);
             player.SetData<int>(EntityData.PLAYER_THIRST, 0);
+            player.SetData<double>(EntityData.PLAYER_PAYCHECK, 0.00);
 
             // unext
             player.SetData<double>(EntityData.PLAYER_JOB_SALARY, 0.0);
@@ -88,16 +91,9 @@ namespace server_side.Data
             return "Undefined";
         }
 
-        async public void SetCurrentIP(string ip)
+        public void SetCurrentIP(string ip)
         {
-            await Task.Run(() =>
-            {
-                using(MySqlConnection con = MySqlConnector.GetDBConnection())
-                {
-                    con.Open();
-                    new MySqlCommand($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_login` = '{GetLogin()}'", con).ExecuteNonQuery();
-                }
-            });
+            MySqlConnector.RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_login` = '{GetLogin()}'");
             
             player.SetData<string>(EntityData.PLAYER_IP, ip);
         }
@@ -121,54 +117,28 @@ namespace server_side.Data
         public int GetAge() => player.GetData<int>(EntityData.PLAYER_AGE);
         public void SetAge(int age) => player.SetData<int>(EntityData.PLAYER_AGE, age);
 
-        async public void GiveMoney(double money, string reason = null, bool updateindb = true)
+        public void GiveMoney(double money, string reason = null, bool updateindb = true)
         {
             player.SetData<double>(EntityData.PLAYER_MONEY, Math.Round(money, 2) + (player.GetData<double>(EntityData.PLAYER_MONEY)));
+
             if (updateindb)
             {
-                await Task.Run(() =>
-                {
-                    string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
-
-                    try
-                    {
-                        using (MySqlConnection con = MySqlConnector.GetDBConnection())
-                        {
-                            con.Open();
-                            new MySqlCommand(query, con).ExecuteNonQuery();
-                            con.Close();
-                        }
-                    }
-                    catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }
-
-                });
+                string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
+                MySqlConnector.RequestExecuteNonQuery(query);
             }
 
             Utilities.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_MONEY), 2);
 
-        async public void GiveBankMoney(double money, string reason = null, bool updateindb = true)
+        public void GiveBankMoney(double money, string reason = null, bool updateindb = true)
         {
             player.SetData<double>(EntityData.PLAYER_BANK, Math.Round(money, 2) + (player.GetData<double>(EntityData.PLAYER_BANK)));
 
             if (updateindb)
             {
-                await Task.Run(() =>
-                {
-                    string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
-
-                    try
-                    {
-                        using (MySqlConnection con = MySqlConnector.GetDBConnection())
-                        {
-                            con.Open();
-                            new MySqlCommand(query, con).ExecuteNonQuery();
-                        }
-
-                    }
-                    catch (Exception e) { NAPI.Util.ConsoleOutput($"[MySQL Exception]: Player: {player.Name}({player.Value})\nQuery: {query}\nException: {e.ToString()}"); }
-                });
+                string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
+                MySqlConnector.RequestExecuteNonQuery(query);
             }
 
             Utilities.UtilityFuncs.UpdatePlayerHud(player);
@@ -193,18 +163,11 @@ namespace server_side.Data
             return "Undefined";
         }
 
-        async public void SetLastJoin(string date)
+        public void SetLastJoin(string date)
         {
             string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_login` = '{GetLogin()}'";
 
-            await Task.Run(() =>
-            {
-                using (MySqlConnection con = MySqlConnector.GetDBConnection())
-                {
-                    con.Open();
-                    new MySqlCommand(query, con).ExecuteNonQuery();
-                }
-            });
+            MySqlConnector.RequestExecuteNonQuery(query);
 
             player.SetData<string>(EntityData.PLAYER_LASTJOIN, date);
         }
@@ -237,5 +200,17 @@ namespace server_side.Data
             Utilities.UtilityFuncs.UpdatePlayerHud(player);
         }
         public int GetThirst() => player.GetData<int>(EntityData.PLAYER_THIRST);
+
+        public double GetPayCheck() => Math.Round(player.GetData<double>(EntityData.PLAYER_PAYCHECK), 2);
+        public void AddToPayCheck(double money, string reason = null)
+        {
+            double paycheck = Math.Round(GetPayCheck() + money, 2);
+
+            string query = $"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_login` = '{GetLogin()}'";
+
+            MySqlConnector.RequestExecuteNonQuery(query);
+
+            player.SetData<double>(EntityData.PLAYER_PAYCHECK, paycheck);
+        }
     }
 }

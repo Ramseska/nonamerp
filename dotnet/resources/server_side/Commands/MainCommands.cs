@@ -118,6 +118,12 @@ namespace server_side.Commands
             NAPI.World.SetTime(hour, 0, 0);
             client.SendChatMessage($"Время изменено на {hour} часов");
         }
+        [Command("setweather")]
+        public void CMD_setweather(Player player, string weathername)
+        {
+            NAPI.World.SetWeather(weathername);
+            player.SendChatMessage($"Погода изменена на {weathername}");
+        }
         [Command("stopsound")]
         public void CMD_stopsound(Player client)
         {

@@ -28,6 +28,7 @@
         public const string PLAYER_HEALTH = "PLAYER_HEALTH";
         public const string PLAYER_DATEREG = "PLAYER_DATAREG";
         public const string PLAYER_LASTJOIN = "PLAYER_LASTJOIN";
+        public const string PLAYER_PAYCHECK = "PLAYER_PAYCHECK";
 
 
         // vehicle data

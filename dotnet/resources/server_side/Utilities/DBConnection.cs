@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 
 namespace server_side.DBConnection
 {
@@ -22,6 +23,25 @@ namespace server_side.DBConnection
             MySqlConnection conn = new MySqlConnection(connString);
 
             return conn;
+        }
+
+        async public static void RequestExecuteNonQuery(string request)
+        {
+            try
+            {
+                await Task.Run(() =>
+                {
+                    using (MySqlConnection con = GetDBConnection())
+                    {
+                        con.Open();
+                        new MySqlCommand(request, con).ExecuteNonQuery();
+                    }
+                });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
     }
 }
