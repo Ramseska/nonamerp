@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace server_side.Commands
 {
     class MainCommands : Script
-    {
+    { 
         [Command("sp", GreedyArg = true)]
         public void CMD_sp(Player client, string namepos = null)
         {

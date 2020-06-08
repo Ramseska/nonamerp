@@ -14,8 +14,9 @@
     left: 50%;
 
     margin-left: -540px;
-    margin-top: 200px;
-
+    
+    top: 50%;
+    margin-top: -260px;
 
     border-bottom-width: 10px;
     border-bottom-style: solid;

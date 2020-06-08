@@ -16,10 +16,13 @@ require("./cef/workdialog/workdialog.js");
 require("./cef/hud/hud.js");
 require("./cef/appleminigame/appleminigame.js");
 require("./jobs/applecollector.js");
-
+// Chat
+mp.gui.execute("window.location = 'package://chat/index.html'");
+require('./chat/chat.js');
 
 //mp.game.ui.displayRadar(false); // disable radar 
-var pukikaki = null;
+
+let blackout = false;
 
 mp.events.add('setPlayerCustomize', (args) => { mp.events.callRemote('sSetPlayerCustomize', args); });
 mp.events.add('setPlayerClothes', (args) => { mp.events.callRemote('sSetPlayerClothes', args); });
@@ -37,16 +40,18 @@ mp.events.add("playerCommand", (command) => {
 
 	args.shift();
 		
-	if (commandName === "pup") {
-        mp.gui.chat.push(`You enter command a "${commandName}" [${args[0]}, ${args[1]}]`);
-        mp.players.local.setComponentVariation(Number(args[0]), Number(args[1]), 0, 2);
+	if (commandName === "cl") {
+        if(args[3] == 0) args[3] = 2;
+        mp.gui.chat.push(`You enter command a "${commandName}" [${args[0]}, ${args[1]}, ${args[2]}, ${args[3]}]`);
+        mp.players.local.setComponentVariation(Number(args[0]), Number(args[1]), Number(args[2]), Number(args[3]));
     }
 
     if(commandName === "slt") {
         mp.game.time.setClockTime(Number(args[0]), Number(args[1]), Number(0));
     }
-    if(commandName === "blackout")
+    if(commandName === "bo")
     {
-        for (let i = 0; i <= 16; i++) mp.game.graphics.setLightsState(i, true);
+        blackout = !blackout;
+        for (let i = 0; i <= 16; i++) mp.game.graphics.setLightsState(i, blackout);
     }
 });
