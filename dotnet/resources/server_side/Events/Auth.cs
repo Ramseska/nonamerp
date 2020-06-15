@@ -6,6 +6,7 @@ using server_side.DBConnection;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using server_side.Data;
+using System.Text.RegularExpressions;
 
 namespace server_side.Events
 {
@@ -40,12 +41,54 @@ namespace server_side.Events
         [RemoteEvent("Event_CancelAuth")] // событие при нажатии "отмена" во время авторизации\регистрации
         public void Event_CancelAuth(Player client, object[] args)
         {
-            client.SendNotification("Was kicked for cancel auth/reg.");
+            Utilities.UtilityFuncs.SendPlayerNotify(client, 0, "You been kicked for cancel auth/reg.");
             client.Kick();
         }
 
-        [RemoteEvent("Event_GetAccountFromBD")]
-        public void Event_GetAccountFromBD(Player client, object[] args)
+        [RemoteEvent("Event_CheckDataOnValid")]
+        public void Event_CheckDataOnValid(Player player, int type, string login, string password, string email)
+        {
+            if (CheckLoginOnValid(login) != string.Empty)
+            {
+                NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", CheckLoginOnValid(login));
+                return;
+            }
+            else if (CheckPasswordOnValid(password) != string.Empty)
+            {
+                NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", CheckPasswordOnValid(password));
+                return;
+            }
+            else if(CheckMailOnValid(email) != string.Empty && type == 1)
+            {
+                NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", CheckMailOnValid(email));
+                return;
+            }
+
+            GetAccountFromBD(player, new object[] { type, login, password, email });
+        }
+
+        private string CheckLoginOnValid(string login)
+        {
+            if (login.Length < 2 || login.Length > 24)
+                return "Ошибка: Логин не может быть короче 2-х и длиннее 24-х символов!";
+            else if(new Regex(@"[^A-Za-z0-9_]").IsMatch(login))
+                return "Ошибка: Логин содержит запрещенные символы!";
+            return string.Empty;
+        }
+        private string CheckPasswordOnValid(string password)
+        {
+            if (password.Length < 6)
+                return "Ошибка: Пароль не может быть короче 6 - ти символов!";
+            return string.Empty;
+        }
+        private string CheckMailOnValid(string email)
+        {
+            if (!new Regex(@"^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$").IsMatch(email))
+                return "Ошибка: Некорректный email!";
+            return string.Empty;
+        }
+
+        public void GetAccountFromBD(Player client, object[] args)
         {
             try
             {
@@ -64,7 +107,7 @@ namespace server_side.Events
 
                             if (!read.HasRows)
                             {
-                                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswer", "[Ошибка]: Данный аккаунт не зарегистрирован!");
+                                NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", "Ошибка: Данный аккаунт не зарегистрирован!");
                                 read.Close();
                                 break;
                             }
@@ -92,7 +135,7 @@ namespace server_side.Events
 
                             if (auth.Password != args[2].ToString())
                             {
-                                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswer", "[Ошибка]: Неверный пароль!");
+                                NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", "Ошибка: Неверный пароль!");
                                 break;
                             }
 
@@ -104,7 +147,7 @@ namespace server_side.Events
                         {
                             if (read.HasRows)
                             {
-                                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswerReg", "[Ошибка]: Данный аккаунт уже зарегистрирован!");
+                                NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", "Ошибка: Данный аккаунт уже зарегистрирован!");
                                 read.Close();
                                 break;
                             }
@@ -114,7 +157,7 @@ namespace server_side.Events
                             client.SetData<string>("R_TempPassword", (string)args[2]);
                             client.SetData<string>("R_TempMail", (string)args[3]);
 
-                            NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
+                            NAPI.ClientEvent.TriggerClientEvent(client, "destroyAuthBrowser");
 
                             JumpToCustomizeStep(client);
 
@@ -126,8 +169,7 @@ namespace server_side.Events
             catch (Exception e)
             {
                 NAPI.Util.ConsoleOutput($"[MySQL Error (#{++exceptionCount})]: " + e.Message);
-                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswer", $"[Ошибка]: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
-                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswerReg", $"[Ошибка]: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
+                NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", $"Ошибка: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
             }
         }
 
@@ -221,8 +263,7 @@ namespace server_side.Events
             catch (Exception e)
             {
                 NAPI.Util.ConsoleOutput($"[MySQL Error (#{++exceptionCount})]: " + e.Message);
-                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswer", $"[Ошибка]: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
-                NAPI.ClientEvent.TriggerClientEvent(client, "SendBadAnswerReg", $"[Ошибка]: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
+                NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", $"Ошибка: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
             }
         }
 
@@ -273,7 +314,7 @@ namespace server_side.Events
 
                 NAPI.ClientEvent.TriggerClientEvent(client, "createHud", 50, 60, playerInfo.GetMoney(), playerInfo.GetBankMoney());
 
-                NAPI.ClientEvent.TriggerClientEvent(client, "DestroyAuthBrowser");
+                NAPI.ClientEvent.TriggerClientEvent(client, "destroyAuthBrowser");
                 Utilities.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");
             }
             catch (Exception e)

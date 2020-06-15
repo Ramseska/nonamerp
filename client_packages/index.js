@@ -1,24 +1,21 @@
-require("./cef/weaponpicker");
-require("./cef/authorization");
+require("./cef/weaponpicker/index.js");
+require("./cef/auth/auth.js");
 //require("./cef/speedo");
 require("./cef/color_picker");
-require("./keybinds.js");
 require("./sound/sound.js");
 // require("./debugUI/debugUI.js");
 require("./cef/other/house");
 //require("./cef/reg_customizer");
 require("./camfly.js");
 require("./cef/notify/notify.js");
-require("./ints.js")
+require("./IPLInteriors.js");
 require("./voice/voice.js");
 require("./cef/customize/index.js");
 require("./cef/workdialog/workdialog.js");
 require("./cef/hud/hud.js");
 require("./cef/appleminigame/appleminigame.js");
 require("./jobs/applecollector.js");
-// Chat
-mp.gui.execute("window.location = 'package://chat/index.html'");
-require('./chat/chat.js');
+require("./keybinds.js");
 
 //mp.game.ui.displayRadar(false); // disable radar 
 

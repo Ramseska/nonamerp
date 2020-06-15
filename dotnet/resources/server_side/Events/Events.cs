@@ -71,7 +71,7 @@ namespace Main.events
 
                 client.Dimension = Convert.ToUInt16("1234" + Convert.ToString(client.Value));
 
-                NAPI.ClientEvent.TriggerClientEvent(client, "CreateAuthWindow");
+                NAPI.ClientEvent.TriggerClientEvent(client, "createAuthBrowser");
 
                 NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
 

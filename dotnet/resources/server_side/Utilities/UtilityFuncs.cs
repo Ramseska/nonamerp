@@ -1,7 +1,5 @@
 ﻿using System;
 using GTANetworkAPI;
-using AngleSharp;
-using System.Linq;
 using server_side.Data;
 
 namespace server_side.Utilities
@@ -16,6 +14,21 @@ namespace server_side.Utilities
             return new Vector3(x,y,client.Position.Z);
         }
 
+        /// <summary>
+        /// Типы уведомлений:<br/><br/>
+        /// <item>
+        /// <term>0</term>
+        /// <description>Обычное уведомление</description>
+        /// </item><br/>
+        /// <item>
+        /// <term>1</term>
+        /// <description>Сообщение от игрока</description>
+        /// </item><br/>
+        /// <item>
+        /// <term>2</term>
+        /// <description>Информация о чем-либо</description>
+        /// </item>
+        /// </summary>
         static public void SendPlayerNotify(Player client, int type, string content, string sendername = null) => NAPI.ClientEvent.TriggerClientEvent(client, "pushNotify", type, content, sendername);
 
         static public void UpdatePlayerHud(Player player)
@@ -23,8 +36,9 @@ namespace server_side.Utilities
             PlayerInfo playerInfo = new PlayerInfo(player);
 
             NAPI.ClientEvent.TriggerClientEvent(player, "updateHud", playerInfo.GetSatiety(), playerInfo.GetThirst(), playerInfo.GetMoney(), playerInfo.GetBankMoney());
-
-            // player.SendChatMessage($">> UpdateHud: {playerInfo.GetSatiety()} {playerInfo.GetThirst()} {playerInfo.GetMoney()} {playerInfo.GetBankMoney()}");
         }
+
+        static public float GetDistToPoint3D(Vector3 from, Vector3 to) => (float)Math.Abs(Math.Sqrt(Math.Pow(to.X - from.X, 2) + Math.Pow(to.Y - from.Y, 2) + Math.Pow(to.Z - from.Z, 2)));
+        static public float GetDistToPoint2D(Vector3 from, Vector3 to) => (float)Math.Abs(Math.Sqrt(Math.Pow(to.X - from.X, 2) + Math.Pow(to.Y - from.Y, 2)));
     }
 }

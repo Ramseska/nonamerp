@@ -26,7 +26,8 @@ function loadApp()
     $('.circle').droppable({
         drop: function(event, ui) 
         {
-            $(event.toElement).removeClass('apple-item').addClass('apple-img').draggable("disable").appendTo($(this)).css({left: 0, top: 0, position: 'relative'});
+            if($(event.originalEvent.target).prop('tagName') != "IMG") return;
+            $(event.originalEvent.target).removeClass('apple-item').addClass('apple-img').draggable("disable").appendTo($(this)).css({left: 0, top: 0, position: 'relative'});
             $(this).droppable("disable").animate({borderColor: '#6dda6d'}, 200);
 
             mp.trigger('onTakedApple');
@@ -48,10 +49,8 @@ function createApple(posY, posX)
         top: posY,
         position: "absolute"
     }).draggable({
-        start: function()
-        {
-            $(this).appendTo($('.container'))
-        }
+        start: function() { $(this).appendTo($('.container')) },
+        containment: $('.container')
     });
     $('#apples-box').append(apple);
 }
@@ -78,14 +77,12 @@ function endApp()
 
 function getRandom(range, size)
 {
-    let m = {};
-    let a = [];
+    let m = {}, a = [];
     for (let i = 0; i < size; ++i) {
         let r = Math.floor(Math.random() * (range - i));
         a.push(((r in m) ? m[r] : r));
         let l = range - i - 1;
         m[r] = (l in m) ? m[l] : l;
     }
-
     return a;
 }

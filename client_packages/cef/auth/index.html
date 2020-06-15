@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="../utils/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box-content">
+                <div id="title">Авторизация</div>
+                <!-- login -->
+                <div class="input-container">
+                    <div class="input-title">
+                        <img class="title-icon" src="./img/user.png">
+                    </div>
+                    <input type="text" id="login" class="input-box" placeholder="login">
+                </div>
+                <!-- password -->
+                <div class="input-container">
+                    <div class="input-title">
+                        <img class="title-icon" src="./img/lock.png">
+                    </div>
+                    <input type="password" id="password" class="input-box" placeholder="password">
+                    <div class="input-title right-title">
+                        <img class="title-icon" id="password-icon" src="./img/hiden.png">
+                    </div>
+                </div>
+                <!-- mail -->
+                <div class="input-container" id="email-container" style="display: none;">
+                    <div class="input-title">
+                        <img class="title-icon" src="./img/email.png">
+                    </div>
+                    <input type="text" id="email" class="input-box" placeholder="e-mail">
+                </div>
+            </div>
+            <div id="box-outlog" style="display: none;"></div>
+            <div id="box-buttons">
+                <input id="button-accept" type="button" value="Войти">
+                <input id="button-cancel" type="button" value="Отмена">
+            </div>
+            <div id="head-outline"></div>
+            <div id="box-switch">Создать аккаунт</div>
+        </div>
+    </body>
+</html>
