@@ -193,78 +193,58 @@ namespace server_side.Events
         {
             try
             {
-                MySqlConnection con = MySqlConnector.GetDBConnection();
+                using(MySqlConnection con = MySqlConnector.GetDBConnection())
+                {
+                    con.Open();
 
-                con.Open();
+                    dynamic based = NAPI.Util.FromJson(basedata);
+                    dynamic cust = NAPI.Util.FromJson(customize);
 
-                dynamic based = NAPI.Util.FromJson(basedata);
-                dynamic cust = NAPI.Util.FromJson(customize);
+                    string name = $"{based["name"]} {based["subname"]}";
+                    string sc = client.SocialClubName;
 
-                string name = $"{based["name"]} {based["subname"]}";
-                string sc = client.SocialClubName;
+                    string currentTime = DateTime.Now.ToString();
 
-                string currentTime = DateTime.Now.ToString();
+                    if (sc == null)
+                        sc = "-";
 
-                if (sc == null)
-                    sc = "-";
+                    string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`, `p_datereg`) VALUES ('" + client.GetData<string>("R_TempLogin") + "', '" + sc + "', '" + client.GetData<string>("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData<string>("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "', '" + currentTime + "')";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
 
-                string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`, `p_datereg`) VALUES ('" + client.GetData<string>("R_TempLogin") + "', '" + sc + "', '" + client.GetData<string>("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData<string>("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "', '" + currentTime + "')";
-                MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_id` = LAST_INSERT_ID()", con);
+                    MySqlDataReader read = cmd.ExecuteReader();
 
-                cmd.ExecuteNonQuery();
+                    AuthData auth = new AuthData(client);
 
-                CreatePlayerAccount(client, client.GetData<string>("R_TempLogin"));
+                    while (read.Read())
+                    {
+                        auth.dbID = (int)read["p_id"];
+                        auth.Login = (string)read["p_login"];
+                        auth.Password = (string)read["p_password"];
+                        auth.IP = (string)read["p_ip"];
+                        auth.Mail = (string)read["p_mail"];
+                        auth.LVL = (int)read["p_lvl"];
+                        auth.Cash = (double)read["p_money"];
+                        auth.BankMoney = (double)read["p_bank"];
+                        auth.Age = (int)read["p_age"];
+                        auth.Name = (string)read["p_name"];
+                        auth.SocialName = (string)read["p_socialclub"];
+                        auth.DateReg = (string)read["p_datereg"];
+                        auth.PayCheck = (double)read["p_paycheck"];
 
-                con.Close();
+                        client.SetData<object>("pCustomize", read["p_customize"]);
+                        client.SetData<object>("pClothes", read["p_clothes"]);
+                    }
+
+                    NAPI.ClientEvent.TriggerClientEvent(client, "disableCustomize");
+                    LogInPlayerAccount(client, auth);
+
+                    read.Close();
+                    con.Close();
+                }
             }
             catch (Exception e) { NAPI.Util.ConsoleOutput(e.ToString()); }
-        }
-
-        public void CreatePlayerAccount(Player client, string name)
-        {
-            try
-            {
-                MySqlConnection con = MySqlConnector.GetDBConnection();
-
-                con.Open();
-
-                string query = "SELECT * FROM `accounts` WHERE `p_login` = '" + name + "'";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader read = cmd.ExecuteReader();
-                AuthData auth = new AuthData(client);
-
-                while (read.Read())
-                {
-                    auth.dbID = (int)read["p_id"];
-                    auth.Login = (string)read["p_login"];
-                    auth.Password = (string)read["p_password"];
-                    auth.IP = (string)read["p_ip"];
-                    auth.Mail = (string)read["p_mail"];
-                    auth.LVL = (int)read["p_lvl"];
-                    auth.Cash = (double)read["p_money"];
-                    auth.BankMoney = (double)read["p_bank"];
-                    auth.Age = (int)read["p_age"];
-                    auth.Name = (string)read["p_name"];
-                    auth.SocialName = (string)read["p_socialclub"];
-                    auth.DateReg = (string)read["p_datereg"];
-                    auth.PayCheck = (double)read["p_paycheck"];
-
-                    client.SetData<object>("pCustomize", read["p_customize"]);
-                    client.SetData<object>("pClothes", read["p_clothes"]);
-                }
-
-
-                NAPI.ClientEvent.TriggerClientEvent(client, "disableCustomize");
-                LogInPlayerAccount(client, auth);
-
-                con.Close();
-                read.Close();
-            }
-            catch (Exception e)
-            {
-                NAPI.Util.ConsoleOutput($"[MySQL Error (#{++exceptionCount})]: " + e.Message);
-                NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", $"Ошибка: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
-            }
         }
 
         public void LogInPlayerAccount(Player client, AuthData data) 

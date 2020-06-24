@@ -3,6 +3,7 @@ body
     margin: 0;
     overflow: hidden;
     -webkit-user-select: none;
+    display: flex;
 }
 
 .container
@@ -13,9 +14,6 @@ body
     height: 600px;
 
     margin: auto;
-
-    top: 400px;
-    margin-top: -300px;
 }
 
 .box

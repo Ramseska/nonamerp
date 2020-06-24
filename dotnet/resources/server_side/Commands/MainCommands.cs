@@ -4,11 +4,17 @@ using System.IO;
 using GTANetworkAPI;
 using server_side.Utilities;
 using System.Threading.Tasks;
+using server_side.Items;
 
 namespace server_side.Commands
 {
     class MainCommands : Script
     { 
+        [Command("gitem")]
+        public void CMD_gitem(Player player, int itemtype, int amount)
+        {
+            Item.GivePlayerItem(player, Item.CreateItem(itemtype, 2));
+        }
         [Command("sp", GreedyArg = true)]
         public void CMD_sp(Player client, string namepos = null)
         {

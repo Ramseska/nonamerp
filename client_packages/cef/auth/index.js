@@ -15,47 +15,26 @@ $(document).ready(() => {
     });
 
     $("#button-accept").click(() => {
-        if(authData.floodKD) { outLog.send("Не флудите!"); return; }
+        if(authData.floodKD) { outLog.send("Не флуди!"); return; }
         authData.floodKD = setTimeout(() => authData.floodKD = null, 3000);
 
-        // code there
-        if(!authData.switcher)
+        if(checkLoginOnValid($("#login").val()))
         {
-            if(checkLoginOnValid($("#login").val()))
-            {
-                outLog.send(checkLoginOnValid($("#login").val()));
-                return;
-            }
-            else if(checkPasswordOnValid($("#password").val()))
-            {
-                outLog.send(checkPasswordOnValid($("#password").val()));
-                return;
-            }
-            
-            mp.trigger('authSendToServer', +authData.switcher, authData.login, authData.password, authData.email);
-            hideOutLog();
+            outLog.send(checkLoginOnValid($("#login").val()));
+            return;
         }
-        else 
+        else if(checkPasswordOnValid($("#password").val()))
         {
-            if(checkLoginOnValid($("#login").val()))
-            {
-                outLog.send(checkLoginOnValid($("#login").val()));
-                return;
-            }
-            else if(checkPasswordOnValid($("#password").val()))
-            {
-                outLog.send(checkPasswordOnValid($("#password").val()));
-                return;
-            }
-            else if(checkMailOnValid($("#email").val()))
-            {
-                outLog.send(checkMailOnValid($("#email").val()));
-                return;
-            }
+            outLog.send(checkPasswordOnValid($("#password").val()));
+            return;
+        }
+        else if(checkMailOnValid($("#email").val()) && authData.switcher)
+        {
+            outLog.send(checkMailOnValid($("#email").val()));
+            return;
+        }
 
-            mp.trigger('authSendToServer', +authData.switcher, authData.login, authData.password, authData.email);
-            hideOutLog();
-        }
+        mp.trigger('authSendToServer', +authData.switcher, authData.login, authData.password, authData.email);
         outLog.send('Wait...');
     });
     

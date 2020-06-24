@@ -5,6 +5,12 @@ body
     display: flex;
 }
 
+@font-face
+{
+    font-family: 'MonsterHuenster';
+    src: url("../utils/fonts/MontserratAlternates/MontserratAlternates-Light.ttf");
+}
+
 .container
 {
     position: relative;
@@ -19,7 +25,7 @@ body
 
     border-radius: 6px;
 
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'MonsterHuenster';
 }
 
 input[type=button]
@@ -31,7 +37,7 @@ input[type=button]
     margin: auto;
     width: 150px;
     height: 35px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'MonsterHuenster';
     font-weight: 100;
 }
 

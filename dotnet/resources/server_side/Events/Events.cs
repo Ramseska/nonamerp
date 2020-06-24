@@ -9,6 +9,7 @@ using server_side.Jobs;
 using System.Linq;
 using MySql.Data.MySqlClient;
 using server_side.DBConnection;
+using server_side.Items;
 
 namespace Main.events
 {
@@ -24,6 +25,7 @@ namespace Main.events
         {
             // NAPI.ClientEvent.TriggerClientEvent(player, "destroySpeedo");
         }
+
         [ServerEvent(Event.ResourceStart)]
         public void Event_OnResourceStart()
         {
@@ -32,6 +34,9 @@ namespace Main.events
             
             // houses
             House.InitHouses();
+
+            // items
+            Item.LoadAllItemsFromDB();
 
             // jobs
             Job.InitJobs();
@@ -81,7 +86,13 @@ namespace Main.events
             {
                 NAPI.Util.ConsoleOutput(e.ToString());
             }
+        }
 
+        [ServerEvent(Event.PlayerDisconnected)]
+        public void Event_PlayerDisconnected(Player player, DisconnectionType type, string reason)
+        {
+            // unload player items from server
+            Item.UnloadPlayerItems(new PlayerInfo(player).GetDbID());
         }
         /*
         [ServerEvent(Event.ChatMessage)]
