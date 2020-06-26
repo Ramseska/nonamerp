@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace server_side.Utilities
+namespace server_side.Utils
 {
     abstract class Area
     {

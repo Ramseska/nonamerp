@@ -11,7 +11,7 @@ namespace server_side.Jobs
 {
     public class Job : Script
     {
-        public enum eJobs : int
+        public enum eJobs : uint
         {
             None = 0,
             AppleCollector = 1,
@@ -25,29 +25,15 @@ namespace server_side.Jobs
            new string[] { "Карьер", "Пока что нихуя нема.." }
         };
 
-        public static void ShowJobDialog(Player player, eJobs job)
+        public static void InitJobs()
         {
-            if(player.GetData<eJobs>(EntityData.PLAYER_JOB) == job)
-            {
-                // uval
-                NAPI.ClientEvent.TriggerClientEvent(player, "createWorkDialog", jobsInfo[(int)job][0], "Вы уверенны, что хотите завершить работу?");
-            }
-            else if(player.GetData<eJobs>(EntityData.PLAYER_JOB) == 0)
-            {
-                // prival
-                player.SetData<eJobs>(EntityData.PLAYER_TEMPJOB, job);
-                NAPI.ClientEvent.TriggerClientEvent(player, "createWorkDialog", jobsInfo[(int)job][0], jobsInfo[(int)job][1]);
-            }
-            else
-            {
-                player.SendChatMessage("Вы уже работаете на другой работе!");
-            }
+            new AppleCollector().CreateJob();
         }
 
         [RemoteEvent("sAcceptJob")]
         public static void OnAcceptJob(Player player)
         {
-            switch(player.GetData<eJobs>(EntityData.PLAYER_TEMPJOB))
+            switch (player.GetData<eJobs>(EntityData.PLAYER_TEMPJOB))
             {
                 case eJobs.None: break;
                 case eJobs.AppleCollector:
@@ -69,11 +55,28 @@ namespace server_side.Jobs
             }
         }
 
+        public static void ShowJobDialog(Player player, eJobs job)
+        {
+            if(player.GetData<eJobs>(EntityData.PLAYER_JOB) == job)
+            {
+                NAPI.ClientEvent.TriggerClientEvent(player, "createWorkDialog", jobsInfo[(int)job][0], "Вы уверенны, что хотите завершить работу?");
+            }
+            else if(player.GetData<eJobs>(EntityData.PLAYER_JOB) == 0)
+            {
+                player.SetData<eJobs>(EntityData.PLAYER_TEMPJOB, job);
+                NAPI.ClientEvent.TriggerClientEvent(player, "createWorkDialog", jobsInfo[(int)job][0], jobsInfo[(int)job][1]);
+            }
+            else
+            {
+                player.SendChatMessage("Вы уже работаете на другой работе!");
+            }
+        }
+
         public static void GiveJobSalary(Player player, eJobs job)
         {
             new PlayerInfo(player).GiveMoney(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), jobsInfo[(int)job][0]);
 
-            Utilities.UtilityFuncs.SendPlayerNotify(player, 0, $"+{player.GetData<double>(EntityData.PLAYER_JOB_SALARY)}$");
+            Utils.UtilityFuncs.SendPlayerNotify(player, 0, $"+{player.GetData<double>(EntityData.PLAYER_JOB_SALARY)}$");
 
             player.SetData<double>(EntityData.PLAYER_JOB_SALARY, 0.0);
         }
@@ -96,11 +99,6 @@ namespace server_side.Jobs
                 pInfo.AddToPayCheck(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), "from job salary");
                 player.SetData<double>(EntityData.PLAYER_JOB_SALARY, 0.00);
             }
-        }
-
-        public static void InitJobs()
-        {
-            new AppleCollector().CreateJob();
         }
     }
 }

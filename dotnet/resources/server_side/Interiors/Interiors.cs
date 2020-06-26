@@ -8,7 +8,10 @@ namespace server_side.Ints
 { 
     class Interiors : Script
     {
-        static public List<Interiors> InteriorsList = new List<Interiors>();
+        static public List<Interiors> InteriorsList = new List<Interiors>()
+        { 
+
+        };
 
         public Vector3 EnterPointCoords;
         public Vector3 ExitPointCoords;

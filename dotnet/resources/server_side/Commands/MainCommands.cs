@@ -2,7 +2,7 @@
 using System.Linq;
 using System.IO;
 using GTANetworkAPI;
-using server_side.Utilities;
+using server_side.Utils;
 using System.Threading.Tasks;
 using server_side.Items;
 
@@ -13,7 +13,7 @@ namespace server_side.Commands
         [Command("gitem")]
         public void CMD_gitem(Player player, int itemtype, int amount)
         {
-            Item.GivePlayerItem(player, Item.CreateItem(itemtype, 2));
+            Item.GivePlayerItem(player, Item.CreateItem(itemtype, amount));
         }
         [Command("sp", GreedyArg = true)]
         public void CMD_sp(Player client, string namepos = null)

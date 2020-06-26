@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using server_side.Data;
 using System.Text.Json;
 using Microsoft.VisualBasic;
-using server_side.Utilities;
+using server_side.Utils;
 
 namespace server_side.Jobs
 {
@@ -22,7 +22,7 @@ namespace server_side.Jobs
         public const string APPLECOL_CURRENT_CP = "APPLECOL_CURRENT_CP";
 
         const int MaxApples = 20; // максимальное кол-во переносимых яблок
-        private double SalaryFactor = 0.2; // $ за 1 яблоко
+        private static double SalaryFactor = 0.2; // $ за 1 яблоко
 
         private ColShape StartJobColShape { get; set; }
         private ColShape AppleDeliveryColShape { get; set; }
@@ -57,24 +57,25 @@ namespace server_side.Jobs
 
         public void CreateJob()
         {
-            NAPI.Marker.CreateMarker(30, new Vector3(413.0344, 6539.8838, 27.7248), new Vector3(), new Vector3(), 1f, new Color(209, 217, 126), dimension: Utilities.Constants.SERVER_DEFAULT_DIMENSION);
+            NAPI.Marker.CreateMarker(30, new Vector3(413.0344, 6539.8838, 27.7248), new Vector3(), new Vector3(), 1f, new Color(209, 217, 126), dimension: Utils.Constants.SERVER_DEFAULT_DIMENSION);
             StartJobColShape = NAPI.ColShape.CreateCylinderColShape(new Vector3(413.0344, 6539.8838, 27.7248), 1f, 2f, 0);
             StartJobColShape.SetData(EntityData.JOB_ID, Job.eJobs.AppleCollector);
 
-            NAPI.Marker.CreateMarker(2, new Vector3(385.0542, 6530.6968, 28.0458), new Vector3(), new Vector3(), 1f, new Color(209, 217, 126), dimension: Utilities.Constants.SERVER_DEFAULT_DIMENSION);
+            NAPI.Marker.CreateMarker(2, new Vector3(385.0542, 6530.6968, 28.0458), new Vector3(), new Vector3(), 1f, new Color(209, 217, 126), dimension: Utils.Constants.SERVER_DEFAULT_DIMENSION);
+            
             AppleDeliveryColShape = NAPI.ColShape.CreateCylinderColShape(new Vector3(385.0542, 6530.6968, 28.0458), 1f, 2f, 0);
             AppleDeliveryColShape.SetData<bool>(APPLECOL_DELIVERY_COLSHAPE, true);
 
-            NAPI.Blip.CreateBlip(478, new Vector3(413.0344, 6539.8838, 27.7248), 1f, 0, name: "Яблочная ферма", drawDistance: Utilities.Constants.SERVER_BLIP_DRAW_DISTANTION, shortRange: true, dimension: Utilities.Constants.SERVER_DEFAULT_DIMENSION);
+            NAPI.Blip.CreateBlip(478, new Vector3(413.0344, 6539.8838, 27.7248), 1f, 0, name: "Яблочная ферма", drawDistance: Utils.Constants.SERVER_BLIP_DRAW_DISTANTION, shortRange: true, dimension: Utils.Constants.SERVER_DEFAULT_DIMENSION);
 
-            AppleLabel = NAPI.TextLabel.CreateTextLabel(string.Empty, new Vector3(413.0344, 6539.8838, 27.7248), 3f, 3f, 10, new Color(255, 255, 255), dimension: Utilities.Constants.SERVER_DEFAULT_DIMENSION);
+            AppleLabel = NAPI.TextLabel.CreateTextLabel(string.Empty, new Vector3(413.0344, 6539.8838, 27.7248), 3f, 3f, 10, new Color(255, 255, 255), dimension: Utils.Constants.SERVER_DEFAULT_DIMENSION);
             NAPI.TextLabel.SetTextLabelText(AppleLabel, $"~y~Яблочная ферма\n_______________\n\n~w~Яблок на складе: ~y~0~w~ ед.");
         }
 
         public void StartJob(Player player)
         {
             player.SetData(EntityData.PLAYER_JOB, player.GetData<Job.eJobs>(EntityData.PLAYER_TEMPJOB));
-            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы начали работу сборщика яблок!");
+            player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}Вы начали работу сборщика яблок!");
 
             player.SetData<int>(APPLECOL_UNITS_HAVE, 0);
             player.SetData<int>(APPLECOL_UNITS_DELIVED, 0);
@@ -90,9 +91,9 @@ namespace server_side.Jobs
                 DestroyPoint(player);
             }
 
-            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы закончили работу сборщика яблок!");
-            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Всего собрано {Utilities.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_DELIVED)}{Utilities.Colors.WHITE} яблок.");
-            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Ваша зарплата: {Utilities.Colors.YELLOW}{Math.Round(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), 2)}{Utilities.Colors.WHITE}$");
+            player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}Вы закончили работу сборщика яблок!");
+            player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}Всего собрано {Utils.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_DELIVED)}{Utils.Colors.WHITE} яблок.");
+            player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}Ваша зарплата: {Utils.Colors.YELLOW}{Math.Round(player.GetData<double>(EntityData.PLAYER_JOB_SALARY), 2)}{Utils.Colors.WHITE}$");
 
             Job.GiveJobSalary(player, player.GetData<Job.eJobs>(EntityData.PLAYER_JOB));
 
@@ -125,14 +126,14 @@ namespace server_side.Jobs
 
                 if (player.GetData<int>(APPLECOL_UNITS_HAVE) == 0)
                 {
-                    player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}У Вас нет яблок!");
+                    player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}У Вас нет яблок!");
                     return;
                 }
 
                 player.SetData<int>(APPLECOL_UNITS_DELIVED, player.GetData<int>(APPLECOL_UNITS_DELIVED) + player.GetData<int>(APPLECOL_UNITS_HAVE));
                 player.SetData<int>(APPLECOL_UNITS_HAVE, 0);
 
-                player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы положили яблоки в ящик. Всего собрано {Utilities.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_DELIVED)} {Utilities.Colors.WHITE}яблок!");
+                player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}Вы положили яблоки в ящик. Всего собрано {Utils.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_DELIVED)} {Utils.Colors.WHITE}яблок!");
 
                 player.SetData<double>(EntityData.PLAYER_JOB_SALARY, GetSalary(player));
 
@@ -169,7 +170,7 @@ namespace server_side.Jobs
 
             GiveApples(player, new Random().Next(1, 5));
 
-            player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}Вы собрали яблоки! Сейчас у Вас собрано {Utilities.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_HAVE)}{Utilities.Colors.WHITE} яблок.");
+            player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}Вы собрали яблоки! Сейчас у Вас собрано {Utils.Colors.YELLOW}{player.GetData<int>(APPLECOL_UNITS_HAVE)}{Utils.Colors.WHITE} яблок.");
 
             CreatePoint(player);
         }
@@ -181,7 +182,7 @@ namespace server_side.Jobs
 
             if (player.GetData<int>(APPLECOL_UNITS_HAVE) >= MaxApples)
             {
-                player.SendChatMessage($"{Utilities.Colors.YELLOW}[Яблочная ферма]: {Utilities.Colors.WHITE}У Вас больше нет места для яблок!");
+                player.SendChatMessage($"{Utils.Colors.YELLOW}[Яблочная ферма]: {Utils.Colors.WHITE}У Вас больше нет места для яблок!");
                 return;
             }
             NAPI.ClientEvent.TriggerClientEvent(player, "createAppleCollectorApp");

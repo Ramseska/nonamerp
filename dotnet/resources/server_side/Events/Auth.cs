@@ -41,7 +41,7 @@ namespace server_side.Events
         [RemoteEvent("Event_CancelAuth")] // событие при нажатии "отмена" во время авторизации\регистрации
         public void Event_CancelAuth(Player client, object[] args)
         {
-            Utilities.UtilityFuncs.SendPlayerNotify(client, 0, "You been kicked for cancel auth/reg.");
+            Utils.UtilityFuncs.SendPlayerNotify(client, 0, "You been kicked for cancel auth/reg.");
             client.Kick();
         }
 
@@ -295,7 +295,7 @@ namespace server_side.Events
                 NAPI.ClientEvent.TriggerClientEvent(client, "createHud", 50, 60, playerInfo.GetMoney(), playerInfo.GetBankMoney());
 
                 NAPI.ClientEvent.TriggerClientEvent(client, "destroyAuthBrowser");
-                Utilities.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");
+                Utils.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");
             }
             catch (Exception e)
             {

@@ -2,7 +2,7 @@
 using GTANetworkAPI;
 using server_side.Data;
 
-namespace server_side.Utilities
+namespace server_side.Utils
 {
     class UtilityFuncs : Script
     {

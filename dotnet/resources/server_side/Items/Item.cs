@@ -19,13 +19,10 @@ namespace server_side.Items
         public int ItemAmount { get; private set; }
         public int InvenrorySlot { get; set; }
 
-        public override string ToString()
-        {
-            return $"ItemID: {this.ItemID}, OwnerID: {this.OwnerID}, ItemType: {this.ItemType}, ItemAmount: {this.ItemAmount}, InvSlot: {this.InvenrorySlot}";
-        }
+        public override string ToString() => $"ItemID: {this.ItemID}, OwnerID: {this.OwnerID}, ItemType: {this.ItemType}, ItemAmount: {this.ItemAmount}, InvSlot: {this.InvenrorySlot}";
 
-        public Item() { }
-        public Item(int itemid, int ownerid, int itemtype, int itemamount, int inventoryslot)
+        private Item() { }
+        private Item(int itemid, int ownerid, int itemtype, int itemamount, int inventoryslot)
         {
             this.ItemID = itemid;
             this.OwnerID = ownerid;
@@ -80,59 +77,18 @@ namespace server_side.Items
 
             item.OwnerID = pInfo.GetDbID();
 
-            MySqlConnector.RequestExecuteNonQuery($"UPDATE `items` SET = `owner_id`='{item.OwnerID}',`item_type`='{item.ItemType}',`item_amount`='{item.ItemAmount}',`inventory_slot`='{item.InvenrorySlot}' WHERE `item_id` = '{item.ItemID}'");
+            MySqlConnector.RequestExecuteNonQuery($"UPDATE `items` SET `owner_id`='{item.OwnerID}',`item_type`='{item.ItemType}',`item_amount`='{item.ItemAmount}',`inventory_slot`='{item.InvenrorySlot}' WHERE `item_id` = '{item.ItemID}'");
         }
 
         public static void UseItem(Player player, Item item)
         {
-
+            throw new NotImplementedException();
         }
 
         public static void DeleteItem(int itemID)
         {
             ListItems.Remove(ListItems.Where(x => x.ItemID == itemID).First());
             MySqlConnector.RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
-        }
-
-        async static public void LoadAllItemsFromDB()
-        {
-            try
-            {
-                await Task.Run(() =>
-                {
-                    using (MySqlConnection con = MySqlConnector.GetDBConnection())
-                    {
-                        int count = 0;
-
-                        con.Open();
-
-                        MySqlDataReader reader = new MySqlCommand("SELECT * FROM `items`", con).ExecuteReader();
-
-                        while(reader.Read())
-                        {
-                            Item item = new Item();
-
-                            item.ItemID = (int)reader["item_id"];
-                            item.OwnerID = (int)reader["owner_id"];
-                            item.ItemType = (int)reader["item_type"];
-                            item.ItemAmount = (int)reader["item_amount"];
-                            item.InvenrorySlot = (int)reader["inventory_slot"];
-
-                            ListItems.Add(item);
-
-                            count++;
-                        }
-                        reader.Close();
-                        con.Close();
-
-                        NAPI.Task.Run(() => NAPI.Util.ConsoleOutput($"[MySQL]: Загружено {count} предметов"));
-                    }
-                });
-            }
-            catch (Exception e)
-            {
-                NAPI.Util.ConsoleOutput(e.ToString());
-            }
         }
 
         async static public void LoadUnownedItemsFromDB()
@@ -149,7 +105,7 @@ namespace server_side.Items
 
                         while (reader.Read())
                         {
-                            if ((int)reader["owner_id"] == -1) continue;
+                            if ((int)reader["owner_id"] != -1) continue;
 
                             ListItems.Add(new Item((int)reader["item_id"], (int)reader["owner_id"], (int)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]));
                         }
@@ -178,15 +134,7 @@ namespace server_side.Items
 
                         while (reader.Read())
                         {
-                            Item item = new Item();
-
-                            item.ItemID = (int)reader["item_id"];
-                            item.OwnerID = (int)reader["owner_id"];
-                            item.ItemType = (int)reader["item_type"];
-                            item.ItemAmount = (int)reader["item_amount"];
-                            item.InvenrorySlot = (int)reader["inventory_slot"];
-
-                            ListItems.Add(item);
+                            ListItems.Add(new Item((int)reader["item_id"], (int)reader["owner_id"], (int)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]));
                         }
                         reader.Close();
                         con.Close();

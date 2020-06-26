@@ -127,7 +127,7 @@ namespace server_side.Data
                 MySqlConnector.RequestExecuteNonQuery(query);
             }
 
-            Utilities.UtilityFuncs.UpdatePlayerHud(player);
+            Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_MONEY), 2);
 
@@ -141,7 +141,7 @@ namespace server_side.Data
                 MySqlConnector.RequestExecuteNonQuery(query);
             }
 
-            Utilities.UtilityFuncs.UpdatePlayerHud(player);
+            Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetBankMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_BANK), 2);
 
@@ -186,7 +186,7 @@ namespace server_side.Data
 
             player.SetData<int>(EntityData.PLAYER_SATIETY, value);
 
-            Utilities.UtilityFuncs.UpdatePlayerHud(player);
+            Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public int GetSatiety() => player.GetData<int>(EntityData.PLAYER_SATIETY);
 
@@ -197,7 +197,7 @@ namespace server_side.Data
 
             player.SetData<int>(EntityData.PLAYER_THIRST, value);
 
-            Utilities.UtilityFuncs.UpdatePlayerHud(player);
+            Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public int GetThirst() => player.GetData<int>(EntityData.PLAYER_THIRST);
 

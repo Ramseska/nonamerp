@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using server_side.Data;
 using server_side.Ints;
 using server_side.Systems;
-using server_side.Utilities;
+using server_side.Utils;
 using server_side.Jobs;
 using System.Linq;
 using MySql.Data.MySqlClient;
@@ -35,9 +35,6 @@ namespace Main.events
             // houses
             House.InitHouses();
 
-            // items
-            Item.LoadAllItemsFromDB();
-
             // jobs
             Job.InitJobs();
             
@@ -61,26 +58,29 @@ namespace Main.events
         }
 
         [ServerEvent(Event.PlayerConnected)]
-        public void Event_PlayerConnected(Player client)
+        public void Event_PlayerConnected(Player player)
         {
             try
             {
-                PlayerInfo playerInfo = new PlayerInfo(client);
+                PlayerInfo playerInfo = new PlayerInfo(player);
 
                 playerInfo.SetDataToDefault(); // reset player data
-                playerInfo.SetSocialClub(client.SocialClubName);
+                playerInfo.SetSocialClub(player.SocialClubName);
 
-                client.Position = new Vector3(1789.294, -244.4794, 291.7196);
-                client.Rotation = new Vector3(client.Rotation.X, client.Rotation.Y, 353.7821f);
-                NAPI.Entity.SetEntityTransparency(client, 0);
+                player.Position = new Vector3(1789.294, -244.4794, 291.7196);
+                player.Rotation = new Vector3(player.Rotation.X, player.Rotation.Y, 353.7821f);
+                NAPI.Entity.SetEntityTransparency(player, 0);
 
-                client.Dimension = Convert.ToUInt16("1234" + Convert.ToString(client.Value));
+                player.Dimension = Convert.ToUInt16("1234" + Convert.ToString(player.Value));
 
-                NAPI.ClientEvent.TriggerClientEvent(client, "createAuthBrowser");
+                NAPI.ClientEvent.TriggerClientEvent(player, "createAuthBrowser");
 
-                NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(client)} | ID: {client.Value}");
+                NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(player)} | ID: {player.Value}");
 
-                //NAPI.ClientEvent.TriggerClientEvent(client, "createDebugUI");
+                //NAPI.ClientEvent.TriggerClientEvent(player, "createDebugUI");
+
+                // load player items from server
+                Item.LoadPlayerItemsFromDB(playerInfo.GetDbID());
             }
             catch (Exception e)
             {
