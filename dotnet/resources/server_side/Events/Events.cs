@@ -78,9 +78,6 @@ namespace Main.events
                 NAPI.Util.ConsoleOutput($"Connected: {NAPI.Player.GetPlayerAddress(player)} | ID: {player.Value}");
 
                 //NAPI.ClientEvent.TriggerClientEvent(player, "createDebugUI");
-
-                // load player items from server
-                Item.LoadPlayerItemsFromDB(playerInfo.GetDbID());
             }
             catch (Exception e)
             {
@@ -92,7 +89,7 @@ namespace Main.events
         public void Event_PlayerDisconnected(Player player, DisconnectionType type, string reason)
         {
             // unload player items from server
-            Item.UnloadPlayerItems(new PlayerInfo(player).GetDbID());
+            ItemController.UnloadPlayerItems(new PlayerInfo(player).GetDbID());
         }
         /*
         [ServerEvent(Event.ChatMessage)]

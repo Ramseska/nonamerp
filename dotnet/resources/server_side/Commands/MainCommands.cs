@@ -5,16 +5,62 @@ using GTANetworkAPI;
 using server_side.Utils;
 using System.Threading.Tasks;
 using server_side.Items;
+using System.Security.Policy;
+using server_side.Data;
+using System.Collections.Generic;
 
 namespace server_side.Commands
 {
     class MainCommands : Script
     { 
-        [Command("gitem")]
-        public void CMD_gitem(Player player, int itemtype, int amount)
+        [Command("idt")]
+        void CMD_itd(Player player)
         {
-            Item.GivePlayerItem(player, Item.CreateItem(itemtype, amount));
+            foreach (var i in ItemData.ItemDataList)
+                Console.WriteLine(i.ToString());
         }
+        [Command("sethp")]
+        public void CMD_sethp(Player player, int hp)
+        {
+            player.Health = hp;
+            UtilityFuncs.SendPlayerNotify(player, 2, $"Ваше здоровье было изменено на {hp}");
+        }
+        [Command("useitem")]
+        public void CMD_useitem(Player player, int itemid)
+        {
+            ItemEntity item = ItemController.ItemsList.Where(x => x.ItemID == itemid).FirstOrDefault();
+            if(item == null)
+            {
+                player.SendChatMessage($"{Utils.Colors.RED}[Ошибка]:{Utils.Colors.WHITE} предмет не найден!");
+                return;
+            }
+
+            ItemController.UseItem(player, item);
+        }
+        [Command("gitem")]
+        public void CMD_gitem(Player player, int itemType, int amount)
+        {
+            if (amount < 1)
+            {
+                player.SendChatMessage($"{Utils.Colors.RED}[Ошибка]:{Utils.Colors.WHITE} Неверное кол-во предмета!");
+                return;
+            }
+            else if (itemType > Enum.GetValues(typeof(Items.eItems)).Length || itemType < 0)
+            {
+                player.SendChatMessage($"{Utils.Colors.RED}[Ошибка]:{Utils.Colors.WHITE} Неверный тип предмета!");
+                return;
+            }
+
+            ItemController.GivePlayerItem(player, itemType, amount);
+        }
+        [Command("inv")]
+        public void CMD_inv(Player player)
+        {
+            List<ItemEntity> items = ItemController.ItemsList.Where(x => x.OwnerID == new PlayerInfo(player).GetDbID()).ToList();
+            foreach (var i in items)
+                player.SendChatMessage(i.ToString());
+        }
+
         [Command("sp", GreedyArg = true)]
         public void CMD_sp(Player client, string namepos = null)
         {

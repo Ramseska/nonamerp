@@ -1353,3 +1353,426 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQ
    at void server_side.DBConnection.MySqlConnector.RequestExecuteNonQuery(string request)+() => { } in D:/Desktop/nonamerp/dotnet/resources/server_side/Utilities/DBConnection.cs:line 37
    at void System.Threading.Tasks.Task.s_ecCallback(object obj)
    at void System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCal
+==================[29.06.2020 17:03:52]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+=========================================================
+
+==================[29.06.2020 17:03:52]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnec
+==================[29.06.2020 17:04:09]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+=========================================================
+
+==================[29.06.2020 17:04:09]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnec
+==================[29.06.2020 18:04:16]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Items.ItemController.UseItem(Player player, ItemEntity item) in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemController.cs:line 119
+=========================================================
+
+==================[29.06.2020 18:04:17]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void server_side.Items.ItemController.UseItem(Player player, ItemEntity item) in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemController.cs:line 119
+   at void server_side.Commands.MainCommands.CMD_useitem(Player player, int itemid) in D:/Desktop/nonamerp/dotnet/resources/server_side/Commands/MainCommands.cs:line 26
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[29.06.2020 18:06:47]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:06:47]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:06:47]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[29.06.2020 18:06:47]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:06:47]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере
+==================[29.06.2020 18:51:40]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:51:40]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:51:40]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[29.06.2020 18:51:40]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:51:40]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+=========================================================
+
+==================[29.06.2020 18:51:40]==================
+System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.NetworkStream.Write(byte[] buffer, int offset, int size)
+   at void MySql.Data.MySqlClient.TimedStream.Write(byte[] buffer, int offset, int count)
+=========================================================
+
+==================[29.06.2020 18:51:40]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорв

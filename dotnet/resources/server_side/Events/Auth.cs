@@ -7,10 +7,11 @@ using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using server_side.Data;
 using System.Text.RegularExpressions;
+using server_side.Items;
 
 namespace server_side.Events
 {
-    class AuthData
+    struct AuthData
     {
         public Player Player;
         public int dbID;
@@ -27,12 +28,10 @@ namespace server_side.Events
         public string DateReg;
         public double PayCheck;
 
-        public AuthData(Player player)
+        public AuthData(Player player) : this()
         {
             this.Player = player;
         }
-
-        private AuthData() { }
     }
     class Auth : Script
     {
@@ -283,6 +282,8 @@ namespace server_side.Events
                 client.Position = new Vector3(-143.7677, 6438.123, 31.4298);
                 client.Rotation = new Vector3(client.Rotation.X, client.Rotation.Y, -49.8411f);
                 client.Dimension = 0;
+
+                ItemController.LoadPlayerItemsFromDB(data.dbID);
 
                 NAPI.Entity.SetEntityTransparency(client, 255);
 

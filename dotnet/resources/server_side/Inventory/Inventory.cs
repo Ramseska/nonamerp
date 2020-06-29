@@ -13,9 +13,9 @@ namespace server_side.Inventory
         [RemoteEvent("sOnLoadInventory")]
         public void sOnLoadInventory(Player player)
         {
-            List<Item> playerItems = Item.ListItems.Where(x => x.OwnerID == new PlayerInfo(player).GetDbID()).ToList();
+            List<ItemEntity> playerItems = ItemController.ItemsList.Where(x => x.OwnerID == new PlayerInfo(player).GetDbID()).ToList();
 
-            var ooo = NAPI.Util.ToJson(playerItems.ToArray<Item>());
+            var ooo = NAPI.Util.ToJson(playerItems.ToArray<ItemEntity>()); 
 
         }
     }

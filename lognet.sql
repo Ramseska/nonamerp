@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 30 2020 г., 09:23
--- Версия сервера: 10.3.13-MariaDB-log
--- Версия PHP: 7.1.32
+-- Время создания: Июн 27 2020 г., 15:13
+-- Версия сервера: 8.0.15
+-- Версия PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -37,22 +37,22 @@ CREATE TABLE `accounts` (
   `p_lastip` varchar(32) DEFAULT NULL,
   `p_password` varchar(32) DEFAULT NULL,
   `p_mail` varchar(256) DEFAULT NULL,
-  `p_lvl` int(12) NOT NULL DEFAULT 0,
+  `p_lvl` int(12) NOT NULL DEFAULT '0',
   `p_datereg` varchar(64) DEFAULT NULL,
   `p_lastjoin` varchar(64) DEFAULT NULL,
   `p_birthday` date DEFAULT NULL,
   `p_sex` tinyint(1) DEFAULT NULL,
-  `p_height` int(11) NOT NULL DEFAULT 0,
-  `p_weight` int(11) NOT NULL DEFAULT 0,
-  `p_age` int(3) NOT NULL DEFAULT 0,
-  `p_satiety` int(3) NOT NULL DEFAULT 100,
-  `p_thirst` int(3) NOT NULL DEFAULT 100,
-  `p_money` double(32,2) NOT NULL DEFAULT 0.00,
-  `p_bank` double(32,2) NOT NULL DEFAULT 0.00,
-  `p_customize` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `p_clothes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `p_house` int(11) NOT NULL DEFAULT 0,
-  `p_paycheck` double(32,2) NOT NULL DEFAULT 0.00
+  `p_height` int(11) NOT NULL DEFAULT '0',
+  `p_weight` int(11) NOT NULL DEFAULT '0',
+  `p_age` int(3) NOT NULL DEFAULT '0',
+  `p_satiety` int(3) NOT NULL DEFAULT '100',
+  `p_thirst` int(3) NOT NULL DEFAULT '100',
+  `p_money` double(32,2) NOT NULL DEFAULT '0.00',
+  `p_bank` double(32,2) NOT NULL DEFAULT '0.00',
+  `p_customize` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
+  `p_clothes` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
+  `p_house` int(11) NOT NULL DEFAULT '0',
+  `p_paycheck` double(32,2) NOT NULL DEFAULT '0.00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -60,7 +60,8 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`p_id`, `p_socialclub`, `p_login`, `p_name`, `p_ip`, `p_lastip`, `p_password`, `p_mail`, `p_lvl`, `p_datereg`, `p_lastjoin`, `p_birthday`, `p_sex`, `p_height`, `p_weight`, `p_age`, `p_satiety`, `p_thirst`, `p_money`, `p_bank`, `p_customize`, `p_clothes`, `p_house`, `p_paycheck`) VALUES
-(1, 'Rams3ska', 'Ramses', 'Adolf Hietler', '127.0.0.1', '127.0.0.1', 'qweewq', 'responsetie@mail.ru', 0, '28.05.2020 23:41:09', '30.05.2020 4:48:37', NULL, 1, 0, 0, 32, 100, 100, 22.20, 0.00, '{\"mother\":25,\"father\":13,\"motherSkin\":0,\"fatherSkin\":0,\"parentsMix\":0,\"skinMix\":0,\"sex\":true,\"noseWidth\":0,\"noseHeigth\":0,\"noseLength\":0,\"noseBridge\":0,\"noseTip\":0,\"noseBridgeShift\":0,\"browHeigth\":0,\"browWidth\":0,\"cheekboneHeigth\":0,\"cheekboneWidth\":0,\"cheekWidth\":0,\"eyes\":0,\"lips\":0,\"jawWidth\":0,\"jawHeigth\":0,\"chinLength\":0,\"chinPosition\":0,\"chinWidth\":0,\"chinShape\":0,\"neckWidth\":0,\"hair\":[12,0,0],\"headOverlay\":{\"blemishes\":[0,255,1],\"facialHair\":[1,255,1],\"eyebrows\":[2,255,1],\"ageing\":[3,255,1],\"makeup\":[4,255,1],\"blush\":[5,255,1],\"complexion\":[6,255,1],\"sunDamage\":[7,255,1],\"lipStick\":[8,255,1],\"moles\":[9,255,1],\"chestHair\":[10,255,1],\"bodyBlemishes\":[11,255,1]}}', '{\"1\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"2\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"3\":{\"drawable\":-1,\"texture\":0,\"palette\":2},\"4\":{\"drawable\":3,\"texture\":0,\"palette\":2},\"5\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"6\":{\"drawable\":1,\"texture\":0,\"palette\":2},\"7\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"8\":{\"drawable\":15,\"texture\":0,\"palette\":2},\"9\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"10\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"11\":{\"drawable\":9,\"texture\":0,\"palette\":2}}', 0, 0.00);
+(1, 'Rams3ska', 'Ramses', 'Adolf Hietler', '127.0.0.1', '127.0.0.1', 'qweewq', 'responsetie@mail.ru', 0, '28.05.2020 23:41:09', '15.06.2020 10:17:38', NULL, 1, 0, 0, 32, 100, 100, 26.20, 0.00, '{\"mother\":25,\"father\":13,\"motherSkin\":0,\"fatherSkin\":0,\"parentsMix\":0,\"skinMix\":0,\"sex\":true,\"noseWidth\":0,\"noseHeigth\":0,\"noseLength\":0,\"noseBridge\":0,\"noseTip\":0,\"noseBridgeShift\":0,\"browHeigth\":0,\"browWidth\":0,\"cheekboneHeigth\":0,\"cheekboneWidth\":0,\"cheekWidth\":0,\"eyes\":0,\"lips\":0,\"jawWidth\":0,\"jawHeigth\":0,\"chinLength\":0,\"chinPosition\":0,\"chinWidth\":0,\"chinShape\":0,\"neckWidth\":0,\"hair\":[12,0,0],\"headOverlay\":{\"blemishes\":[0,255,1],\"facialHair\":[1,255,1],\"eyebrows\":[2,255,1],\"ageing\":[3,255,1],\"makeup\":[4,255,1],\"blush\":[5,255,1],\"complexion\":[6,255,1],\"sunDamage\":[7,255,1],\"lipStick\":[8,255,1],\"moles\":[9,255,1],\"chestHair\":[10,255,1],\"bodyBlemishes\":[11,255,1]}}', '{\"1\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"2\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"3\":{\"drawable\":-1,\"texture\":0,\"palette\":2},\"4\":{\"drawable\":3,\"texture\":0,\"palette\":2},\"5\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"6\":{\"drawable\":1,\"texture\":0,\"palette\":2},\"7\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"8\":{\"drawable\":15,\"texture\":0,\"palette\":2},\"9\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"10\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"11\":{\"drawable\":9,\"texture\":0,\"palette\":2}}', 0, 0.00),
+(2, 'Rams3ska', 'Francesca', 'Francesca Sesram', '127.0.0.1', '127.0.0.1', 'qweewq', 'responsetie@mail.ru', 0, '15.06.2020 10:26:38', '27.06.2020 19:11:55', NULL, 0, 0, 0, 21, 100, 100, 4.00, 0.00, '{\"mother\":21,\"father\":12,\"motherSkin\":21,\"fatherSkin\":12,\"parentsMix\":\"0.3\",\"skinMix\":\"0.4\",\"sex\":false,\"noseWidth\":\"-0.3\",\"noseHeigth\":0,\"noseLength\":0,\"noseBridge\":0,\"noseTip\":0,\"noseBridgeShift\":0,\"browHeigth\":\"-0.7\",\"browWidth\":\"-0.4\",\"cheekboneHeigth\":\"-0.3\",\"cheekboneWidth\":\"0.3\",\"cheekWidth\":0,\"eyes\":\"-0.2\",\"lips\":\"0.2\",\"jawWidth\":\"-1\",\"jawHeigth\":\"-1\",\"chinLength\":\"-0.5\",\"chinPosition\":\"0.1\",\"chinWidth\":\"-0.4\",\"chinShape\":\"-1\",\"neckWidth\":\"-1\",\"hair\":[15,1,46],\"headOverlay\":{\"blemishes\":[0,255,1],\"facialHair\":[1,255,1],\"eyebrows\":[2,\"0\",1],\"ageing\":[3,255,1],\"makeup\":[4,\"1\",\"0.87\"],\"blush\":[5,\"2\",\"0.38\"],\"complexion\":[6,255,1],\"sunDamage\":[7,255,1],\"lipStick\":[8,\"5\",\"0.45\"],\"moles\":[9,255,1],\"chestHair\":[10,255,1],\"bodyBlemishes\":[11,255,1]}}', '{\"1\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"2\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"3\":{\"drawable\":-1,\"texture\":0,\"palette\":2},\"4\":{\"drawable\":4,\"texture\":0,\"palette\":2},\"5\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"6\":{\"drawable\":3,\"texture\":0,\"palette\":2},\"7\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"8\":{\"drawable\":15,\"texture\":0,\"palette\":2},\"9\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"10\":{\"drawable\":0,\"texture\":0,\"palette\":2},\"11\":{\"drawable\":27,\"texture\":0,\"palette\":2}}', 0, 0.00);
 
 -- --------------------------------------------------------
 
@@ -69,17 +70,17 @@ INSERT INTO `accounts` (`p_id`, `p_socialclub`, `p_login`, `p_name`, `p_ip`, `p_
 --
 
 CREATE TABLE `house` (
-  `h_id` int(11) NOT NULL DEFAULT -1,
-  `h_owner` varchar(64) CHARACTER SET utf8 NOT NULL DEFAULT 'None',
-  `h_days` int(11) NOT NULL DEFAULT 0,
-  `h_lock` tinyint(1) NOT NULL DEFAULT 0,
-  `h_price` int(11) NOT NULL DEFAULT 0,
-  `h_class` int(11) NOT NULL DEFAULT -1,
-  `h_interior` int(11) NOT NULL DEFAULT -1,
-  `h_enterposX` float(8,4) NOT NULL DEFAULT 0.0000,
-  `h_enterposY` float(8,4) NOT NULL DEFAULT 0.0000,
-  `h_enterposZ` float(8,4) NOT NULL DEFAULT 0.0000,
-  `h_enterposR` float(8,4) NOT NULL DEFAULT 0.0000
+  `h_id` int(11) NOT NULL DEFAULT '-1',
+  `h_owner` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'None',
+  `h_days` int(11) NOT NULL DEFAULT '0',
+  `h_lock` tinyint(1) NOT NULL DEFAULT '0',
+  `h_price` int(11) NOT NULL DEFAULT '0',
+  `h_class` int(11) NOT NULL DEFAULT '-1',
+  `h_interior` int(11) NOT NULL DEFAULT '-1',
+  `h_enterposX` float(8,4) NOT NULL DEFAULT '0.0000',
+  `h_enterposY` float(8,4) NOT NULL DEFAULT '0.0000',
+  `h_enterposZ` float(8,4) NOT NULL DEFAULT '0.0000',
+  `h_enterposR` float(8,4) NOT NULL DEFAULT '0.0000'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -171,6 +172,27 @@ INSERT INTO `house` (`h_id`, `h_owner`, `h_days`, `h_lock`, `h_price`, `h_class`
 (82, 'None', 0, 0, 5800, 0, 0, 52.2054, 3741.9729, 40.0846, 189.1048),
 (83, 'None', 0, 0, 700, 0, 0, 40.5160, 3715.5728, 39.6745, 149.5446);
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `items`
+--
+
+CREATE TABLE `items` (
+  `item_id` int(11) NOT NULL,
+  `owner_id` int(11) DEFAULT '-1',
+  `item_type` int(11) DEFAULT '-1',
+  `item_amount` int(11) DEFAULT '-1',
+  `inventory_slot` int(11) DEFAULT '-1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `items`
+--
+
+INSERT INTO `items` (`item_id`, `owner_id`, `item_type`, `item_amount`, `inventory_slot`) VALUES
+(1, -1, 1, 3, -1);
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -182,6 +204,12 @@ ALTER TABLE `accounts`
   ADD PRIMARY KEY (`p_id`);
 
 --
+-- Индексы таблицы `items`
+--
+ALTER TABLE `items`
+  ADD PRIMARY KEY (`item_id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -189,7 +217,13 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT для таблицы `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT для таблицы `items`
+--
+ALTER TABLE `items`
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
