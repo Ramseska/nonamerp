@@ -38,14 +38,14 @@ namespace server_side.Commands
             ItemController.UseItem(player, item);
         }
         [Command("gitem")]
-        public void CMD_gitem(Player player, int itemType, int amount)
+        public void CMD_gitem(Player player, string itemType, int amount)
         {
             if (amount < 1)
             {
                 player.SendChatMessage($"{Utils.Colors.RED}[Ошибка]:{Utils.Colors.WHITE} Неверное кол-во предмета!");
                 return;
             }
-            else if (itemType > Enum.GetValues(typeof(Items.eItems)).Length || itemType < 0)
+            else if (ItemData.ItemDataList.Where(x => x.Type == itemType).FirstOrDefault() == null)
             {
                 player.SendChatMessage($"{Utils.Colors.RED}[Ошибка]:{Utils.Colors.WHITE} Неверный тип предмета!");
                 return;

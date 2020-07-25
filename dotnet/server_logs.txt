@@ -10404,4 +10404,180 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
    at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
    at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
-   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnecti
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectiInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 25.07.2020 17:06:21
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Systems.Test..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemEntity..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 9 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 9 remote procedure(s)
+[MySQL]: Домов загружено: 83 | Домов в списке: 83
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\itemData.json'.
+File name: 'D:\itemData.json'
+   at SafeFileHandle System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at SafeFileHandle System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at new System.IO.FileStream(string path, FileMode mode, FileAccess access, FileShare share, int bufferSize, FileOptions options)
+   at Stream System.IO.StreamReader.ValidateArgsAndOpenPath(string path, Encoding encoding, int bufferSize)
+   at new System.IO.StreamReader(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks)
+   at string System.IO.File.InternalReadAllText(string path, Encoding encoding)
+   at string System.IO.File.ReadAllText(string path)
+   at void server_side.Items.ItemData.UnPackDataFromJson() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 69
+   at void server_side.Items.ItemData.InitItemData() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 44
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 42
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at GTANetworkInternals.ScriptingEngine.InvokeVoidMethod(String method, Object[] args)
+   at GTANetworkInternals.EventParser.Parse(Event _event, Object[] arguments)
+   at GTANetworkInternals.EvenInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 25.07.2020 17:06:52
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Systems.Test..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemEntity..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 9 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 9 remote procedure(s)
+[MySQL]: Домов загружено: 83 | Домов в списке: 83
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Desktop\itemData.json'.
+File name: 'D:\Desktop\itemData.json'
+   at SafeFileHandle System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at SafeFileHandle System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at new System.IO.FileStream(string path, FileMode mode, FileAccess access, FileShare share, int bufferSize, FileOptions options)
+   at Stream System.IO.StreamReader.ValidateArgsAndOpenPath(string path, Encoding encoding, int bufferSize)
+   at new System.IO.StreamReader(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks)
+   at string System.IO.File.InternalReadAllText(string path, Encoding encoding)
+   at string System.IO.File.ReadAllText(string path)
+   at void server_side.Items.ItemData.UnPackDataFromJson() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 69
+   at void server_side.Items.ItemData.InitItemData() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 44
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 42
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at GTANetworkInternals.ScriptingEngine.InvokeVoidMethod(String method, Object[] args)
+   at GTANetworkInternals.EventParser.Parse(Event _event, Object[] arguments)
+   at GTANetwoInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 25.07.2020 17:17:11
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Systems.Test..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemEntity..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 9 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 9 remote procedure(s)
+[MySQL]: Домов загружено: 83 | Домов в списке: 83
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at string server_side.Items.ItemData.ToString() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 38
+   at void server_side.Items.ItemData.UnPackDataFromJson() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 82
+   at void server_side.Items.ItemData.InitItemData() in D:/Desktop/nonamerp/dotnet/resources/server_side/Items/ItemData.cs:line 44
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 42
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at GTANetworkInternals.ScriptingEngine.InvokeVoidMethod(String method, Object[] args)
+   at GTANetworkInternals.EventParser.Parse(Event _event, Object[] arguments)
+   at GTANetworkInternals.EventCollection.<>c__DisplayClass4_0.<ParseEx>b__1(EventParser x)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at GTANetworkInternals.EventCollection.ParseEx(Event _event, ScriptingEngine engine, Object[] arguments)
+   at GTANetworkInternals.EventHandler.ParseEx(Event _event, ScriptingEngine engine, Object[] arguments)
+   at GTANetworkInternals.GameServer.<>c.<StartResource>b__67_0(ScriptingEngine r)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String pare

@@ -37,6 +37,9 @@ namespace Main.events
 
             // jobs
             Job.InitJobs();
+
+            // items
+            ItemData.InitItemData();
             
             /*
             DateTime time = DateTime.Now;

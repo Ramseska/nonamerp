@@ -13,11 +13,17 @@ namespace server_side.Items
 {
     class ItemController : Script
     {
+        // В дальнейшем, во имя оптимизации, сделать список предметов для каждого игрока отдельным экземпляром.
         static public readonly List<ItemEntity> ItemsList = new List<ItemEntity>();
 
-        public static void GivePlayerItem(Player player, int type, int amount = 1)
+
+        public static void GivePlayerItem(Player player, string type, int amount = 1)
         {
-            if ((amount < 1) || (type > Enum.GetValues(typeof(Items.eItems)).Length || type < 0)) return;
+            if(ItemData.ItemDataList.Where(x => x.Type == type).FirstOrDefault() == null)
+            {
+                NAPI.Util.ConsoleOutput("[Ошибка]: Выдаваемого предмета с типом " + type + " не существует!");
+                return;
+            }
 
             ItemEntity item = CreateItem(type, amount);
             item.OwnerID = new PlayerInfo(player).GetDbID();
@@ -28,7 +34,7 @@ namespace server_side.Items
                 Console.WriteLine(i.ToString());
         }
 
-        public static ItemEntity CreateItem(int type, int amount)
+        public static ItemEntity CreateItem(string type, int amount)
         {
             try
             {
@@ -91,12 +97,12 @@ namespace server_side.Items
                         {
                             while (reader.Read())
                             {
-                                ItemsList.Add(new ItemEntity((int)reader["item_id"], (int)reader["owner_id"], (int)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]));
+                                ItemsList.Add(new ItemEntity((int)reader["item_id"], (int)reader["owner_id"], (string)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]));
                             }
 
                             NAPI.Util.ConsoleOutput($"[{playerDbId}]: Загружено {ItemsList.Where(x => x.OwnerID == playerDbId).Count()} предметов.");
                         }
-                        else { NAPI.Util.ConsoleOutput($"[Ошибка]: Предметы для игрока {playerDbId} не найдены в базе данных!"); }
+                        else { NAPI.Util.ConsoleOutput($"[Ахтунг]: Предметы для игрока {playerDbId} не найдены в базе данных!"); }
 
                         reader.Close();
                         con.Close();
@@ -116,7 +122,7 @@ namespace server_side.Items
             {
                 ItemData itemData = ItemData.ItemDataList.Where(x => x.Type == item.ItemType).FirstOrDefault();
 
-                if (itemData != null)
+                if (itemData.Action != null)
                 {
                     itemData.Action(player);
 
@@ -131,7 +137,7 @@ namespace server_side.Items
 
                     return;
                 }
-                NAPI.Util.ConsoleOutput($"[Ошибка]: Не удалось использовать предмет, т.к. он не был описан в классе ItemData\nItem: {item}");
+                NAPI.Util.ConsoleOutput($"[Ошибка]: Не удалось использовать предмет, т.к. его действие не описано в классе ItemData\nItem: {item}");
             }
             catch (Exception e)
             {
@@ -154,7 +160,7 @@ namespace server_side.Items
                 {
                     while (reader.Read())
                     {
-                        item = new ItemEntity((int)reader["item_id"], (int)reader["owner_id"], (int)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]);
+                        item = new ItemEntity((int)reader["item_id"], (int)reader["owner_id"], (string)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]);
                     }
                 }
 
@@ -177,57 +183,4 @@ namespace server_side.Items
             MySqlConnector.RequestExecuteNonQuery(query);
         }
     }
-
-
-    /*
-        public static void GivePlayerItem(Player player, ItemController item)
-        {
-            PlayerInfo pInfo = new PlayerInfo(player);
-
-            item.OwnerID = pInfo.GetDbID();
-
-            MySqlConnector.RequestExecuteNonQuery($"UPDATE `items` SET `owner_id`='{item.OwnerID}',`item_type`='{item.ItemType}',`item_amount`='{item.ItemAmount}',`inventory_slot`='{item.InvenrorySlot}' WHERE `item_id` = '{item.ItemID}'");
-        }
-
-        public static void UseItem(Player player, ItemController item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static void DeleteItem(int itemID)
-        {
-            ListItems.Remove(ListItems.Where(x => x.ItemID == itemID).First());
-            MySqlConnector.RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
-        }
-
-        async static public void LoadUnownedItemsFromDB()
-        {
-            try
-            {
-                await Task.Run(() =>
-                {
-                    using (MySqlConnection con = MySqlConnector.GetDBConnection())
-                    {
-                        con.Open();
-
-                        MySqlDataReader reader = new MySqlCommand("SELECT * FROM `items`", con).ExecuteReader();
-
-                        while (reader.Read())
-                        {
-                            if ((int)reader["owner_id"] != -1) continue;
-
-                            ListItems.Add(new ItemController((int)reader["item_id"], (int)reader["owner_id"], (int)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]));
-                        }
-                        reader.Close();
-                        con.Close();
-                    }
-                });
-            }
-            catch (Exception e)
-            {
-                NAPI.Util.ConsoleOutput(e.ToString());
-            }
-        }
-    }
-    */
 }

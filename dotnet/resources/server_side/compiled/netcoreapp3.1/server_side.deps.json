@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "server_side/1.0.0": {
         "dependencies": {
-          "AngleSharp": "0.14.0.0",
+          "Newtonsoft.Json": "12.0.3",
           "Bootstrapper": "1.1.0.0",
           "Colorful.Console": "1.2.10.0",
           "MySql.Data": "8.0.20.0",
@@ -20,11 +20,11 @@
           "server_side.dll": {}
         }
       },
-      "AngleSharp/0.14.0.0": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
-          "AngleSharp.dll": {
-            "assemblyVersion": "0.14.0.0",
-            "fileVersion": "0.14.0.0"
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
           }
         }
       },
@@ -174,14 +174,6 @@
           }
         }
       },
-      "Newtonsoft.Json/12.0.0.0": {
-        "runtime": {
-          "Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.3.23909"
-          }
-        }
-      },
       "NeoSmart.Hashing/0.1.0.0": {
         "runtime": {
           "NeoSmart.Hashing.dll": {
@@ -271,10 +263,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AngleSharp/0.14.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "Bootstrapper/1.1.0.0": {
       "type": "reference",
@@ -312,11 +306,6 @@
       "sha512": ""
     },
     "Microsoft.CodeAnalysis.CSharp/3.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Newtonsoft.Json/12.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

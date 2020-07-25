@@ -1,28 +1,34 @@
+// gui's
 require("./cef/weaponpicker/index.js");
 require("./cef/auth/auth.js");
-//require("./cef/speedo");
 require("./cef/color_picker");
-require("./sound/sound.js");
-// require("./debugUI/debugUI.js");
 require("./cef/other/house");
-//require("./cef/reg_customizer");
-require("./camfly.js");
 require("./cef/notify/notify.js");
-require("./IPLInteriors.js");
-require("./voice/voice.js");
 require("./cef/customize/index.js");
 require("./cef/workdialog/workdialog.js");
-require("./cef/hud/hud.js");
 require("./cef/appleminigame/appleminigame.js");
+require("./cef/hud/hud.js");
+// jobs
 require("./jobs/applecollector.js");
-require("./keybinds.js");
+// interiors
+require("./IPLInteriors.js");
+// other
+require("./sound/sound.js");
+require("./voice/voice.js");
+require("./camfly.js");
+require("./customize/customize.js");
 
+// keybinds
+require("./keybinds.js"); // forever last
+
+
+
+// temp shit >>
 //mp.game.ui.displayRadar(false); // disable radar 
 
 let blackout = false;
+// temp shit <<
 
-mp.events.add('setPlayerCustomize', (args) => { mp.events.callRemote('sSetPlayerCustomize', args); });
-mp.events.add('setPlayerClothes', (args) => { mp.events.callRemote('sSetPlayerClothes', args); });
 
 mp.events.add({
     'playerEnterVehicle': (vehicle, seat) => {
@@ -50,5 +56,9 @@ mp.events.add("playerCommand", (command) => {
     {
         blackout = !blackout;
         for (let i = 0; i <= 16; i++) mp.game.graphics.setLightsState(i, blackout);
+    }
+    if(commandName === "tt")
+    {
+        mp.events.call("createTestEvent");
     }
 });

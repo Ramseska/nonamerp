@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using GTANetworkAPI;
 
 namespace server_side.Items
 {
-    class ItemEntity
+    class ItemEntity : Script
     {
         public int ItemID { get; private set; }
         public int OwnerID { get; set; }
-        public int ItemType { get; private set; }
+        public string ItemType { get; private set; }
         public int ItemAmount { get; set; }
         public int InvenrorySlot { get; set; }
 
         private ItemEntity() { }
 
-        public ItemEntity(int itemid, int ownerid, int itemtype, int itemamount, int inventoryslot)
+        public ItemEntity(int itemid, int ownerid, string itemtype, int itemamount, int inventoryslot)
         {
             this.ItemID = itemid;
             this.OwnerID = ownerid;

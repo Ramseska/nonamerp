@@ -113,7 +113,6 @@ D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Debug\netcoreapp3.1\server_
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Debug\netcoreapp3.1\server_side.csproj.CopyComplete
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Debug\netcoreapp3.1\server_side.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Debug\netcoreapp3.1\server_side.pdb
-D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\System.Drawing.Common.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\System.Drawing.Common.xml
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\MySql.Data.dll
@@ -123,4 +122,3 @@ D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\System.C
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\MySql.Data.xml
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\Renci.SshNet.xml
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Debug\netcoreapp3.1\server_side.csproj.CoreCompileInputs.cache
-D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\AngleSharp.dll
