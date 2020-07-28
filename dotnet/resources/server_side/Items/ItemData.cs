@@ -24,7 +24,6 @@ namespace server_side.Items
         public static List<ItemData> ItemDataList = new List<ItemData>();
 
         private ItemData() { }
-        //public ItemData(string type) => this.Type = type;
         public ItemData(string type, int stack, string group, int weight)
         {
             Type = type;
@@ -36,7 +35,6 @@ namespace server_side.Items
 
 
         public override string ToString() => $"Type: {this.Type}, MaxInStack: {this.MaxItemsInStack}, Group: {Group}, Weight: {Weight}, Action: {(Action == null ? "null" : $"{Action}")}";
-
 
 
         public static void InitItemData()
@@ -96,80 +94,4 @@ namespace server_side.Items
             }
         }
     }
-    /*
-    public class ItemDatad
-    {
-        public static List<ItemData> ItemDataList = new List<ItemData>();
-
-        [JsonIgnore]
-        public string ItemType { get; private set; }
-        [JsonProperty("ItemImg")]
-        public string ItemImg { get; private set; }
-        [JsonProperty("ItemStack")]
-        public int ItemStack { get; private set; }
-        [JsonProperty("ItemGroup")]
-        public string ItemGroup { get; private set; }
-        [JsonProperty("ItemName")]
-        public string ItemName { get; private set; }
-        [JsonProperty("ItemDescription")]
-        public string ItemDescription { get; private set; }
-        [JsonProperty("ItemWeigth")]
-        public int ItemWeigth { get; private set; }
-
-        private ItemDatad() { }
-        public ItemDatad(string type, string img, int stack, string group, string name, string desc, int weight)
-        {
-            this.ItemType = type;
-            this.ItemImg = img;
-            this.ItemStack = stack;
-            this.ItemGroup = group;
-            this.ItemName = name;
-            this.ItemDescription = desc;
-            this.ItemWeigth = weight;
-        }
-
-        public override string ToString()
-        {
-            return "ItemType: " + ItemType + " | ItemImg: " + ItemImg + " | ItemStack: " + ItemStack + " | ItemGroup: " + ItemGroup + " | ItemName: " + ItemName + " | ItemDesc: " + ItemDescription + " | ItemWeight: " + ItemWeigth;
-        }
-    }
-
-    public class ItemZalupa
-    {
-        public static void UnPackJson(string json)
-        {
-            var j = JsonConvert.DeserializeObject<Dictionary<string, ItemData>>(json);
-
-            foreach (var r in j)
-            {
-                ItemData t = r.Value;
-                ItemData.ItemDataList.Add(new ItemDatad(r.Key, t.ItemImg, t.ItemStack, t.ItemGroup, t.ItemName, t.ItemDescription, t.ItemWeigth));
-            }
-        }
-
-        public static void PackJson()
-        {
-            Dictionary<string, ItemData> kp = new Dictionary<string, ItemData>();
-
-            foreach (var i in ItemData.ItemDataList)
-            {
-                kp.Add(i.ItemType, i);
-            }
-
-            var ser = JsonConvert.SerializeObject(kp);
-
-            System.IO.File.WriteAllText(PathData.fileName, ser);
-        }
-
-        public static void CreateItem(Label label, string type, string img, int stack, string group, string name, string desc, int weigth)
-        {
-            ItemData item = new ItemData(type, img, stack, group, name, desc, weigth);
-            ItemData.ItemDataList.Add(item);
-
-            label.Text = "Объект успешно добавлен!";
-
-            PackJson();
-        }
-    }
-    */
 }

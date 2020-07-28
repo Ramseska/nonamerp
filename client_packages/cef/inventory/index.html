@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <script src="../utils/jquery.min.js"></script>
+        <script src="../utils/jquery-ui.min.js"></script>
+
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="inventory-container">
+            <!-- Player inventory stats -->
+            <div id="stats-container" class="container">
+                <div id="header-name">
+                    <p id="player-name">Ramses Flipsize</p>
+                </div>
+                <div id="human-access">
+                    <div class="access-slots-box">
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                    </div>
+                    <img src="./img/human-body1.svg" id="human">
+                    <div class="access-slots-box">
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                        <div class="access-slot"></div>
+                    </div>
+                </div>
+                <div class="line" id="stats-line"></div>
+                <div id="player-info-box">
+                    <div class="value-box">
+                        <img src="./img/money.svg" class="bar-icon">
+                        <p id="player-cash" class="value-text">130039320$</p>
+                    </div>
+                    <div class="value-box">
+                        <img src="./img/bank.svg" class="bar-icon">
+                        <p id="player-money" class="value-text">130039320$</p>
+                    </div>
+                    <div class="bar-box">
+                        <img src="./img/heart.svg" class="bar-icon">
+                        <div class="bar-line" id="health-line"></div>
+                    </div>
+                    <div class="bar-box">
+                        <img src="./img/apple.svg" class="bar-icon">
+                        <div class="bar-line" id="hunger-line"></div>
+                    </div>
+                    <div class="bar-box">
+                        <img src="./img/water-bottle.svg" class="bar-icon">
+                        <div class="bar-line" id="thirst-line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Player inventory box -->
+            <div id="items-container" class="container">
+                <div id="items-box" class="container">
+                    <!--                     
+                    <div class="item-box">
+                        <img class="item-picture" src="./img/apple.svg">
+                        <div class="item-amount-box">
+                            <p class="item-amount-value">99</p>
+                        </div>
+                    </div>
+                     -->
+                </div>
+                <div class="line"></div>
+                <div id="bottom-box">
+                    <div id="items-info">Всего предметов: 1000 ед.</div>
+                    <div id="items-weigth">Вес: 30/100 кг</div>
+                </div>
+            </div>
+            <!-- Box for trading -->
+            <div id="trade-container" class="container" hidden=true></div>
+            <!-- Loot box -->
+            <div id="loot-container" class="container" hidden=true></div>
+        </div>
+
+        <!-- using item menu -->
+        <div id="menu-container" hidden=true>
+            <div id="inventory-menu" class="container" hidden=true>
+                <input type="button" class="inventory-menu-button" value="Информация" id="button-info" onclick="onClickButtonInfo()">
+                <input type="button" class="inventory-menu-button" value="Использовать" id="button-use" onclick="onClickButtonUse()">
+                <input type="button" class="inventory-menu-button" value="Выбросить" id="button-drop" onclick="onClickButtonDrop()">
+                <input type="button" class="inventory-menu-button" value="Закрыть" id="button-close" onclick="onClickButtonClose()">
+            </div>
+            <div id="menu-description" class="container" hidden=true>
+                <div id="menu-description-content"></div>
+            </div>
+        </div>
+    </body>
+</html>

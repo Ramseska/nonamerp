@@ -10,7 +10,7 @@ namespace server_side.DBConnection
 {
     public class MySqlConnector
     {
-        public static MySqlConnection GetDBConnection()
+        public MySqlConnection GetDBConnection()
         {
             string host = "localhost";
             int port = 3306;
@@ -20,21 +20,22 @@ namespace server_side.DBConnection
 
             string connString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + password;
 
-            MySqlConnection conn = new MySqlConnection(connString);
+            MySqlConnection con = new MySqlConnection(connString);
 
-            return conn;
+            return con;
         }
 
-        async public static void RequestExecuteNonQuery(string request)
+        async public void RequestExecuteNonQuery(string request)
         {
             try
             {
                 await Task.Run(() =>
                 {
-                    using (MySqlConnection con = GetDBConnection())
+                    using(MySqlConnection con = GetDBConnection())
                     {
-                        con.Open();
+                        con.OpenAsync();
                         new MySqlCommand(request, con).ExecuteNonQuery();
+                        con.CloseAsync();
                     }
                 });
             }

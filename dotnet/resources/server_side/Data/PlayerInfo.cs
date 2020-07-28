@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 using GTANetworkAPI;
 using server_side.DBConnection;
-using MySql.Data.MySqlClient;
-using System.Security.Policy;
-using System.Runtime.InteropServices.ComTypes;
+
+
 
 namespace server_side.Data
 {
@@ -93,7 +89,7 @@ namespace server_side.Data
 
         public void SetCurrentIP(string ip)
         {
-            MySqlConnector.RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_login` = '{GetLogin()}'");
+            new MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_id` = '{GetDbID()}'");
             
             player.SetData<string>(EntityData.PLAYER_IP, ip);
         }
@@ -123,8 +119,8 @@ namespace server_side.Data
 
             if (updateindb)
             {
-                string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
-                MySqlConnector.RequestExecuteNonQuery(query);
+                string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
+                new MySqlConnector().RequestExecuteNonQuery(query);
             }
 
             Utils.UtilityFuncs.UpdatePlayerHud(player);
@@ -137,8 +133,8 @@ namespace server_side.Data
 
             if (updateindb)
             {
-                string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_login` = '{GetLogin()}'";
-                MySqlConnector.RequestExecuteNonQuery(query);
+                string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
+                new MySqlConnector().RequestExecuteNonQuery(query);
             }
 
             Utils.UtilityFuncs.UpdatePlayerHud(player);
@@ -165,9 +161,9 @@ namespace server_side.Data
 
         public void SetLastJoin(string date)
         {
-            string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_login` = '{GetLogin()}'";
+            string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_id` = '{GetDbID()}'";
 
-            MySqlConnector.RequestExecuteNonQuery(query);
+            new MySqlConnector().RequestExecuteNonQuery(query);
 
             player.SetData<string>(EntityData.PLAYER_LASTJOIN, date);
         }
@@ -202,13 +198,11 @@ namespace server_side.Data
         public int GetThirst() => player.GetData<int>(EntityData.PLAYER_THIRST);
 
         public double GetPayCheck() => Math.Round(player.GetData<double>(EntityData.PLAYER_PAYCHECK), 2);
-        public void AddToPayCheck(double money, string reason = null)
+        public void AddToPayCheck(double money, string reason = null, bool isLogin = false)
         {
             double paycheck = Math.Round(GetPayCheck() + money, 2);
 
-            string query = $"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_login` = '{GetLogin()}'";
-
-            MySqlConnector.RequestExecuteNonQuery(query);
+            if(isLogin) new MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
 
             player.SetData<double>(EntityData.PLAYER_PAYCHECK, paycheck);
         }

@@ -38,7 +38,7 @@ namespace server_side.Items
         {
             try
             {
-                using (MySqlConnection con = MySqlConnector.GetDBConnection())
+                using (MySqlConnection con = new MySqlConnector().GetDBConnection())
                 {
                     con.Open();
 
@@ -74,7 +74,7 @@ namespace server_side.Items
             if (item != null)
             {
                 ItemsList.Remove(item);
-                MySqlConnector.RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
+                new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
                 return;
             }
 
@@ -87,7 +87,7 @@ namespace server_side.Items
             {
                 await Task.Run(() =>
                 {
-                    using (MySqlConnection con = MySqlConnector.GetDBConnection())
+                    using (MySqlConnection con = new MySqlConnector().GetDBConnection())
                     {
                         con.Open();
 
@@ -147,7 +147,7 @@ namespace server_side.Items
 
         private static ItemEntity GetItemFromDB(int itemid)
         {
-            using (MySqlConnection con = MySqlConnector.GetDBConnection())
+            using (MySqlConnection con = new MySqlConnector().GetDBConnection())
             {
                 con.Open();
 
@@ -180,7 +180,7 @@ namespace server_side.Items
                 $"`item_amount` = '{item.ItemAmount}'," +
                 $"`inventory_slot` = '{item.InvenrorySlot}' " +
                 $"WHERE `item_id` = '{item.ItemID}'";
-            MySqlConnector.RequestExecuteNonQuery(query);
+            new MySqlConnector().RequestExecuteNonQuery(query);
         }
     }
 }

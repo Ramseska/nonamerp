@@ -11,7 +11,7 @@ namespace server_side.Jobs
 {
     public class Job : Script
     {
-        public enum eJobs : uint
+        public enum eJobs : int
         {
             None = 0,
             AppleCollector = 1,

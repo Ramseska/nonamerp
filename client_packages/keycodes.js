@@ -60,4 +60,4 @@ const key =
     z = 0x5A
 ]
 
-module.export = key;
+module.export.key = key;

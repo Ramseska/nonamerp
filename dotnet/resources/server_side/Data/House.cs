@@ -38,7 +38,7 @@ namespace server_side.Data
 
         public static void InitHouses()
         {
-            using (MySqlConnection con = MySqlConnector.GetDBConnection())
+            using (MySqlConnection con = new MySqlConnector().GetDBConnection())
             {
                 con.Open();
 
@@ -139,7 +139,7 @@ namespace server_side.Data
                 HouseText = NAPI.TextLabel.CreateTextLabel($"House ID: {tempID}\nHouse Owner: None\nHouse Price: {HousePrice}\nHouse Class: {HouseClass}\nHouse Status: {HouseStatus}", HousePosition, 3f, 3f, 10, new Color(255, 255, 255))
             };
             
-            using(MySqlConnection con = MySqlConnector.GetDBConnection())
+            using(MySqlConnection con = new MySqlConnector().GetDBConnection())
             {
                 con.Open();
                 string query = 
@@ -192,7 +192,7 @@ namespace server_side.Data
 
             HouseList.Remove(h);
 
-            MySqlConnector.RequestExecuteNonQuery($"DELETE FROM house WHERE h_id = {houseid}");
+            new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM house WHERE h_id = {houseid}");
 
             client.SendChatMessage($"Дом {houseid} успешно был удален!");
         }

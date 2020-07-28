@@ -91,7 +91,7 @@ namespace server_side.Events
         {
             try
             {
-                MySqlConnection con = MySqlConnector.GetDBConnection();
+                MySqlConnection con = new MySqlConnector().GetDBConnection();
                 con.Open();
 
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_login` = '" + args[1] + "'", con);
@@ -192,7 +192,7 @@ namespace server_side.Events
         {
             try
             {
-                using(MySqlConnection con = MySqlConnector.GetDBConnection())
+                using(MySqlConnection con = new MySqlConnector().GetDBConnection())
                 {
                     con.Open();
 
@@ -269,7 +269,7 @@ namespace server_side.Events
                 playerInfo.SetDateReg(data.DateReg);
                 playerInfo.SetLastJoin(DateTime.Now.ToString());
                 playerInfo.SetCurrentIP(client.Address);
-                playerInfo.AddToPayCheck(data.PayCheck);
+                playerInfo.AddToPayCheck(data.PayCheck, isLogin: true);
 
                 client.ResetData("pCustomize");
                 client.ResetData("pClothes");

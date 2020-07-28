@@ -1,0 +1,408 @@
+@font-face
+{
+    font-family: 'MonsterHuenster';
+    src: url("../utils/fonts/MontserratAlternates/MontserratAlternates-Light.ttf");
+}
+
+@font-face
+{
+    font-family: 'Abel';
+    src: url("../utils/fonts/Abel-Regular.ttf");
+}
+
+body
+{
+    -webkit-user-select: none;
+
+    overflow: hidden;
+
+    background-color: gray;
+
+    display: flex;
+
+    font-family: 'MonsterHuenster';
+}
+
+.line
+{
+    width: 100%;
+    height: 1px;
+    background: -webkit-linear-gradient(18deg, rgb(114, 242, 255) 24%, rgb(75, 255, 0) 93%);
+}
+
+#inventory-container
+{
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+
+#items-container
+{
+    width: 471px;
+    height: 500px;
+}
+
+#items-box::-webkit-scrollbar { display: none; }
+
+#items-box
+{
+    position: relative;
+
+    width: 465px;
+    height: 465px;
+
+    margin: 3px 0px 3px 3px;
+
+    background-color: #D0D9DD;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: auto;
+}
+
+#bottom-box
+{
+    position: relative;
+
+    width: 456px;
+    height: 28px;
+
+    margin-left: 8px;
+
+    display: flex;
+
+    /* font */  
+    font-weight: 14;
+}
+
+#items-info
+{
+    position: relative;
+
+    margin: auto;
+    margin-left: 0;
+
+    width: 228px;
+
+    text-align: start;
+}
+#items-weigth
+{
+    position: relative;
+
+    margin: auto;
+    margin-right: 0;
+
+    width: 228px;
+
+    text-align: end;
+}
+
+.item-box
+{
+    position: relative;
+
+    width: 85px;
+    height: 85px;
+
+    margin: 4px;
+
+    background: linear-gradient(26.29deg, #DFFFF4 0%, rgba(255, 255, 255, 0) 52.48%), linear-gradient(333.17deg, #D3FFFA 0%, #FFFFFF 54.3%);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.21);
+    border-radius: 3px;
+}
+
+.item-picture
+{
+    position: relative;
+
+    width: 54px;
+    height: 54px;
+
+    margin: 15 15 0 15;
+}
+
+.item-amount-box
+{
+    position: relative;
+
+    width: 20px;
+    height: 16px;
+
+    background: #FAFAFA;
+    border-radius: 3px 0px;
+
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.12);
+
+    float: right;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-amount-value
+{
+    position: relative;
+    font-family: Abel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #505050;
+    margin: 0;
+}
+
+.container
+{
+    position: relative;
+
+    background-color: #F5F5F5;
+
+    border-radius: 3px;
+
+    margin: 4px;
+}
+
+#stats-container
+{
+    position: relative;
+
+    width: 250px;
+    height: 500px;
+}
+
+#header-name
+{
+    position: relative;
+
+    width: 100%;
+    height: 57px;
+
+    display: flex;
+}
+
+#player-name
+{
+    position: relative;
+
+    margin: auto;
+
+    font-family: MonsterHuenster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+#human-access
+{
+    position: relative;
+
+    width: 100%;
+    height: 269px;
+
+    display: flex;
+}
+
+
+img#human
+{
+    position: relative;
+
+    height: 269;
+    width: 140px;
+}
+
+.access-slots-box
+{
+    position: relative;
+
+    width: 35px;
+    height: 269px;
+
+    margin: 0 10px 0 10px;
+}
+
+.access-slot
+{
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+
+    margin-bottom: 4px;
+
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+img { pointer-events: none; }
+
+#stats-line
+{
+    margin-top: 27px;
+}
+
+#player-info-box
+{
+    position: relative;
+
+    width: 100%;
+    height: 146px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: MonsterHuenster;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.value-box
+{
+    position: relative;
+
+    width: 187px;
+    height: 18px;
+
+    margin: auto;
+    margin-left: 18px;
+}
+
+.value-text
+{
+    margin: auto;
+
+    width: 160px;
+    margin-left: 27px;
+}
+
+.bar-box
+{
+    position: relative;
+
+    width: 222px;
+    height: 18px;
+
+    margin: auto;
+    margin-left: 18px;
+}
+.bar-icon
+{
+    position: relative;
+
+    float: left;
+
+    width: 18px;
+    height: 18px;
+}
+
+.bar-line
+{
+    position: relative;
+
+    margin-top: 4px;
+    margin-left: 27;
+
+    width: 195;
+    height: 10;
+}
+
+#health-line
+{
+    background-color: #D7443E;
+    width: 100;
+}
+
+#hunger-line
+{
+    background-color: #95E379;
+}
+
+#thirst-line
+{
+    background-color: #3EBBD7;
+}
+
+#inventory-menu
+{
+    position: relative;
+
+    width: 120px;
+    height: 121px;
+
+    background: linear-gradient(180deg, #55E7F0 0%, #47E499 100%);
+    border-radius: 3px;
+}
+
+.inventory-menu-button
+{
+    position: relative;
+
+    width: 112px;
+    height: 24px;
+
+    margin-left: 4px;
+    margin-top: 5px;
+
+    background: #F5F5F5;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+
+    border: 0;
+    outline: 0;
+
+    font-family: 'MonsterHuenster';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+}
+
+#menu-container
+{
+    position: absolute;
+
+    width: 366px;
+
+    display: flex;
+}
+
+#menu-description
+{
+    position: relative;
+
+    width: 200px;
+    height: 120px;
+
+    background: linear-gradient(180deg, #55E7F0 0%, #47E499 100%);
+    border-radius: 3px;
+}
+
+#menu-description-content::-webkit-scrollbar { display: none; }
+#menu-description-content
+{
+    position: relative;
+
+    height: 110;
+
+    background-color: #F5F5F5;
+
+    border-radius: 3px;
+    margin: 5 4;
+
+    padding: 5;
+    box-sizing: border-box;
+    font-size: 13;
+
+    overflow: overlay;
+}
