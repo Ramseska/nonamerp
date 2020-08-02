@@ -1,7 +1,7 @@
 let picker_Browser = null;
 
 mp.keys.bind(0x4B, false, () => { // K
-    if (loginBrowser != null) return;
+    if (picker_Browser != null) return;
     if(mp.players.local.vehicle != null) {
         if (mp.gui.cursor.visible) return;
         if (picker_Browser != null) {

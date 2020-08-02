@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 using GTANetworkAPI;
+using Newtonsoft.Json;
 
 namespace server_side.Items
 {
-    class ItemEntity : Script
+    class ItemEntity
     {
+        [JsonProperty("itemID")]
         public int ItemID { get; private set; }
+        [JsonProperty("ownerID")]
         public int OwnerID { get; set; }
+        [JsonProperty("itemType")]
         public string ItemType { get; private set; }
+        [JsonProperty("itemAmount")]
         public int ItemAmount { get; set; }
+        [JsonProperty("inventorySlot")]
         public int InvenrorySlot { get; set; }
 
         private ItemEntity() { }

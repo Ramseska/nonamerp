@@ -27,22 +27,15 @@ namespace server_side.DBConnection
 
         async public void RequestExecuteNonQuery(string request)
         {
-            try
+            await Task.Run(() =>
             {
-                await Task.Run(() =>
+                using (MySqlConnection con = GetDBConnection())
                 {
-                    using(MySqlConnection con = GetDBConnection())
-                    {
-                        con.OpenAsync();
-                        new MySqlCommand(request, con).ExecuteNonQuery();
-                        con.CloseAsync();
-                    }
-                });
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+                    con.Open();
+                    new MySqlCommand(request, con).ExecuteNonQuery();
+                    con.Close();
+                }
+            });
         }
     }
 }

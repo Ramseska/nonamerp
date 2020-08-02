@@ -16,7 +16,7 @@ body
 
     overflow: hidden;
 
-    background-color: gray;
+    /* background-color: gray; */
 
     display: flex;
 
@@ -405,4 +405,10 @@ img { pointer-events: none; }
     font-size: 13;
 
     overflow: overlay;
+}
+
+h3
+{
+    margin: 0;
+    margin-bottom: -15px;
 }

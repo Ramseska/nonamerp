@@ -1,3 +1,4 @@
+/*
 const key = 
 [
     f1 = 0x70,
@@ -59,5 +60,4 @@ const key =
     y = 0x59,
     z = 0x5A
 ]
-
-module.export.key = key;
+*/

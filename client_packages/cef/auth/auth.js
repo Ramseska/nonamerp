@@ -2,7 +2,7 @@ var authBrowser = null;
 
 mp.events.add({
     'createAuthBrowser' : () => {
-        if(authBrowser != null) return;
+        if(authBrowser != null || authBrowser != undefined) return;
 
         authBrowser = mp.browsers.new("package://cef/auth/index.html");
 

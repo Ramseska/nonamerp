@@ -8,6 +8,7 @@ require("./cef/customize/index.js");
 require("./cef/workdialog/workdialog.js");
 require("./cef/appleminigame/appleminigame.js");
 require("./cef/hud/hud.js");
+require("./cef/inventory/inventory.js");
 // jobs
 require("./jobs/applecollector.js");
 // interiors
@@ -16,7 +17,6 @@ require("./IPLInteriors.js");
 require("./sound/sound.js");
 require("./voice/voice.js");
 require("./camfly.js");
-require("./customize/customize.js");
 
 // keybinds
 require("./keybinds.js"); // forever last
@@ -26,10 +26,10 @@ require("./keybinds.js"); // forever last
 // temp shit >>
 //mp.game.ui.displayRadar(false); // disable radar 
 
-let blackout = false;
+///let blackout = false;
 // temp shit <<
 
-
+/*
 mp.events.add({
     'playerEnterVehicle': (vehicle, seat) => {
         if (mp.players.local.getSeatIsTryingToEnter() !== -1 || vehicle.getIsEngineRunning()) return;
@@ -57,8 +57,5 @@ mp.events.add("playerCommand", (command) => {
         blackout = !blackout;
         for (let i = 0; i <= 16; i++) mp.game.graphics.setLightsState(i, blackout);
     }
-    if(commandName === "tt")
-    {
-        mp.events.call("createTestEvent");
-    }
 });
+*/

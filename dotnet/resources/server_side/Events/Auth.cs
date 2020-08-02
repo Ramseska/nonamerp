@@ -27,6 +27,8 @@ namespace server_side.Events
         public string SocialName;
         public string DateReg;
         public double PayCheck;
+        public int Satiety;
+        public int Thirst;
 
         public AuthData(Player player) : this()
         {
@@ -126,6 +128,8 @@ namespace server_side.Events
                                 auth.SocialName = (string)read["p_socialclub"];
                                 auth.DateReg = (string)read["p_datereg"];
                                 auth.PayCheck = (double)read["p_paycheck"];
+                                auth.Satiety = (int)read["p_satiety"];
+                                auth.Thirst = (int)read["p_thirst"];
 
                                 client.SetData<object>("pCustomize", read["p_customize"]);
                                 client.SetData<object>("pClothes", read["p_clothes"]);
@@ -231,6 +235,8 @@ namespace server_side.Events
                         auth.SocialName = (string)read["p_socialclub"];
                         auth.DateReg = (string)read["p_datereg"];
                         auth.PayCheck = (double)read["p_paycheck"];
+                        auth.Satiety = (int)read["p_satiety"];
+                        auth.Thirst = (int)read["p_thirst"];
 
                         client.SetData<object>("pCustomize", read["p_customize"]);
                         client.SetData<object>("pClothes", read["p_clothes"]);
@@ -269,7 +275,9 @@ namespace server_side.Events
                 playerInfo.SetDateReg(data.DateReg);
                 playerInfo.SetLastJoin(DateTime.Now.ToString());
                 playerInfo.SetCurrentIP(client.Address);
-                playerInfo.AddToPayCheck(data.PayCheck, isLogin: true);
+                playerInfo.InitPayCheck(data.PayCheck);
+                playerInfo.SetSatiety(data.Satiety);
+                playerInfo.SetThirst(data.Thirst);
 
                 client.ResetData("pCustomize");
                 client.ResetData("pClothes");
@@ -283,7 +291,11 @@ namespace server_side.Events
                 client.Rotation = new Vector3(client.Rotation.X, client.Rotation.Y, -49.8411f);
                 client.Dimension = 0;
 
-                ItemController.LoadPlayerItemsFromDB(data.dbID);
+                ItemController.LoadPlayerItemsFromDB(client, data.dbID);
+
+                // new Inventory.Inventory(client).Init();
+
+                ////
 
                 NAPI.Entity.SetEntityTransparency(client, 255);
 

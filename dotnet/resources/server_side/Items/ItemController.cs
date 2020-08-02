@@ -28,6 +28,8 @@ namespace server_side.Items
             ItemEntity item = CreateItem(type, amount);
             item.OwnerID = new PlayerInfo(player).GetDbID();
 
+            new Inventory.Inventory(player).GiveItem(item);
+
             UpdateItemInDB(item);
 
             foreach (var i in ItemsList)
@@ -81,7 +83,7 @@ namespace server_side.Items
             NAPI.Util.ConsoleOutput($"[Item Exception]: Не удалось удалить объект (ID: {itemID}), т.к. он не был найден в списке.");
         }
 
-        async static public void LoadPlayerItemsFromDB(int playerDbId)
+        async static public void LoadPlayerItemsFromDB(Player player, int playerDbId)
         {
             try
             {
@@ -103,6 +105,8 @@ namespace server_side.Items
                             NAPI.Util.ConsoleOutput($"[{playerDbId}]: Загружено {ItemsList.Where(x => x.OwnerID == playerDbId).Count()} предметов.");
                         }
                         else { NAPI.Util.ConsoleOutput($"[Ахтунг]: Предметы для игрока {playerDbId} не найдены в базе данных!"); }
+
+                        NAPI.Task.Run(() => { new Inventory.Inventory(player).Init(); });
 
                         reader.Close();
                         con.Close();

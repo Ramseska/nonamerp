@@ -4,6 +4,8 @@ let mousePos = { X: 0, Y: 0 };
 
 let isMenuActive = -1, isInfoActive = false;
 
+let itemsData = null;
+
 const inventoryInfo =
 {
     weigth: 0,
@@ -22,14 +24,16 @@ const playerInfo =
 
 class Item 
 {
-    constructor(img, amount, group, name, description, weigth)
+    constructor(id, img, amount, group, name, description, weigth, stack)
     {
+        this.id = id
         this.img = img
         this.amount = amount
         this.group = group
         this.name = name
         this.description = description
         this.weigth = weigth
+        this.maxstack = stack
     }
 
     create()
@@ -39,7 +43,7 @@ class Item
         
         this.element = 
         $(`<div class="item-box">
-            <img class="item-picture" src="${this.img}">
+            <img class="item-picture" src="./img/items/${this.img}">
             <div class="item-amount-box">
                 <p class="item-amount-value">${this.amount}</p>
             </div>
@@ -62,7 +66,7 @@ class Item
     {
         this.element = 
         $(`<div class="item-box">
-            <img class="item-picture" src="${this.img}">
+            <img class="item-picture" src="/img/items/${this.img}">
             <div class="item-amount-box">
                 <p class="item-amount-value">${this.amount}</p>
             </div>
@@ -81,23 +85,28 @@ function updateIndex()
     itemList.forEach((e, i) => $(e.element).data('index', e.index = i));
 }
 
-function initInventory(name, cash, bank, health, hungry, thirst, items)
+function initInventory(name, cash, bank, health, hungry, thirst, items, data)
 {
-    updateInventoryInfo()
-    updatePlayerInfo("", 0, 0, 0, 0, 0)
-    //let item = new Item("./img/items/water-bottle.svg", 3, "none", "Булылка воды", "Пить ебать надо ее").create();
+    itemsData = data;
 
+    if(items.length != 0) addItems(items);
+        
+    updatePlayerInfo(name, cash, bank, thirst, hungry, health);
 }
 
-function initItems(items)
+function addItems(item)
 {
+    for(let i = 0; i < item.length; i++)
+    {
+        new Item(item[i].itemID, itemsData[item[i].itemType].ItemImg, item[i].itemAmount, itemsData[item[i].itemType].ItemGroup, itemsData[item[i].itemType].ItemName, itemsData[item[i].itemType].ItemDescription, itemsData[item[i].itemType].ItemWeight, itemsData[item[i].itemType].ItemStack).create();
+    }
 
+    updateInventoryInfo()
 }
 
-function addItem(item)
+function updateItem(item)
 {
-    new Item("./img/items/water-bottle.svg", 3, "none", "Булылка воды", "Пить ебать надо ее", 333.3).create();
-    updateInventoryInfo()
+    itemList.find(x => x.id == item.itemID).amount = item.itemAmount;
 }
 
 function deleteItem(index)
@@ -106,8 +115,6 @@ function deleteItem(index)
 }
 
 $(document).ready(() => {
-    initInventory()
-
     $(document).on('click', function(e){
         if(!$(e.target).hasClass("item-box") && !$(e.target).parent().is("#inventory-menu") && isMenuActive != -1)
         {
@@ -118,7 +125,6 @@ $(document).ready(() => {
         {
             if(isMenuActive == -1)
             {
-                // $("#inventory-menu").css({left: mousePos.X, top: mousePos.Y}).fadeIn(100);
                 $("#menu-container").css({left: mousePos.X, top: mousePos.Y}).fadeIn(100);
                 $("#inventory-menu").fadeIn(90);
                 isMenuActive = $(e.target).data('index');
@@ -134,8 +140,6 @@ $(document).ready(() => {
                 
                 isMenuActive = $(e.target).data('index');
             }
-
-            console.log(isMenuActive)
         }
     });
 
@@ -149,17 +153,18 @@ function onClickButtonInfo()
 {
     if(!isInfoActive) 
     {
-        $("#menu-description-content").html(itemList[isMenuActive].description);
+        $("#menu-description-content").html(`<h3>${itemList[isMenuActive].name}</h3><br>${itemList[isMenuActive].description}`);
 
         $("#menu-description").fadeIn(90)
     }
     else $("#menu-description").fadeOut(90)
+
     isInfoActive = !isInfoActive
 }
 
 function onClickButtonUse()
 {
-    throw new Error("Еще нет реализации")
+    mp.trigger("InventoryUseItem", itemList[isMenuActive].id)
 }
 
 function onClickButtonDrop() 

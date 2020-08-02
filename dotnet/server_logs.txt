@@ -10580,4 +10580,112 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at GTANetworkInternals.EventHandler.ParseEx(Event _event, ScriptingEngine engine, Object[] arguments)
    at GTANetworkInternals.GameServer.<>c.<StartResource>b__67_0(ScriptingEngine r)
    at System.Collections.Generic.List`1.ForEach(Action`1 action)
-   at GTANetworkInternals.GameServer.StartResource(String resourceName, String pare
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String pareInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 01.08.2020 17:49:55
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Systems.Test..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemEntity..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 9 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 9 remote procedure(s)
+[MySQL]: Домов загружено: 83 | Домов в списке: 83
+
+Server is loaded!
+
+-> Resource server_side started!
+Started! Waiting for connections..
+Connected: 127.0.0.1 | ID: 0
+[2]: Загружено 3 предметов.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'ManifestModule' with type 'System.Reflection.RuntimeModule'. Path 'ITEM_AID_KIT.Action.Method.Module.Assembly'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SeriaInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 01.08.2020 17:53:33
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Systems.Test..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemEntity..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 9 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 9 remote procedure(s)
+[MySQL]: Домов загружено: 83 | Домов в списке: 83
+
+Server is loaded!
+
+-> Resource server_side started!
+Started! Waiting for connections..
+Connected: 127.0.0.1 | ID: 0
+[2]: Загружено 3 предметов.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'ManifestModule' with type 'System.Reflection.RuntimeModule'. Path 'ITEM_AID_KIT.Action.Method.Module.Assembly'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Seria

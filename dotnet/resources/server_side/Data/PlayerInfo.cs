@@ -198,13 +198,14 @@ namespace server_side.Data
         public int GetThirst() => player.GetData<int>(EntityData.PLAYER_THIRST);
 
         public double GetPayCheck() => Math.Round(player.GetData<double>(EntityData.PLAYER_PAYCHECK), 2);
-        public void AddToPayCheck(double money, string reason = null, bool isLogin = false)
+        public void AddToPayCheck(double money, string reason = null)
         {
             double paycheck = Math.Round(GetPayCheck() + money, 2);
 
-            if(isLogin) new MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
+            new MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
 
             player.SetData<double>(EntityData.PLAYER_PAYCHECK, paycheck);
         }
+        public void InitPayCheck(double money) => player.SetData<double>(EntityData.PLAYER_PAYCHECK, money);
     }
 }
