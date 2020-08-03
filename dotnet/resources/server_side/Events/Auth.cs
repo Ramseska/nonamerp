@@ -11,30 +11,6 @@ using server_side.Items;
 
 namespace server_side.Events
 {
-    struct AuthData
-    {
-        public Player Player;
-        public int dbID;
-        public string Login;
-        public string Password;
-        public string Mail;
-        public string IP;
-        public int LVL;
-        public double Cash;
-        public double BankMoney;
-        public int Age;
-        public string Name;
-        public string SocialName;
-        public string DateReg;
-        public double PayCheck;
-        public int Satiety;
-        public int Thirst;
-
-        public AuthData(Player player) : this()
-        {
-            this.Player = player;
-        }
-    }
     class Auth : Script
     {
         private static int exceptionCount { get; set; } // счетчик исключений для отладки 
@@ -104,7 +80,7 @@ namespace server_side.Events
                 {
                     case 0: // auth
                         {
-                            AuthData auth = new AuthData(client);
+                            AuthData auth = new AuthData();
 
                             if (!read.HasRows)
                             {
@@ -218,7 +194,7 @@ namespace server_side.Events
                     cmd = new MySqlCommand("SELECT * FROM `accounts` WHERE `p_id` = LAST_INSERT_ID()", con);
                     MySqlDataReader read = cmd.ExecuteReader();
 
-                    AuthData auth = new AuthData(client);
+                    AuthData auth = new AuthData();
 
                     while (read.Read())
                     {

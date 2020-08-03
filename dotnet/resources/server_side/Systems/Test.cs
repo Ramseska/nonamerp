@@ -8,12 +8,5 @@ using System.Reflection.Metadata;
 
 namespace server_side.Systems
 {
-    class Test : Script
-    {
-        [RemoteProc("CalledFromCef")]
-        public void RemoteProc_CalledFromCef(Player player, string text)
-        {
-            player.SendChatMessage("Called proc from cef: " + text);
-        }
-    }
+
 }

@@ -9,6 +9,7 @@ require("./cef/workdialog/workdialog.js");
 require("./cef/appleminigame/appleminigame.js");
 require("./cef/hud/hud.js");
 require("./cef/inventory/inventory.js");
+require("./customize/customize.js");
 // jobs
 require("./jobs/applecollector.js");
 // interiors

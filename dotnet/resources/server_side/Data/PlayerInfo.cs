@@ -89,7 +89,7 @@ namespace server_side.Data
 
         public void SetCurrentIP(string ip)
         {
-            new MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_id` = '{GetDbID()}'");
+            new DBConnection.MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_id` = '{GetDbID()}'");
             
             player.SetData<string>(EntityData.PLAYER_IP, ip);
         }
@@ -120,7 +120,7 @@ namespace server_side.Data
             if (updateindb)
             {
                 string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
-                new MySqlConnector().RequestExecuteNonQuery(query);
+                new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
             }
 
             Utils.UtilityFuncs.UpdatePlayerHud(player);
@@ -134,7 +134,7 @@ namespace server_side.Data
             if (updateindb)
             {
                 string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
-                new MySqlConnector().RequestExecuteNonQuery(query);
+                new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
             }
 
             Utils.UtilityFuncs.UpdatePlayerHud(player);
@@ -163,7 +163,7 @@ namespace server_side.Data
         {
             string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_id` = '{GetDbID()}'";
 
-            new MySqlConnector().RequestExecuteNonQuery(query);
+            new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
 
             player.SetData<string>(EntityData.PLAYER_LASTJOIN, date);
         }
@@ -202,7 +202,7 @@ namespace server_side.Data
         {
             double paycheck = Math.Round(GetPayCheck() + money, 2);
 
-            new MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
+            new DBConnection.MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
 
             player.SetData<double>(EntityData.PLAYER_PAYCHECK, paycheck);
         }
