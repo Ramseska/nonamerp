@@ -26,6 +26,8 @@ namespace server_side.Inventory
         {
             //name, cash, bank, health, hungry, thirst, items, itemsData
             NAPI.ClientEvent.TriggerClientEvent(_player, "InventoryLoad", player.GetName(), player.GetMoney(), player.GetBankMoney(), _player.Health, player.GetSatiety(), player.GetThirst(), JsonConvert.SerializeObject(ItemController.ItemsList.Where(x => x.OwnerID == player.GetDbID())), File.ReadAllText(@"dotnet/itemData.json"));
+
+            NAPI.Util.ConsoleOutput("[Inventory]: " + player.GetName() + " - инвентарь инициализирован");
         }
 
         public void Update()

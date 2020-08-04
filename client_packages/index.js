@@ -1,20 +1,20 @@
 // gui's
-require("./cef/weaponpicker/index.js");
 require("./cef/auth/auth.js");
-require("./cef/color_picker");
-require("./cef/other/house");
-require("./cef/notify/notify.js");
 require("./cef/customize/index.js");
-require("./cef/workdialog/workdialog.js");
-require("./cef/appleminigame/appleminigame.js");
-require("./cef/hud/hud.js");
 require("./cef/inventory/inventory.js");
-require("./customize/customize.js");
+require("./cef/hud/hud.js");
+require("./cef/notify/notify.js");
+require("./cef/color_picker");
+require("./cef/weaponpicker/index.js");
+require("./cef/other/house");
 // jobs
+require("./cef/workdialog/workdialog.js");
 require("./jobs/applecollector.js");
+require("./cef/appleminigame/appleminigame.js");
 // interiors
 require("./IPLInteriors.js");
 // other
+require("./customize/customize.js");
 require("./sound/sound.js");
 require("./voice/voice.js");
 require("./camfly.js");

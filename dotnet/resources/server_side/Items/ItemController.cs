@@ -1,6 +1,7 @@
 ﻿using GTANetworkAPI;
 using MySql.Data.MySqlClient;
 using server_side.Data;
+using server_side.DataBase.Models;
 using server_side.DBConnection;
 using server_side.Events;
 using System;
@@ -27,10 +28,10 @@ namespace server_side.Items
 
             ItemEntity item = CreateItem(type, amount);
             item.OwnerID = new PlayerInfo(player).GetDbID();
+            
+            UpdateItemInDB(item);
 
             new Inventory.Inventory(player).GiveItem(item);
-
-            UpdateItemInDB(item);
 
             foreach (var i in ItemsList)
                 Console.WriteLine(i.ToString());
@@ -38,6 +39,23 @@ namespace server_side.Items
 
         public static ItemEntity CreateItem(string type, int amount)
         {
+            using (DataBase.AppContext db = new DataBase.AppContext())
+            {
+                var md = new ItemModel();
+                md.Type = type;
+                md.Amount = amount;
+
+                db.Items.Add(md);
+
+                db.SaveChanges();
+
+                ItemEntity item = new ItemEntity(md.Id, md.OwnerId, md.Type, md.Amount, md.Slot);
+
+                ItemsList.Add(item);
+
+                return item;
+            }
+            /*
             try
             {
                 using (MySqlConnection con = new MySqlConnector().GetDBConnection())
@@ -60,13 +78,13 @@ namespace server_side.Items
                         NAPI.Util.ConsoleOutput("[Item Exception]: Не удалось создать объект.");
                     }
                 }
+                
             }
             catch (Exception e)
             {
                 NAPI.Util.ConsoleOutput(e.ToString());
             }
-
-            return null;
+            */
         }
 
         public static void DeleteItem(int itemID)
@@ -76,17 +94,40 @@ namespace server_side.Items
             if (item != null)
             {
                 ItemsList.Remove(item);
-                new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
+                //new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
+                using(var db = new DataBase.AppContext())
+                {
+                    var md = db.Items.Where(x => x.Id == itemID).FirstOrDefault();
+                    if(md != null)
+                        db.Items.Remove(md);
+
+                    db.SaveChangesAsync();
+                }
                 return;
             }
 
             NAPI.Util.ConsoleOutput($"[Item Exception]: Не удалось удалить объект (ID: {itemID}), т.к. он не был найден в списке.");
         }
 
-        async static public void LoadPlayerItemsFromDB(Player player, int playerDbId)
+        static public void LoadPlayerItemsFromDB(Player player, int playerDbId)
         {
             try
             {
+                using (var db = new DataBase.AppContext())
+                {
+                    var mds = db.Items.Where(x => x.OwnerId == playerDbId).ToList();
+
+                    if(mds.Any())
+                    {
+                        foreach(var i in mds)
+                        {
+                            ItemsList.Add(new ItemEntity(i.Id, i.OwnerId, i.Type, i.Amount, i.Slot));
+                        }
+                        NAPI.Util.ConsoleOutput($"[{playerDbId}]: Загружено {mds.Count} предметов.");
+                    }
+                    else { NAPI.Util.ConsoleOutput($"[Ахтунг]: Предметы для игрока {playerDbId} не найдены в базе данных!"); }
+                }
+                /*
                 await Task.Run(() =>
                 {
                     using (MySqlConnection con = new MySqlConnector().GetDBConnection())
@@ -112,6 +153,7 @@ namespace server_side.Items
                         con.Close();
                     }
                 });
+                */
             }
             catch (Exception e)
             {
@@ -151,6 +193,7 @@ namespace server_side.Items
 
         private static ItemEntity GetItemFromDB(int itemid)
         {
+            /*
             using (MySqlConnection con = new MySqlConnector().GetDBConnection())
             {
                 con.Open();
@@ -173,10 +216,28 @@ namespace server_side.Items
 
                 return item;
             }
+            */
+            return null;
         }
 
         public static void UpdateItemInDB(ItemEntity item)
         {
+            using(var db = new DataBase.AppContext())
+            {
+                var md = db.Items.Where(x => x.Id == item.ItemID).FirstOrDefault();
+
+                NAPI.Util.ConsoleOutput($"\n\n\n>>> Item: {item} | Model: {md.Id}, {md.OwnerId}, {md.Type}, {md.Amount}, {md.Slot}");
+
+                md.OwnerId = item.OwnerID;
+                md.Type = item.ItemType;
+                md.Amount = item.ItemAmount;
+                md.Slot = item.InvenrorySlot;
+
+                NAPI.Util.ConsoleOutput($"\n\n\n>>> Item: {item} | Model: {md.Id}, {md.OwnerId}, {md.Type}, {md.Amount}, {md.Slot}");
+
+                db.SaveChanges();
+            }
+            /*
             string query = $"" +
                 $"UPDATE `items` SET " +
                 $"`owner_id` = '{item.OwnerID}', " +
@@ -185,6 +246,7 @@ namespace server_side.Items
                 $"`inventory_slot` = '{item.InvenrorySlot}' " +
                 $"WHERE `item_id` = '{item.ItemID}'";
             new MySqlConnector().RequestExecuteNonQuery(query);
+            */
         }
     }
 }

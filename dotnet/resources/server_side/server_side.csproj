@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,6 +23,9 @@
     </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\..\runtime\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector">
+      <HintPath>..\..\runtime\MySqlConnector.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet">
       <HintPath>..\..\runtime\Renci.SshNet.dll</HintPath>

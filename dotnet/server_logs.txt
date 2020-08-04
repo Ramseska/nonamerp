@@ -10688,4 +10688,1077 @@ Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for p
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Seria
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SeriaInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:32:16
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at new Microsoft.EntityFrameworkCore.DbContext(DbContextOptions options)
+   at new Microsoft.EntityFrameworkCore.DbContext()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 16
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 36
+
+
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at GTANetworkInternals.ScriptingEngine.InvokeVoidMethod(String method, Object[] args)
+   at GTANetworkInternals.EventParser.Parse(Event _event, Object[] arguments)
+   at GTANetworkInternals.EventCollection.<>c__DisplayClass4_0.<ParseEx>b__1(EventParser x)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at GTANetworkInternals.EventCollection.ParseEx(Event _event, ScriptingEngine engine, ObjInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:33:43
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Extensions.DependencyInjection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.Extensions.DependencyInjection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+BuildServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+(long k) => { }
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)
+   at new Microsoft.EntityFrameworkCore.DbContext(DbContextOptions options)
+   at new Microsoft.EntityFrameworkCore.DbContext()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 16
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 36
+
+
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindiInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:33:49
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Extensions.DependencyInjection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.Extensions.DependencyInjection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+BuildServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+(long k) => { }
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)
+   at new Microsoft.EntityFrameworkCore.DbContext(DbContextOptions options)
+   at new Microsoft.EntityFrameworkCore.DbContext()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 16
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Events.cs:line 36
+
+
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindiInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:34:55
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()
+   at bool Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.ApplyServices(IDbContextOptions options, ServiceCollection services)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+BuildServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+(long k) => { }
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)
+   at new Microsoft.EntityFrameworkCore.DbContext(DbContextOptions options)
+   at new Microsoft.EntityFrameworkCore.DbContext()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 16
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/EventInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:35:19
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()
+   at bool Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.ApplyServices(IDbContextOptions options, ServiceCollection services)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+BuildServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+(long k) => { }
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)
+   at new Microsoft.EntityFrameworkCore.DbContext(DbContextOptions options)
+   at new Microsoft.EntityFrameworkCore.DbContext()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 16
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/EventInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:36:02
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Extensions.Caching.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.Extensions.Caching.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()
+   at bool Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.ApplyServices(IDbContextOptions options, ServiceCollection services)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+BuildServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)+(long k) => { }
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at IServiceProvider Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, bool providerRequired)
+   at new Microsoft.EntityFrameworkCore.DbContext(DbContextOptions options)
+   at new Microsoft.EntityFrameworkCore.DbContext()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 16
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52
+   at void Main.events.Events.Event_OnResourceStart() in D:/Desktop/nonamerp/dotnet/resources/server_side/Events/Initializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:36:57
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.EntityFrameworkCore.Relational, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql
+   at server_side.DataBase.AppContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder) in D:\Desktop\nonamerp\dotnet\resources\server_side\DataBase\AppContext.cs:line 22
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at server_side.DataBase.AppContext..ctor() in D:\Desktop\nonamerp\dotnet\resources\server_side\DataBase\AppContext.cs:line 18
+   at server_side.Data.House.InitHouses() in D:\Desktop\nonamerp\dotnet\resources\server_side\Data\House.cs:line 52
+   at Main.events.Events.Event_OnResourceStart() in D:\Desktop\nonamerp\dotnet\resources\server_side\Events\Events.cs:line 36
+
+
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMetInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:44:43
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.EntityFrameworkCore.Relational, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. Не удается найти указанный файл.
+File name: 'Microsoft.EntityFrameworkCore.Relational, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql
+   at server_side.DataBase.AppContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder) in D:\Desktop\nonamerp\dotnet\resources\server_side\DataBase\AppContext.cs:line 22
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at server_side.DataBase.AppContext..ctor() in D:\Desktop\nonamerp\dotnet\resources\server_side\DataBase\AppContext.cs:line 18
+   at server_side.Data.House.InitHouses() in D:\Desktop\nonamerp\dotnet\resources\server_side\Data\House.cs:line 52
+   at Main.events.Events.Event_OnResourceStart() in D:\Desktop\nonamerp\dotnet\resources\server_side\Events\Events.cs:line 36
+
+
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMetInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:49:29
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'MySqlConnector, Version=0.61.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92'. Не удается найти указанный файл.
+File name: 'MySqlConnector, Version=0.61.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92'
+   at DbContextOptionsBuilder Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, string connectionString, Action<MySqlDbContextOptionsBuilder> mySqlOptionsAction)
+   at void server_side.DataBase.AppContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder) in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 22
+   at IServiceProvider Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance(?)
+   at TService Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService<TService>(IInfrastructure<IServiceProvider> accessor)
+   at TService Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService<TService>(IInfrastructure<IServiceProvider> accessor)
+   at IDatabaseFacadeDependencies Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at bool Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 18
+   at void server_side.Data.House.InitHouses() in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 52Initializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 20:51:31
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Не удается найти указанный файл.
+File name: 'Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   at int Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingInfo.GetHashCode()
+   at int System.ValueTuple<T1, T2, T3>.GetHashCode()
+   at int System.Collections.Generic.GenericEqualityComparer<T>.GetHashCode(T obj)
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at RelationalTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMappingWithConversion(in RelationalTypeMappingInfo mappingInfo, IReadOnlyList<IProperty> principals)
+   at CoreTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMapping(MemberInfo member)
+   at bool Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.IsCandidatePrimitiveProperty(PropertyInfo propertyInfo)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.Process(IConventionEntityTypeBuilder entityTypeBuilder)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, IConventionContext<IConventionEntityTypeBuilder> context)
+   at IConventionEntityTypeBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder)
+   at OnEntityTypeAddedNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+RunVisitor.VisitOnEntityTypeAdded(OnEntityTypeAddedNode node)
+   at ConventionNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+OnEntityTypeAddedNode.Accept(ConventionVisitor visitor)
+   at ConventionNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionVisitor.Visit(ConventionNode node)
+   at ConventionScope Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionVisitor.VisitConventionScope(ConventionScope node)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionBatch.Run()
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionBatch.Dispose()
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at new Microsoft.EntityFrameworkCore.Metadata.Internal.Model(ConventionSet conventions)
+   at new Microsoft.EntityFrameworkCore.ModelBuilder(ConventionSet conventions)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Func<ServiceProviderEngineScope, oInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:00:01
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Не удается найти указанный файл.
+File name: 'Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   at int Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingInfo.GetHashCode()
+   at int System.ValueTuple<T1, T2, T3>.GetHashCode()
+   at int System.Collections.Generic.GenericEqualityComparer<T>.GetHashCode(T obj)
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at RelationalTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMappingWithConversion(in RelationalTypeMappingInfo mappingInfo, IReadOnlyList<IProperty> principals)
+   at CoreTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMapping(MemberInfo member)
+   at bool Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.IsCandidatePrimitiveProperty(PropertyInfo propertyInfo)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.Process(IConventionEntityTypeBuilder entityTypeBuilder)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, IConventionContext<IConventionEntityTypeBuilder> context)
+   at IConventionEntityTypeBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder)
+   at OnEntityTypeAddedNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+RunVisitor.VisitOnEntityTypeAdded(OnEntityTypeAddedNode node)
+   at ConventionNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+OnEntityTypeAddedNode.Accept(ConventionVisitor visitor)
+   at ConventionNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionVisitor.Visit(ConventionNode node)
+   at ConventionScope Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionVisitor.VisitConventionScope(ConventionScope node)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionBatch.Run()
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionBatch.Dispose()
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at new Microsoft.EntityFrameworkCore.Metadata.Internal.Model(ConventionSet conventions)
+   at new Microsoft.EntityFrameworkCore.ModelBuilder(ConventionSet conventions)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Func<ServiceProviderEngineScope, oInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:00:52
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Pomelo.JsonObject, Version=2.2.1.0, Culture=neutral, PublicKeyToken=2cc498582444921b'. Не удается найти указанный файл.
+File name: 'Pomelo.JsonObject, Version=2.2.1.0, Culture=neutral, PublicKeyToken=2cc498582444921b'
+   at RelationalTypeMapping Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlTypeMappingSource.FindRawMapping(RelationalTypeMappingInfo mappingInfo)
+   at RelationalTypeMapping Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlTypeMappingSource.FindMapping(in RelationalTypeMappingInfo mappingInfo)
+   at RelationalTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMappingWithConversion(in RelationalTypeMappingInfo mappingInfo, IReadOnlyList<IProperty> principals)+(ValueTuple<RelationalTypeMappingInfo, Type, ValueConverter> k) => { }
+   at TValue System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>.GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
+   at RelationalTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMappingWithConversion(in RelationalTypeMappingInfo mappingInfo, IReadOnlyList<IProperty> principals)
+   at CoreTypeMapping Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSource.FindMapping(MemberInfo member)
+   at bool Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.IsCandidatePrimitiveProperty(PropertyInfo propertyInfo)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.Process(IConventionEntityTypeBuilder entityTypeBuilder)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.PropertyDiscoveryConvention.ProcessEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder, IConventionContext<IConventionEntityTypeBuilder> context)
+   at IConventionEntityTypeBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnEntityTypeAdded(IConventionEntityTypeBuilder entityTypeBuilder)
+   at OnEntityTypeAddedNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+RunVisitor.VisitOnEntityTypeAdded(OnEntityTypeAddedNode node)
+   at ConventionNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+OnEntityTypeAddedNode.Accept(ConventionVisitor visitor)
+   at ConventionNode Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionVisitor.Visit(ConventionNode node)
+   at ConventionScope Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionVisitor.VisitConventionScope(ConventionScope node)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionBatch.Run()
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ConventionBatch.Dispose()
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelInitialized(IConventionModelBuilder modelBuilder)
+   at new Microsoft.EntityFrameworkCore.Metadata.Internal.Model(ConventionSet conventions)
+   at new Microsoft.EntityFrameworkCore.ModelBuilder(ConventionSet conventions)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult MicrosofInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:03:11
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: Entity type 'PlayerModel' has composite primary key defined with data annotations. To set composite primary key, use fluent API.
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.KeyAttributeConvention.ProcessModelFinalized(IConventionModelBuilder modelBuilder, IConventionContext<IConventionModelBuilder> context)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelFinalized(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalized(IConventionModelBuilder modelBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.Initializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:04:00
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: The property 'PlayerModel.Customize' could not be mapped, because it is of type 'object' which is not a supported primitive type or a valid entity type. Either explicitly map this property, or ignore it using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at void Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidatePropertyMapping(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Pomelo.EntityFrameworkCore.MySql.Internal.MySqlModelValidator.Validate(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.ValidatingConvention.ProcessModelFinalized(IConventionModelBuilder modelBuilder, IConventionContext<IConventionModelBuilder> context)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelFinalized(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalized(IConventionModelBuilder modelBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Func<ServiceProviderEngineScope, object> Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.RealizeService(ServiceCallSite callSite)+(ServiceProviderEngineScope scope) => { } [0]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at T Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<T>(IServiceProvider provider)
+   at IDbContextDependencies Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at IServiceProvider Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance(?)
+   at TService Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService<TService>(IInfrastructure<IServiceProvider> accessor)
+   at TService Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService<TService>(IInfrastructure<IServiceProvider> accessor)
+   at IDatabaseFacadeDependencies Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DepenInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:29:16
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: The property 'PlayerModel.Customize' could not be mapped, because it is of type 'object' which is not a supported primitive type or a valid entity type. Either explicitly map this property, or ignore it using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at void Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidatePropertyMapping(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Pomelo.EntityFrameworkCore.MySql.Internal.MySqlModelValidator.Validate(IModel model, IDiagnosticsLogger<Validation> logger)
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.ValidatingConvention.ProcessModelFinalized(IConventionModelBuilder modelBuilder, IConventionContext<IConventionModelBuilder> context)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelFinalized(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalized(IConventionModelBuilder modelBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Func<ServiceProviderEngineScope, object> Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.RealizeService(ServiceCallSite callSite)+(ServiceProviderEngineScope scope) => { } [0]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at T Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<T>(IServiceProvider provider)
+   at IDbContextDependencies Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at IServiceProvider Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at IServiceProvider Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance(?)
+   at TService Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService<TService>(IInfrastructure<IServiceProvider> accessor)
+   at TService Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService<TService>(IInfrastructure<IServiceProvider> accessor)
+   at IDatabaseFacadeDependencies Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DepenInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:42:58
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+[MySQL]: Дома не найдены.
+
+Server is loaded!
+
+-> Resource server_side started!
+Started! Waiting for connections..
+Connected: 127.0.0.1 | ID: 0
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'lognet.accounts' doesn't exist
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'lognet.accounts' doesn't exist
+   at async Task MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at void MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 130
+   at async Task<MySqlDataReader> MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary<string, CachedProcedure> cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 391
+   at async Task<DbDataReader> MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList<IMySqlCommand> commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/CommandExecutor.cs:line 62
+   at DbDataReader MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlCommand.cs:line 217
+   at DbDataReader System.Data.Common.DbCommand.ExecuteReader()
+   at RelationalDataReader Microsoft.EntityFrInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 03.08.2020 21:56:25
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Inventory.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 12 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+[MySQL]: Дома не найдены.
+
+Server is loaded!
+
+-> Resource server_side started!
+Started! Waiting for connections..
+Connected: 127.0.0.1 | ID: 0
+[Ахтунг]: Предметы для игрока 1 не найдены в базе данных!
+Data: 1 | HouseID: 1
+UNHANDLED EXCEPTION IN COMMAND hcr FOR RESOURCE server_side
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: Failed to compare two elements in the array.
+ ---> System.ArgumentException: At least one object must implement IComparable.
+   at int System.Collections.Comparer.Compare(object a, object b)
+   at int System.Collections.Generic.ObjectComparer<T>.Compare(T x, T y)
+   at void System.Collections.Generic.ArraySortHelper<T>.SwapIfGreater(T[] keys, Comparison<T> comparer, int a, int b)
+   at void System.Collections.Generic.ArraySortHelper<T>.IntroSort(T[] keys, int lo, int hi, int depthLimit, Comparison<T> comparer)
+   at void System.Collections.Generic.ArraySortHelper<T>.IntrospectiveSort(T[] keys, int left, int length, Comparison<T> comparer)
+   at void System.Collections.Generic.ArraySortHelper<T>.Sort(T[] keys, int index, int length, IComparer<T> comparer)
+   --- End of inner exception stack trace ---
+   at void System.Collections.Generic.ArraySortHelper<T>.Sort(T[] keys, int index, int length, IComparer<T> comparer)
+   at void Array.Sort<T>(T[] array, int index, int length, IComparer<T> comparer)
+   at void System.Collections.Generic.List<T>.Sort(int index, int count, IComparer<T> comparer)
+   at void System.Collections.Generic.List<T>.Sort()
+   at void server_side.Data.House.CreateHouse(Vector3 HousePosition, float rotation, int HousePrice, int HouseClass) in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 138
+   at void serve

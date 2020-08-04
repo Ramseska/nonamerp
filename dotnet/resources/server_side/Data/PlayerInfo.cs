@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using GTANetworkAPI;
 using server_side.DBConnection;
 
@@ -89,7 +90,12 @@ namespace server_side.Data
 
         public void SetCurrentIP(string ip)
         {
-            new DBConnection.MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_id` = '{GetDbID()}'");
+            //new DBConnection.MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_lastip` = '{ip}' WHERE `p_id` = '{GetDbID()}'");
+            using(DataBase.AppContext db = new DataBase.AppContext())
+            {
+                db.Accounts.Where(x => x.Id == GetDbID()).FirstOrDefault().LastIP = ip;
+                db.SaveChanges();
+            }
             
             player.SetData<string>(EntityData.PLAYER_IP, ip);
         }
@@ -119,8 +125,13 @@ namespace server_side.Data
 
             if (updateindb)
             {
-                string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
-                new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
+                //string query = $"UPDATE `accounts` SET `p_money` = '{Convert.ToString(GetMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
+                //new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
+                using (DataBase.AppContext db = new DataBase.AppContext())
+                {
+                    db.Accounts.Where(x => x.Id == GetDbID()).FirstOrDefault().Cash= GetMoney();
+                    db.SaveChanges();
+                }
             }
 
             Utils.UtilityFuncs.UpdatePlayerHud(player);
@@ -133,8 +144,13 @@ namespace server_side.Data
 
             if (updateindb)
             {
-                string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
-                new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
+                //string query = $"UPDATE `accounts` SET `p_bank` = '{Convert.ToString(GetBankMoney()).Replace(',', '.')}' WHERE `p_id` = '{GetDbID()}'";
+                //new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
+                using (DataBase.AppContext db = new DataBase.AppContext())
+                {
+                    db.Accounts.Where(x => x.Id == GetDbID()).FirstOrDefault().Bank = GetBankMoney();
+                    db.SaveChanges();
+                }
             }
 
             Utils.UtilityFuncs.UpdatePlayerHud(player);
@@ -144,8 +160,8 @@ namespace server_side.Data
         public void SetHouse(int houseid) => player.SetData<int>(EntityData.PLAYER_HOUSE, houseid);
         public int GetHouse() => player.GetData<int>(EntityData.PLAYER_HOUSE);
 
-        public void SetCustomize(object args) => player.SetData<object>(EntityData.PLAYER_CUSTOMIZE, args);
-        public object GetCustomize() => player.GetData<object>(EntityData.PLAYER_CUSTOMIZE);
+        public void SetCustomize(string args) => player.SetData<string>(EntityData.PLAYER_CUSTOMIZE, args);
+        public string GetCustomize() => player.GetData<string>(EntityData.PLAYER_CUSTOMIZE);
 
         public void SetClothes(object args) => player.SetData<object>(EntityData.PLAYER_CLOTHES, args);
         public object GetClothes() => player.GetData<object>(EntityData.PLAYER_CLOTHES);
@@ -161,9 +177,14 @@ namespace server_side.Data
 
         public void SetLastJoin(string date)
         {
-            string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_id` = '{GetDbID()}'";
+            //string query = $"UPDATE `accounts` SET `p_lastjoin` = '{date}' WHERE `p_id` = '{GetDbID()}'";
 
-            new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
+            //new DBConnection.MySqlConnector().RequestExecuteNonQuery(query);
+            using (DataBase.AppContext db = new DataBase.AppContext())
+            {
+                db.Accounts.Where(x => x.Id == GetDbID()).FirstOrDefault().DateLastJoin = date;
+                db.SaveChanges();
+            }
 
             player.SetData<string>(EntityData.PLAYER_LASTJOIN, date);
         }
@@ -202,7 +223,12 @@ namespace server_side.Data
         {
             double paycheck = Math.Round(GetPayCheck() + money, 2);
 
-            new DBConnection.MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
+            //new DBConnection.MySqlConnector().RequestExecuteNonQuery($"UPDATE `accounts` SET `p_paycheck` = '{paycheck}' WHERE `p_id` = '{GetDbID()}'");
+            using (DataBase.AppContext db = new DataBase.AppContext())
+            {
+                db.Accounts.Where(x => x.Id == GetDbID()).FirstOrDefault().PayCheck = paycheck;
+                db.SaveChangesAsync();
+            }
 
             player.SetData<double>(EntityData.PLAYER_PAYCHECK, paycheck);
         }

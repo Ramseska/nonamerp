@@ -121,3 +121,4 @@ D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\System.S
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\MySql.Data.xml
 D:\Desktop\nonamerp\dotnet\resources\server_side\compiled\netcoreapp3.1\Renci.SshNet.xml
+D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Debug\netcoreapp3.1\server_side.csproj.CoreCompileInputs.cache

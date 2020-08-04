@@ -1,7 +1,6 @@
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\server_side.deps.json
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\server_side.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\server_side.pdb
-D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\AngleSharp.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Bootstrapper.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\MySql.Data.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Renci.SshNet.dll
@@ -10,7 +9,6 @@ D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Syste
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Colorful.Console.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
-D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\NeoSmart.Hashing.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\xxHash.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Ben.Demystifier.dll
@@ -66,3 +64,4 @@ D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Release\netcoreapp3.1\serve
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Release\netcoreapp3.1\server_side.csproj.CopyComplete
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Release\netcoreapp3.1\server_side.dll
 D:\Desktop\nonamerp\dotnet\resources\server_side\obj\Release\netcoreapp3.1\server_side.pdb
+D:\Desktop\nonamerp\dotnet\resources\server_side\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Analyzers.dll

@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using System.Text;
 using GTANetworkAPI;
 using server_side.DBConnection;
-using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using server_side.Data;
 using System.Text.RegularExpressions;
 using server_side.Items;
+using MySql.Data.MySqlClient.Memcached;
+using server_side.DataBase;
+using System.Data.OleDb;
+using server_side.DataBase.Models;
+using System.Linq;
+using System.Security.Permissions;
+using Newtonsoft.Json.Linq;
 
 namespace server_side.Events
 {
     class Auth : Script
     {
-        private static int exceptionCount { get; set; } // счетчик исключений для отладки 
-
         [RemoteEvent("Event_CancelAuth")] // событие при нажатии "отмена" во время авторизации\регистрации
         public void Event_CancelAuth(Player client, object[] args)
         {
@@ -35,20 +39,20 @@ namespace server_side.Events
                 NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", CheckPasswordOnValid(password));
                 return;
             }
-            else if(CheckMailOnValid(email) != string.Empty && type == 1)
+            else if (CheckMailOnValid(email) != string.Empty && type == 1)
             {
                 NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", CheckMailOnValid(email));
                 return;
             }
 
-            GetAccountFromBD(player, new object[] { type, login, password, email });
+            GetAccountFromBD(player, type, login, password, email);
         }
 
         private string CheckLoginOnValid(string login)
         {
             if (login.Length < 2 || login.Length > 24)
                 return "Ошибка: Логин не может быть короче 2-х и длиннее 24-х символов!";
-            else if(new Regex(@"[^A-Za-z0-9_]").IsMatch(login))
+            else if (new Regex(@"[^A-Za-z0-9_]").IsMatch(login))
                 return "Ошибка: Логин содержит запрещенные символы!";
             return string.Empty;
         }
@@ -65,8 +69,51 @@ namespace server_side.Events
             return string.Empty;
         }
 
-        public void GetAccountFromBD(Player client, object[] args)
+        public void GetAccountFromBD(Player player, int type, string login, string password, string email)
         {
+            using (DataBase.AppContext db = new DataBase.AppContext())
+            {
+                var authData = db.Accounts.Where(x => x.Login == login).FirstOrDefault();
+
+                switch (type)
+                {
+                    case 0: // auth
+                        {
+                            if (authData == null)
+                            {
+                                NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", "Ошибка: Данный аккаунт не зарегистрирован!");
+                                break;
+                            }
+                            else if (authData.Password != password)
+                            {
+                                NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", "Ошибка: Неверный пароль!");
+                                break;
+                            }
+
+                            LogInPlayerAccount(player, authData);
+                            break;
+                        }
+                    case 1: // reg
+                        {
+                            if (authData != null)
+                            {
+                                NAPI.ClientEvent.TriggerClientEvent(player, "authSendError", "Ошибка: Данный аккаунт уже зарегистрирован!");
+                                break;
+                            }
+
+                            player.SetData<string>("R_TempLogin", login);
+                            player.SetData<string>("R_TempPassword", password);
+                            player.SetData<string>("R_TempMail", email);
+
+                            NAPI.ClientEvent.TriggerClientEvent(player, "destroyAuthBrowser");
+
+                            JumpToCustomizeStep(player);
+                            break;
+                        }
+                }
+
+            }
+            /*
             try
             {
                 MySqlConnection con = new MySqlConnector().GetDBConnection();
@@ -144,12 +191,14 @@ namespace server_side.Events
                         }
                 }
                 con.Close();
+                
             }
             catch (Exception e)
             {
                 NAPI.Util.ConsoleOutput($"[MySQL Error (#{++exceptionCount})]: " + e.Message);
                 NAPI.ClientEvent.TriggerClientEvent(client, "authSendError", $"Ошибка: MySQL Exception! Обратитесь к администрации сервера. (#{exceptionCount})");
             }
+            */
         }
 
         public void JumpToCustomizeStep(Player client)
@@ -168,8 +217,36 @@ namespace server_side.Events
         }
 
         [RemoteEvent("EndPlayerCustomize")]
-        public void EndPlayerCustomize(Player client, string basedata, string customize, string clothes)
+        public void EndPlayerCustomize(Player player, string basedata, string customize, string clothes)
         {
+            using (DataBase.AppContext db = new DataBase.AppContext())
+            {
+                dynamic based = NAPI.Util.FromJson(basedata);
+                dynamic cust = NAPI.Util.FromJson(customize);
+
+                PlayerModel md = new PlayerModel();
+
+                md.Name = $"{based["name"]} {based["subname"]}";
+                md.SClubName = player.SocialClubName;
+                md.SClubId = player.SocialClubId;
+                md.Serial = player.Serial;
+                md.Login = player.GetData<string>("R_TempLogin");
+                md.Password = player.GetData<string>("R_TempPassword");
+                md.Mail = player.GetData<string>("R_TempMail");
+                md.RegIP = player.Address;
+                md.DateReg = DateTime.Now.ToString();
+                md.Age = (int)based["old"];
+                md.Sex = (bool)cust["sex"];
+                md.Customize = customize;
+                md.Clothes = clothes;
+
+                db.Accounts.Add(md);
+                db.SaveChanges();
+
+                NAPI.ClientEvent.TriggerClientEvent(player, "disableCustomize");
+                LogInPlayerAccount(player, md);
+            }
+            /*
             try
             {
                 using(MySqlConnection con = new MySqlConnector().GetDBConnection())
@@ -187,7 +264,8 @@ namespace server_side.Events
                     if (sc == null)
                         sc = "-";
 
-                    string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`, `p_datereg`) VALUES ('" + client.GetData<string>("R_TempLogin") + "', '" + sc + "', '" + client.GetData<string>("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData<string>("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "', '" + currentTime + "')";
+                    string query = "INSERT INTO `accounts` (`p_login`, `p_socialclub`, `p_password`, `p_ip`, `p_mail`, `p_name`, `p_age`, `p_sex`, `p_customize`, `p_clothes`, `p_datereg`) 
+                        VALUES ('" + client.GetData<string>("R_TempLogin") + "', '" + sc + "', '" + client.GetData<string>("R_TempPassword") + "', '" + client.Address + "', '" + client.GetData<string>("R_TempMail") + "', '" + name + "', '" + based["old"] + "', '" + (int)cust["sex"] + "', '" + customize + "', '" + clothes + "', '" + currentTime + "')";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.ExecuteNonQuery();
 
@@ -226,28 +304,29 @@ namespace server_side.Events
                 }
             }
             catch (Exception e) { NAPI.Util.ConsoleOutput(e.ToString()); }
+            */
         }
 
-        public void LogInPlayerAccount(Player client, AuthData data) 
+        public void LogInPlayerAccount(Player client, PlayerModel data)
         {
             try
             {
                 PlayerInfo playerInfo = new PlayerInfo(client);
 
                 playerInfo.SetAuthorized(true);
-                playerInfo.SetDbID(data.dbID);
+                playerInfo.SetDbID(data.Id);
                 playerInfo.SetLVL(data.LVL);
                 playerInfo.SetName(data.Name);
                 playerInfo.SetLogin(data.Login);
                 playerInfo.SetMail(data.Mail);
                 playerInfo.SetPassword(data.Password);
-                playerInfo.SetRegIP(data.IP);
-                playerInfo.SetCustomize(client.GetData<object>("pCustomize"));
-                playerInfo.SetClothes(client.GetData<object>("pClothes"));
+                playerInfo.SetRegIP(data.RegIP);
+                playerInfo.SetCustomize(Convert.ToString(data.Customize));
+                playerInfo.SetClothes(Convert.ToString(data.Clothes));
                 playerInfo.GiveMoney(data.Cash, updateindb: false);
-                playerInfo.GiveBankMoney(data.BankMoney, updateindb: false);
+                playerInfo.GiveBankMoney(data.Bank, updateindb: false);
                 playerInfo.SetAge(data.Age);
-                playerInfo.SetSocialClub(data.SocialName);
+                playerInfo.SetSocialClub(data.SClubName);
                 playerInfo.SetDateReg(data.DateReg);
                 playerInfo.SetLastJoin(DateTime.Now.ToString());
                 playerInfo.SetCurrentIP(client.Address);
@@ -255,8 +334,6 @@ namespace server_side.Events
                 playerInfo.SetSatiety(data.Satiety);
                 playerInfo.SetThirst(data.Thirst);
 
-                client.ResetData("pCustomize");
-                client.ResetData("pClothes");
                 client.ResetData("R_TempLogin");
                 client.ResetData("R_TempPassword");
                 client.ResetData("R_TempMail");
@@ -267,13 +344,14 @@ namespace server_side.Events
                 client.Rotation = new Vector3(client.Rotation.X, client.Rotation.Y, -49.8411f);
                 client.Dimension = 0;
 
-                ItemController.LoadPlayerItemsFromDB(client, data.dbID);
+                ItemController.LoadPlayerItemsFromDB(client, data.Id);
 
-                // new Inventory.Inventory(client).Init();
+                new Inventory.Inventory(client).Init();
 
                 ////
 
                 NAPI.Entity.SetEntityTransparency(client, 255);
+
 
                 if (playerInfo.GetCustomize() != null)
                     NAPI.ClientEvent.TriggerClientEvent(client, "setPlayerCustomize", playerInfo.GetCustomize());
@@ -284,6 +362,7 @@ namespace server_side.Events
                 NAPI.ClientEvent.TriggerClientEvent(client, "createHud", 50, 60, playerInfo.GetMoney(), playerInfo.GetBankMoney());
 
                 NAPI.ClientEvent.TriggerClientEvent(client, "destroyAuthBrowser");
+
                 Utils.UtilityFuncs.SendPlayerNotify(client, 2, "Вы успешно авторизировались!");
             }
             catch (Exception e)

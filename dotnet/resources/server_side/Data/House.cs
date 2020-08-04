@@ -6,17 +6,12 @@ using GTANetworkAPI;
 using MySql.Data.MySqlClient;
 using server_side.DBConnection;
 using System.Threading.Tasks;
+using server_side.DataBase.Models;
 
 namespace server_side.Data
 {
-    class House : Script, IComparable<House>
-    {
-        public int CompareTo(House id)
-        {
-            if (id == null) return -1;
-            else return this.HouseID.CompareTo(id.HouseID);
-        }
-
+    class House : Script
+    { 
         static List<House> HouseList = new List<House>();
 
         public int HouseID;
@@ -36,8 +31,52 @@ namespace server_side.Data
         public Blip HouseBlip;
         public TextLabel HouseText;
 
+        private House() { }
+        private House(int id, int clas, int price, int rent, int days, bool door, string owner, Vector3 enterpos, float rotation, bool status, int interior)
+        {
+            HouseID = id;
+            HouseClass = clas;
+            HousePrice = price;
+            HouseRent = rent;
+            HouseDays = days;
+            HouseDoors = door;
+            HouseOwner = owner;
+            HouseEnterPosition = enterpos;
+            HouseEnterRotation = rotation;
+            HouseStatus = status;
+            HouseInterior = interior;
+        }
+
         public static void InitHouses()
         {
+            using(DataBase.AppContext db = new DataBase.AppContext())
+            {
+                var hs = db.House.Select(x => x).ToList();
+
+                if (!hs.Any())
+                {
+                    NAPI.Util.ConsoleOutput("[MySQL]: Дома не найдены.");
+                    return;
+                }
+
+                foreach(var i in hs)
+                {
+                    House h = new House(i.Id, i.Class, i.Price, i.Rent, i.Days, i.Doors, i.Owner, new Vector3(i.EnterPointX, i.EnterPointY, i.EnterPointZ), i.EnterRotation, i.Status, i.Interior);
+
+                    ColShape cs = NAPI.ColShape.CreateCylinderColShape(h.HouseEnterPosition, 1.0f, 2f, dimension: 0);
+                    cs.SetData<int>("CSHouseID", h.HouseID);
+                    h.HouseColShape = cs;
+
+                    h.HouseMarker = NAPI.Marker.CreateMarker(1, new Vector3(h.HouseEnterPosition.X, h.HouseEnterPosition.Y, h.HouseEnterPosition.Z - 1f), new Vector3(), new Vector3(), 1.0f, new Color(139, 201, 131, 100));
+                    h.HouseBlip = NAPI.Blip.CreateBlip(h.HouseStatus == true ? 375 : 374, h.HouseEnterPosition, 1f, 2, drawDistance: 15.0f, dimension: 0, shortRange: true, name: $"Дом № {h.HouseID}");
+                    h.HouseText = NAPI.TextLabel.CreateTextLabel($"Номер дома: {h.HouseID}\nВладелец: Нет\nЦена: {h.HousePrice}\nКласс: {h.HouseClass}\nСтатус: {h.HouseStatus}", h.HouseEnterPosition, 3f, 3f, 10, new Color(255, 255, 255));
+
+                    HouseList.Add(h);
+                }
+
+                NAPI.Util.ConsoleOutput("[Houses]: Домов загружено: {0}", hs.Count);
+            }
+            /*
             using (MySqlConnection con = new MySqlConnector().GetDBConnection())
             {
                 con.Open();
@@ -89,6 +128,7 @@ namespace server_side.Data
                 }
                 con.Close();
             }
+            */
         }
 
         public void CreateHouse(Vector3 HousePosition, float rotation, int HousePrice, int HouseClass)
@@ -138,7 +178,27 @@ namespace server_side.Data
                 HouseBlip = NAPI.Blip.CreateBlip(374, HousePosition, 1f, 2, drawDistance: 15.0f, dimension: 0, shortRange: true, name: $"Дом №{tempID}"),
                 HouseText = NAPI.TextLabel.CreateTextLabel($"House ID: {tempID}\nHouse Owner: None\nHouse Price: {HousePrice}\nHouse Class: {HouseClass}\nHouse Status: {HouseStatus}", HousePosition, 3f, 3f, 10, new Color(255, 255, 255))
             };
-            
+            HouseList.Add(h);
+
+            using(DataBase.AppContext db = new DataBase.AppContext())
+            {
+                HouseModel md = new HouseModel();
+
+                md.Owner = h.HouseOwner;
+                md.Days = h.HouseDays;
+                md.Doors = h.HouseDoors;
+                md.Price = h.HousePrice;
+                md.Class = h.HouseClass;
+                md.Interior = h.HouseInterior;
+                md.EnterPointX = h.HouseEnterPosition.X;
+                md.EnterPointY = h.HouseEnterPosition.Y;
+                md.EnterPointZ = h.HouseEnterPosition.Z;
+                md.EnterRotation = h.HouseEnterRotation;
+
+                db.House.Add(md);
+                db.SaveChanges();
+            }
+            /*
             using(MySqlConnection con = new MySqlConnector().GetDBConnection())
             {
                 con.Open();
@@ -152,7 +212,7 @@ namespace server_side.Data
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 cmd.ExecuteNonQuery();
             }
-            HouseList.Add(h);
+            */
         }
 
         public static void OnPlayerEnterColshape(ColShape shape, Player client)
@@ -192,7 +252,14 @@ namespace server_side.Data
 
             HouseList.Remove(h);
 
-            new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM house WHERE h_id = {houseid}");
+            // new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM house WHERE h_id = {houseid}");
+            using(DataBase.AppContext db = new DataBase.AppContext())
+            {
+                HouseModel md = new HouseModel() { Id = houseid };
+                db.House.Attach(md);
+                db.House.Remove(md);
+                db.SaveChanges();
+            }
 
             client.SendChatMessage($"Дом {houseid} успешно был удален!");
         }

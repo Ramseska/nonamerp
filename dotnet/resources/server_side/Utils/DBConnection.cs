@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace server_side.DBConnection
 {
+    /*
     public class MySqlConnector
     {
         public MySqlConnection GetDBConnection()
@@ -38,4 +39,5 @@ namespace server_side.DBConnection
             });
         }
     }
+    */
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 using GTANetworkAPI;
 using Newtonsoft.Json;
@@ -19,7 +20,7 @@ namespace server_side.Items
         [JsonProperty("inventorySlot")]
         public int InvenrorySlot { get; set; }
 
-        private ItemEntity() { }
+        protected ItemEntity() { }
 
         public ItemEntity(int itemid, int ownerid, string itemtype, int itemamount, int inventoryslot)
         {
