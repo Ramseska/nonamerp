@@ -51,11 +51,11 @@ namespace server_side.InventorySystem
                 return;
             }
 
-            var temp = JsonConvert.SerializeObject(new ItemController().UseItem(player, item));
+            item = new ItemController().UseItem(player, item);
 
-            NAPI.ClientEvent.TriggerClientEvent(player, "InventoryUpdateItem", temp);
+            NAPI.Util.ConsoleOutput($"in sUseItem > id: {item.ItemID}, amount: {item.ItemAmount}");
 
-            Console.WriteLine($"Serialized object in UseItem: {temp}");
+            NAPI.ClientEvent.TriggerClientEvent(player, "InventoryUpdateItem", item.ItemID, item.ItemAmount);
         }
 
         public void GiveItem(ItemEntity item)

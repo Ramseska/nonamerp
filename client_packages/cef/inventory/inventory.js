@@ -29,7 +29,8 @@ mp.events.add({
 
     },
     "InventoryUpdateItem": (id, amount) => {
-        inventoryBrowser.execute(`updateItem(${id, amount})`)
+        mp.gui.chat.push("In InventoryUpdateItem > id: " + id + " amount: " + amount)
+        inventoryBrowser.execute(`updateItem(${id}, ${amount})`)
     },
     "InventoryUseItem": (id) => {
         mp.events.callRemote("sUseItem", id);

@@ -139,6 +139,8 @@ namespace server_side.Items
 
             item.ItemAmount--;
 
+            itemData.Action(player);
+
             ItemEntity _item = item;
 
             if (item.ItemAmount <= 0)

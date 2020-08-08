@@ -108,34 +108,18 @@ function deleteItemById(id)
 
 function useItem()
 {
-    console.log('Use: ' + menu)
-    // mp.trigger('InventoryUseItem', menu);
-    tempHook(menu)
+    mp.trigger('InventoryUseItem', menu);
 
     hideMenu();
 }
 
-function tempHook(id)
-{
-    let amount = findItemById(id).amount - 1;
-
-    updateItem(id, amount)
-}
-
 function updateItem(id, amount)
 {
+    mp.trigger("logConsole", `in updateItem > id: ${id}, amount: ${amount}`)
+
     let item = findItemById(id);
 
     if((item.amount = amount) <= 0) item.delete();
-
-    showAllItems()
-}
-
-function showAllItems()
-{
-    itemsList.forEach(e => {
-        console.log(e.toString());
-    });
 }
 
 function showMenu(id)
@@ -227,8 +211,6 @@ $(document).ready(() =>
         {
             hideMenu();
         }
-
-        //console.log(`Mouse Coords:\n\tX: ${mousePos.X}\n\tY: ${mousePos.Y}\n\nElement: ${$(e.target).data('item-id')}`)
     });
 
     $(this).mousemove(function(e) {

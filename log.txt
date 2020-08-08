@@ -3972,3 +3972,991 @@ Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Te
 DELETE FROM `Items`
 WHERE `Id` = @p0;
 SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Class`, `h`.`Days`, `h`.`Doors`, `h`.`EnterPointX`, `h`.`EnterPointY`, `h`.`EnterPointZ`, `h`.`EnterRotation`, `h`.`Interior`, `h`.`Owner`, `h`.`Price`, `h`.`Rent`, `h`.`Status`
+FROM `House` AS `h`
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (100ms) [Parameters=[@__login_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Login` = @__login_0
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Executed DbCommand (82ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Accounts` SET `DateLastJoin` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@__playerDbId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`OwnerId` = @__playerDbId_0
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (69ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (418ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Class`, `h`.`Days`, `h`.`Doors`, `h`.`EnterPointX`, `h`.`EnterPointY`, `h`.`EnterPointZ`, `h`.`EnterRotation`, `h`.`Interior`, `h`.`Owner`, `h`.`Price`, `h`.`Rent`, `h`.`Status`
+FROM `House` AS `h`
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (57ms) [Parameters=[@__login_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Login` = @__login_0
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Executed DbCommand (39ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Accounts` SET `DateLastJoin` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__playerDbId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`OwnerId` = @__playerDbId_0
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (105ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Class`, `h`.`Days`, `h`.`Doors`, `h`.`EnterPointX`, `h`.`EnterPointY`, `h`.`EnterPointZ`, `h`.`EnterRotation`, `h`.`Interior`, `h`.`Owner`, `h`.`Price`, `h`.`Rent`, `h`.`Status`
+FROM `House` AS `h`
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (66ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (46ms) [Parameters=[@__login_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Login` = @__login_0
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Executed DbCommand (23ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Accounts` SET `DateLastJoin` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (10ms) [Parameters=[@__playerDbId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`OwnerId` = @__playerDbId_0
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (819ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (22ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (13ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (38ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Class`, `h`.`Days`, `h`.`Doors`, `h`.`EnterPointX`, `h`.`EnterPointY`, `h`.`EnterPointZ`, `h`.`EnterRotation`, `h`.`Interior`, `h`.`Owner`, `h`.`Price`, `h`.`Rent`, `h`.`Status`
+FROM `House` AS `h`
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Class`, `h`.`Days`, `h`.`Doors`, `h`.`EnterPointX`, `h`.`EnterPointY`, `h`.`EnterPointZ`, `h`.`EnterRotation`, `h`.`Interior`, `h`.`Owner`, `h`.`Price`, `h`.`Rent`, `h`.`Status`
+FROM `House` AS `h`
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (56ms) [Parameters=[@__login_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Login` = @__login_0
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Executed DbCommand (38ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Accounts` SET `DateLastJoin` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__playerDbId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`OwnerId` = @__playerDbId_0
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (13ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Class`, `h`.`Days`, `h`.`Doors`, `h`.`EnterPointX`, `h`.`EnterPointY`, `h`.`EnterPointZ`, `h`.`EnterRotation`, `h`.`Interior`, `h`.`Owner`, `h`.`Price`, `h`.`Rent`, `h`.`Status`
+FROM `House` AS `h`
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (66ms) [Parameters=[@__login_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Login` = @__login_0
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Executed DbCommand (48ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Accounts` SET `DateLastJoin` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@__playerDbId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`OwnerId` = @__playerDbId_0
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (23ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (113ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (35ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (145ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Age`, `a`.`Bank`, `a`.`Cash`, `a`.`Clothes`, `a`.`Customize`, `a`.`DateLastJoin`, `a`.`DateReg`, `a`.`Health`, `a`.`House`, `a`.`LVL`, `a`.`LastIP`, `a`.`Login`, `a`.`Mail`, `a`.`Name`, `a`.`Password`, `a`.`PayCheck`, `a`.`RegIP`, `a`.`SClubId`, `a`.`SClubName`, `a`.`Satiety`, `a`.`Serial`, `a`.`Sex`, `a`.`Thirst`
+FROM `Accounts` AS `a`
+WHERE `a`.`Id` = 1
+LIMIT 1
+Executed DbCommand (71ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+UPDATE `Accounts` SET `Cash` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (13ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (16ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Items` (`Amount`, `OwnerId`, `Slot`, `Type`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Items`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `OwnerId` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__item_ItemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__item_ItemID_0
+LIMIT 1
+Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+UPDATE `Items` SET `Amount` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+Entity Framework Core 3.1.0 initialized 'AppContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'lognet'
+Executed DbCommand (0ms) [Parameters=[@__itemID_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Amount`, `i`.`OwnerId`, `i`.`Slot`, `i`.`Type`
+FROM `Items` AS `i`
+WHERE `i`.`Id` = @__itemID_0
+LIMIT 1
+Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Items`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
