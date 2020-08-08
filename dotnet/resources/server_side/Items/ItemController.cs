@@ -33,7 +33,7 @@ namespace server_side.Items
             
             UpdateItemInDB(item);
 
-            new InventoryNS.Inventory(player).GiveItem(item);
+            new InventorySystem.Inventory(player).GiveItem(item);
 
             foreach (var i in ItemsList)
                 Console.WriteLine(i.ToString());
@@ -57,36 +57,6 @@ namespace server_side.Items
 
                 return item;
             }
-            /*
-            try
-            {
-                using (MySqlConnection con = new MySqlConnector().GetDBConnection())
-                {
-                    con.Open();
-
-                    new MySqlCommand($"INSERT INTO `items` (`item_type`, `item_amount`) VALUES ('{type}', '{amount}')", con).ExecuteNonQuery();
-
-                    ItemEntity item = GetItemFromDB(Convert.ToInt32(MySqlHelper.ExecuteScalar(con, "SELECT LAST_INSERT_ID()")));
-
-                    con.Close();
-
-                    if(item != null)
-                    {
-                        ItemsList.Add(item);
-                        return item;
-                    }
-                    else
-                    {
-                        NAPI.Util.ConsoleOutput("[Item Exception]: Не удалось создать объект.");
-                    }
-                }
-                
-            }
-            catch (Exception e)
-            {
-                NAPI.Util.ConsoleOutput(e.ToString());
-            }
-            */
         }
 
         public void DeleteItem(int itemID)
@@ -96,7 +66,7 @@ namespace server_side.Items
             if (item != null)
             {
                 ItemsList.Remove(item);
-                //new MySqlConnector().RequestExecuteNonQuery($"DELETE FROM `items` WHERE `item_id` = '{itemID}'");
+                
                 using(var db = new DataBase.AppContext())
                 {
                     var md = db.Items.Where(x => x.Id == itemID).FirstOrDefault();
@@ -129,33 +99,6 @@ namespace server_side.Items
                     }
                     else { NAPI.Util.ConsoleOutput($"[Ахтунг]: Предметы для игрока {playerDbId} не найдены в базе данных!"); }
                 }
-                /*
-                await Task.Run(() =>
-                {
-                    using (MySqlConnection con = new MySqlConnector().GetDBConnection())
-                    {
-                        con.Open();
-
-                        MySqlDataReader reader = new MySqlCommand($"SELECT * FROM `items` WHERE `owner_id` = {playerDbId}", con).ExecuteReader();
-
-                        if(reader.HasRows)
-                        {
-                            while (reader.Read())
-                            {
-                                ItemsList.Add(new ItemEntity((int)reader["item_id"], (int)reader["owner_id"], (string)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]));
-                            }
-
-                            NAPI.Util.ConsoleOutput($"[{playerDbId}]: Загружено {ItemsList.Where(x => x.OwnerID == playerDbId).Count()} предметов.");
-                        }
-                        else { NAPI.Util.ConsoleOutput($"[Ахтунг]: Предметы для игрока {playerDbId} не найдены в базе данных!"); }
-
-                        NAPI.Task.Run(() => { new Inventory.Inventory(player).Init(); });
-
-                        reader.Close();
-                        con.Close();
-                    }
-                });
-                */
             }
             catch (Exception e)
             {
@@ -164,9 +107,11 @@ namespace server_side.Items
         }
         public void UnloadPlayerItems(int playerDbId) => ItemsList.RemoveAll(x => x.OwnerID == playerDbId);
 
-        public void UseItem(Player player, ItemEntity item)
+        public ItemEntity UseItem(Player player, ItemEntity item)
         {
             ItemData itemData = ItemData.ItemDataList.Where(x => x.Type == item.ItemType).FirstOrDefault();
+
+            /*
 
             if (itemData.Action != null)
             {
@@ -184,35 +129,28 @@ namespace server_side.Items
                 return;
             }
             NAPI.Util.ConsoleOutput($"[Ошибка]: Не удалось использовать предмет, т.к. его действие не описано в классе ItemData\nItem: {item}");
-        }
+            */
 
-        private ItemEntity GetItemFromDB(int itemid)
-        {
-            /*
-            using (MySqlConnection con = new MySqlConnector().GetDBConnection())
+            if(itemData.Action == null)
             {
-                con.Open();
-
-                MySqlCommand cmd = new MySqlCommand($"SELECT * FROM `items` WHERE `item_id` = '{itemid}'", con);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                ItemEntity item = null;
-
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        item = new ItemEntity((int)reader["item_id"], (int)reader["owner_id"], (string)reader["item_type"], (int)reader["item_amount"], (int)reader["inventory_slot"]);
-                    }
-                }
-
-                reader.Close();
-                con.Close();
-
+                NAPI.Util.ConsoleOutput($"[Ошибка]: Не удалось использовать предмет, т.к. его действие не описано в классе ItemData\nItem: {item}");
                 return item;
             }
-            */
-            return null;
+
+            item.ItemAmount--;
+
+            ItemEntity _item = item;
+
+            if (item.ItemAmount <= 0)
+            {
+                DeleteItem(item.ItemID);
+            }   
+            else
+            {
+                UpdateItemInDB(item);
+            } 
+
+            return _item;
         }
 
         private void UpdateItemInDB(ItemEntity item)
@@ -221,14 +159,10 @@ namespace server_side.Items
             {
                 var md = db.Items.Where(x => x.Id == item.ItemID).FirstOrDefault();
 
-                NAPI.Util.ConsoleOutput($"\n\n\n>>> Item: {item} | Model: {md.Id}, {md.OwnerId}, {md.Type}, {md.Amount}, {md.Slot}");
-
                 md.OwnerId = item.OwnerID;
                 md.Type = item.ItemType;
                 md.Amount = item.ItemAmount;
                 md.Slot = item.InvenrorySlot;
-
-                NAPI.Util.ConsoleOutput($"\n\n\n>>> Item: {item} | Model: {md.Id}, {md.OwnerId}, {md.Type}, {md.Amount}, {md.Slot}");
 
                 db.SaveChanges();
             }

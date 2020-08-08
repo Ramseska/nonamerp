@@ -2,7 +2,7 @@
 using System.Linq;
 using GTANetworkAPI;
 using server_side.DBConnection;
-using server_side.InventoryNS;
+using server_side.InventorySystem;
 
 
 namespace server_side.Data

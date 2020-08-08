@@ -10,8 +10,6 @@ mp.events.add({
         inventoryBrowser.active = false;
 
         inventoryBrowser.execute(`initInventory("${name}", ${cash}, ${bank}, ${health}, ${hungry}, ${thirst}, ${items}, ${data})`);
-
-        // mp.events.callRemote("debugLogFromClientSide", dbg)
     },
     "InventoryOpen": () => {
         mp.gui.chat.activate(false);
@@ -22,7 +20,7 @@ mp.events.add({
         inventoryBrowser.active = mp.gui.cursor.visible = false;
     },
     "InventoryAddItem": (item) => {
-        inventoryBrowser.execute(`addItems(${item})`);
+        inventoryBrowser.execute(`addItem(${item})`);
     },
     "InventoryRemoveItem": (id) => {
         mp.events.callRemote("sRemoveItem", id);
@@ -48,14 +46,9 @@ mp.events.add({
     "InventoryUpdateBar": (name, cash, money, health, hunger, thirst) => {
         if(inventoryBrowser == null || inventoryBrowser == undefined) return;
 
-        inventoryBrowser.execute(`updatePlayerInfo("${name}", ${cash}, ${money}, ${thirst}, ${hunger}, ${health})`)
+        inventoryBrowser.execute(`updatePlayerBar("${name}", ${cash}, ${money}, ${thirst}, ${hunger}, ${health})`)
     },
     "logConsole": (text) => { // dbg
         mp.events.callRemote("debugLogFromClientSide", text)
     }
 });
-
-function InventoryBuildObject(item)
-{
-
-}

@@ -346,7 +346,7 @@ namespace server_side.Events
 
                 new ItemController().LoadPlayerItemsFromDB(client, data.Id);
 
-                new InventoryNS.Inventory(client).Init();
+                new InventorySystem.Inventory(client).Init();
 
                 ////
 
