@@ -56,8 +56,7 @@ namespace server_side.Items
                 {
                     "ITEM_AID_KIT", (Player player) =>
                     {
-                        if(player.Health + 30 > 100) player.Health = 100;
-                        else player.Health += 30;
+                        new PlayerInfo(player).GiveHealth(30);
 
                         Utils.UtilityFuncs.SendPlayerNotify(player, 0, "Вы использовали аптечку (+30 hp)");
                     }

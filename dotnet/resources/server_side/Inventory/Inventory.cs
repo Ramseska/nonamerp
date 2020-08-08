@@ -6,7 +6,7 @@ using server_side.Items;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace server_side.Inventory
+namespace server_side.InventoryNS
 {
 
     class Inventory : Script
@@ -51,9 +51,14 @@ namespace server_side.Inventory
                 return;
             }
 
-            ItemData.ItemDataList.Where(x => x.Type == item.ItemType).FirstOrDefault().Action(player);
+            //ItemData.ItemDataList.Where(x => x.Type == item.ItemType).FirstOrDefault().Action(player);
+            new ItemController().UseItem(player, item);
 
-            NAPI.ClientEvent.TriggerClientEvent(player, "InventoryUpdateItem", JsonConvert.SerializeObject(item));
+            var temp = JsonConvert.SerializeObject(item);
+
+            NAPI.ClientEvent.TriggerClientEvent(player, "InventoryUpdateItem", temp);
+
+            Console.WriteLine($"Serialized object in UseItem: {temp}");
         }
 
         public void GiveItem(ItemEntity item)
@@ -78,7 +83,7 @@ namespace server_side.Inventory
                 return;
             }
 
-            ItemController.DeleteItem(item.ItemID);
+            new ItemController().DeleteItem(item.ItemID);
         }
 
         public void UpdateBar()

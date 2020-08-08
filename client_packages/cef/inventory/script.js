@@ -1,242 +1,201 @@
-let itemList = [];
+let itemsData = {"ITEM_APPLE":{"ItemImg":"apple.svg","ItemStack":1,"ItemGroup":"Food","ItemName":"Яблоко","ItemDescription":"Спелое зеленое яблоко. Немного утоляет голод.","ItemWeight":170},"ITEM_AID_KIT":{"ItemImg":"first-aid-kit.svg","ItemStack":3,"ItemGroup":"Medical","ItemName":"Аптечка","ItemDescription":"Содержит в себе все необходимые инструменты и препараты для оказания первой помощи.","ItemWeight":2100},"ITEM_WATER_BOTTLE":{"ItemImg":"water-bottle.svg","ItemStack":3,"ItemGroup":"Food","ItemName":"Бутылка воды","ItemDescription":"Литровая бутылка дистиллированной воды. Утоляет жажду.","ItemWeight":1010}};
+let itemsList = [], mousePos = { X: 0, Y: 0 }, menu = -1, descWindow = false;
 
-let mousePos = { X: 0, Y: 0 };
+const playerInfo = { name: "No Name", cash: 0, bank: 0, health: 100, hunger: 100, thirst: 100 }
 
-let isMenuActive = -1, isInfoActive = false;
 
-let itemsData = null;
 
-const inventoryInfo =
-{
-    weigth: 0,
-    items: 0
-}
-
-const playerInfo =
-{
-    name: "No Name",
-    cash: 0,
-    bank: 0,
-    health: 100,
-    hunger: 100,
-    thirst: 100
-}
-
-class Item 
+class Item
 {
     constructor(id, img, amount, group, name, description, weigth, stack)
     {
         this.id = id
         this.img = img
-        this.amount = amount
+        this._amount = amount
         this.group = group
         this.name = name
         this.description = description
         this.weigth = weigth
         this.maxstack = stack
+        this.element = undefined
+    }
+
+    get amount() { return this._amount; }
+    set amount(val) 
+    { 
+        $(this.element).find('.item-amount-value').html(this._amount = val);
+        
+        updateInventoryInfo();
     }
 
     create()
     {
-        itemList.push(this)
-        this.index = itemList.indexOf(this)
-        
+        itemsList.push(this)
+
         this.element = 
         $(`<div class="item-box">
             <img class="item-picture" src="./img/items/${this.img}">
             <div class="item-amount-box">
-                <p class="item-amount-value">${this.amount}</p>
+                <p class="item-amount-value">${this._amount}</p>
             </div>
-        </div>`).appendTo($("#items-box"))
-        
-        updateIndex()
-        updateInventoryInfo()
+        </div>`).appendTo($('#items-box')).data('item-id', this.id);
 
-        return this;
+        updateInventoryInfo();
     }
+
     delete()
     {
-        $(this.element).remove()
-        itemList.splice(itemList[this.index], 1)
+        $(this.element).remove();
 
-        updateIndex()
-        updateInventoryInfo()
+        itemsList.splice(itemsList.indexOf(this), 1);
+
+        updateInventoryInfo();
     }
-    update()
+
+    toString() 
     {
-        this.element = 
-        $(`<div class="item-box">
-            <img class="item-picture" src="/img/items/${this.img}">
-            <div class="item-amount-box">
-                <p class="item-amount-value">${this.amount}</p>
-            </div>
-        </div>`)
-        
-        updateInventoryInfo()
-    }
-    toString()
-    {
-        return "Name: " + this.name + "\nDescription: " + this.description + "\nAmount: " + this.amount + "\nGroup: " + this.group + "\nIMG: " + this.img + "\nIndex: " + this.index +"\n\n";
+        return `\nItemID: ${this.id}\nItemName: ${this.name}\nItemAmount: ${this._amount}\nItemGroup: ${this.group}\nItemWeigth: ${this.weigth}\nItemStack: ${this.maxstack}\nItemImg: ${this.img}\n`;
     }
 }
 
-function updateIndex()
-{
-    itemList.forEach((e, i) => $(e.element).data('index', e.index = i));
-}
+/*
+    Inventory
+     - Init inventory +
+     - Update Inventory Info (weigth / count items) +
+     - Update Player Bar +
+    Items
+     - Add +
+     - Delete\drop
+     - Update +
+     - Use +
+     - Merge 
+     - Swap
+*/
 
 function initInventory(name, cash, bank, health, hungry, thirst, items, data)
 {
     itemsData = data;
 
-    if(items.length != 0) addItems(items);
-        
-    updatePlayerInfo(name, cash, bank, thirst, hungry, health);
+    updatePlayerBar(name, cash, bank, thirst, hungry, health);
+    
+    if(items != null && items != undefined) addItem(items);
 }
 
-function addItems(item)
+function addItem(items)
 {
-    for(let i = 0; i < item.length; i++)
+    if(!Array.isArray(items))
     {
-        new Item(item[i].itemID, itemsData[item[i].itemType].ItemImg, item[i].itemAmount, itemsData[item[i].itemType].ItemGroup, itemsData[item[i].itemType].ItemName, itemsData[item[i].itemType].ItemDescription, itemsData[item[i].itemType].ItemWeight, itemsData[item[i].itemType].ItemStack).create();
+        new Item(items.itemID, itemsData[items.itemType].ItemImg, items.itemAmount, itemsData[items.itemType].ItemGroup, itemsData[items.itemType].ItemName, itemsData[items.itemType].ItemDescription, 
+            itemsData[items.itemType].ItemWeight, itemsData[items.itemType].ItemStack).create();
     }
-
-    updateInventoryInfo()
-}
-
-function updateItem(item)
-{
-    itemList.find(x => x.id == item.itemID).amount = item.itemAmount;
-}
-
-function deleteItem(index)
-{
-    itemList[index].delete()
-}
-
-$(document).ready(() => {
-    $(document).on('click', function(e){
-        if(!$(e.target).hasClass("item-box") && !$(e.target).parent().is("#inventory-menu") && isMenuActive != -1)
-        {
-            onClickButtonClose()
-            return;
-        }
-        else if($(e.target).hasClass("item-box"))
-        {
-            if(isMenuActive == -1)
-            {
-                $("#menu-container").css({left: mousePos.X, top: mousePos.Y}).fadeIn(100);
-                $("#inventory-menu").fadeIn(90);
-                isMenuActive = $(e.target).data('index');
-            }
-            else if(isMenuActive != -1)
-            {
-                $("#menu-container").css({left: mousePos.X, top: mousePos.Y});
-                if(isInfoActive) 
-                {
-                    $("#menu-description").fadeOut(0)
-                    isInfoActive = false
-                }
-                
-                isMenuActive = $(e.target).data('index');
-            }
-        }
-    });
-
-    $(this).mousemove(function(e)   {
-        mousePos.X = e.pageX;
-        mousePos.Y = e.pageY;
-    });
-});
-
-function onClickButtonInfo()
-{
-    if(!isInfoActive) 
+    else 
     {
-        $("#menu-description-content").html(`<h3>${itemList[isMenuActive].name}</h3><br>${itemList[isMenuActive].description}`);
-
-        $("#menu-description").fadeIn(90)
+        items.forEach(items => {
+            new Item(items.itemID, itemsData[items.itemType].ItemImg, items.itemAmount, itemsData[items.itemType].ItemGroup, itemsData[items.itemType].ItemName, itemsData[items.itemType].ItemDescription, 
+                itemsData[items.itemType].ItemWeight, itemsData[items.itemType].ItemStack).create();
+        });
     }
-    else $("#menu-description").fadeOut(90)
-
-    isInfoActive = !isInfoActive
 }
 
-function onClickButtonUse()
+function deleteItemById(id)
 {
-    mp.trigger("InventoryUseItem", itemList[isMenuActive].id)
+    let item = findItemById(id);
+
+    if(item === undefined) return;
+
+    item.delete();
 }
 
-function onClickButtonDrop() 
+function useItem()
 {
-    throw new Error("Еще нет реализации")
+    console.log('Use: ' + menu)
+    // mp.trigger('InventoryUseItem', menu);
+    tempHook(menu)
+
+    hideMenu();
 }
 
-function onClickButtonClose()
+function tempHook(id)
 {
-    $("#inventory-menu").fadeOut(90);
+    let amount = findItemById(id).amount - 1;
+
+    updateItem(id, amount)
+}
+
+function updateItem(id, amount)
+{
+    let item = findItemById(id);
+
+    if((item.amount = amount) <= 0) item.delete();
+
+    showAllItems()
+}
+
+function showAllItems()
+{
+    itemsList.forEach(e => {
+        console.log(e.toString());
+    });
+}
+
+function showMenu(id)
+{
+    menu = id;
+
+    $("#menu-container").css({left: mousePos.X, top: mousePos.Y}).fadeIn(100);
+    $("#inventory-menu").fadeIn(90);
+}
+
+function hideMenu()
+{
+    menu = -1;
+
     $("#menu-container").fadeOut(100);
-    if(isInfoActive) 
-    {
-        $("#menu-description").fadeOut(0)
-        isInfoActive = false
-    }
-    isMenuActive = -1;
+    $("#inventory-menu").fadeOut(90);
+
+    hideDescription()
 }
 
-function updatePlayerInfo(name, cash, money, thirst, hunger, health)
+function showDescription()
 {
-    setHealth(playerInfo.health = health)
-    setHunger(playerInfo.hunger = hunger)
-    setThirst(playerInfo.thirst = thirst)
-    setMoney(playerInfo.money = money)
-    setCash(playerInfo.cash = cash)
-    setName(playerInfo.name = name)
+    let item = itemsList.find(x => x.id == menu);
+
+    $("#menu-description-content").html(`<h3>${item.name}</h3><br>${item.description}`);
+
+    $("#menu-description").fadeIn(100);
+
+    descWindow = true;
 }
 
-function setHealth(health)
+function hideDescription()
 {
-    $('#health-line').animate({
-        width: calculateLine(health) 
-    }, 1000);
+    $("#menu-description").fadeOut(100);
+
+    descWindow = false;
 }
 
-function setHunger(hunger)
+function buttonDropItem()
 {
-    $('#hunger-line').animate({
-        width: calculateLine(hunger) 
-    }, 1000);
+    
 }
 
-function setThirst(thirst)
+function updatePlayerBar(name, cash, money, thirst, hunger, health)
 {
-    $('#thirst-line').animate({
-        width: calculateLine(thirst) 
-    }, 1000);
-}
-
-function setMoney(money)
-{
-    $('#player-money').html(money + "$")
-}
-
-function setCash(cash)
-{
-    $('#player-cash').html(cash + "$")
-}
-
-function setName(name)
-{
-    $('#player-name').html(name)
+    setHealth(health);
+    setHunger(hunger);
+    setThirst(thirst);
+    setMoney(money);
+    setCash(cash);
+    setName(name);
 }
 
 function updateInventoryInfo()
 {
     let accWeigth = 0, accItems = 0;
 
-    if(itemList.length)
+    if(itemsList.length)
     {
-        itemList.forEach(e => {
+        itemsList.forEach(e => {
             accItems += e.amount
             accWeigth += e.amount * e.weigth
         });
@@ -246,7 +205,91 @@ function updateInventoryInfo()
     $("#items-weigth").html(`Вес: ${(accWeigth/1000).toFixed(2)}/100 кг`)
 }
 
+$(document).ready(() => 
+{
+    $(document).on('click', (e) => {
+
+        if(menu == -1 && $(e.target).data('item-id') != undefined)
+        {
+            showMenu($(e.target).data('item-id'));
+        }
+        else if(menu != -1 && $(e.target).data('item-id') != undefined)
+        {
+            if($(e.target).data('item-id') == menu)
+            {
+                hideDescription();
+
+                setTimeout($("#menu-container").css({left: mousePos.X, top: mousePos.Y}), 100);
+            }
+            else hideMenu();
+        }
+        else if(menu != -1 && $(e.target).data('item-id') == undefined && $(e.target).attr('class') != 'inventory-menu-button' && $(e.target).attr('id') != 'inventory-menu')
+        {
+            hideMenu();
+        }
+
+        //console.log(`Mouse Coords:\n\tX: ${mousePos.X}\n\tY: ${mousePos.Y}\n\nElement: ${$(e.target).data('item-id')}`)
+    });
+
+    $(this).mousemove(function(e) {
+        mousePos.X = e.pageX;
+        mousePos.Y = e.pageY;
+    });
+});
+
+function setHealth(health)
+{
+    $('#health-line').animate({
+        width: calculateLine(playerInfo.health = health) 
+    }, 1000);
+}
+
+function setHunger(hunger)
+{
+    $('#hunger-line').animate({
+        width: calculateLine(playerInfo.hunger = hunger) 
+    }, 1000);
+}
+
+function setThirst(thirst)
+{
+    $('#thirst-line').animate({
+        width: calculateLine(playerInfo.thirst = thirst) 
+    }, 1000);
+}
+
+function setMoney(money)
+{
+    smoothChangeValue(playerInfo.money, playerInfo.money = money, $('#player-money'));
+}
+
+function setCash(cash)
+{		
+    smoothChangeValue(playerInfo.cash, playerInfo.cash = cash, $('#player-cash'));
+}
+
+function setName(name)
+{
+    $('#player-name').html(playerInfo.name = name)
+}
+
 function calculateLine(value)
 {
     return (value * 195) / 100;
+}
+
+function findItemById(id)
+{
+    return itemsList.find(x => x.id == id);
+}
+
+function smoothChangeValue(old, cur, el)
+{
+    $({numberValue: old}).animate({numberValue: cur}, {
+        duration: 2000,
+        easing: "easeOutSine",
+        step: function(val) {
+            $(el).html(`${Math.ceil(val)}$`);
+        }
+    });
 }

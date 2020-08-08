@@ -15,10 +15,12 @@ namespace server_side.Items
     class ItemController : Script
     {
         // В дальнейшем, во имя оптимизации, сделать список предметов для каждого игрока отдельным экземпляром.
-        static public readonly List<ItemEntity> ItemsList = new List<ItemEntity>();
+        public static readonly List<ItemEntity> ItemsList = new List<ItemEntity>();
+
+        public ItemController() { }
 
 
-        public static void GivePlayerItem(Player player, string type, int amount = 1)
+        public void GivePlayerItem(Player player, string type, int amount = 1)
         {
             if(ItemData.ItemDataList.Where(x => x.Type == type).FirstOrDefault() == null)
             {
@@ -31,13 +33,13 @@ namespace server_side.Items
             
             UpdateItemInDB(item);
 
-            new Inventory.Inventory(player).GiveItem(item);
+            new InventoryNS.Inventory(player).GiveItem(item);
 
             foreach (var i in ItemsList)
                 Console.WriteLine(i.ToString());
         }
 
-        public static ItemEntity CreateItem(string type, int amount)
+        public ItemEntity CreateItem(string type, int amount)
         {
             using (DataBase.AppContext db = new DataBase.AppContext())
             {
@@ -87,7 +89,7 @@ namespace server_side.Items
             */
         }
 
-        public static void DeleteItem(int itemID)
+        public void DeleteItem(int itemID)
         {
             ItemEntity item = ItemsList.Where(x => x.ItemID == itemID).FirstOrDefault();
 
@@ -101,7 +103,7 @@ namespace server_side.Items
                     if(md != null)
                         db.Items.Remove(md);
 
-                    db.SaveChangesAsync();
+                    db.SaveChanges();
                 }
                 return;
             }
@@ -109,7 +111,7 @@ namespace server_side.Items
             NAPI.Util.ConsoleOutput($"[Item Exception]: Не удалось удалить объект (ID: {itemID}), т.к. он не был найден в списке.");
         }
 
-        static public void LoadPlayerItemsFromDB(Player player, int playerDbId)
+        public void LoadPlayerItemsFromDB(Player player, int playerDbId)
         {
             try
             {
@@ -160,38 +162,31 @@ namespace server_side.Items
                 NAPI.Util.ConsoleOutput(e.ToString());
             }
         }
-        static public void UnloadPlayerItems(int playerDbId) => ItemsList.RemoveAll(x => x.OwnerID == playerDbId);
+        public void UnloadPlayerItems(int playerDbId) => ItemsList.RemoveAll(x => x.OwnerID == playerDbId);
 
-        public static void UseItem(Player player, ItemEntity item)
+        public void UseItem(Player player, ItemEntity item)
         {
-            try
-            {
-                ItemData itemData = ItemData.ItemDataList.Where(x => x.Type == item.ItemType).FirstOrDefault();
+            ItemData itemData = ItemData.ItemDataList.Where(x => x.Type == item.ItemType).FirstOrDefault();
 
-                if (itemData.Action != null)
+            if (itemData.Action != null)
+            {
+                itemData.Action(player);
+
+
+                if (--item.ItemAmount <= 0)
                 {
-                    itemData.Action(player);
-
-                    if (--item.ItemAmount <= 0)
-                    {
-                        DeleteItem(item.ItemID);
-                    }   
-                    else
-                    {
-                        UpdateItemInDB(item);
-                    }
-
-                    return;
+                    DeleteItem(item.ItemID);
+                }   
+                else
+                {
+                    UpdateItemInDB(item);
                 }
-                NAPI.Util.ConsoleOutput($"[Ошибка]: Не удалось использовать предмет, т.к. его действие не описано в классе ItemData\nItem: {item}");
+                return;
             }
-            catch (Exception e)
-            {
-                NAPI.Util.ConsoleOutput(e.ToString());
-            }
+            NAPI.Util.ConsoleOutput($"[Ошибка]: Не удалось использовать предмет, т.к. его действие не описано в классе ItemData\nItem: {item}");
         }
 
-        private static ItemEntity GetItemFromDB(int itemid)
+        private ItemEntity GetItemFromDB(int itemid)
         {
             /*
             using (MySqlConnection con = new MySqlConnector().GetDBConnection())
@@ -220,7 +215,7 @@ namespace server_side.Items
             return null;
         }
 
-        public static void UpdateItemInDB(ItemEntity item)
+        private void UpdateItemInDB(ItemEntity item)
         {
             using(var db = new DataBase.AppContext())
             {

@@ -13,9 +13,6 @@ mp.events.add({
 
         // mp.events.callRemote("debugLogFromClientSide", dbg)
     },
-    "ZALIUPA": (text) => {
-        mp.events.callRemote("debugLogFromClientSide", text)
-    },
     "InventoryOpen": () => {
         mp.gui.chat.activate(false);
         inventoryBrowser.active = mp.gui.cursor.visible = true;
@@ -25,7 +22,7 @@ mp.events.add({
         inventoryBrowser.active = mp.gui.cursor.visible = false;
     },
     "InventoryAddItem": (item) => {
-
+        inventoryBrowser.execute(`addItems(${item})`);
     },
     "InventoryRemoveItem": (id) => {
         mp.events.callRemote("sRemoveItem", id);
@@ -33,11 +30,12 @@ mp.events.add({
     "InventoryDropItem": (id) => {
 
     },
-    "InventoryUpdateItem": (item) => {
-        inventoryBrowser.execute(`updateItem(${item})`)
+    "InventoryUpdateItem": (id, amount) => {
+        inventoryBrowser.execute(`updateItem(${id, amount})`)
     },
     "InventoryUseItem": (id) => {
         mp.events.callRemote("sUseItem", id);
+        mp.events.call("debugLogFromClientSide", `Used item id in InventoryUseItem (CS): ${id}`)
     },
     "InventoryDestroy": () => {
         if(inventoryBrowser == null || inventoryBrowser == undefined) return;
@@ -50,7 +48,10 @@ mp.events.add({
     "InventoryUpdateBar": (name, cash, money, health, hunger, thirst) => {
         if(inventoryBrowser == null || inventoryBrowser == undefined) return;
 
-        inventoryBrowser.execute(`updatePlayerInfo(${name}, ${cash}, ${money}, ${thirst}, ${hunger}, ${health})`)
+        inventoryBrowser.execute(`updatePlayerInfo("${name}", ${cash}, ${money}, ${thirst}, ${hunger}, ${health})`)
+    },
+    "logConsole": (text) => { // dbg
+        mp.events.callRemote("debugLogFromClientSide", text)
     }
 });
 

@@ -22,7 +22,7 @@ namespace server_side.Commands
         [Command("sethp")]
         public void CMD_sethp(Player player, int hp)
         {
-            player.Health = hp;
+            new PlayerInfo(player).SetHealth(hp);
             UtilityFuncs.SendPlayerNotify(player, 2, $"Ваше здоровье было изменено на {hp}");
         }
         [Command("useitem")]
@@ -35,7 +35,7 @@ namespace server_side.Commands
                 return;
             }
 
-            ItemController.UseItem(player, item);
+            new ItemController().UseItem(player, item);
         }
         [Command("gitem")]
         public void CMD_gitem(Player player, string itemType, int amount)
@@ -51,7 +51,7 @@ namespace server_side.Commands
                 return;
             }
 
-            ItemController.GivePlayerItem(player, itemType, amount);
+            new ItemController().GivePlayerItem(player, itemType, amount);
         }
         [Command("inv")]
         public void CMD_inv(Player player)
@@ -77,14 +77,6 @@ namespace server_side.Commands
                 s.WriteLine(text);
 
             client.SendChatMessage($"Saved: {text}");
-        }
-        [Command("gm")]
-        public void CMD_gm(Player client)
-        {
-            if (!client.GetData<bool>("temp_gm"))
-                client.SetData<bool>("temp_gm", true);
-            else
-                client.SetData<bool>("temp_gm", false);
         }
         [Command("gtbm")]
         public void CMD_gbm(Player client)
@@ -191,7 +183,7 @@ namespace server_side.Commands
         {
             if(client.IsInVehicle)
                 client.Vehicle.Repair();
-            client.Health = 100;
+            new PlayerInfo(client).SetHealth(100);
         }
         [Command("mcd")]
         public void CMD_mcd(Player client)

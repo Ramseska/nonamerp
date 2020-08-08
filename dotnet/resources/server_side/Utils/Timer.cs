@@ -59,15 +59,5 @@ namespace server_side.Timers
 
             _ResetPickUpKD();
         }
-
-        [ServerEvent(Event.Update)]
-        public void Event_Update()
-        {
-            NAPI.Pools.GetAllPlayers().ForEach(p =>
-            {
-                if(p.GetData<bool>("temp_gm"))
-                    p.Health = 100;
-            });
-        }
     }
 }

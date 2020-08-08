@@ -344,9 +344,9 @@ namespace server_side.Events
                 client.Rotation = new Vector3(client.Rotation.X, client.Rotation.Y, -49.8411f);
                 client.Dimension = 0;
 
-                ItemController.LoadPlayerItemsFromDB(client, data.Id);
+                new ItemController().LoadPlayerItemsFromDB(client, data.Id);
 
-                new Inventory.Inventory(client).Init();
+                new InventoryNS.Inventory(client).Init();
 
                 ////
 

@@ -56,7 +56,7 @@ namespace Main.events
             NAPI.Server.SetLogRemoteEventParamParserExceptions(true);
 
             Console.ForegroundColor = ConsoleColor.Green;
-            NAPI.Util.ConsoleOutput("\nServer is loaded!\n");
+            NAPI.Util.ConsoleOutput("\nServer is loaded! (HI)\n");
             Console.ResetColor();
         }
 
@@ -92,7 +92,7 @@ namespace Main.events
         public void Event_PlayerDisconnected(Player player, DisconnectionType type, string reason)
         {
             // unload player items from server
-            ItemController.UnloadPlayerItems(new PlayerInfo(player).GetDbID());
+            new ItemController().UnloadPlayerItems(new PlayerInfo(player).GetDbID());
         }
         /*
         [ServerEvent(Event.ChatMessage)]
@@ -142,19 +142,6 @@ namespace Main.events
             House.OnPlayerEnterColshape(colshape, client);
             Job.OnEnterJobPickUp(colshape, client);
         }
-
-        [ServerEvent(Event.Update)]
-        public void Event_Update()
-        {
-            NAPI.Pools.GetAllPlayers().ForEach((p) =>
-            {
-                if(p.GetData<bool>("temp_gm") == true)
-                {
-                    p.Health = 100;
-                }
-            });
-        }
-        // Какого-то хуя не работает. Нужно найти способ реализации
         /*
         [ServerEvent(Event.PlayerDisconnected)]
         public void OnPlayerDisconnected(Player player, DisconnectionType type, string reason)

@@ -1,5 +1,6 @@
 // gui's
 require("./cef/auth/auth.js");
+require("./customize/customize.js");
 require("./cef/customize/index.js");
 require("./cef/inventory/inventory.js");
 require("./cef/hud/hud.js");
@@ -14,7 +15,6 @@ require("./cef/appleminigame/appleminigame.js");
 // interiors
 require("./IPLInteriors.js");
 // other
-require("./customize/customize.js");
 require("./sound/sound.js");
 require("./voice/voice.js");
 require("./camfly.js");

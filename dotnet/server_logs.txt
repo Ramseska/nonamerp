@@ -11761,4 +11761,104 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at void System.Collections.Generic.List<T>.Sort(int index, int count, IComparer<T> comparer)
    at void System.Collections.Generic.List<T>.Sort()
    at void server_side.Data.House.CreateHouse(Vector3 HousePosition, float rotation, int HousePrice, int HouseClass) in D:/Desktop/nonamerp/dotnet/resources/server_side/Data/House.cs:line 138
-   at void serve
+   at void serveInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 05.08.2020 19:33:33
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.InventoryNS.Inventory..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 7 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 10 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 21 command(s)
+server_side: loaded 24 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 11 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 11 remote procedure(s)
+[Houses]: Домов загружено: 2
+
+Server is loaded! (HI)
+
+-> Resource server_side started!
+Started! Waiting for connections..
+Connected: 127.0.0.1 | ID: 0
+[1]: Загружено 1 предметов.
+[Inventory]: Francesca Sesmar - инвентарь инициализирован
+
+
+
+>>> Item: ItemID: 5, OwnerID: 1, ItemType: ITEM_AID_KIT, ItemAmount: 2, InvSlot: -1 | Model: 5, 1, ITEM_AID_KIT, 3, -1
+
+
+
+>>> Item: ItemID: 5, OwnerID: 1, ItemType: ITEM_AID_KIT, ItemAmount: 2, InvSlot: -1 | Model: 5, 1, ITEM_AID_KIT, 2, -1
+
+
+
+>>> Item: ItemID: 11, OwnerID: 1, ItemType: ITEM_APPLE, ItemAmount: 1, InvSlot: -1 | Model: 11, -1, ITEM_APPLE, 1, -1
+
+
+
+>>> Item: ItemID: 11, OwnerID: 1, ItemType: ITEM_APPLE, ItemAmount: 1, InvSlot: -1 | Model: 11, 1, ITEM_APPLE, 1, -1
+
+
+
+>>> Item: ItemID: 12, OwnerID: 1, ItemType: ITEM_AID_KIT, ItemAmount: 3, InvSlot: -1 | Model: 12, -1, ITEM_AID_KIT, 3, -1
+
+
+
+>>> Item: ItemID: 12, OwnerID: 1, ItemType: ITEM_AID_KIT, ItemAmount: 3, InvSlot: -1 | Model: 12, 1, ITEM_AID_KIT, 3, -1
+
+
+
+>>> Item: ItemID: 13, OwnerID: 1, ItemType: ITEM_WATER_BOTTLE, ItemAmount: 3, InvSlot: -1 | Model: 13, -1, ITEM_WATER_BOTTLE, 3, -1
+
+
+
+>>> Item: ItemID: 13, OwnerID: 1, ItemType: ITEM_WATER_BOTTLE, ItemAmount: 3, InvSlot: -1 | Model: 13, 1, ITEM_WATER_BOTTLE, 3, -1
+
+
+
+>>> Item: ItemID: 13, OwnerID: 1, ItemType: ITEM_WATER_BOTTLE, ItemAmount: 2, InvSlot: -1 | Model: 13, 1, ITEM_WATER_BOTTLE, 3, -1
+
+
+
+>>> Item: ItemID: 13, OwnerID: 1, ItemType: ITEM_WATER_BOTTLE, ItemAmount: 2, InvSlot: -1 | Model: 13, 1, ITEM_WATER_BOTTLE, 2, -1
+
+
+
+>>> Item: ItemID: 12, OwnerID: 1, ItemType: ITEM_AID_KIT, ItemAmount: 2, InvSlot: -1 | Model: 12, 1, ITEM_AID_KIT, 3, -1
+
+
+
+>>> Item: ItemID: 12, OwnerID: 1, ItemType: ITEM_AID_KIT, ItemAmount: 2, InvSlot: -1 | Model: 12, 1, ITEM_AID_KIT, 2, -1
+
+
+
+>>> Item: ItemID: 14, OwnerID: 1, It

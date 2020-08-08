@@ -2,7 +2,7 @@
 using System.Linq;
 using GTANetworkAPI;
 using server_side.DBConnection;
-
+using server_side.InventoryNS;
 
 
 namespace server_side.Data
@@ -104,7 +104,12 @@ namespace server_side.Data
         public void SetRegIP(string ip) => player.SetData<string>(EntityData.PLAYER_REGIP, ip);
         public string GetRegIP() => player.GetData<string>(EntityData.PLAYER_REGIP);
 
-        public void SetName(string name) => player.SetData<string>(EntityData.PLAYER_NAME, name);
+        public void SetName(string name) 
+        {
+            player.SetData<string>(EntityData.PLAYER_NAME, name);
+
+            new Inventory(player).UpdateBar();
+        } 
         public string GetName()
         {
             if (!string.IsNullOrEmpty(player.GetData<string>(EntityData.PLAYER_NAME)))
@@ -134,6 +139,7 @@ namespace server_side.Data
                 }
             }
 
+            new Inventory(player).UpdateBar();
             Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_MONEY), 2);
@@ -153,6 +159,7 @@ namespace server_side.Data
                 }
             }
 
+            new Inventory(player).UpdateBar();
             Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public double GetBankMoney() => Math.Round(player.GetData<double>(EntityData.PLAYER_BANK), 2);
@@ -203,6 +210,7 @@ namespace server_side.Data
 
             player.SetData<int>(EntityData.PLAYER_SATIETY, value);
 
+            new Inventory(player).UpdateBar();
             Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public int GetSatiety() => player.GetData<int>(EntityData.PLAYER_SATIETY);
@@ -214,11 +222,35 @@ namespace server_side.Data
 
             player.SetData<int>(EntityData.PLAYER_THIRST, value);
 
+            new Inventory(player).UpdateBar();
             Utils.UtilityFuncs.UpdatePlayerHud(player);
         }
         public int GetThirst() => player.GetData<int>(EntityData.PLAYER_THIRST);
 
         public double GetPayCheck() => Math.Round(player.GetData<double>(EntityData.PLAYER_PAYCHECK), 2);
+
+        public void GiveHealth(int health) 
+        {
+            health = player.GetData<int>(EntityData.PLAYER_HEALTH) + (health);
+
+            SetHealth(health);
+        }
+        public void SetHealth(int health)
+        {
+            if(health > 100) health = 100;
+            else if(health <= 0) 
+            {
+                player.Kill();
+                health = 5;
+            }
+            player.Health = health;
+            
+            player.SetData(EntityData.PLAYER_HEALTH, health);
+
+            new Inventory(player).UpdateBar();
+        }
+        public int GetHealth() => player.GetData<int>(EntityData.PLAYER_HEALTH);
+
         public void AddToPayCheck(double money, string reason = null)
         {
             double paycheck = Math.Round(GetPayCheck() + money, 2);
@@ -227,7 +259,7 @@ namespace server_side.Data
             using (DataBase.AppContext db = new DataBase.AppContext())
             {
                 db.Accounts.Where(x => x.Id == GetDbID()).FirstOrDefault().PayCheck = paycheck;
-                db.SaveChangesAsync();
+                db.SaveChanges();
             }
 
             player.SetData<double>(EntityData.PLAYER_PAYCHECK, paycheck);

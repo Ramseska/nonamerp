@@ -16,7 +16,11 @@ body
 
     overflow: hidden;
 
-    /* background-color: gray; */
+    /* background-image: url("./gtas.png");
+    background-repeat: round; */
+    backdrop-filter: blur(5px);
+
+    margin: 0;
 
     display: flex;
 
@@ -54,7 +58,7 @@ body
 
     margin: 3px 0px 3px 3px;
 
-    background-color: #D0D9DD;
+    background-color: #dcdcdc;
 
     display: flex;
     flex-wrap: wrap;
