@@ -1,6 +1,6 @@
 // gui's
-require("./cef/auth/auth.js");
 require("./customize/customize.js");
+require("./cef/auth/auth.js");
 require("./cef/customize/index.js");
 require("./cef/inventory/inventory.js");
 require("./cef/hud/hud.js");
@@ -20,7 +20,7 @@ require("./voice/voice.js");
 require("./camfly.js");
 
 // keybinds
-require("./keybinds.js"); // forever last
+require("./keybinds.js");
 
 
 

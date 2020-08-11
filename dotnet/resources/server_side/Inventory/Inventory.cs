@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 namespace server_side.InventorySystem
 {
 
-    class Inventory : Script
+    class Inventory : ItemsStorage
     {
         private Player _player = null;
         private PlayerInfo player = null;
