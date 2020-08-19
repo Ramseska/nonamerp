@@ -13,6 +13,14 @@ namespace server_side.Commands
 {
     class MainCommands : Script
     { 
+        [Command("lbc")]
+        void CMD_lbc(Player player)
+        {
+            new server_side.InventorySystem.LootBag().Create(player);
+
+            Console.WriteLine("LootBag created!");
+        }
+
         [Command("idt")]
         void CMD_itd(Player player)
         {

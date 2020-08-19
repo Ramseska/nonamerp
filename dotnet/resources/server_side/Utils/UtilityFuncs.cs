@@ -6,12 +6,12 @@ namespace server_side.Utils
 {
     class UtilityFuncs : Script
     {
-        static public Vector3 GetPosFrontOfPlayer(Player client, double distantion)
+        static public Vector3 GetPosFrontOfPlayer(Player player, double distantion)
         {
-            double heading = client.Rotation.Z * Math.PI / 180;
-            double x = client.Position.X + (distantion * Math.Sin(-heading));
-            double y = client.Position.Y + (distantion * Math.Cos(-heading));
-            return new Vector3(x,y,client.Position.Z);
+            double heading = player.Rotation.Z * Math.PI / 180;
+            double x = player.Position.X + (distantion * Math.Sin(-heading));
+            double y = player.Position.Y + (distantion * Math.Cos(-heading));
+            return new Vector3(x, y, player.Position.Z);
         }
 
         /// <summary>

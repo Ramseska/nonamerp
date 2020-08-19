@@ -49,6 +49,11 @@ mp.events.add({
 
         inventoryBrowser.execute(`updatePlayerBar("${name}", ${cash}, ${money}, ${thirst}, ${hunger}, ${health})`)
     },
+    "InventoryOpenLootBag": (id) => {
+        mp.events.callRemote('sOpenLootBag', id)
+
+        mp.gui.chat.push('callRemote: ' + id);
+    },
     "logConsole": (text) => { // dbg
         mp.events.callRemote("debugLogFromClientSide", text)
     }

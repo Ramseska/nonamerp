@@ -24,3 +24,10 @@ mp.keys.bind(0x49, false, () => { // i
     if(inventoryBrowser.active) mp.events.call("InventoryClose");
     else mp.events.call("InventoryOpen");
 });
+
+mp.keys.bind(0x45, false, () => { // e
+    if(mp.gui.cursor.visible == true) return;
+    if(mp.players.local.getVariable("InLootBagColShape") == null || mp.players.local.getVariable("InLootBagColShape") == undefined) return;
+
+    mp.events.call("InventoryOpenLootBag", mp.players.local.getVariable("InLootBagColShape"));
+})

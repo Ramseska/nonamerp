@@ -1,4 +1,3 @@
-let itemsData = {"ITEM_APPLE":{"ItemImg":"apple.svg","ItemStack":1,"ItemGroup":"Food","ItemName":"Яблоко","ItemDescription":"Спелое зеленое яблоко. Немного утоляет голод.","ItemWeight":170},"ITEM_AID_KIT":{"ItemImg":"first-aid-kit.svg","ItemStack":3,"ItemGroup":"Medical","ItemName":"Аптечка","ItemDescription":"Содержит в себе все необходимые инструменты и препараты для оказания первой помощи.","ItemWeight":2100},"ITEM_WATER_BOTTLE":{"ItemImg":"water-bottle.svg","ItemStack":3,"ItemGroup":"Food","ItemName":"Бутылка воды","ItemDescription":"Литровая бутылка дистиллированной воды. Утоляет жажду.","ItemWeight":1010}};
 let itemsList = [], mousePos = { X: 0, Y: 0 }, menu = -1, descWindow = false;
 
 const playerInfo = { name: "No Name", cash: 0, bank: 0, health: 100, hunger: 100, thirst: 100 }
@@ -57,20 +56,6 @@ class Item
         return `\nItemID: ${this.id}\nItemName: ${this.name}\nItemAmount: ${this._amount}\nItemGroup: ${this.group}\nItemWeigth: ${this.weigth}\nItemStack: ${this.maxstack}\nItemImg: ${this.img}\n`;
     }
 }
-
-/*
-    Inventory
-     - Init inventory +
-     - Update Inventory Info (weigth / count items) +
-     - Update Player Bar +
-    Items
-     - Add +
-     - Delete\drop
-     - Update +
-     - Use +
-     - Merge 
-     - Swap
-*/
 
 function initInventory(name, cash, bank, health, hungry, thirst, items, data)
 {

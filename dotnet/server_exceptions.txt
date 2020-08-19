@@ -1,0 +1,75 @@
+
+==================[19.08.2020 4:20:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+=========================================================
+
+==================[19.08.2020 4:20:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[19.08.2020 4:20:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[19.08.2020 4:20:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at ValueTask<Packet> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPacketAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 409
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.DoReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 467
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 462
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.StandardPayloadHandler.ReadPayloadAsync(ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/StandardPayloadHandler.cs:line 42
+   at ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 734
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[19.08.2020 4:20:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at ValueTask<Packet> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPacketAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 409
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.DoReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 467
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 462
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.StandardPayloadHandler.ReadPayloadAsync(ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/StandardPayloadHandler.cs:line 42
+   at ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 734
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask<ArraySegment<byte>> task) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 762
+=========================================================
+
+==================[19.08.2020 4:20:08]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at ValueTask<Packet> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPacketAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 409
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.DoReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 467
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 462
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.StandardPayloadHandler.ReadPayloadAsync(ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/StandardPayloadHandler.cs:line 42
+   at ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 734
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask<ArraySegment<byte>> task) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 762
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[19.08.2020 4:20:09]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.Socket.Send(byte[] buffer, int offset, int size, SocketFlags socketFlags)
+=========================================================
+
+==================[19.08.2020 4:20:09]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.Socket.Send(byte[] buffer, int offset, int size, SocketFlags socketFlags)
+   at int MySqlConnector.Utilities.SocketExtensions.Send(Socket socket, ReadOnlyMemory<byte> data, SocketFlags flags) in C:/projects/mysqlconnector/src/MySqlConnector/Utilities/SocketExtensions.cs:line 37
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.WriteBytesAsync(ReadOnlyMemory<byte> data, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 117
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[19.08.2020 4:20:09]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at int System.Net.Sockets.Socket.Send(byte[] buffer, int offset, int size, SocketFlags socketFlags)
+   at int MySqlConnector.Utilities.SocketExtensions.Send(Socket socket, ReadOnlyMemory<byte> data, Socke

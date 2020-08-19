@@ -30,7 +30,7 @@ namespace Main.events
         public void Event_OnResourceStart()
         {
             // ints
-            Interiors.CreateInterior(new Vector3(1839.098f, 3673.332f, 34.2767f), new Vector3(275.9121, -1361.429, 24.5378), 211.3162f, 51.81643f, 1, NAPI.Blip.CreateBlip(61, new Vector3(343.0853f, -1399.852f, 32.5092f), 1f, 0, name: "Hospital", drawDistance: 15.0f, shortRange: true, dimension: 0));
+            Interiors.InitInteriors();
             
             // houses
             House.InitHouses();
@@ -132,15 +132,21 @@ namespace Main.events
             }, 5000);
         }
         [ServerEvent(Event.PlayerEnterColshape)]
-        public void Event_PlayerEnterColshape(ColShape colshape, Player client)
+        public void Event_PlayerEnterColshape(ColShape colshape, Player player)
         {
-            if (client.GetData<int>(EntityData.PLAYER_PICKUPKD) != 0) return;
-            client.SetData<int>(EntityData.PLAYER_PICKUPKD, client.GetData<int>(EntityData.PLAYER_PICKUPKD) + 5);
+            if (player.GetData<int>(EntityData.PLAYER_PICKUPKD) != 0) return;
+            player.SetData<int>(EntityData.PLAYER_PICKUPKD, player.GetData<int>(EntityData.PLAYER_PICKUPKD) + 5);
 
             // there another "EnterColShape" events:
-            Interiors.OnPlayerEnterConshape(colshape, client);
-            House.OnPlayerEnterColshape(colshape, client);
-            Job.OnEnterJobPickUp(colshape, client);
+            Interiors.OnPlayerEnterConshape(colshape, player);
+            House.OnPlayerEnterColshape(colshape, player);
+            Job.OnEnterJobPickUp(colshape, player);
+            server_side.InventorySystem.LootBag.EnterLootBagColShape(colshape, player);
+        }
+        [ServerEvent(Event.PlayerExitColshape)]
+        public void OnPlayerExitColShape(ColShape colshape, Player player)
+        {
+            server_side.InventorySystem.LootBag.ExitLootBagColShape(colshape, player);
         }
         /*
         [ServerEvent(Event.PlayerDisconnected)]
