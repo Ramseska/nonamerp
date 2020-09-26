@@ -23,8 +23,7 @@ namespace server_side.InventorySystem
 
 
         public void Init()
-        {
-            //name, cash, bank, health, hungry, thirst, items, itemsData
+        { 
             NAPI.ClientEvent.TriggerClientEvent(_player, "InventoryLoad", player.GetName(), player.GetMoney(), player.GetBankMoney(), _player.Health, player.GetSatiety(), player.GetThirst(), JsonConvert.SerializeObject(ItemController.ItemsList.Where(x => x.OwnerID == player.GetDbID())), File.ReadAllText(@"dotnet/itemData.json"));
 
             NAPI.Util.ConsoleOutput("[Inventory]: " + player.GetName() + " - инвентарь инициализирован");
@@ -63,31 +62,8 @@ namespace server_side.InventorySystem
             NAPI.ClientEvent.TriggerClientEvent(_player, "InventoryAddItem", JsonConvert.SerializeObject(item));
         }
 
-        /*
-        [RemoteEvent("sRemoveItem")]
-        public void RemoveItem(Player player, int id)
-        {
-            ItemEntity item = ItemController.ItemsList.Where(x => x.ItemID == id).FirstOrDefault();
-
-            if (item == null)
-            {
-                Utils.UtilityFuncs.SendPlayerNotify(player, 0, "Ошибка! Данного предмета не существует на сервере!");
-                return;
-            }
-
-            else if(item.OwnerID != new PlayerInfo(player).GetDbID())
-            {
-                Utils.UtilityFuncs.SendPlayerNotify(player, 0, "Ошибка! Данный предмет не пренадлежит Вам!");
-                return;
-            }
-
-            new ItemController().DeleteItem(item.ItemID);
-        }
-        */
-
         public void UpdateBar()
         {
-            //name, cash, money, health, hunger, thirst
             NAPI.ClientEvent.TriggerClientEvent(_player, "InventoryUpdateBar", player.GetName(), player.GetMoney(), player.GetBankMoney(), _player.Health, player.GetSatiety(), player.GetThirst());
         }
     }

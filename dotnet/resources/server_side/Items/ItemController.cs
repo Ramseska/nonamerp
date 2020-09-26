@@ -14,11 +14,9 @@ namespace server_side.Items
 {
     class ItemController : Script
     {
-        // В дальнейшем, во имя оптимизации, сделать список предметов для каждого игрока отдельным экземпляром.
         public static readonly List<ItemEntity> ItemsList = new List<ItemEntity>();
 
         public ItemController() { }
-
 
         public void GivePlayerItem(Player player, string type, int amount = 1)
         {

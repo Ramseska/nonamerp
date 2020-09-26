@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v/P26EvFyP9FGdrANnQH4PgpnhEISkDn9/TBEFZvw5/Zs3FjLmB0znvf6YKeQIWV91obow0mCxhUBwmmjjaXCg==",
+  "dgSpecHash": "eu2J2xqwGHDaEZ5v8rNyizUC9z9P4i+VJ3WTMiwevK9XVsaivOHXjYPP2yNjnH5rwVd5uGxmmAAz8rVxT4fdqw==",
   "success": true,
   "projectFilePath": "D:\\Desktop\\nonamerp\\dotnet\\resources\\server_side\\server_side.csproj",
   "expectedPackageFiles": [
@@ -28,8 +28,7 @@
     "C:\\Users\\msmsm\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\msmsm\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\msmsm\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\msmsm\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
-    "C:\\Users\\msmsm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\msmsm\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

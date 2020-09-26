@@ -66,6 +66,25 @@ body
     overflow: auto;
 }
 
+#items-box-ex::-webkit-scrollbar { display: none; }
+
+#items-box-ex
+{
+    position: relative;
+
+    width: 279px;
+    height: 465px;
+
+    margin: 3px 0px 3px 3px;
+
+    background-color: #dcdcdc;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: auto;
+}
+
 #bottom-box
 {
     position: relative;
@@ -76,6 +95,22 @@ body
     margin-left: 8px;
 
     display: flex;
+
+    /* font */  
+    font-weight: 14;
+}
+#bottom-box-ex
+{
+    position: relative;
+
+    width: 277px;
+    height: 28px;
+
+    margin-left: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     /* font */  
     font-weight: 14;

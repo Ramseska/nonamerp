@@ -11909,4 +11909,163 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
    at bool Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(bool errorsExpected)
    at bool Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlDatabaseCreator.Exists(bool retryOnNotExists)+(DateTime giveUp) => { }
-   at TResult Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute<TState, TResult>(IExecutionStrategy strategy, TState state, Func<TState, TResult> operation, Func<TState, ExecutionResult<TResult>> verifySucceeded)+
+   at TResult Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute<TState, TResult>(IExecutionStrategy strategy, TState state, Func<TState, TResult> operation, Func<TState, ExecutionResult<TResult>> verifySucceeded)+Initializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 22.08.2020 5:03:58
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemsStorage..
+server_side: instantiating server_side.InventorySystem.Inventory..
+server_side: instantiating server_side.InventorySystem.LootBag..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 11 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 5 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 15 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 5 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 15 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 442
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 657
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 312
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 280
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool erroInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 21.09.2020 14:25:24
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemsStorage..
+server_side: instantiating server_side.InventorySystem.Inventory..
+server_side: instantiating server_side.InventorySystem.LootBag..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 11 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 5 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 15 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 5 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 15 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 442
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 657
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 312
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 280
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 21.09.2020 14:26:29
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemsStorage..
+server_side: instantiating server_side.InventorySystem.Inventory..
+server_side: instantiating server_side.InventorySystem.LootBag..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 11 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 5 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 15 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 5 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 15 remote procedure(s)
+-> Error starting 'server_side'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 442
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 657
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 312
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 280
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool err

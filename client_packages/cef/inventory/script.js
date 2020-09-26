@@ -1,8 +1,6 @@
-let itemsList = [], mousePos = { X: 0, Y: 0 }, menu = -1, descWindow = false;
+let itemsList = [], dropList = [], mousePos = { X: 0, Y: 0 }, menu = -1, descWindow = false;
 
 const playerInfo = { name: "No Name", cash: 0, bank: 0, health: 100, hunger: 100, thirst: 100 }
-
-
 
 class Item
 {
@@ -10,7 +8,7 @@ class Item
     {
         this.id = id
         this.img = img
-        this._amount = amount
+        this.amount = amount
         this.group = group
         this.name = name
         this.description = description
@@ -19,10 +17,10 @@ class Item
         this.element = undefined
     }
 
-    get amount() { return this._amount; }
+    get amount() { return this.amount; }
     set amount(val) 
     { 
-        $(this.element).find('.item-amount-value').html(this._amount = val);
+        $(this.element).find('.item-amount-value').html(this.amount = val);
         
         updateInventoryInfo();
     }
@@ -35,7 +33,7 @@ class Item
         $(`<div class="item-box">
             <img class="item-picture" src="./img/items/${this.img}">
             <div class="item-amount-box">
-                <p class="item-amount-value">${this._amount}</p>
+                <p class="item-amount-value">${this.amount}</p>
             </div>
         </div>`).appendTo($('#items-box')).data('item-id', this.id);
 
@@ -53,7 +51,7 @@ class Item
 
     toString() 
     {
-        return `\nItemID: ${this.id}\nItemName: ${this.name}\nItemAmount: ${this._amount}\nItemGroup: ${this.group}\nItemWeigth: ${this.weigth}\nItemStack: ${this.maxstack}\nItemImg: ${this.img}\n`;
+        return `\nItemID: ${this.id}\nItemName: ${this.name}\nItemAmount: ${this.amount}\nItemGroup: ${this.group}\nItemWeigth: ${this.weigth}\nItemStack: ${this.maxstack}\nItemImg: ${this.img}\n`;
     }
 }
 
@@ -107,7 +105,7 @@ function updateItem(id, amount)
     if((item.amount = amount) <= 0) item.delete();
 }
 
-function showMenu(id)
+function showMenu(id, dir)
 {
     menu = id;
 
@@ -141,6 +139,11 @@ function hideDescription()
     $("#menu-description").fadeOut(100);
 
     descWindow = false;
+}
+
+function dropItemInLootBag()
+{
+
 }
 
 function buttonDropItem()
