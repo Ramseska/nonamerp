@@ -47,12 +47,10 @@ function PushNotification(notifyType = 0, content = 'null', senderName = 'unknow
 
 	$(sh).addClass('puka');
 
-	/*
 	setTimeout(() => {
 		$(nb).fadeOut(300);
 		setTimeout(() => nb.remove(), 400);
 	}, 10000);
-	*/
 
 	if ($('div.notify-box').length > 5) $('div.notify-box').first().remove();
 }

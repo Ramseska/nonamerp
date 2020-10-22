@@ -444,3 +444,87 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at bool Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
    at bool Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
    at new server_side.DataBase.AppContext() in D:/Desktop/nonamerp/dotnet/resources/server_side/DataBase/AppContext.cs:line 18
+
+==================[21.10.2020 12:40:15]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[21.10.2020 12:40:15]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+   at async Task MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at void MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 130
+=========================================================
+
+==================[21.10.2020 12:40:15]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+   at async Task MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at void MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 130
+   at async Task<MySqlDataReader> MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary<string, CachedProcedure> cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 391
+=========================================================
+
+==================[21.10.2020 12:40:15]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+   at async Task MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at void MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 130
+   at async Task<MySqlDataReader> MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary<string, CachedProcedure> cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 391
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[21.10.2020 12:40:15]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'lognet'
+   at async Task MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at void MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 130
+   at async Task<MySqlDataReader> MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary<string, CachedProcedure> cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlDataReader.cs:line 391
+   at async 
+==================[21.10.2020 13:15:30]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+=========================================================
+
+==================[21.10.2020 13:15:30]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[21.10.2020 13:15:30]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[21.10.2020 13:15:30]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at ValueTask<Packet> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPacketAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 409
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.DoReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 467
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.StandardPayloadHandler.ReadPayloadAsync(ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/StandardPayloadHandler.cs:line 42
+   at ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 750
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[21.10.2020 13:15:30]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at ValueTask<Packet> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPacketAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 409
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.DoReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 467
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.StandardPayloadHandler.ReadPayloadAsync(ArraySegmentHolder<byte> cache, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/StandardPayloadHandler.cs:line 42
+   at ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 750
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<PayloadData> MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask<ArraySegment<byte>> task) in C:/projects/mysqlconnector/src/MySqlConnector/Core/ServerSession.cs:line 762
+=========================================================
+
+==================[21.10.2020 13:15:30]==================
+System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at ValueTask<int> MySqlConnector.Protocol.Serialization.SocketByteHandler.DoReadBytesSync(Memory<byte> buffer) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 36
+   at async ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.BufferedByteReader.ReadBytesAsync(IByteHandler byteHandler, ArraySegment<byte> buffer, int totalBytesToRead, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/BufferedByteReader.cs:line 36
+   at ValueTask<Packet> MySqlConnector.Protocol.Serialization.ProtocolUtility.ReadPacketAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/projects/mysqlconnector/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 409
+   at ValueTask<ArraySegment<byte>> MySqlConnector.Protocol.Serialization.ProtocolUtility.DoReadPayloadAsync(BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func<int> getNextSequenceNumber, ArraySegmentHolder<byte> previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in C:/proj

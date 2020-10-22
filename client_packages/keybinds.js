@@ -4,8 +4,10 @@ mp.keys.bind(0x4F, false, () => { // O
 });
 
 mp.keys.bind(0x4A, false, () => { // j 
-    if(weaponPickerBrowser == null) mp.events.call('CreateWeaponPicker');
-    else mp.events.call('DestroyWeaponPicker');
+    if(weaponPickerBrowser == null && !mp.gui.cursor.visible) mp.events.call('CreateWeaponPicker');
+    else if(weaponPickerBrowser != null) {
+	mp.events.call('DestroyWeaponPicker');
+    }
 });
 
 mp.keys.bind(0x74, false, () => { // f5

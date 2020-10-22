@@ -12068,4 +12068,149 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
    at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(IOBehavior? ioBehavior, CancellationToken cancellationToken) in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 312
    at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:/projects/mysqlconnector/src/MySqlConnector/MySql.Data.MySqlClient/MySqlConnection.cs:line 280
-   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool err
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 21.10.2020 13:11:42
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting server_side resource..
+server_side: loading scripts.. found 1 script(s)
+server_side: instantiating Main.events.Events..
+server_side: instantiating server_side.Timers.Timer..
+server_side: instantiating server_side.Utils.UtilityFuncs..
+server_side: instantiating server_side.Jobs.AppleCollector..
+server_side: instantiating server_side.Jobs.Job..
+server_side: instantiating server_side.Items.ItemController..
+server_side: instantiating server_side.Items.ItemData..
+server_side: instantiating server_side.Items.ItemsStorage..
+server_side: instantiating server_side.InventorySystem.Inventory..
+server_side: instantiating server_side.InventorySystem.LootBag..
+server_side: instantiating server_side.Ints.Interiors..
+server_side: instantiating server_side.Events.AnotherEvents..
+server_side: instantiating server_side.Events.Auth..
+server_side: instantiating server_side.Data.House..
+server_side: instantiating server_side.Data.PlayerInfo..
+server_side: instantiating server_side.DataBase.Models.HouseModel..
+server_side: instantiating server_side.Commands.MainCommands..
+server_side: loading server events.. found 8 server event(s)
+server_side: loading server events.. found 1 server event(s)
+server_side: loading server events.. found 2 server event(s)
+server_side: loaded 11 server events(s)
+server_side: loading commands.. found 3 command(s)
+server_side: loading commands.. found 22 command(s)
+server_side: loaded 25 commands(s)
+server_side: loading remote events.. found 2 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 1 remote event(s)
+server_side: loading remote events.. found 5 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loading remote events.. found 3 remote event(s)
+server_side: loaded 15 remote event(s)
+server_side: loading remote procedures.. found 2 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 1 remote procedure(s)
+server_side: loading remote procedures.. found 5 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loading remote procedures.. found 3 remote procedure(s)
+server_side: loaded 15 remote procedure(s)
+[MySQL]: Дома не найдены.
+
+Server is loaded! (HI)
+
+-> Resource server_side started!
+Started! Waiting for connections..
+Connected: 127.0.0.1 | ID: 0
+Connected: 26.44.64.20 | ID: 1
+[1]: Загружено 1 предметов.
+[Inventory]: Francesca Sesmar - инвентарь инициализирован
+[Ахтунг]: Предметы для игрока 2 не найдены в базе данных!
+[Inventory]: Waka Flipsize - инвентарь инициализирован
+[01:12:21][1]Waka Flipsize: убрал парашу?
+[01:12:28][0]Francesca Sesmar: Нет
+[01:12:30][1]Waka Flipsize: пон
+[01:12:35][0]Francesca Sesmar: Оф радио
+[01:13:02][1]Waka Flipsize: на арз тут сады
+[01:15:23][1]Waka Flipsize: ало
+[01:15:27][0]Francesca Sesmar: ?
+[01:15:31][1]Waka Flipsize: какой тут радиус сообщений?
+[01:15:34][1]Waka Flipsize: или его нт ваще?
+[01:15:39][0]Francesca Sesmar: Обычный 
+[01:15:44][1]Waka Flipsize: а хули ты та кдалеко слышишь меня
+[01:15:45][0]Francesca Sesmar: Ну тип девелоп мод как бы
+[01:15:51][0]Francesca Sesmar: Глобал чат стоит
+[01:15:58][1]Waka Flipsize: а норм что мне рандомно даёт то 1 то 4 яблока за 1 дерево?
+[01:16:03][0]Francesca Sesmar: Да
+[01:16:32][1]Waka Flipsize: 1.6 бакса за 8 яблок?
+[01:16:37][0]Francesca Sesmar: Ну да
+[01:16:38][1]Waka Flipsize: я на кого блть похож
+[01:16:44][0]Francesca Sesmar: Ой
+[01:16:44][1]Waka Flipsize: м пон
+[01:17:00][1]Waka Flipsize: а где брать плеер айди
+[01:17:09][0]Francesca Sesmar: Ну тип я 0 ты 1
+[01:17:18][1]Waka Flipsize: ну а если блять 100 игроков будет
+[01:17:29][0]Francesca Sesmar: Блядь че ты хочешь, я кроме этой хуйни ничего не делал
+[01:17:37][0]Francesca Sesmar: Инвентарь только разве что еще
+[01:17:42][1]Waka Flipsize: а ты уверен что это удобно с десятичными цифрами работать?
+[01:17:42][0]Francesca Sesmar: И то не доделал
+[01:17:55][0]Francesca Sesmar: Ну могу двоичные въебать
+[01:17:58][1]Waka Flipsize: :D
+[01:18:03][0]Francesca Sesmar: Я 00
+[01:18:04][0]Francesca Sesmar: Ты 01
+[01:18:23][1]Waka Flipsize: инв работает?
+[01:18:42][1]Waka Flipsize: тут меню хотя бы есть?
+[01:18:47][0]Francesca Sesmar: Нет
+[01:18:56][1]Waka Flipsize: а че кроме садов есть?
+[01:19:03][0]Francesca Sesmar: Инвентарь
+[01:19:07][1]Waka Flipsize: как аткрыть
+[01:19:11][0]Francesca Sesmar: Догадайся
+[01:19:18][1]Waka Flipsize: hz
+[01:19:21][0]Francesca Sesmar: i..
+[01:19:44][1]Waka Flipsize: в инв 2 бакса а на деле 1.6
+[01:19:55][0]Francesca Sesmar: В курсе
+[01:20:26][1]Waka Flipsize: а вот дальнабощеки
+[01:20:34][0]Francesca Sesmar: Пиздец конечно
+[01:20:36][1]Waka Flipsize: чо
+[01:20:38][0]Francesca Sesmar: Стоит прицеп
+[01:20:43][0]Francesca Sesmar: СРазу тут дальнобои
+[01:20:46][1]Waka Flipsize: нудая
+[01:21:02][1]Waka Flipsize: шериф депортамент
+[01:21:57][1]Waka Flipsize: фд
+[01:22:02][1]Waka Flipsize: блейн каунти
+[01:22:06][0]Francesca Sesmar: kavo?
+[01:22:10][1]Waka Flipsize: округ блейн
+[01:22:26][1]Waka Flipsize: церковь какая то
+[01:22:38][1]Waka Flipsize: я не опнял
+[01:22:41][1]Waka Flipsize: а где хаты блять?
+[01:22:47][0]Francesca Sesmar: На старой винде
+[01:22:51][1]Waka Flipsize: понимаю
+[01:22:53][1]Waka Flipsize: а вернуть не хош?
+[01:22:56][0]Francesca Sesmar: Не-а
+[01:22:58][1]Waka Flipsize: понимаю
+[01:23:04][1]Waka Flipsize: опять рассставлять?
+[01:23:07][0]Francesca Sesmar: Ну да
+[01:23:09][1]Waka Flipsize: .....
+[01:23:12][1]Waka Flipsize: бекапы сука
+[01:23:38][1]Waka Flipsize: мая хата
+[01:24:16][0]Francesca Sesmar: Бля какая же кайфовая синхра на 1.1
+[01:24:19][1]Waka Flipsize: +
+[01:24:32][1]Waka Flipsize: еще апдейт дропнут и ваще заебись будет
+[01:25:20][1]Waka Flipsize: улетел
+[01:25:46][1]Waka Flipsize: а каким хуем карту ограничивать? невидимые текстуры?
+[01:25:54][0]Francesca Sesmar: Придумать легенту 
+[01:25:57][0]Francesca Sesmar: Легенду?
+[01:26:00][0]Francesca Sesmar: ДА БЛЯДЬ
+[01:26:02][1]Waka Flipsize: лох
+[01:26:02][0]Francesca Sesmar: Легенду*
+[01:26:13][0]Francesca Sesmar: Загадки от жака фреско
+[01:26:19][1]Waka Flipsize: уроки русского от казакова
+[01:26:48][1]Waka Flipsize: ну шо тут сказати
+[01:26:53][1]Waka Flipsize: я сзади лежу
+[01:27:05][0]Francesca Sesmar: Где
+[01:27:07][1]Waka Flipsize: адыхаю
+[01:27:16][1]Waka Flipsize: на мене только фенди худе
+[01:27:25][1]Waka Flipsize: кадиклак кадиклак
+[01:27:55][1]Waka Flipsize: ебать будто у бабушки на даче 
+[01:28:10][1]Waka Flipsize: такой же свинтус
+[01:28:35][1]Waka Flipsize: скинь мне псд любой
+[01:28:40][0]Francesca Sesmar: ?
+[01:28:41][1]Waka Flipsize: можешь автризацию
+[01:28:44][1]Waka Fl
